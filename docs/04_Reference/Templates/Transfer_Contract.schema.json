@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Transfer_Contract.schema.json",
+  "title": "CompInt Transfer Contract",
+  "allOf": [
+    {
+      "$ref": "Contract_Common.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "source_scope",
+        "target_scope",
+        "source_interaction_ref",
+        "target_interaction_ref",
+        "correspondence_mapping",
+        "target_construct",
+        "carrier_hypothesis",
+        "experience_state_definition",
+        "invariants",
+        "controlled_variants",
+        "mechanism_assumptions",
+        "baseline_measures",
+        "counterfactual_definition",
+        "transfer_measures",
+        "outcome_classification_rule",
+        "adaptation_familiarity_rule",
+        "transport_bounds",
+        "failure_conditions"
+      ],
+      "properties": {
+        "source_scope": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/scope"
+        },
+        "target_scope": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/scope"
+        },
+        "source_interaction_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "target_interaction_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "correspondence_mapping": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "minProperties": 1
+          }
+        },
+        "target_construct": {
+          "type": "string",
+          "minLength": 1
+        },
+        "carrier_hypothesis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "experience_state_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "invariants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "controlled_variants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "mechanism_assumptions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "baseline_measures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "counterfactual_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transfer_measures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "outcome_classification_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["positive", "null", "negative"],
+          "properties": {
+            "positive": { "type": "string", "minLength": 1 },
+            "null": { "type": "string", "minLength": 1 },
+            "negative": { "type": "string", "minLength": 1 }
+          }
+        },
+        "adaptation_familiarity_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transport_bounds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object"
+          }
+        },
+        "failure_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

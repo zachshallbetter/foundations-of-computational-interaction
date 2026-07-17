@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<key id="d1" for="node" attr.name="definition" attr.type="string"/>
+<key id="d2" for="edge" attr.name="relation" attr.type="string"/>
+<graph id="CompInt" edgedefault="directed">
+<node id="domain-commitments"><data key="d0">Domain commitments</data><data key="d1">A set of commitments about admissible entities, categories, relations, identity conditions, modalities, and constraints in a domain. In computational work, these commitments may be approximated through ontologies, schemas, contracts, types, or model definitions, but none of those artifacts is automatically a philosophical ontology.</data></node>
+<node id="system-state"><data key="d0">System state</data><data key="d1">The physical, computational, social, or modeled condition of a declared system at a particular time.</data></node>
+<node id="semantic-assignment"><data key="d0">Semantic assignment</data><data key="d1">A rule-governed assignment of content, denotation, truth conditions, inferential consequences, or transition behavior to expressions, states, signs, or operations within a specified system and domain.</data></node>
+<node id="semantic-state"><data key="d0">Semantic state</data><data key="d1">The content-bearing assignments and relations currently licensed by a specified semantics for a system or discourse state.</data></node>
+<node id="information"><data key="d0">Information</data><data key="d1">A typed measure or characterization of distinctions, correlations, descriptions, or content relative to a specified source, code, semantic relation, probability model, or use.</data></node>
+<node id="representation"><data key="d0">Representation</data><data key="d1">A materially or formally realized vehicle that provides selective access to a declared target through a mapping or correspondence and an interpretive practice.
+
+A representation may preserve, transform, omit, or introduce structure.</data></node>
+<node id="projection"><data key="d0">Projection</data><data key="d1">A declared transformation from a target description, system state, or semantic assignment into an accessible representational form.
+
+A projection contract specifies:
+
+- target and authority;
+- mapping or construction rule;
+- interpretation assumptions;
+- preserved properties;
+- transformed properties;
+- omitted properties;
+- introduced properties;
+- available operations;
+- observer assumptions;
+- intended use;
+- context and scope;
+- uncertainty, tolerance, and failure conditions.</data></node>
+<node id="scoped-invariance"><data key="d0">Scoped invariance</data><data key="d1">A declared property remains invariant across projections when independently specified comparison rules show that it is preserved for a stated target, observer class, context, metric, and tolerance.
+
+Invariance must be typed. Relevant types include:
+
+- ontological;
+- semantic;
+- informational;
+- structural;
+- topological;
+- computational;
+- inferential;
+- task;
+- behavioral;
+- interactional.</data></node>
+<node id="interpretation"><data key="d0">Interpretation</data><data key="d1">The application, recovery, construction, negotiation, or revision of semantic relations by an interpreting system under a context, competence, history, and purpose.</data></node>
+<node id="interaction-participant"><data key="d0">Interaction participant</data><data key="d1">Any bounded person, collective, organism, computational process, artificial system, institution, or hybrid arrangement occupying a consequential role within an interaction.
+
+A participant may observe, interpret, act, constrain, authorize, mediate, represent, store, or transform state. Participation does not imply autonomy, intelligence, consciousness, or learning.</data></node>
+<node id="agent"><data key="d0">Agent</data><data key="d1">An acting interaction participant that selects or produces actions through a policy, rule, control process, intention, or other action-selection organization.</data></node>
+<node id="environment"><data key="d0">Environment</data><data key="d1">The declared physical, computational, social, symbolic, or mixed system within which action and state transition occur.</data></node>
+<node id="affordance"><data key="d0">Affordance</data><data key="d1">An action-relevant relation between an agent’s effectivities or capabilities and environmental structure that makes a class of action possible. In the Gibsonian sense, perception is not required for the affordance to exist.</data></node>
+<node id="opportunity"><data key="d0">Opportunity</data><data key="d1">A typed and indexed analytical profile coordinating action-availability relations under declared system, agent, projection, task, authority, state, and temporal conditions.
+
+Opportunity is not a new primitive. It coordinates established relations such as feasibility, capability, permission, enablement, reachability, exposure, signaling, belief, expected consequence, reversibility, and uncertainty.</data></node>
+<node id="opportunity-profile"><data key="d0">Opportunity profile</data><data key="d1">For an agent, action, state, projection, and time, an opportunity profile records the relevant typed relations:
+
+- domain-valid;
+- effectively capable;
+- permitted;
+- enabled;
+- reachable outcomes;
+- exposed;
+- signaled;
+- believed available;
+- expected consequences;
+- selected;
+- executed;
+- successful;
+- reversible or recoverable;
+- uncertainty and provenance.
+
+Selected, executed, and successful are trace predicates rather than availability sets.</data></node>
+<node id="capability"><data key="d0">Capability</data><data key="d1">The effective capacity or resources required for an agent-system coupling to execute an action or bring about an outcome under declared conditions.</data></node>
+<node id="permission"><data key="d0">Permission</data><data key="d1">Authorization under a policy, role, rule, authority, or institutional condition for a subject to perform an operation.</data></node>
+<node id="enablement"><data key="d0">Enablement</data><data key="d1">The condition in which an action’s current-state preconditions are satisfied.</data></node>
+<node id="reachability"><data key="d0">Reachability</data><data key="d1">The existence of at least one admissible transition sequence from a declared initial state to a target state or outcome within specified constraints and horizon.</data></node>
+<node id="exposure"><data key="d0">Exposure</data><data key="d1">Provision by the current projection of an executable access path to an operation.</data></node>
+<node id="signaling"><data key="d0">Signaling</data><data key="d1">Perceivable information indicating an operation, condition, consequence, state, or recovery path.</data></node>
+<node id="discoverability"><data key="d0">Discoverability</data><data key="d1">The empirically observed probability and process by which an agent identifies an action or relation under declared task, projection, knowledge, modality, context, and time conditions.</data></node>
+<node id="believed-action"><data key="d0">Believed action</data><data key="d1">An action represented by an agent as available, with an associated confidence and expected consequence.</data></node>
+<node id="action"><data key="d0">Action</data><data key="d1">A declared intervention, command, operation, or behavior capable of participating in a state transition.</data></node>
+<node id="state-transition"><data key="d0">State transition</data><data key="d1">A change from one declared system state to another under a transition relation, process, or event.</data></node>
+<node id="observation"><data key="d0">Observation</data><data key="d1">A recorded or accessible distinction about state, transition, representation, or outcome available through a specified measurement or observation process.</data></node>
+<node id="situated-behavior"><data key="d0">Situated behavior</data><data key="d1">A bounded, temporally extended trajectory of observable or instrumentally recoverable changes, outputs, or regulated persistence attributed to a system in relation to its environment under a declared observation and attribution model.</data></node>
+<node id="behavioral-evidence"><data key="d0">Behavioral evidence</data><data key="d1">A provenance-preserving chain connecting direct observations, system-derived features, latent interpretations, alternative explanations, uncertainty, and falsifying evidence to a bounded research claim.</data></node>
+<node id="behavioral-equivalence"><data key="d0">Behavioral equivalence</data><data key="d1">Equivalence of declared action or outcome distributions for a specified population, task, context, metric, and tolerance.</data></node>
+<node id="interactional-equivalence"><data key="d0">Interactional equivalence</data><data key="d1">Equivalence of the available operation-transition-observation structure under specified agent, task, projection, authority, state, context, and tolerance conditions.</data></node>
+<node id="interaction"><data key="d0">Interaction</data><data key="d1">A family of bounded coupling phenomena in which distinguishable systems or participants become mutually consequential through perturbation, constraint, uptake, response, and recurrence.</data></node>
+<node id="interaction-episode"><data key="d0">Interaction episode</data><data key="d1">A bounded interval in which two or more distinguishable systems are coupled such that perturbations originating in, or mediated by, one system alter the possible or actual state trajectory of another, and the resulting configuration constrains a later trajectory of an originating or co-participating system within a declared boundary and timescale.
+
+Reciprocal closure may be direct, indirect, asymmetric, delayed, probabilistic, or environmentally mediated.</data></node>
+<node id="coupling"><data key="d0">Coupling</data><data key="d1">A relation or pathway through which a participant or shared medium can alter another participant&#x27;s transition structure, reachable states, probabilities, timing, or constraints.</data></node>
+<node id="perturbation"><data key="d0">Perturbation</data><data key="d1">A difference propagated through a coupling relation that may change state, transition conditions, probabilities, timing, or reachable outcomes.</data></node>
+<node id="uptake"><data key="d0">Uptake</data><data key="d1">Incorporation of a perturbation into a participant&#x27;s state, transition process, control process, or interpreted situation. Uptake need not be semantic or conscious.</data></node>
+<node id="recurrence"><data key="d0">Recurrence</data><data key="d1">Return influence through which a response constrains an originating participant, a co-participant, or the shared coupling configuration.</data></node>
+<node id="interaction-contract"><data key="d0">Interaction contract</data><data key="d1">A declaration of interaction identity, participants and roles, boundary, timescale, state, coupling, preconditions, events, transitions, protocol, invariants, evidence, failure, recovery, and completion conditions.</data></node>
+<node id="interaction-morphology"><data key="d0">Interaction morphology</data><data key="d1">The measurable structural properties of a representation or interaction surface, such as hierarchy, topology, density, alignment, rhythm, symmetry, enclosure, continuity, direction, visual weight, temporal organization, and modality.</data></node>
+<node id="interaction-grammar"><data key="d0">Interaction grammar</data><data key="d1">A typed vocabulary and composition structure for semantic actions and transitions independent of any one input modality or rendering implementation.</data></node>
+<node id="interaction-history"><data key="d0">Interaction history</data><data key="d1">The accumulated experience, training, conventions, outcomes, failures, practices, and prior exposure that may change an agent’s later beliefs, policies, and interpretation.</data></node>
+<node id="trace"><data key="d0">Trace</data><data key="d1">A temporally ordered or partially ordered record of observable or attributed events under declared boundaries, granularity, and observation rules.</data></node>
+<node id="measurement-contract"><data key="d0">Measurement contract</data><data key="d1">A declaration of the measurand, observation process, operationalization, scale, uncertainty, validity evidence, population, task, projection, comparison conditions, and permitted interpretation.</data></node>
+<node id="interaction-similarity"><data key="d0">Interaction similarity</data><data key="d1">A comparison of interaction tokens, types, structures, protocols, opportunities, traces, behaviors, policies, strategies, outcomes, causes, or measurements under an explicit frame, correspondence mapping, admissible transformations, metrics, tolerances, uncertainty, and validity domain.</data></node>
+<node id="token-identity"><data key="d0">Token identity</data><data key="d1">Historical identity of one bounded interaction episode under declared continuity, participant, boundary, and timescale criteria.</data></node>
+<node id="type-identity"><data key="d0">Type identity</data><data key="d1">Membership in the same abstraction-defined interaction class under explicit classification rules.</data></node>
+<node id="equivalence"><data key="d0">Equivalence</data><data key="d1">Exact preservation under a declared comparison contract and observable set. Equivalence is always typed.</data></node>
+<node id="similarity"><data key="d0">Similarity</data><data key="d1">Graded proximity under declared dimensions, representations, alignment rules, metrics, weights, tolerances, and uncertainty.</data></node>
+<node id="incomparability"><data key="d0">Incomparability</data><data key="d1">Failure to establish a defensible common comparison space because boundaries, targets, mappings, scales, observation processes, uncertainty, or validity domains cannot be aligned without unsupported assumptions.</data></node>
+<node id="similarity-contract"><data key="d0">Similarity contract</data><data key="d1">A declaration of comparison target, frame, representations, correspondence mapping, invariants, variants, observables, admissible and prohibited transformations, typed metrics or predicates, tolerances, uncertainty, validity domain, and final typed profile.</data></node>
+<node id="strategy"><data key="d0">Strategy</data><data key="d1">An inferred, temporally extended organization of conditional action selection, information use, resource allocation, and contingency response that tends to preserve or improve one or more criteria across a declared class of interaction states.</data></node>
+<node id="strategy-contract"><data key="d0">Strategy contract</data><data key="d1">A declaration of strategy-bearing system, domain, timescale, criteria, state and observation model, state abstraction, opportunity assumptions, action repertoire, selection policy, information policy, commitments, contingency and recovery rules, switching and stopping conditions, resources, authority, identity invariants, rival strategies, uncertainty, and validity domain.</data></node>
+<node id="policy"><data key="d0">Policy</data><data key="d1">A conditional relation from represented states, observations, or beliefs to action distributions.</data></node>
+<node id="fundamental"><data key="d0">Fundamental</data><data key="d1">A representation-independent computational substrate for declaring domain commitments, evolving system state, assigning operational semantics, and producing governed projections whose preservation, transformation, omission, introduced structure, operations, snapshots, and replay can be inspected.</data></node>
+<node id="computational-interaction-science"><data key="d0">Computational Interaction Science</data><data key="d1">A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
+
+CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.</data></node>
+<edge id="e0" source="domain-commitments" target="system-state"><data key="d2">constrains</data></edge>
+<edge id="e1" source="domain-commitments" target="semantic-assignment"><data key="d2">constrains</data></edge>
+<edge id="e2" source="semantic-assignment" target="semantic-state"><data key="d2">licenses</data></edge>
+<edge id="e3" source="system-state" target="projection"><data key="d2">source for</data></edge>
+<edge id="e4" source="semantic-assignment" target="projection"><data key="d2">source for</data></edge>
+<edge id="e5" source="projection" target="representation"><data key="d2">realizes</data></edge>
+<edge id="e6" source="representation" target="interpretation"><data key="d2">supports</data></edge>
+<edge id="e7" source="interpretation" target="opportunity-profile"><data key="d2">informs</data></edge>
+<edge id="e8" source="system-state" target="opportunity-profile"><data key="d2">constrains</data></edge>
+<edge id="e9" source="projection" target="opportunity-profile"><data key="d2">exposes</data></edge>
+<edge id="e10" source="opportunity-profile" target="interaction-episode"><data key="d2">conditions</data></edge>
+<edge id="e11" source="coupling" target="interaction-episode"><data key="d2">constitutes</data></edge>
+<edge id="e12" source="interaction-participant" target="coupling"><data key="d2">participates in</data></edge>
+<edge id="e13" source="observation" target="trace"><data key="d2">records</data></edge>
+<edge id="e14" source="trace" target="measurement-contract"><data key="d2">input to</data></edge>
+<edge id="e15" source="measurement-contract" target="interaction-similarity"><data key="d2">supports</data></edge>
+<edge id="e16" source="interaction-similarity" target="equivalence"><data key="d2">types</data></edge>
+<edge id="e17" source="policy" target="strategy"><data key="d2">component of</data></edge>
+<edge id="e18" source="interaction-history" target="strategy"><data key="d2">updates</data></edge>
+<edge id="e19" source="interaction-history" target="interpretation"><data key="d2">conditions</data></edge>
+<edge id="e20" source="interaction-history" target="believed-action"><data key="d2">conditions</data></edge>
+<edge id="e21" source="affordance" target="opportunity-profile"><data key="d2">contributes</data></edge>
+<edge id="e22" source="capability" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e23" source="permission" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e24" source="enablement" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e25" source="reachability" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e26" source="exposure" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e27" source="signaling" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e28" source="believed-action" target="opportunity-profile"><data key="d2">component</data></edge>
+<edge id="e29" source="action" target="state-transition"><data key="d2">may produce</data></edge>
+<edge id="e30" source="state-transition" target="system-state"><data key="d2">changes</data></edge>
+<edge id="e31" source="agent" target="interaction-participant"><data key="d2">subtype of</data></edge>
+<edge id="e32" source="environment" target="coupling"><data key="d2">mediates</data></edge>
+<edge id="e33" source="token-identity" target="interaction-episode"><data key="d2">identifies</data></edge>
+<edge id="e34" source="type-identity" target="interaction-episode"><data key="d2">classifies</data></edge>
+<edge id="e35" source="similarity-contract" target="interaction-similarity"><data key="d2">specifies</data></edge>
+<edge id="e36" source="strategy-contract" target="strategy"><data key="d2">specifies</data></edge>
+<edge id="e37" source="interaction-contract" target="interaction-episode"><data key="d2">specifies</data></edge>
+<edge id="e38" source="measurement-contract" target="behavioral-evidence"><data key="d2">governs</data></edge>
+<edge id="e39" source="projection" target="scoped-invariance"><data key="d2">tested across</data></edge>
+<edge id="e40" source="equivalence" target="scoped-invariance"><data key="d2">expresses</data></edge>
+<edge id="e41" source="computational-interaction-science" target="interaction"><data key="d2">studies</data></edge>
+</graph>
+</graphml>

@@ -1,0 +1,18 @@
+{
+  "study_id": "CIS-EX-008-INVALID-MISSING-ENVIRONMENT",
+  "schema_version": "0.3.0",
+  "study_version": "0.1.0",
+  "theory_version": "1.0.0",
+  "protocol_ref": { "id": "CIS-EX-008-PROTOCOL", "version": "0.1.0" },
+  "contract_refs": {},
+  "scope": {},
+  "construct_refs": [],
+  "participants": [],
+  "interaction_episodes": [],
+  "states": [],
+  "records": [],
+  "coded_events": [],
+  "behavioral_traces": [],
+  "measures": [],
+  "uncertainties": []
+}

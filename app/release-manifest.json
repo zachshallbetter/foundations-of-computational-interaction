@@ -1,0 +1,36 @@
+{
+  "manifest_version": "0.1.0",
+  "release_id": "compint-consolidation-candidate-1.0.0",
+  "status": "internal-consolidation-candidate",
+  "publication_date": null,
+  "reviewer": null,
+  "artifacts": [
+    { "artifact_id": "COMPINT-DET-001", "path": "README.md", "version": "1.0.0", "sha256": "42dd9cbc6fb665f69f26ee10d8b462623adf07b431677bde201a75a24bddc849", "authority_level": 1, "status": "frozen", "dependencies": [], "generated_from": null },
+    { "artifact_id": "COMPINT-AUTH-001", "path": "AUTHORITY.md", "version": "1.0.0", "sha256": "67bed9b2890448530028d801a53bbe49f149c2565d3e78f206e34ea476d56064", "authority_level": 1, "status": "frozen", "dependencies": ["COMPINT-DET-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-DOCMAP-001", "path": "DOCUMENT_MAP.md", "version": "0.1.0", "sha256": "f254c232263b42d96af228b77db35bc613c6aea12174ad45c10246f6ace51c2d", "authority_level": 1, "status": "internal", "dependencies": ["COMPINT-AUTH-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-NAMING-001", "path": "NAMING.md", "version": "1.0.0", "sha256": "0336be97e290a8c324e3be1ac334696917e06e310ff21d47358116019673025b", "authority_level": 2, "status": "frozen", "dependencies": ["COMPINT-DET-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-VERSION-001", "path": "VERSIONING.md", "version": "1.0.0", "sha256": "77d7fc8838293eb320b2183358c8d2666e798946d8bdb38d811b403574e0c7c1", "authority_level": 2, "status": "frozen", "dependencies": ["COMPINT-AUTH-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-CONFORM-001", "path": "CONFORMANCE.md", "version": "0.1.0", "sha256": "8c0e02cf18b5f0db5f1cb4f7f9feaf048fcd1f7426920587d44aca20317845bd", "authority_level": 7, "status": "frozen", "dependencies": ["COMPINT-AUTH-001", "COMPINT-CONTRACT-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-ONTO-SYNC-001", "path": "../docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Ontology.md", "version": "1.0.0", "sha256": "ed80b4090685677ac050d611fc28cbd01f391b162103a2bef4f2388427591116", "authority_level": 3, "status": "label-freeze", "dependencies": ["COMPINT-DET-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-CONTRACT-001", "path": "../docs/04_Reference/Templates/Contract_Common.schema.json", "version": "0.2.0", "sha256": "a8c9cac4d83f3652d1cb756ff3b332ca5fe5df215af29f976e376b4a779daf21", "authority_level": 4, "status": "draft", "dependencies": ["COMPINT-ONTO-SYNC-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-DATA-001", "path": "../docs/04_Reference/Dataset_Schema/interaction_study.schema.json", "version": "0.3.0", "sha256": "d5806f36be4894b9c41b39cf3df612efd1e122682fb16edf2ea4697454a2a290", "authority_level": 4, "status": "draft", "dependencies": ["COMPINT-CONTRACT-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-C-API-001", "path": "include/cis.h", "version": "0.1.0", "sha256": "49dfaff59ea831d2ab33d14197814e15b9f38ab926e23a173b020e7b40f45318", "authority_level": 8, "status": "experimental", "dependencies": ["COMPINT-CONFORM-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-C-IMPL-001", "path": "src/cis.c", "version": "0.1.0", "sha256": "bca7b7222dab3ed97ab2483dd557da5bdf1abdcfc875bd2eeed759b600f083ce", "authority_level": 8, "status": "experimental", "dependencies": ["COMPINT-C-API-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-EXAMPLES-001", "path": "examples/manifest.csv", "version": "0.1.0", "sha256": "b7ccf3189b775ab00baaeb1aabc8b0a688f8f23590b08da445a244e689a8ab39", "authority_level": 9, "status": "active", "dependencies": ["COMPINT-CONFORM-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-FIG-001-SOURCE", "path": "../docs/04_Reference/Figures/FIG-001_Concept_Dependency_Graph.dot", "version": "1.0.0", "sha256": "5313eb1eb654154740208ceaa781a4b913cdba36fd12c736fdcbb09688eff46e", "authority_level": 9, "status": "source", "dependencies": ["COMPINT-ONTO-SYNC-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-FIG-002-SOURCE", "path": "../docs/04_Reference/Figures/FIG-002_Contract_Architecture.dot", "version": "0.2.0", "sha256": "9f8999dcb7a4cb55b894eb3db4d08a848d51f14b2b5641d4ad0ae7eeed5bb9a2", "authority_level": 9, "status": "source", "dependencies": ["COMPINT-CONTRACT-001"], "generated_from": null },
+    { "artifact_id": "COMPINT-FIG-001-SVG", "path": "../docs/04_Reference/Figures/FIG-001_Concept_Dependency_Graph.svg", "version": "1.0.0", "sha256": "83a245f6b35a7524993e7724bceb9d859b830c610b3aae4f513d5863151742fe", "authority_level": 10, "status": "generated", "dependencies": ["COMPINT-FIG-001-SOURCE"], "generated_from": "COMPINT-FIG-001-SOURCE" },
+    { "artifact_id": "COMPINT-FIG-001-PNG", "path": "../docs/04_Reference/Figures/FIG-001_Concept_Dependency_Graph.png", "version": "1.0.0", "sha256": "42e572529bbe1e7ea8ec093f1d09f4855464b349eae075dd539a6f6450618f44", "authority_level": 10, "status": "generated", "dependencies": ["COMPINT-FIG-001-SOURCE"], "generated_from": "COMPINT-FIG-001-SOURCE" },
+    { "artifact_id": "COMPINT-FIG-001-PDF", "path": "../docs/04_Reference/Figures/FIG-001_Concept_Dependency_Graph.pdf", "version": "1.0.0", "sha256": "315e24af4ced387ed9fdfbc5d61fe3210bd0034429cfedc56b022e5f923c8912", "authority_level": 10, "status": "generated", "dependencies": ["COMPINT-FIG-001-SOURCE"], "generated_from": "COMPINT-FIG-001-SOURCE" },
+    { "artifact_id": "COMPINT-FIG-002-SVG", "path": "../docs/04_Reference/Figures/FIG-002_Contract_Architecture.svg", "version": "0.2.0", "sha256": "dccd6dad5a717a69d944718732918ad83db1704d82e16e5a0481a1165f1a89dc", "authority_level": 10, "status": "generated", "dependencies": ["COMPINT-FIG-002-SOURCE"], "generated_from": "COMPINT-FIG-002-SOURCE" },
+    { "artifact_id": "COMPINT-FIG-002-PNG", "path": "../docs/04_Reference/Figures/FIG-002_Contract_Architecture.png", "version": "0.2.0", "sha256": "a1cf553812093e8995369659d4bf6fc6a7c1ecc15dd39e7d364853a4a2304cee", "authority_level": 10, "status": "generated", "dependencies": ["COMPINT-FIG-002-SOURCE"], "generated_from": "COMPINT-FIG-002-SOURCE" },
+    { "artifact_id": "COMPINT-FIG-002-PDF", "path": "../docs/04_Reference/Figures/FIG-002_Contract_Architecture.pdf", "version": "0.2.0", "sha256": "b198c9037574b82e55928c98addf86ca93139ce5024956ed30cb1a0d41566aad", "authority_level": 10, "status": "generated", "dependencies": ["COMPINT-FIG-002-SOURCE"], "generated_from": "COMPINT-FIG-002-SOURCE" }
+  ],
+  "known_limitations": [
+    "canonical concept identifiers are unratified",
+    "bibliography and evidence mappings are not authority-verified",
+    "schemas are unpiloted draft 0.x candidates",
+    "legacy Markdown derivatives are not regenerated",
+    "no empirical or independent review is recorded"
+  ]
+}

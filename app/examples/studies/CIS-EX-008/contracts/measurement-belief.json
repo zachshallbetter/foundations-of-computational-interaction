@@ -1,0 +1,49 @@
+{
+  "contract_id": "CIS-EX-008-MEASUREMENT-BELIEF",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Believed availability", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending cognitive interviewing and measurement review",
+    "task": "bounded target-operation discovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": ["The report is not direct access to awareness, confidence, expected consequence, trust, or actual availability."],
+  "measurand": "participant response to the frozen pre-outcome question of whether the target action is currently available",
+  "unit": null,
+  "level_of_analysis": "participant-condition report",
+  "observation_model": "A time-linked participant response is recorded before target outcome disclosure and preserved separately from system availability predicates.",
+  "instrument_ref": { "id": "CIS-EX-008-BELIEF-INSTRUMENT", "version": "0.1.0" },
+  "operationalization": "Map the frozen yes, no, and unsure response options to distinct categories; never infer a missing report from behavior.",
+  "coding_rules": ["Preserve unsure as a category.", "Record nonresponse as missing rather than no.", "Exclude reports administered after target outcome disclosure from the primary measure."],
+  "estimator": "preregistered multinomial or explicitly dichotomized condition contrast with participant repeated structure",
+  "scale_type": "nominal",
+  "permissible_transformations": ["preregistered category relabeling", "declared binary collapse with unsure and missing treatment specified"],
+  "permissible_comparisons": ["condition contrast after instrument invariance and administration checks"],
+  "permitted_interpretations": ["The value is the participant's recorded response to the frozen availability question before target outcome disclosure."],
+  "uncertainty_model_ref": { "id": "CIS-EX-008-UNCERTAINTY-BELIEF", "version": "0.1.0" },
+  "uncertainty_budget": {
+    "wording": "interpretation is bounded to populations and modalities covered by cognitive review",
+    "administration_time": "late administration invalidates the primary measure",
+    "nonresponse": "represented as missing_unknown and never inferred from behavior"
+  },
+  "reliability_evidence_requirements": ["administration timing and response capture verified", "test-retest interpretation declared if assessed"],
+  "validity_evidence_requirements": ["cognitive interviews support the intended reading", "response behavior is evaluated separately from actual availability"],
+  "comparison_scope": {
+    "population": "population for which the instrument wording and modality were reviewed",
+    "task": "frozen target-operation discovery task",
+    "projection": "frozen CIS-EX-008 condition versions",
+    "context": "reviewed instrument modality, language, device, and administration timing"
+  },
+  "missingness_rules": {
+    "nonresponse": "mark missing_unknown",
+    "unsure": "retain as observed category",
+    "late_administration": "mark invalid for the primary estimand"
+  }
+}

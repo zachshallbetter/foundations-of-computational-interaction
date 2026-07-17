@@ -1,0 +1,79 @@
+digraph CompIntOntology {
+  graph [
+    rankdir=LR,
+    bgcolor="#ffffff",
+    pad="0.25",
+    nodesep="0.32",
+    ranksep="0.56",
+    splines=polyline,
+    fontname="Helvetica",
+    label="CompInt 1.0.0 — canonical analytical dependency graph",
+    labelloc=t,
+    fontsize=18
+  ];
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#f4f1e8",
+    color="#4b5563",
+    fontcolor="#111827",
+    fontname="Helvetica",
+    fontsize=10,
+    margin="0.13,0.08"
+  ];
+  edge [color="#374151", fontcolor="#374151", fontname="Helvetica", fontsize=9, arrowsize=0.65];
+
+  domain [label="Domain / ontology"];
+  semantics [label="Semantic structure"];
+  projection [label="Representation / projection"];
+  observation [label="Observation / interpretation"];
+  opportunity [label="Opportunity profile"];
+  episode [label="Interaction episode", fillcolor="#dceef2"];
+  trace [label="Formal trace /\nbehavioral trace"];
+  strategy [label="Strategy / experience / transfer"];
+  formal [label="Formal models"];
+  inference [label="Measurement / similarity /\ncomparison / prediction"];
+  evidence [label="Evidence and\nexplanatory gain"];
+
+  participant [label="Interaction participant"];
+  agent [label="Acting participant / agent"];
+  environment [label="Environment"];
+
+  determination [
+    label="Supported determination\nInterdisciplinary scientific synthesis\nNot an independent discipline",
+    shape=note,
+    fillcolor="#fff0d8"
+  ];
+
+  domain -> semantics -> projection -> observation -> opportunity -> episode -> trace -> strategy -> formal -> inference -> evidence;
+  participant -> episode [label="participates"];
+  agent -> participant [label="subtype", arrowhead=empty];
+  environment -> opportunity [label="conditions"];
+  environment -> episode [label="context"];
+  evidence -> determination [label="supports only"];
+
+  trace -> opportunity [label="causal feedback", style=dashed, color="#8b5e3c", fontcolor="#8b5e3c", constraint=false];
+  strategy -> projection [label="causal feedback", style=dashed, color="#8b5e3c", fontcolor="#8b5e3c", constraint=false];
+  evidence -> semantics [label="theory revision", style=dashed, color="#8b5e3c", fontcolor="#8b5e3c", constraint=false];
+
+  subgraph cluster_contracts {
+    label="Executable contract layers";
+    color="#9ca3af";
+    style="rounded,dashed";
+    fontsize=10;
+    projection_contract [label="Projection", shape=component, fillcolor="#eef2ff"];
+    opportunity_contract [label="Opportunity", shape=component, fillcolor="#eef2ff"];
+    interaction_contract [label="Interaction", shape=component, fillcolor="#eef2ff"];
+    behavioral_contract [label="Behavioral evidence", shape=component, fillcolor="#eef2ff"];
+    measurement_contract [label="Measurement", shape=component, fillcolor="#eef2ff"];
+    comparison_contract [label="Similarity / transfer / strategy /\nprediction / comparison", shape=component, fillcolor="#eef2ff"];
+    projection_contract -> opportunity_contract -> interaction_contract -> behavioral_contract -> measurement_contract -> comparison_contract [color="#6b7280"];
+  }
+
+  projection -> projection_contract [style=dotted, arrowhead=none];
+  opportunity -> opportunity_contract [style=dotted, arrowhead=none];
+  episode -> interaction_contract [style=dotted, arrowhead=none];
+  trace -> behavioral_contract [style=dotted, arrowhead=none];
+  inference -> measurement_contract [style=dotted, arrowhead=none];
+  inference -> comparison_contract [style=dotted, arrowhead=none];
+}

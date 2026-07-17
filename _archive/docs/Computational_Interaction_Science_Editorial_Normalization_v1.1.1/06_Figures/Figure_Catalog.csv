@@ -1,0 +1,19 @@
+Paper ID,Paper,Figure/Caption,Embedded Media Count,Table Count,Source DOCX
+01,"INTERACTION AS A
+SCIENTIFIC EXPLANANDUM","Figure 1. Dependency graph for the minimum ontology. Arrows indicate explanatory dependence, not necessarily temporal precedence.",1,8,02_Research_Papers/01_Scientific_Explanandum/Interaction_as_a_Scientific_Explanandum.docx
+02,"CAN INTERACTION BECOME A
+PRIMARY SCIENTIFIC OBJECT?",Table 1 compares scientific structure rather than disciplinary history. “Observer” identifies the investigator or measurement system; “observed” identifies the focal target. The rows are ideal types: each discipline contains internal disagreement and subfields that cross the stated boundary.,0,5,02_Research_Papers/02_Primary_Scientific_Object/Can_Interaction_Become_a_Primary_Scientific_Object.docx
+03,How Sciences Define Their Objects,"Table 1 records dominant structures rather than exhaustive internal diversity. 'Observer' identifies the epistemic role that selects and records evidence, not necessarily a person external to the system. 'Mechanism/dependency' includes lawful, causal, structural, functional, historical, computational, interpretive, and statistical forms.",0,6,02_Research_Papers/03_Architecture_of_Sciences/How_Sciences_Define_Their_Objects.docx
+04,"Representation, Invariance, and Projection",No explicit caption detected,0,6,02_Research_Papers/04_Representation_and_Projection/Representation_Invariance_and_Projection.docx
+05,"Ontology, Semantics, Representation, and Interpretation","Table 7 is the reusable transformation matrix. Its rule is that invariance must be typed and tested independently for ontology, formal semantics, information, representation, interpretation, and behavior.",0,9,02_Research_Papers/05_Ontology_Semantics_Interpretation/Ontology_Semantics_Representation_and_Interpretation.docx
+06,"Opportunity, Affordance, and Action Availability",No explicit caption detected,0,3,02_Research_Papers/06_Opportunity/Opportunity_Affordance_and_Action_Availability.docx
+07,Interaction,No explicit caption detected,0,3,02_Research_Papers/07_Interaction/Interaction_Toward_a_General_Theory_of_Interaction.docx
+08,Behavior,No explicit caption detected,0,8,02_Research_Papers/08_Behavior/Behavior_Toward_a_Scientific_Theory_of_Computational_Behavior.docx
+09,Measurement,No explicit caption detected,0,4,02_Research_Papers/09_Measurement/Measurement_Toward_a_Scientific_Framework_for_Interaction_Research.docx
+10,Interaction Similarity,No explicit caption detected,0,5,02_Research_Papers/10_Similarity/Interaction_Similarity_Toward_a_General_Theory_of_Comparable_Interactions.docx
+11,Interaction Transfer,No explicit caption detected,0,3,02_Research_Papers/11_Transfer/Interaction_Transfer_Toward_a_Theory_of_Experience_and_Adaptation.docx
+12,Interaction Strategies,No explicit caption detected,0,3,02_Research_Papers/12_Strategies/Interaction_Strategies_Toward_a_Theory_of_Behavioral_Organization.docx
+13,Formal Models of Computational Interaction,No explicit caption detected,0,3,02_Research_Papers/13_Formal_Models/Formal_Models_of_Computational_Interaction_Toward_a_Mathematical_Foundation.docx
+14,Predicting Interaction,No explicit caption detected,0,9,02_Research_Papers/14_Prediction/Predicting_Interaction_Toward_a_Predictive_Theory_of_Computational_Interaction.docx
+15,Comparative Interaction,No explicit caption detected,0,8,02_Research_Papers/15_Comparative_Interaction/Comparative_Interaction_Toward_a_Scientific_Method_for_Comparing_Computational_Interactions.docx
+16,Computational Interaction Science,No explicit caption detected,0,7,02_Research_Papers/16_Program_Synthesis/Computational_Interaction_Science_Foundations.docx

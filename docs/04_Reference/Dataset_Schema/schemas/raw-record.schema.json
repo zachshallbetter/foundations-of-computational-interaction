@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "raw-record.schema.json",
+  "title": "CompInt Raw Instrument Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "study_id",
+    "episode_id",
+    "timestamp",
+    "record_type",
+    "source",
+    "payload_schema_ref",
+    "payload",
+    "missingness",
+    "provenance"
+  ],
+  "properties": {
+    "record_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "study_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "episode_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "participant_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "record_type": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "payload_schema_ref": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "missingness": {
+      "$ref": "common.schema.json#/$defs/missingness"
+    },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

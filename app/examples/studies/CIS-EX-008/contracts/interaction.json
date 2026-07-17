@@ -1,0 +1,65 @@
+{
+  "contract_id": "CIS-EX-008-INTERACTION",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Interaction episode", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery and recovery task",
+    "projection": "one frozen CIS-EX-008 condition",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": [
+    "An isolated participant input or system output does not by itself establish a strict interaction episode."
+  ],
+  "participant_refs": ["CIS-EX-008-PARTICIPANT", "CIS-EX-008-TARGET-SYSTEM"],
+  "environment_refs": ["CIS-EX-008-ENVIRONMENT-CONTROLLED"],
+  "boundary": "Begins when the frozen projection becomes actionable; ends at completion, abandonment, invalid instrumentation, or the preregistered timeout.",
+  "timescale": "condition-level episode using monotonic instrument time",
+  "initiation_conditions": ["The assigned projection, target, instrument, and authority versions resolve and projection.ready is recorded."],
+  "initial_state_ref": "CIS-EX-008-STATE-INITIAL",
+  "coupling_relations": [
+    {
+      "source_ref": "CIS-EX-008-PARTICIPANT",
+      "target_ref": "CIS-EX-008-TARGET-SYSTEM",
+      "pathway": "selection through an exposed operation path",
+      "possible_consequence": "target transition, rejection, or unchanged state"
+    },
+    {
+      "source_ref": "CIS-EX-008-TARGET-SYSTEM",
+      "target_ref": "CIS-EX-008-PARTICIPANT",
+      "pathway": "versioned projection feedback",
+      "possible_consequence": "later selection, recovery, completion, or abandonment"
+    }
+  ],
+  "perturbation_conditions": ["A valid participant selection reaches the target system through the exposed operation path."],
+  "uptake_conditions": ["The target system resolves the selection and emits a typed rejection or committed transition with feedback."],
+  "preconditions": [
+    "Assigned projection and target versions loaded.",
+    "Instrument clock and event capture pass technical verification.",
+    "Participant has completed standardized training and the active condition has not been exposed previously in the measured block."
+  ],
+  "postconditions": ["Termination type, last verified state, and unresolved evidence status are recorded."],
+  "event_types": ["projection.ready", "belief.report", "action.select", "action.reject", "transition.commit", "feedback.present", "recovery.select", "task.complete", "task.abandon"],
+  "transition_semantics_ref": { "id": "CIS-EX-008-TRANSITION-SEMANTICS", "version": "0.1.0" },
+  "protocol": "Present condition, collect pre-outcome belief report, permit action sequence, present frozen feedback after each attempt, and terminate under the declared completion, abandonment, invalidity, or timeout rule.",
+  "invariants": ["Target semantics and operation vocabulary remain constant across conditions.", "Rejected actions do not mutate target state."],
+  "evidence_requirements": {
+    "coupling": "time-linked participant action and system feedback records",
+    "recurrence": "at least one feedback event precedes a later participant selection or explicit termination response"
+  },
+  "failure_conditions": ["Required event capture is missing or non-monotonic.", "Condition versions change inside an episode.", "A rejected action mutates target state."],
+  "recovery_conditions": ["The recovery operation restores the declared recoverable state.", "A participant may abandon without being coded as recovered."],
+  "completion_conditions": ["The target state and frozen explicit success criterion are both satisfied."],
+  "episode_identity_rule": "Use the assigned participant-condition-block identity; duplicate starts are retained and invalidate the episode unless the frozen adjudication rule resolves one canonical start.",
+  "provenance_requirements": {
+    "raw": "participant, episode, projection, instrument, source, and monotonic capture identity",
+    "derived": "input record references plus contract, coding-rule, and software versions"
+  },
+  "uncertainty_assumptions": ["Clock ordering is resolvable within the declared resolution.", "Attribution is unknown when participant, episode, or projection identity does not resolve.", "Missing recurrence evidence does not establish absence of interaction."]
+}

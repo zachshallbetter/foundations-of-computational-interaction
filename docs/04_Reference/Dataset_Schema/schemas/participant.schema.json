@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "participant.schema.json",
+  "title": "CompInt Interaction Participant",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "participant_id",
+    "participant_kind",
+    "roles",
+    "capabilities",
+    "authority",
+    "pseudonymous",
+    "consent_ref"
+  ],
+  "properties": {
+    "participant_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "participant_kind": {
+      "enum": [
+        "person",
+        "collective",
+        "organism",
+        "computational_process",
+        "artificial_system",
+        "institution",
+        "hybrid"
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/non_empty_string"
+      },
+      "uniqueItems": true
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/non_empty_string"
+      },
+      "uniqueItems": true
+    },
+    "authority": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/non_empty_string"
+      },
+      "uniqueItems": true
+    },
+    "pseudonymous": {
+      "type": "boolean"
+    },
+    "consent_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "local_state_schema_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

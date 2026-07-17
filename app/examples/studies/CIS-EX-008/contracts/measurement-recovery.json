@@ -1,0 +1,49 @@
+{
+  "contract_id": "CIS-EX-008-MEASUREMENT-RECOVERY",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Recovery duration", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery and recovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": ["Recovery duration is not resilience, confidence, expertise, or strategy."],
+  "measurand": "elapsed monotonic instrument time from a valid failed or rejected attempt to the first verified return to the declared recoverable state",
+  "unit": "milliseconds",
+  "level_of_analysis": "recovery interval nested within participant-condition episode",
+  "observation_model": "Typed attempt results and replay-verified state records delimit a recovery interval.",
+  "instrument_ref": { "id": "CIS-EX-008-INSTRUMENT-EVENT-LOG", "version": "0.1.0" },
+  "operationalization": "Subtract failure-event time from the first later state record satisfying the frozen recovery predicate; censor at abandonment or timeout; mark invalid when replay or timing diverges.",
+  "coding_rules": ["Use the first qualifying state after the indexed failure.", "Keep censored, invalid, missing, and observed-zero intervals distinct."],
+  "estimator": "preregistered time-to-recovery model with participant repeated structure and declared censoring",
+  "scale_type": "duration",
+  "permissible_transformations": ["positive unit conversion", "preregistered monotonic transformation with estimand restated"],
+  "permissible_comparisons": ["condition contrast under equivalent clock, timeout, failure, and recovery definitions"],
+  "permitted_interpretations": ["The duration reports instrument time from a qualifying failure to the first replay-verified recoverable state under the frozen rule."],
+  "uncertainty_model_ref": { "id": "CIS-EX-008-UNCERTAINTY-RECOVERY", "version": "0.1.0" },
+  "uncertainty_budget": {
+    "clock": "bounded by verified resolution and synchronization error",
+    "state_replay": "divergence marks the interval invalid",
+    "censoring": "timeout and abandonment are represented explicitly rather than imputed"
+  },
+  "reliability_evidence_requirements": ["replay reproduces failure and recovery states", "clock resolution and synchronization verified"],
+  "validity_evidence_requirements": ["recovery predicate is task-relevant and frozen before observation", "censoring mechanisms are reported"],
+  "comparison_scope": {
+    "population": "reviewed and adequately supported study population",
+    "task": "frozen target-operation discovery and recovery task",
+    "projection": "frozen CIS-EX-008 condition versions",
+    "context": "reviewed devices, instructions, training, and setting"
+  },
+  "missingness_rules": {
+    "timeout_or_abandonment": "right-censor rather than encode zero",
+    "clock_or_replay_failure": "mark invalid",
+    "no_qualifying_failure": "mark not_applicable"
+  }
+}

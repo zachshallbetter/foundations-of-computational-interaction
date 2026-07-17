@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "similarity-profile.schema.json",
+  "title": "CompInt Similarity Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_id",
+    "similarity_contract_ref",
+    "left_ref",
+    "right_ref",
+    "comparison_status",
+    "dimensions",
+    "provenance"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "similarity_contract_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "left_ref": {
+      "type": "string"
+    },
+    "right_ref": {
+      "type": "string"
+    },
+    "comparison_status": {
+      "enum": [
+        "comparable",
+        "incomparable"
+      ]
+    },
+    "incomparability_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "metric",
+          "value",
+          "tolerance",
+          "uncertainty_ref"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "ontological",
+              "semantic",
+              "informational",
+              "structural",
+              "topological",
+              "computational",
+              "inferential",
+              "task",
+              "behavioral",
+              "interactional"
+            ]
+          },
+          "metric": {
+            "type": "string"
+          },
+          "value": {
+            "$ref": "common.schema.json#/$defs/typed_value"
+          },
+          "tolerance": {
+            "$ref": "common.schema.json#/$defs/typed_value"
+          },
+          "uncertainty_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

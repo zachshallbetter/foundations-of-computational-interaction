@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "CompInt Common Definitions",
+  "type": "object",
+  "$defs": {
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-[0-9A-Za-z.-]+)?$"
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "version": {
+          "$ref": "#/$defs/semver"
+        }
+      }
+    },
+    "construct_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "identifier_status",
+        "canonical_id"
+      ],
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "identifier_status": {
+          "enum": [
+            "unratified",
+            "ratified"
+          ]
+        },
+        "canonical_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "population",
+        "task",
+        "projection",
+        "context"
+      ],
+      "properties": {
+        "population": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "projection": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "method",
+        "recorded_at"
+      ],
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "method": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "software_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "instrument_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "missingness": {
+      "enum": [
+        "not_missing",
+        "missing_unknown",
+        "not_applicable",
+        "not_observed",
+        "withheld",
+        "invalid"
+      ]
+    },
+    "typed_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value_type",
+        "value",
+        "unit"
+      ],
+      "properties": {
+        "value_type": {
+          "enum": [
+            "integer",
+            "number",
+            "boolean",
+            "string",
+            "category",
+            "duration"
+          ]
+        },
+        "value": {
+          "type": [
+            "integer",
+            "number",
+            "boolean",
+            "string",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "relation_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "evidence_refs",
+        "uncertainty_ref"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "true",
+            "false",
+            "unknown"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "uniqueItems": true
+        },
+        "uncertainty_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "rationale",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "not_assessed"
+          ]
+        },
+        "rationale": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

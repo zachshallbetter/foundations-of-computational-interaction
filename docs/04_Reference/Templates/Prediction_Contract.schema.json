@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Prediction_Contract.schema.json",
+  "title": "CompInt Prediction Contract",
+  "allOf": [
+    {
+      "$ref": "Contract_Common.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "target",
+        "unit",
+        "horizon",
+        "information_cutoff_rule",
+        "input_refs",
+        "input_provenance_requirements",
+        "population",
+        "context",
+        "model_class",
+        "causal_status",
+        "prediction_form",
+        "uncertainty_model_ref",
+        "evaluation_design",
+        "calibration_plan",
+        "coverage_plan",
+        "validity_domain",
+        "transport_scope",
+        "failure_conditions",
+        "abstention_rules",
+        "monitoring_rules",
+        "update_rules",
+        "prediction_type",
+        "observation_intervention_status"
+      ],
+      "properties": {
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "horizon": {
+          "type": "string",
+          "minLength": 1
+        },
+        "information_cutoff_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference" }
+        },
+        "input_provenance_requirements": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "population": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_class": {
+          "type": "string",
+          "minLength": 1
+        },
+        "causal_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prediction_form": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uncertainty_model_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "calibration_plan": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "evaluation_design": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "coverage_plan": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "validity_domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transport_scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "failure_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "abstention_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "monitoring_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "update_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "prediction_type": {
+          "enum": [
+            "forecast",
+            "retrodiction",
+            "diagnosis",
+            "causal_effect",
+            "policy_evaluation"
+          ]
+        },
+        "observation_intervention_status": {
+          "enum": [
+            "observational",
+            "interventional"
+          ]
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

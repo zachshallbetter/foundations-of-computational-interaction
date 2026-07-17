@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "consent-record.schema.json",
+  "title": "CompInt Consent Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "schema_version",
+    "participant_ref",
+    "protocol_ref",
+    "consent_version",
+    "recorded_at",
+    "status",
+    "permitted_uses",
+    "retention_rule",
+    "withdrawal_process",
+    "future_reuse"
+  ],
+  "properties": {
+    "record_id": { "type": "string", "minLength": 1 },
+    "schema_version": { "const": "0.2.0" },
+    "participant_ref": { "type": "string", "minLength": 1 },
+    "protocol_ref": { "type": "string", "minLength": 1 },
+    "consent_version": { "type": "string", "minLength": 1 },
+    "recorded_at": { "type": "string", "format": "date-time" },
+    "status": { "enum": ["granted", "declined", "withdrawn", "waived-by-authority"] },
+    "permitted_uses": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "retention_rule": { "type": "string", "minLength": 1 },
+    "withdrawal_process": { "type": "string", "minLength": 1 },
+    "future_reuse": { "enum": ["not_permitted", "study_only", "specified_reuse", "broad_reuse"] },
+    "withdrawn_at": { "type": ["string", "null"], "format": "date-time" },
+    "authority_ref": { "type": ["string", "null"] },
+    "community_review_ref": { "type": ["string", "null"] },
+    "amends_record_id": { "type": ["string", "null"] },
+    "notes": { "type": ["string", "null"] }
+  }
+}

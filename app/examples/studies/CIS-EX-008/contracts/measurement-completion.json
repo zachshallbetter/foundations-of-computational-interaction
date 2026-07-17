@@ -1,0 +1,49 @@
+{
+  "contract_id": "CIS-EX-008-MEASUREMENT-COMPLETION",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Task completion", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": ["Equal completion does not establish equal discovery, understanding, effort, accessibility, or interaction equivalence."],
+  "measurand": "whether the terminal target state and explicit success criterion are satisfied before abandonment or timeout",
+  "unit": null,
+  "level_of_analysis": "participant-condition episode",
+  "observation_model": "Replay-verified terminal state and the frozen completion predicate determine completion.",
+  "instrument_ref": { "id": "CIS-EX-008-INSTRUMENT-EVENT-LOG", "version": "0.1.0" },
+  "operationalization": "One when both terminal target state and explicit criterion resolve true; zero after validly observed timeout or abandonment without completion; missing or invalid when terminal evidence cannot be resolved.",
+  "coding_rules": ["Execution alone is insufficient.", "Unknown outcome remains unknown rather than failure unless the frozen termination rule licenses zero."],
+  "estimator": "preregistered condition contrast in completion probability with participant repeated structure",
+  "scale_type": "binary",
+  "permissible_transformations": ["logical complement with relabeled estimand"],
+  "permissible_comparisons": ["condition contrast with identical completion criterion and timeout"],
+  "permitted_interpretations": ["The episode satisfied the frozen terminal state and explicit success criterion within a validly observed termination window."],
+  "uncertainty_model_ref": { "id": "CIS-EX-008-UNCERTAINTY-COMPLETION", "version": "0.1.0" },
+  "uncertainty_budget": {
+    "terminal_state": "unresolved replay produces missing_unknown or invalid, never inferred failure",
+    "criterion": "criterion version must resolve before classification",
+    "termination": "timeout or abandonment is zero only under the frozen rule"
+  },
+  "reliability_evidence_requirements": ["independent replay reproduces terminal state and criterion evaluation"],
+  "validity_evidence_requirements": ["completion criterion represents the frozen task target without condition-specific advantage"],
+  "comparison_scope": {
+    "population": "reviewed and adequately supported study population",
+    "task": "frozen target-operation discovery task",
+    "projection": "frozen CIS-EX-008 condition versions",
+    "context": "reviewed devices, instructions, training, and setting"
+  },
+  "missingness_rules": {
+    "invalid_terminal_state": "mark invalid",
+    "valid_timeout_or_abandonment": "record zero only when the frozen rule defines noncompletion",
+    "unresolved_outcome": "mark missing_unknown"
+  }
+}

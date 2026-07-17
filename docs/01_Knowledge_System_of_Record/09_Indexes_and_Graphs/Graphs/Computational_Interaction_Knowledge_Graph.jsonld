@@ -1,0 +1,795 @@
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "relation": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+  },
+  "@graph": [
+    {
+      "@id": "compint:domain-commitments",
+      "@type": "Concept",
+      "name": "Domain commitments",
+      "description": "A set of commitments about admissible entities, categories, relations, identity conditions, modalities, and constraints in a domain. In computational work, these commitments may be approximated through ontologies, schemas, contracts, types, or model definitions, but none of those artifacts is automatically a philosophical ontology."
+    },
+    {
+      "@id": "compint:system-state",
+      "@type": "Concept",
+      "name": "System state",
+      "description": "The physical, computational, social, or modeled condition of a declared system at a particular time."
+    },
+    {
+      "@id": "compint:semantic-assignment",
+      "@type": "Concept",
+      "name": "Semantic assignment",
+      "description": "A rule-governed assignment of content, denotation, truth conditions, inferential consequences, or transition behavior to expressions, states, signs, or operations within a specified system and domain."
+    },
+    {
+      "@id": "compint:semantic-state",
+      "@type": "Concept",
+      "name": "Semantic state",
+      "description": "The content-bearing assignments and relations currently licensed by a specified semantics for a system or discourse state."
+    },
+    {
+      "@id": "compint:information",
+      "@type": "Concept",
+      "name": "Information",
+      "description": "A typed measure or characterization of distinctions, correlations, descriptions, or content relative to a specified source, code, semantic relation, probability model, or use."
+    },
+    {
+      "@id": "compint:representation",
+      "@type": "Concept",
+      "name": "Representation",
+      "description": "A materially or formally realized vehicle that provides selective access to a declared target through a mapping or correspondence and an interpretive practice.\n\nA representation may preserve, transform, omit, or introduce structure."
+    },
+    {
+      "@id": "compint:projection",
+      "@type": "Concept",
+      "name": "Projection",
+      "description": "A declared transformation from a target description, system state, or semantic assignment into an accessible representational form.\n\nA projection contract specifies:\n\n- target and authority;\n- mapping or construction rule;\n- interpretation assumptions;\n- preserved properties;\n- transformed properties;\n- omitted properties;\n- introduced properties;\n- available operations;\n- observer assumptions;\n- intended use;\n- context and scope;\n- uncertainty, tolerance, and failure conditions."
+    },
+    {
+      "@id": "compint:scoped-invariance",
+      "@type": "Concept",
+      "name": "Scoped invariance",
+      "description": "A declared property remains invariant across projections when independently specified comparison rules show that it is preserved for a stated target, observer class, context, metric, and tolerance.\n\nInvariance must be typed. Relevant types include:\n\n- ontological;\n- semantic;\n- informational;\n- structural;\n- topological;\n- computational;\n- inferential;\n- task;\n- behavioral;\n- interactional."
+    },
+    {
+      "@id": "compint:interpretation",
+      "@type": "Concept",
+      "name": "Interpretation",
+      "description": "The application, recovery, construction, negotiation, or revision of semantic relations by an interpreting system under a context, competence, history, and purpose."
+    },
+    {
+      "@id": "compint:interaction-participant",
+      "@type": "Concept",
+      "name": "Interaction participant",
+      "description": "Any bounded person, collective, organism, computational process, artificial system, institution, or hybrid arrangement occupying a consequential role within an interaction.\n\nA participant may observe, interpret, act, constrain, authorize, mediate, represent, store, or transform state. Participation does not imply autonomy, intelligence, consciousness, or learning."
+    },
+    {
+      "@id": "compint:agent",
+      "@type": "Concept",
+      "name": "Agent",
+      "description": "An acting interaction participant that selects or produces actions through a policy, rule, control process, intention, or other action-selection organization."
+    },
+    {
+      "@id": "compint:environment",
+      "@type": "Concept",
+      "name": "Environment",
+      "description": "The declared physical, computational, social, symbolic, or mixed system within which action and state transition occur."
+    },
+    {
+      "@id": "compint:affordance",
+      "@type": "Concept",
+      "name": "Affordance",
+      "description": "An action-relevant relation between an agent’s effectivities or capabilities and environmental structure that makes a class of action possible. In the Gibsonian sense, perception is not required for the affordance to exist."
+    },
+    {
+      "@id": "compint:opportunity",
+      "@type": "Concept",
+      "name": "Opportunity",
+      "description": "A typed and indexed analytical profile coordinating action-availability relations under declared system, agent, projection, task, authority, state, and temporal conditions.\n\nOpportunity is not a new primitive. It coordinates established relations such as feasibility, capability, permission, enablement, reachability, exposure, signaling, belief, expected consequence, reversibility, and uncertainty."
+    },
+    {
+      "@id": "compint:opportunity-profile",
+      "@type": "Concept",
+      "name": "Opportunity profile",
+      "description": "For an agent, action, state, projection, and time, an opportunity profile records the relevant typed relations:\n\n- domain-valid;\n- effectively capable;\n- permitted;\n- enabled;\n- reachable outcomes;\n- exposed;\n- signaled;\n- believed available;\n- expected consequences;\n- selected;\n- executed;\n- successful;\n- reversible or recoverable;\n- uncertainty and provenance.\n\nSelected, executed, and successful are trace predicates rather than availability sets."
+    },
+    {
+      "@id": "compint:capability",
+      "@type": "Concept",
+      "name": "Capability",
+      "description": "The effective capacity or resources required for an agent-system coupling to execute an action or bring about an outcome under declared conditions."
+    },
+    {
+      "@id": "compint:permission",
+      "@type": "Concept",
+      "name": "Permission",
+      "description": "Authorization under a policy, role, rule, authority, or institutional condition for a subject to perform an operation."
+    },
+    {
+      "@id": "compint:enablement",
+      "@type": "Concept",
+      "name": "Enablement",
+      "description": "The condition in which an action’s current-state preconditions are satisfied."
+    },
+    {
+      "@id": "compint:reachability",
+      "@type": "Concept",
+      "name": "Reachability",
+      "description": "The existence of at least one admissible transition sequence from a declared initial state to a target state or outcome within specified constraints and horizon."
+    },
+    {
+      "@id": "compint:exposure",
+      "@type": "Concept",
+      "name": "Exposure",
+      "description": "Provision by the current projection of an executable access path to an operation."
+    },
+    {
+      "@id": "compint:signaling",
+      "@type": "Concept",
+      "name": "Signaling",
+      "description": "Perceivable information indicating an operation, condition, consequence, state, or recovery path."
+    },
+    {
+      "@id": "compint:discoverability",
+      "@type": "Concept",
+      "name": "Discoverability",
+      "description": "The empirically observed probability and process by which an agent identifies an action or relation under declared task, projection, knowledge, modality, context, and time conditions."
+    },
+    {
+      "@id": "compint:believed-action",
+      "@type": "Concept",
+      "name": "Believed action",
+      "description": "An action represented by an agent as available, with an associated confidence and expected consequence."
+    },
+    {
+      "@id": "compint:action",
+      "@type": "Concept",
+      "name": "Action",
+      "description": "A declared intervention, command, operation, or behavior capable of participating in a state transition."
+    },
+    {
+      "@id": "compint:state-transition",
+      "@type": "Concept",
+      "name": "State transition",
+      "description": "A change from one declared system state to another under a transition relation, process, or event."
+    },
+    {
+      "@id": "compint:observation",
+      "@type": "Concept",
+      "name": "Observation",
+      "description": "A recorded or accessible distinction about state, transition, representation, or outcome available through a specified measurement or observation process."
+    },
+    {
+      "@id": "compint:situated-behavior",
+      "@type": "Concept",
+      "name": "Situated behavior",
+      "description": "A bounded, temporally extended trajectory of observable or instrumentally recoverable changes, outputs, or regulated persistence attributed to a system in relation to its environment under a declared observation and attribution model."
+    },
+    {
+      "@id": "compint:behavioral-evidence",
+      "@type": "Concept",
+      "name": "Behavioral evidence",
+      "description": "A provenance-preserving chain connecting direct observations, system-derived features, latent interpretations, alternative explanations, uncertainty, and falsifying evidence to a bounded research claim."
+    },
+    {
+      "@id": "compint:behavioral-equivalence",
+      "@type": "Concept",
+      "name": "Behavioral equivalence",
+      "description": "Equivalence of declared action or outcome distributions for a specified population, task, context, metric, and tolerance."
+    },
+    {
+      "@id": "compint:interactional-equivalence",
+      "@type": "Concept",
+      "name": "Interactional equivalence",
+      "description": "Equivalence of the available operation-transition-observation structure under specified agent, task, projection, authority, state, context, and tolerance conditions."
+    },
+    {
+      "@id": "compint:interaction",
+      "@type": "Concept",
+      "name": "Interaction",
+      "description": "A family of bounded coupling phenomena in which distinguishable systems or participants become mutually consequential through perturbation, constraint, uptake, response, and recurrence."
+    },
+    {
+      "@id": "compint:interaction-episode",
+      "@type": "Concept",
+      "name": "Interaction episode",
+      "description": "A bounded interval in which two or more distinguishable systems are coupled such that perturbations originating in, or mediated by, one system alter the possible or actual state trajectory of another, and the resulting configuration constrains a later trajectory of an originating or co-participating system within a declared boundary and timescale.\n\nReciprocal closure may be direct, indirect, asymmetric, delayed, probabilistic, or environmentally mediated."
+    },
+    {
+      "@id": "compint:coupling",
+      "@type": "Concept",
+      "name": "Coupling",
+      "description": "A relation or pathway through which a participant or shared medium can alter another participant's transition structure, reachable states, probabilities, timing, or constraints."
+    },
+    {
+      "@id": "compint:perturbation",
+      "@type": "Concept",
+      "name": "Perturbation",
+      "description": "A difference propagated through a coupling relation that may change state, transition conditions, probabilities, timing, or reachable outcomes."
+    },
+    {
+      "@id": "compint:uptake",
+      "@type": "Concept",
+      "name": "Uptake",
+      "description": "Incorporation of a perturbation into a participant's state, transition process, control process, or interpreted situation. Uptake need not be semantic or conscious."
+    },
+    {
+      "@id": "compint:recurrence",
+      "@type": "Concept",
+      "name": "Recurrence",
+      "description": "Return influence through which a response constrains an originating participant, a co-participant, or the shared coupling configuration."
+    },
+    {
+      "@id": "compint:interaction-contract",
+      "@type": "Concept",
+      "name": "Interaction contract",
+      "description": "A declaration of interaction identity, participants and roles, boundary, timescale, state, coupling, preconditions, events, transitions, protocol, invariants, evidence, failure, recovery, and completion conditions."
+    },
+    {
+      "@id": "compint:interaction-morphology",
+      "@type": "Concept",
+      "name": "Interaction morphology",
+      "description": "The measurable structural properties of a representation or interaction surface, such as hierarchy, topology, density, alignment, rhythm, symmetry, enclosure, continuity, direction, visual weight, temporal organization, and modality."
+    },
+    {
+      "@id": "compint:interaction-grammar",
+      "@type": "Concept",
+      "name": "Interaction grammar",
+      "description": "A typed vocabulary and composition structure for semantic actions and transitions independent of any one input modality or rendering implementation."
+    },
+    {
+      "@id": "compint:interaction-history",
+      "@type": "Concept",
+      "name": "Interaction history",
+      "description": "The accumulated experience, training, conventions, outcomes, failures, practices, and prior exposure that may change an agent’s later beliefs, policies, and interpretation."
+    },
+    {
+      "@id": "compint:trace",
+      "@type": "Concept",
+      "name": "Trace",
+      "description": "A temporally ordered or partially ordered record of observable or attributed events under declared boundaries, granularity, and observation rules."
+    },
+    {
+      "@id": "compint:measurement-contract",
+      "@type": "Concept",
+      "name": "Measurement contract",
+      "description": "A declaration of the measurand, observation process, operationalization, scale, uncertainty, validity evidence, population, task, projection, comparison conditions, and permitted interpretation."
+    },
+    {
+      "@id": "compint:interaction-similarity",
+      "@type": "Concept",
+      "name": "Interaction similarity",
+      "description": "A comparison of interaction tokens, types, structures, protocols, opportunities, traces, behaviors, policies, strategies, outcomes, causes, or measurements under an explicit frame, correspondence mapping, admissible transformations, metrics, tolerances, uncertainty, and validity domain."
+    },
+    {
+      "@id": "compint:token-identity",
+      "@type": "Concept",
+      "name": "Token identity",
+      "description": "Historical identity of one bounded interaction episode under declared continuity, participant, boundary, and timescale criteria."
+    },
+    {
+      "@id": "compint:type-identity",
+      "@type": "Concept",
+      "name": "Type identity",
+      "description": "Membership in the same abstraction-defined interaction class under explicit classification rules."
+    },
+    {
+      "@id": "compint:equivalence",
+      "@type": "Concept",
+      "name": "Equivalence",
+      "description": "Exact preservation under a declared comparison contract and observable set. Equivalence is always typed."
+    },
+    {
+      "@id": "compint:similarity",
+      "@type": "Concept",
+      "name": "Similarity",
+      "description": "Graded proximity under declared dimensions, representations, alignment rules, metrics, weights, tolerances, and uncertainty."
+    },
+    {
+      "@id": "compint:incomparability",
+      "@type": "Concept",
+      "name": "Incomparability",
+      "description": "Failure to establish a defensible common comparison space because boundaries, targets, mappings, scales, observation processes, uncertainty, or validity domains cannot be aligned without unsupported assumptions."
+    },
+    {
+      "@id": "compint:similarity-contract",
+      "@type": "Concept",
+      "name": "Similarity contract",
+      "description": "A declaration of comparison target, frame, representations, correspondence mapping, invariants, variants, observables, admissible and prohibited transformations, typed metrics or predicates, tolerances, uncertainty, validity domain, and final typed profile."
+    },
+    {
+      "@id": "compint:strategy",
+      "@type": "Concept",
+      "name": "Strategy",
+      "description": "An inferred, temporally extended organization of conditional action selection, information use, resource allocation, and contingency response that tends to preserve or improve one or more criteria across a declared class of interaction states."
+    },
+    {
+      "@id": "compint:strategy-contract",
+      "@type": "Concept",
+      "name": "Strategy contract",
+      "description": "A declaration of strategy-bearing system, domain, timescale, criteria, state and observation model, state abstraction, opportunity assumptions, action repertoire, selection policy, information policy, commitments, contingency and recovery rules, switching and stopping conditions, resources, authority, identity invariants, rival strategies, uncertainty, and validity domain."
+    },
+    {
+      "@id": "compint:policy",
+      "@type": "Concept",
+      "name": "Policy",
+      "description": "A conditional relation from represented states, observations, or beliefs to action distributions."
+    },
+    {
+      "@id": "compint:fundamental",
+      "@type": "Concept",
+      "name": "Fundamental",
+      "description": "A representation-independent computational substrate for declaring domain commitments, evolving system state, assigning operational semantics, and producing governed projections whose preservation, transformation, omission, introduced structure, operations, snapshots, and replay can be inspected."
+    },
+    {
+      "@id": "compint:computational-interaction-science",
+      "@type": "Concept",
+      "name": "Computational Interaction Science",
+      "description": "A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.\n\nCIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines."
+    },
+    {
+      "@id": "compint:edge-0",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:domain-commitments"
+      },
+      "target": {
+        "@id": "compint:system-state"
+      },
+      "relation": "constrains"
+    },
+    {
+      "@id": "compint:edge-1",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:domain-commitments"
+      },
+      "target": {
+        "@id": "compint:semantic-assignment"
+      },
+      "relation": "constrains"
+    },
+    {
+      "@id": "compint:edge-2",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:semantic-assignment"
+      },
+      "target": {
+        "@id": "compint:semantic-state"
+      },
+      "relation": "licenses"
+    },
+    {
+      "@id": "compint:edge-3",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:system-state"
+      },
+      "target": {
+        "@id": "compint:projection"
+      },
+      "relation": "source for"
+    },
+    {
+      "@id": "compint:edge-4",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:semantic-assignment"
+      },
+      "target": {
+        "@id": "compint:projection"
+      },
+      "relation": "source for"
+    },
+    {
+      "@id": "compint:edge-5",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:projection"
+      },
+      "target": {
+        "@id": "compint:representation"
+      },
+      "relation": "realizes"
+    },
+    {
+      "@id": "compint:edge-6",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:representation"
+      },
+      "target": {
+        "@id": "compint:interpretation"
+      },
+      "relation": "supports"
+    },
+    {
+      "@id": "compint:edge-7",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interpretation"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "informs"
+    },
+    {
+      "@id": "compint:edge-8",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:system-state"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "constrains"
+    },
+    {
+      "@id": "compint:edge-9",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:projection"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "exposes"
+    },
+    {
+      "@id": "compint:edge-10",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:opportunity-profile"
+      },
+      "target": {
+        "@id": "compint:interaction-episode"
+      },
+      "relation": "conditions"
+    },
+    {
+      "@id": "compint:edge-11",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:coupling"
+      },
+      "target": {
+        "@id": "compint:interaction-episode"
+      },
+      "relation": "constitutes"
+    },
+    {
+      "@id": "compint:edge-12",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interaction-participant"
+      },
+      "target": {
+        "@id": "compint:coupling"
+      },
+      "relation": "participates in"
+    },
+    {
+      "@id": "compint:edge-13",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:observation"
+      },
+      "target": {
+        "@id": "compint:trace"
+      },
+      "relation": "records"
+    },
+    {
+      "@id": "compint:edge-14",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:trace"
+      },
+      "target": {
+        "@id": "compint:measurement-contract"
+      },
+      "relation": "input to"
+    },
+    {
+      "@id": "compint:edge-15",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:measurement-contract"
+      },
+      "target": {
+        "@id": "compint:interaction-similarity"
+      },
+      "relation": "supports"
+    },
+    {
+      "@id": "compint:edge-16",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interaction-similarity"
+      },
+      "target": {
+        "@id": "compint:equivalence"
+      },
+      "relation": "types"
+    },
+    {
+      "@id": "compint:edge-17",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:policy"
+      },
+      "target": {
+        "@id": "compint:strategy"
+      },
+      "relation": "component of"
+    },
+    {
+      "@id": "compint:edge-18",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interaction-history"
+      },
+      "target": {
+        "@id": "compint:strategy"
+      },
+      "relation": "updates"
+    },
+    {
+      "@id": "compint:edge-19",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interaction-history"
+      },
+      "target": {
+        "@id": "compint:interpretation"
+      },
+      "relation": "conditions"
+    },
+    {
+      "@id": "compint:edge-20",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interaction-history"
+      },
+      "target": {
+        "@id": "compint:believed-action"
+      },
+      "relation": "conditions"
+    },
+    {
+      "@id": "compint:edge-21",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:affordance"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "contributes"
+    },
+    {
+      "@id": "compint:edge-22",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:capability"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-23",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:permission"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-24",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:enablement"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-25",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:reachability"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-26",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:exposure"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-27",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:signaling"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-28",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:believed-action"
+      },
+      "target": {
+        "@id": "compint:opportunity-profile"
+      },
+      "relation": "component"
+    },
+    {
+      "@id": "compint:edge-29",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:action"
+      },
+      "target": {
+        "@id": "compint:state-transition"
+      },
+      "relation": "may produce"
+    },
+    {
+      "@id": "compint:edge-30",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:state-transition"
+      },
+      "target": {
+        "@id": "compint:system-state"
+      },
+      "relation": "changes"
+    },
+    {
+      "@id": "compint:edge-31",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:agent"
+      },
+      "target": {
+        "@id": "compint:interaction-participant"
+      },
+      "relation": "subtype of"
+    },
+    {
+      "@id": "compint:edge-32",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:environment"
+      },
+      "target": {
+        "@id": "compint:coupling"
+      },
+      "relation": "mediates"
+    },
+    {
+      "@id": "compint:edge-33",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:token-identity"
+      },
+      "target": {
+        "@id": "compint:interaction-episode"
+      },
+      "relation": "identifies"
+    },
+    {
+      "@id": "compint:edge-34",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:type-identity"
+      },
+      "target": {
+        "@id": "compint:interaction-episode"
+      },
+      "relation": "classifies"
+    },
+    {
+      "@id": "compint:edge-35",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:similarity-contract"
+      },
+      "target": {
+        "@id": "compint:interaction-similarity"
+      },
+      "relation": "specifies"
+    },
+    {
+      "@id": "compint:edge-36",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:strategy-contract"
+      },
+      "target": {
+        "@id": "compint:strategy"
+      },
+      "relation": "specifies"
+    },
+    {
+      "@id": "compint:edge-37",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:interaction-contract"
+      },
+      "target": {
+        "@id": "compint:interaction-episode"
+      },
+      "relation": "specifies"
+    },
+    {
+      "@id": "compint:edge-38",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:measurement-contract"
+      },
+      "target": {
+        "@id": "compint:behavioral-evidence"
+      },
+      "relation": "governs"
+    },
+    {
+      "@id": "compint:edge-39",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:projection"
+      },
+      "target": {
+        "@id": "compint:scoped-invariance"
+      },
+      "relation": "tested across"
+    },
+    {
+      "@id": "compint:edge-40",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:equivalence"
+      },
+      "target": {
+        "@id": "compint:scoped-invariance"
+      },
+      "relation": "expresses"
+    },
+    {
+      "@id": "compint:edge-41",
+      "@type": "Relation",
+      "source": {
+        "@id": "compint:computational-interaction-science"
+      },
+      "target": {
+        "@id": "compint:interaction"
+      },
+      "relation": "studies"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+# Computational Interaction Science Reading Guide
+
+## Tier 1 - Cross-cutting foundations
+
+- **W3C. (2023). Web Content Accessibility Guidelines (WCAG) 2.2** - mapped to 32 canonical concepts.
+- **Tarski, A. (1944). The semantic conception of truth and the foundations of semantics** - mapped to 20 canonical concepts.
+- **Yarkoni, T., & Westfall, J. (2017). Choosing Prediction Over Explanation in Psychology: Lessons From Machine Learning** - mapped to 20 canonical concepts.
+- **Shannon, C. E. (1948). A mathematical theory of communication** - mapped to 14 canonical concepts.
+- **Fitts, P. M. (1954). The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement** - mapped to 14 canonical concepts.
+- **Park, D. (1981). Concurrency and automata on infinite sequences** - mapped to 10 canonical concepts.
+- **Bar-Hillel, Y., & Carnap, R. (1953). Semantic information** - mapped to 9 canonical concepts.
+- **Judd, C. H. (1908). The relation of special training to general intelligence** - mapped to 9 canonical concepts.
+- **Wiener, N. (1948). Cybernetics** - mapped to 8 canonical concepts.
+- **Goodwin, C. (2000). Action and embodiment within situated human interaction** - mapped to 8 canonical concepts.
+- **Bertalanffy, L. von. (1968). General system theory** - mapped to 7 canonical concepts.
+- **Beer, R. D. (1995). A dynamical systems perspective on agent-environment interaction** - mapped to 7 canonical concepts.
+- **Hyman, R. (1953). Stimulus Information as a Determinant of Reaction Time** - mapped to 6 canonical concepts.
+- **Bertalanffy, L. von. (1968). General system theory: Foundations, development, applications** - mapped to 6 canonical concepts.
+- **Thorndike, E. L., & Woodworth, R. S. (1901). The influence of improvement in one mental function upon the efficiency of other functions** - mapped to 6 canonical concepts.
+- **Simon, H. A. (1955). A behavioral model of rational choice** - mapped to 5 canonical concepts.
+- **von Bertalanffy, L. (1968). General system theory: Foundations, development, applications** - mapped to 5 canonical concepts.
+- **Rosenblueth, A., Wiener, N., & Bigelow, J. (1943). Behavior, purpose and teleology** - mapped to 5 canonical concepts.
+- **Kuhn, T. S. (1970). The structure of scientific revolutions (2nd ed.; original work published 1962)** - mapped to 5 canonical concepts.
+- **Dourish, P. (2001). Where the Action Is: The Foundations of Embodied Interaction** - mapped to 5 canonical concepts.
+- **Dourish, P. (2001). Where the action is: The foundations of embodied interaction** - mapped to 5 canonical concepts.
+- **Taylor, B. N., & Kuyatt, C. E. (1994). Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results** - mapped to 5 canonical concepts.
+- **Thelen, E., & Smith, L. B. (1994). A dynamic systems approach to the development of cognition and action** - mapped to 5 canonical concepts.
+- **Card, S. K., Moran, T. P., & Newell, A. (1983). The Psychology of Human-Computer Interaction** - mapped to 5 canonical concepts.
+- **Parasuraman, R., Sheridan, T. B., & Wickens, C. D. (2000). A model for types and levels of human interaction with automation** - mapped to 4 canonical concepts.
+- **Simon, H. A. (1955). A behavioral model of rational choice** - mapped to 4 canonical concepts.
+- **Skinner, B. F. (1938). The Behavior of Organisms** - mapped to 4 canonical concepts.
+- **Gentner, D. (1983). Structure-mapping: A theoretical framework for analogy** - mapped to 4 canonical concepts.
+- **FIPA. (2002). FIPA Agent Communication Language Specifications and Interaction Protocol Specifications** - mapped to 4 canonical concepts.
+- **Bunke, H. (1997). On a relation between graph edit distance and maximum common subgraph** - mapped to 4 canonical concepts.
+
+## Tier 2 - Core specialized sources
+
+- Card, S. K., Moran, T. P., & Newell, A. (1983). The Psychology of Human-Computer Interaction - mapped to 4 concepts.
+- Gower, J. C. (1971). A general coefficient of similarity and some of its properties - mapped to 4 concepts.
+- Norman, D. A. (1986). Cognitive engineering - mapped to 3 concepts.
+- Hick, W. E. (1952). On the Rate of Gain of Information - mapped to 3 concepts.
+- Palmer, S. E. (1978). Fundamental aspects of cognitive representation - mapped to 3 concepts.
+- Salmon, W. C. (1984). Scientific explanation and the causal structure of the world - mapped to 3 concepts.
+- Cousot, P., & Cousot, R. (1977). Abstract interpretation: A unified lattice model for static analysis of programs by construction or approximation of fixpoints - mapped to 3 concepts.
+- Stoffregen, T. A. (2003). Affordances as properties of the animal-environment system - mapped to 3 concepts.
+- Searle, J. R. (1980). Minds, brains, and programs - mapped to 3 concepts.
+- van der Aalst, W. M. P. (2016). Process Mining: Data Science in Action (2nd ed.) - mapped to 3 concepts.
+- Stevens, S. S. (1946). On the theory of scales of measurement - mapped to 3 concepts.
+- Stevens, S. S. (1946). On the theory of scales of measurement - mapped to 3 concepts.
+- Thorndike, R. L. (1949). Personnel Selection: Test and Measurement Techniques - mapped to 3 concepts.
+- Abate, A., Bacci, G., Bacci, G., & Larsen, K. G. (2017). On the relationship between bisimulation and trace equivalence in an approximate probabilistic context - mapped to 3 concepts.
+- Maturana, H. R. (2002). Autopoiesis, structural coupling and cognition - mapped to 3 concepts.
+- Davidson, D. (1980). Essays on Actions and Events - mapped to 3 concepts.
+- Card, S. K., Moran, T. P., & Newell, A. (1983). The psychology of human-computer interaction - mapped to 3 concepts.
+- Card, S. K., Moran, T. P., & Newell, A. (1983). The Psychology of Human-Computer Interaction - mapped to 3 concepts.
+- Cronbach, L. J., & Meehl, P. E. (1955). Construct validity in psychological tests - mapped to 3 concepts.
+- Hoare, C. A. R. (1985). Communicating sequential processes - mapped to 3 concepts.
+- Ericsson, K. A., Krampe, R. T., & Tesch-Romer, C. (1993). The role of deliberate practice in the acquisition of expert performance - mapped to 2 concepts.
+- Suchman, L. A. (1987). Plans and Situated Actions - mapped to 2 concepts.
+- Suchman, L. A. (1987). Plans and Situated Actions - mapped to 2 concepts.
+- Gibson, J. J. (1979). The Ecological Approach to Visual Perception - mapped to 2 concepts.
+- Gibson, J. J. (1979). The Ecological Approach to Visual Perception - mapped to 2 concepts.
+- Levenshtein, V. I. (1966). Binary codes capable of correcting deletions, insertions, and reversals - mapped to 2 concepts.
+- Sandhu, R. S., Coyne, E. J., Feinstein, H. L., & Youman, C. E. (1996). Role-based access control models - mapped to 2 concepts.
+- Ferraiolo, D. F., Kuhn, D. R., & Chandramouli, R. (2003). Role-Based Access Control - mapped to 2 concepts.
+- van der Aalst, W. M. P. (2016). Process Mining: Data Science in Action - mapped to 2 concepts.
+- Dretske, F. I. (1981). Knowledge and the Flow of Information - mapped to 2 concepts.
+- Stichweh, R. (1992). The sociology of scientific disciplines - mapped to 2 concepts.
+- Hornbæk, K., & Oulasvirta, A. (2017). What is interaction? In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (pp - mapped to 2 concepts.
+- Oulasvirta, A., Jokinen, J. P. P., & Howes, A. (2022). Computational rationality as a theory of interaction - mapped to 2 concepts.
+- Wegner, P. (1997). Why interaction is more powerful than algorithms - mapped to 2 concepts.
+- Codd, E. F. (1970). A relational model of data for large shared data banks - mapped to 2 concepts.
+- Clark, H. H., & Brennan, S. E. (1991). Grounding in communication - mapped to 2 concepts.
+- Ramadge, P. J., & Wonham, W. M. (1987). Supervisory control of a class of discrete event processes - mapped to 2 concepts.
+- Gieryn, T. F. (1983). Boundary-work and the demarcation of science from non-science - mapped to 2 concepts.
+- Ferrando, A., Winikoff, M., Cranefield, S., Dignum, F., & Mascardi, V. (2019). On the enactability of agent interaction protocols: Toward a unified approach - mapped to 2 concepts.
+- Kaelbling, L. P., Littman, M. L., & Cassandra, A. R. (1998). Planning and acting in partially observable stochastic domains - mapped to 2 concepts.
+- Kaelbling, L. P., Littman, M. L., & Cassandra, A. R. (1998). Planning and acting in partially observable stochastic domains - mapped to 2 concepts.
+- Rasmussen, J. (1983). Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models - mapped to 2 concepts.
+- Tversky, A. (1977). Features of similarity - mapped to 2 concepts.
+- Zhang, J., & Norman, D. A. (1994). Representations in distributed cognitive tasks - mapped to 2 concepts.
+- Wittgenstein, L. (1953). Philosophical Investigations - mapped to 1 concepts.
+- Grice, H. P. (1957). Meaning - mapped to 1 concepts.
+- Simon, H. A. (1962). The architecture of complexity - mapped to 1 concepts.
+- Scott, D., & Strachey, C. (1971). Toward a Mathematical Semantics for Computer Languages - mapped to 1 concepts.
+- Morris, C. W. (1938). Foundations of the Theory of Signs - mapped to 1 concepts.
+- Floridi, L. (2004). Outline of a theory of strongly semantic information - mapped to 1 concepts.
+- Kolchinsky, A., & Wolpert, D. H. (2018). Semantic information, autonomous agency, and nonequilibrium statistical physics - mapped to 1 concepts.
+- Lave, J. (1988). Cognition in Practice - mapped to 1 concepts.
+- Shimojima, A. (2015). Semantic properties of diagrams and their cognitive potentials - mapped to 1 concepts.
+- Lave, J., & Wenger, E. (1991). Situated learning: Legitimate peripheral participation - mapped to 1 concepts.
+- Sutton, R. S., Precup, D., & Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning - mapped to 1 concepts.
+- Fikes, R. E., & Nilsson, N. J. (1971). STRIPS: A new approach to the application of theorem proving to problem solving - mapped to 1 concepts.
+- Rothenberg, J. (1989). The nature of modeling - mapped to 1 concepts.
+- Cohen, P. R., & Levesque, H. J. (1990). Intention is choice with commitment - mapped to 1 concepts.
+- Anderson, J. R. (2007). How Can the Human Mind Occur in the Physical Universe? Oxford University Press - mapped to 1 concepts.
+- Gibson, J. J. (1979). The Ecological Approach to Visual Perception - mapped to 1 concepts.
+- van Glabbeek, R. J. (1990). The linear time-branching time spectrum - mapped to 1 concepts.
+- van Glabbeek, R. J. (1990). The linear time-branching time spectrum - mapped to 1 concepts.
+- Norman, D. A. (1986). Cognitive engineering - mapped to 1 concepts.
+- Kelso, J. A. S. (1995). Dynamic patterns: The self-organization of brain and behavior - mapped to 1 concepts.
+- Jastrzembski, T. S., & Charness, N. (2007). The Model Human Processor and the Older Adult: Parameter Estimation and Validation Within a Mobile Phone Task - mapped to 1 concepts.
+- Borko, H. (1968). Information science: What is it? American Documentation, 19(1), 3-5 - mapped to 1 concepts.
+- Tufte, E. R. (1983). The visual display of quantitative information - mapped to 1 concepts.
+- Guarino, N. (1998). Formal ontology and information systems - mapped to 1 concepts.
+- Kendon, A. (1990). Conducting Interaction: Patterns of Behavior in Focused Encounters - mapped to 1 concepts.
+- Suppes, P., & Zinnes, J. L. (1963). Basic measurement theory - mapped to 1 concepts.
+
+## Use
+
+Read Tier 1 before cross-domain synthesis. Use Tier 2 for concept-specific verification. Entries not mapped here remain available in the master bibliography and should be consulted by topic.

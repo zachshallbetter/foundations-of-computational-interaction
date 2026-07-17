@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "comparison-profile.schema.json",
+  "title": "CompInt Comparison Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "comparison_id",
+    "comparison_contract_ref",
+    "left_ref",
+    "right_ref",
+    "gates",
+    "admissible",
+    "result_type",
+    "dimensions",
+    "provenance"
+  ],
+  "properties": {
+    "comparison_id": {
+      "type": "string"
+    },
+    "comparison_contract_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "left_ref": {
+      "type": "string"
+    },
+    "right_ref": {
+      "type": "string"
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target",
+        "boundary",
+        "opportunity",
+        "observation",
+        "measurement",
+        "correspondence",
+        "ethics_accessibility"
+      ],
+      "properties": {
+        "target": {
+          "$ref": "common.schema.json#/$defs/gate"
+        },
+        "boundary": {
+          "$ref": "common.schema.json#/$defs/gate"
+        },
+        "opportunity": {
+          "$ref": "common.schema.json#/$defs/gate"
+        },
+        "observation": {
+          "$ref": "common.schema.json#/$defs/gate"
+        },
+        "measurement": {
+          "$ref": "common.schema.json#/$defs/gate"
+        },
+        "correspondence": {
+          "$ref": "common.schema.json#/$defs/gate"
+        },
+        "ethics_accessibility": {
+          "$ref": "common.schema.json#/$defs/gate"
+        }
+      }
+    },
+    "admissible": {
+      "type": "boolean"
+    },
+    "result_type": {
+      "enum": [
+        "token_identity",
+        "typed_equivalence",
+        "similarity",
+        "dominance",
+        "trade_off",
+        "incomparable"
+      ]
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "vetoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_rule_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

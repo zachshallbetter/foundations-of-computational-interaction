@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "behavioral-trace.schema.json",
+  "title": "CompInt Behavioral Trace",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "trace_id",
+    "episode_id",
+    "behavioral_evidence_contract_ref",
+    "event_refs",
+    "ordering",
+    "segmentation_version",
+    "attribution_status",
+    "provenance"
+  ],
+  "properties": {
+    "trace_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "episode_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "behavioral_evidence_contract_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "event_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "ordering": {
+      "enum": [
+        "total",
+        "partial"
+      ]
+    },
+    "ordering_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "before",
+          "after"
+        ],
+        "properties": {
+          "before": {
+            "type": "string"
+          },
+          "after": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "segmentation_version": {
+      "$ref": "common.schema.json#/$defs/semver"
+    },
+    "attribution_status": {
+      "enum": [
+        "formal_only",
+        "provisional_behavioral",
+        "adjudicated_behavioral"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainty_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Strategy_Contract.schema.json",
+  "title": "CompInt Strategy Contract",
+  "allOf": [
+    {
+      "$ref": "Contract_Common.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "strategy_bearer_ref",
+        "domain_ref",
+        "timescale",
+        "criteria",
+        "constraints",
+        "state_model_ref",
+        "observation_model_ref",
+        "state_abstraction",
+        "opportunity_assumptions",
+        "action_repertoire",
+        "selection_policy",
+        "information_policy",
+        "commitments",
+        "contingency_rules",
+        "recovery_rules",
+        "switching_conditions",
+        "stopping_conditions",
+        "resources",
+        "authority_ref",
+        "identity_invariants",
+        "rival_strategies",
+        "evidence_requirements",
+        "uncertainty_model_ref",
+        "validity_domain"
+      ],
+      "properties": {
+        "strategy_bearer_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timescale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "criteria": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "state_model_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "observation_model_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "state_abstraction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "opportunity_assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "action_repertoire": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "selection_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "information_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commitments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "contingency_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "recovery_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "switching_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "stopping_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "authority_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_invariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "rival_strategies": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_requirements": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["multi_episode_or_discriminating", "rival_exclusion"],
+          "properties": {
+            "multi_episode_or_discriminating": { "type": "string", "minLength": 1 },
+            "rival_exclusion": { "type": "string", "minLength": 1 }
+          }
+        },
+        "uncertainty_model_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "validity_domain": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

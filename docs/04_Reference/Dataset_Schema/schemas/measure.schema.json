@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "measure.schema.json",
+  "title": "CompInt Measure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "measure_id",
+    "measurement_contract_ref",
+    "measurand",
+    "level_of_analysis",
+    "scale_type",
+    "value",
+    "missingness",
+    "evidence_refs",
+    "provenance"
+  ],
+  "properties": {
+    "measure_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "measurement_contract_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "measurand": {
+      "type": "string"
+    },
+    "level_of_analysis": {
+      "type": "string"
+    },
+    "scale_type": {
+      "enum": [
+        "nominal",
+        "ordinal",
+        "interval",
+        "ratio",
+        "count",
+        "binary",
+        "duration"
+      ]
+    },
+    "value": {
+      "$ref": "common.schema.json#/$defs/typed_value"
+    },
+    "missingness": {
+      "$ref": "common.schema.json#/$defs/missingness"
+    },
+    "uncertainty_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "interpretation_status": {
+      "enum": [
+        "descriptive",
+        "model_based",
+        "construct_evidence"
+      ]
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "coded-event.schema.json",
+  "title": "CompInt Coded Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "episode_id",
+    "record_refs",
+    "event_type",
+    "coding_level",
+    "coding_rules_ref",
+    "coder_refs",
+    "coding_status",
+    "provenance"
+  ],
+  "properties": {
+    "event_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "episode_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "record_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "common.schema.json#/$defs/non_empty_string"
+      },
+      "uniqueItems": true
+    },
+    "event_type": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "participant_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "coding_level": {
+      "enum": [
+        "verified_observation",
+        "coded_observation",
+        "attributed_action",
+        "attributed_behavior"
+      ]
+    },
+    "coding_rules_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "coder_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "coding_status": {
+      "enum": [
+        "provisional",
+        "adjudicated",
+        "rejected"
+      ]
+    },
+    "uncertainty_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

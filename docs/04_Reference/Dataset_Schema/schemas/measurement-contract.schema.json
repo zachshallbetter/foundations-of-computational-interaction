@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "measurement-contract.schema.json",
+  "title": "CompInt measurement-contract.schema.json",
+  "$ref": "../../Templates/Measurement_Contract.schema.json"
+}

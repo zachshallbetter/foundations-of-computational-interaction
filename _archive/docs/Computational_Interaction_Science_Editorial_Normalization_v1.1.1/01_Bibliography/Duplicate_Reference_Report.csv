@@ -1,0 +1,36 @@
+duplicate_group,normalized_title,keys,count
+DUP-0001,a behavioral model of rational choice,simon1955; simon1955a,2
+DUP-0002,a mathematical theory of communication,shannon1948; shannon1948a,2
+DUP-0003,a translation approach to portable ontology specifications,gruber1993; gruber1993a,2
+DUP-0004,an introduction to cybernetics,ashby1956; ashby1956an,2
+DUP-0005,cognition in the wild,hutchins1995; hutchins1995cognition,2
+DUP-0006,cognitive engineering,norman1986; norman1986cognitive; norman1986cognitive2,3
+DUP-0007,communicating sequential processes,hoare1985; hoare1985communicating,2
+DUP-0008,computational rationality as a theory of interaction,oulasvirta2022; oulasvirta2022computational; oulasvirta2022computational2,3
+DUP-0009,concurrency and automata on infinite sequences,park1981; park1981concurrency,2
+DUP-0010,cybernetics,wiener1948; wiener1948cybernetics,2
+DUP-0011,cybernetics or control and communication in the animal and the machine,wiener1948cybernetics2; wiener1948cybernetics3; wiener1948cybernetics4,3
+DUP-0012,event structures,winskel1987; winskel1987event,2
+DUP-0013,general system theory foundations development applications,bertalanffy1968general; vonbertalanffy1968,2
+DUP-0014,human computer interaction as science,reeves2015; reeves2015humancomputer,2
+DUP-0015,learning by expanding,engestrom1987; engestrom1987learning,2
+DUP-0016,learning by expanding an activity theoretical approach to developmental research,engestrom1987learning2; engestrm1987,2
+DUP-0017,on aims and methods of ethology,tinbergen1963; tinbergen1963on,2
+DUP-0018,on the theory of scales of measurement,stevens1946; stevens1946on,2
+DUP-0019,planning and acting in partially observable stochastic domains,kaelbling1998; kaelbling1998planning,2
+DUP-0020,plans and situated actions,suchman1987; suchman1987plans; suchman1987plans2; suchman1987plans3; suchman1987plans4,5
+DUP-0021,principles of model checking,baier2008; baier2008principles; baier2008principles2,3
+DUP-0022,prospect theory an analysis of decision under risk,kahneman1979; kahneman1979prospect,2
+DUP-0023,reinforcement learning an introduction 2nd ed,sutton2018; sutton2018reinforcement,2
+DUP-0024,representations in distributed cognitive tasks,zhang1994; zhang1994representations,2
+DUP-0025,statecharts a visual formalism for complex systems,harel1987; harel1987statecharts,2
+DUP-0026,technology affordances,gaver1991; gaver1991technology,2
+DUP-0027,the design of everyday things rev,norman2013; norman2013the,2
+DUP-0028,the design of everyday things revised edition,norman2013the3; norman2013the4,2
+DUP-0029,the ecological approach to visual perception,gibson1979; gibson1979the; gibson1979the2,3
+DUP-0030,the linear time branching time spectrum,vanglabbeek1990; vanglabbeek1990the,2
+DUP-0031,the psychology of human computer interaction,card1983; card1983the; card1983the2; card1983the3,4
+DUP-0032,understanding computers and cognition,winograd1986; winograd1986understanding,2
+DUP-0033,web content accessibility guidelines wcag 2 2,wc2023; wc2023web,2
+DUP-0034,where the action is the foundations of embodied interaction,dourish2001; dourish2001where,2
+DUP-0035,why a diagram is sometimes worth ten thousand words,larkin1987; larkin1987why,2

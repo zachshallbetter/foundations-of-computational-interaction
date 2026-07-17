@@ -1,0 +1,97 @@
+flowchart TD
+  domain_commitments["Domain commitments"]
+  system_state["System state"]
+  semantic_assignment["Semantic assignment"]
+  semantic_state["Semantic state"]
+  information["Information"]
+  representation["Representation"]
+  projection["Projection"]
+  scoped_invariance["Scoped invariance"]
+  interpretation["Interpretation"]
+  interaction_participant["Interaction participant"]
+  agent["Agent"]
+  environment["Environment"]
+  affordance["Affordance"]
+  opportunity["Opportunity"]
+  opportunity_profile["Opportunity profile"]
+  capability["Capability"]
+  permission["Permission"]
+  enablement["Enablement"]
+  reachability["Reachability"]
+  exposure["Exposure"]
+  signaling["Signaling"]
+  discoverability["Discoverability"]
+  believed_action["Believed action"]
+  action["Action"]
+  state_transition["State transition"]
+  observation["Observation"]
+  situated_behavior["Situated behavior"]
+  behavioral_evidence["Behavioral evidence"]
+  behavioral_equivalence["Behavioral equivalence"]
+  interactional_equivalence["Interactional equivalence"]
+  interaction["Interaction"]
+  interaction_episode["Interaction episode"]
+  coupling["Coupling"]
+  perturbation["Perturbation"]
+  uptake["Uptake"]
+  recurrence["Recurrence"]
+  interaction_contract["Interaction contract"]
+  interaction_morphology["Interaction morphology"]
+  interaction_grammar["Interaction grammar"]
+  interaction_history["Interaction history"]
+  trace["Trace"]
+  measurement_contract["Measurement contract"]
+  interaction_similarity["Interaction similarity"]
+  token_identity["Token identity"]
+  type_identity["Type identity"]
+  equivalence["Equivalence"]
+  similarity["Similarity"]
+  incomparability["Incomparability"]
+  similarity_contract["Similarity contract"]
+  strategy["Strategy"]
+  strategy_contract["Strategy contract"]
+  policy["Policy"]
+  fundamental["Fundamental"]
+  computational_interaction_science["Computational Interaction Science"]
+  domain_commitments -->|constrains| system_state
+  domain_commitments -->|constrains| semantic_assignment
+  semantic_assignment -->|licenses| semantic_state
+  system_state -->|source for| projection
+  semantic_assignment -->|source for| projection
+  projection -->|realizes| representation
+  representation -->|supports| interpretation
+  interpretation -->|informs| opportunity_profile
+  system_state -->|constrains| opportunity_profile
+  projection -->|exposes| opportunity_profile
+  opportunity_profile -->|conditions| interaction_episode
+  coupling -->|constitutes| interaction_episode
+  interaction_participant -->|participates in| coupling
+  observation -->|records| trace
+  trace -->|input to| measurement_contract
+  measurement_contract -->|supports| interaction_similarity
+  interaction_similarity -->|types| equivalence
+  policy -->|component of| strategy
+  interaction_history -->|updates| strategy
+  interaction_history -->|conditions| interpretation
+  interaction_history -->|conditions| believed_action
+  affordance -->|contributes| opportunity_profile
+  capability -->|component| opportunity_profile
+  permission -->|component| opportunity_profile
+  enablement -->|component| opportunity_profile
+  reachability -->|component| opportunity_profile
+  exposure -->|component| opportunity_profile
+  signaling -->|component| opportunity_profile
+  believed_action -->|component| opportunity_profile
+  action -->|may produce| state_transition
+  state_transition -->|changes| system_state
+  agent -->|subtype of| interaction_participant
+  environment -->|mediates| coupling
+  token_identity -->|identifies| interaction_episode
+  type_identity -->|classifies| interaction_episode
+  similarity_contract -->|specifies| interaction_similarity
+  strategy_contract -->|specifies| strategy
+  interaction_contract -->|specifies| interaction_episode
+  measurement_contract -->|governs| behavioral_evidence
+  projection -->|tested across| scoped_invariance
+  equivalence -->|expresses| scoped_invariance
+  computational_interaction_science -->|studies| interaction

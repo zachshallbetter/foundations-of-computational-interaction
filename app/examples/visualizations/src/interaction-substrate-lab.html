@@ -1,0 +1,377 @@
+<div id="cis-experience" data-example-id="CIS-EX-003" data-theory-version="1.0.0">
+  <style>
+    #cis-experience { color: var(--foreground); display: grid; gap: 20px; }
+    #cis-experience .cis-identity { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    #cis-experience .cis-theory-path { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; color: var(--muted-foreground); }
+    #cis-experience .cis-theory-path strong { color: var(--foreground); font-weight: 500; }
+    #cis-experience .cis-control-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: end; }
+    #cis-experience .cis-control-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    #cis-experience .cis-switches { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    #cis-experience .cis-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    #cis-experience .cis-layout { display: grid; grid-template-columns: minmax(220px, .72fr) minmax(360px, 1.28fr); gap: 24px; align-items: stretch; }
+    #cis-experience .cis-state { display: grid; gap: 10px; justify-items: center; align-content: start; padding: 14px; }
+    #cis-experience .cis-state svg { width: 100%; max-width: 240px; height: auto; color: var(--foreground); }
+    #cis-experience .cis-door-frame { fill: var(--muted); stroke: var(--border); stroke-width: 2; }
+    #cis-experience .cis-door { fill: color-mix(in srgb, var(--viz-series-1) 20%, var(--card)); stroke: var(--viz-series-1); stroke-width: 2; transform-origin: 78px 24px; transition: transform 260ms ease; }
+    #cis-experience .cis-door.is-open { transform: perspective(220px) rotateY(-58deg); }
+    #cis-experience .cis-knob { fill: var(--foreground); }
+    #cis-experience .cis-lock { fill: color-mix(in srgb, var(--viz-series-3) 26%, transparent); stroke: var(--viz-series-3); stroke-width: 2; }
+    #cis-experience .cis-label { fill: var(--foreground); font-size: 12px; }
+    #cis-experience .cis-muted-label { fill: var(--muted-foreground); font-size: 11px; }
+    #cis-experience .cis-state-data { width: 100%; display: grid; gap: 5px; }
+    #cis-experience .cis-state-row { display: flex; justify-content: space-between; gap: 12px; }
+    #cis-experience .cis-state-row span:last-child { color: var(--foreground); }
+    #cis-experience .cis-opportunity { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    #cis-experience .cis-verdict { display: grid; gap: 9px; padding: 14px; }
+    #cis-experience .cis-verdict-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    #cis-experience .cis-verdict-row strong { font-weight: 500; }
+    #cis-experience .cis-verdict-value { white-space: nowrap; }
+    #cis-experience .cis-verdict-value[data-status="yes"] { color: var(--foreground); }
+    #cis-experience .cis-verdict-value[data-status="no"] { color: var(--destructive); }
+    #cis-experience .cis-verdict-value[data-status="unknown"] { color: var(--muted-foreground); }
+    #cis-experience .cis-dim-group { display: grid; gap: 6px; }
+    #cis-experience .cis-dim-row { display: grid; gap: 0; }
+    #cis-experience .cis-dim { min-height: 38px; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 16px minmax(0, 1fr); column-gap: 7px; align-items: center; padding: 5px 0; }
+    #cis-experience .cis-dim:last-child { border-bottom: 0; }
+    #cis-experience .cis-dim-mark { color: var(--muted-foreground); font-weight: 500; }
+    #cis-experience .cis-dim[data-status="yes"] .cis-dim-mark { color: var(--foreground); }
+    #cis-experience .cis-dim[data-status="no"] .cis-dim-mark { color: var(--destructive); }
+    #cis-experience .cis-dim-copy { display: grid; gap: 1px; min-width: 0; }
+    #cis-experience .cis-dim-copy strong { font-weight: 500; }
+    #cis-experience .cis-dim-copy span { color: var(--muted-foreground); font-size: 11px; }
+    #cis-experience .cis-trace { width: 100%; height: auto; min-height: 124px; }
+    #cis-experience .cis-lane { stroke: var(--border); stroke-width: 1; }
+    #cis-experience .cis-event-ok { fill: var(--viz-series-2); }
+    #cis-experience .cis-event-fail { fill: var(--destructive); }
+    #cis-experience .cis-event-unknown { fill: var(--muted-foreground); }
+    #cis-experience .cis-event-stem { stroke: var(--border); stroke-width: 1; }
+    #cis-experience .cis-parity { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+    #cis-experience .cis-parity-mark { color: var(--destructive); font-weight: 500; }
+    #cis-experience .cis-parity-mark.is-pass { color: var(--foreground); }
+    #cis-experience .cis-section { display: grid; gap: 8px; }
+    #cis-experience .cis-section-label { color: var(--muted-foreground); font-size: 11px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
+    @media (max-width: 620px) {
+      #cis-experience .cis-layout { grid-template-columns: 1fr; }
+      #cis-experience .cis-control-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #cis-experience .cis-opportunity { grid-template-columns: 1fr; gap: 12px; }
+    }
+    @media (max-width: 380px) {
+      #cis-experience .cis-control-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #cis-experience .cis-door { transition: none; }
+    }
+  </style>
+
+  <div class="cis-identity text-small text-muted"><code>CIS-EX-003</code><span>Executable concept model</span><span>·</span><span>Theory Version 1.0.0</span></div>
+  <div class="cis-theory-path text-small" aria-label="Analytical sequence">
+    <strong>Can it happen?</strong><span>→</span><strong>Can this participant find it?</strong><span>→</span><strong>What actually occurred?</strong>
+  </div>
+
+  <div class="cis-control-grid" aria-label="Simulation controls">
+    <label class="form-label">Participant
+      <select class="form-select" id="cis-participant">
+        <option value="alice">Alice · user · move</option>
+        <option value="root">Root · admin · move + lock</option>
+        <option value="visitor">Visitor · user · no capabilities</option>
+      </select>
+    </label>
+    <label class="form-label">Intended action
+      <select class="form-select" id="cis-action">
+        <option value="open">Open → door open</option>
+        <option value="close">Close → door closed</option>
+        <option value="lock">Lock → lock engaged</option>
+        <option value="unlock">Unlock → lock released</option>
+      </select>
+    </label>
+    <label class="form-label">Outcome after execution
+      <select class="form-select" id="cis-outcome">
+        <option value="unknown">Not observed</option>
+        <option value="success">Success</option>
+        <option value="failure">Failure</option>
+      </select>
+    </label>
+    <label class="form-label">Search horizon <span id="cis-horizon-value">1</span>
+      <input class="form-range" id="cis-horizon" type="range" min="0" max="4" value="1">
+    </label>
+  </div>
+
+  <div class="cis-control-bar" aria-label="Projection and belief controls">
+    <div class="cis-switches">
+      <label class="form-check form-switch"><input class="form-check-input" id="cis-exposed" type="checkbox" checked><span class="form-check-label">Interface exposes action</span></label>
+      <label class="form-check form-switch"><input class="form-check-input" id="cis-signaled" type="checkbox" checked><span class="form-check-label">Interface signals action</span></label>
+      <label class="form-check form-switch"><input class="form-check-input" id="cis-believed" type="checkbox" checked><span class="form-check-label">Participant believes available</span></label>
+    </div>
+    <div class="cis-actions">
+      <button class="btn btn-primary" id="cis-attempt" type="button">Try action</button>
+      <button class="btn btn-ghost" id="cis-reset" type="button">Reset episode</button>
+    </div>
+  </div>
+
+  <div class="cis-layout">
+    <section class="card cis-state" aria-label="Current system and projection state">
+      <div class="cis-section-label">System now</div>
+      <svg viewBox="0 0 220 180" role="img" aria-label="Door system state">
+        <desc id="cis-door-desc">A door shows the current open and locked state.</desc>
+        <rect class="cis-door-frame" x="72" y="18" width="82" height="136" rx="3"></rect>
+        <g id="cis-door-panel" class="cis-door">
+          <rect x="78" y="24" width="70" height="124" rx="2"></rect>
+          <circle class="cis-knob" cx="136" cy="88" r="4"></circle>
+        </g>
+        <g id="cis-lock-mark" transform="translate(160 68)">
+          <path class="cis-lock" d="M4 16V10a10 10 0 0 1 20 0v6h-5v-6a5 5 0 0 0-10 0v6z"></path>
+          <rect class="cis-lock" x="0" y="16" width="28" height="24" rx="3"></rect>
+        </g>
+        <text class="cis-label" id="cis-state-label" x="110" y="170" text-anchor="middle">closed · unlocked</text>
+      </svg>
+      <div class="cis-state-data text-small text-muted">
+        <div class="cis-state-row"><span>Position</span><span id="cis-position-value">closed</span></div>
+        <div class="cis-state-row"><span>Lock</span><span id="cis-lock-value">released</span></div>
+        <div class="cis-state-row"><span>Projection</span><span id="cis-projection-value">open signaled</span></div>
+      </div>
+      <div class="cis-parity text-small" aria-live="polite">
+        <span class="cis-parity-mark" id="cis-parity-mark" aria-hidden="true">×</span>
+        <span id="cis-parity-label">Checking C reference vector</span>
+      </div>
+      <code class="text-small" id="cis-hash"></code>
+    </section>
+
+    <section class="cis-section" aria-label="Opportunity profile and conclusion">
+      <div class="card cis-verdict" aria-live="polite">
+        <div class="cis-verdict-row"><span>System can execute this action now</span><strong class="cis-verdict-value" id="cis-executable-verdict"></strong></div>
+        <div class="cis-verdict-row"><span>Action is available through this projection</span><strong class="cis-verdict-value" id="cis-presented-verdict"></strong></div>
+        <div class="cis-verdict-row"><span>Participant belief matches projected availability</span><strong class="cis-verdict-value" id="cis-belief-verdict"></strong></div>
+        <div class="text-small text-muted" id="cis-verdict-reason"></div>
+      </div>
+      <div class="cis-section-label">Why · each dimension answers a different question</div>
+      <div class="cis-opportunity" id="cis-opportunity"></div>
+    </section>
+  </div>
+
+  <section class="cis-section" aria-label="Interaction trace">
+    <div class="cis-section-label">What happened · selection is not execution; execution is not success</div>
+    <svg class="cis-trace" id="cis-trace" viewBox="0 0 720 136" role="img" aria-label="Participant event trace">
+      <desc id="cis-trace-desc">Events appear in participant lanes as actions are attempted.</desc>
+    </svg>
+    <div class="text-small text-muted" id="cis-selected-detail">No action selected in this episode.</div>
+  </section>
+
+  <script>
+    (() => {
+      const root = document.getElementById('cis-experience');
+      const $ = (selector) => root.querySelector(selector);
+      const participants = {
+        alice: { label: 'Alice', role: 0, caps: 1, lane: 0 },
+        root: { label: 'Root', role: 1, caps: 3, lane: 1 },
+        visitor: { label: 'Visitor', role: 0, caps: 0, lane: 2 }
+      };
+      const actions = {
+        open: { label: 'open', cap: 1, roles: 1, reverse: 'close', target: s => s.position === 1, enabled: s => s.position === 0 && s.locked === 0, apply: s => ({ position: 1, locked: s.locked }) },
+        close: { label: 'close', cap: 1, roles: 1, reverse: 'open', target: s => s.position === 0, enabled: s => s.position === 1, apply: s => ({ position: 0, locked: s.locked }) },
+        lock: { label: 'lock', cap: 2, roles: 2, reverse: 'unlock', target: s => s.locked === 1, enabled: s => s.position === 0, apply: s => ({ position: s.position, locked: 1 }) },
+        unlock: { label: 'unlock', cap: 2, roles: 2, reverse: 'lock', target: s => s.locked === 0, enabled: s => true, apply: s => ({ position: s.position, locked: 0 }) }
+      };
+      const cVectors = {
+        '0,0': '16981056525137609861',
+        '0,1': '14748741118170020452',
+        '1,0': '11289045597036932164',
+        '1,1': '13521361004004521573'
+      };
+      const dims = [
+        ['domain', 'Domain-valid', 'declared action'],
+        ['capable', 'Capable', 'required resources'],
+        ['permitted', 'Permitted', 'role authority'],
+        ['enabled', 'Enabled', 'state preconditions'],
+        ['reachable', 'Reachable', 'target within horizon'],
+        ['exposed', 'Exposed', 'executable path shown'],
+        ['signaled', 'Signaled', 'operation indicated'],
+        ['believed', 'Believed', 'participant report'],
+        ['selected', 'Selected', 'attempt in trace'],
+        ['executed', 'Executed', 'transition committed'],
+        ['successful', 'Successful', 'explicit outcome'],
+        ['reversible', 'Reversible', 'exact round trip']
+      ];
+      const dimGroups = [
+        ['Structural availability', ['domain', 'capable', 'permitted', 'enabled', 'reachable']],
+        ['Projection and belief', ['exposed', 'signaled', 'believed']],
+        ['Trace and consequence', ['selected', 'executed', 'successful', 'reversible']]
+      ];
+      let state = { position: 0, locked: 0 };
+      let trace = [];
+
+      function allowed(person, action) {
+        return (action.roles & (1 << person.role)) !== 0;
+      }
+      function capable(person, action) {
+        return (person.caps & action.cap) === action.cap;
+      }
+      function sameState(a, b) {
+        return a.position === b.position && a.locked === b.locked;
+      }
+      function successors(source, person) {
+        const next = [];
+        Object.values(actions).forEach(action => {
+          if (capable(person, action) && allowed(person, action) && action.enabled(source)) {
+            const candidate = action.apply(source);
+            if (!next.some(value => sameState(value, candidate))) next.push(candidate);
+          }
+        });
+        return next;
+      }
+      function reachable(source, person, target, horizon) {
+        const queue = [{ state: source, depth: 0 }];
+        const seen = new Set([`${source.position},${source.locked}`]);
+        while (queue.length) {
+          const current = queue.shift();
+          if (target(current.state)) return true;
+          if (current.depth >= horizon) continue;
+          successors(current.state, person).forEach(next => {
+            const key = `${next.position},${next.locked}`;
+            if (!seen.has(key)) {
+              seen.add(key);
+              queue.push({ state: next, depth: current.depth + 1 });
+            }
+          });
+        }
+        return false;
+      }
+      function reversible(source, person, action) {
+        const reverse = actions[action.reverse];
+        if (!capable(person, action) || !allowed(person, action) || !action.enabled(source)) return false;
+        const changed = action.apply(source);
+        if (!capable(person, reverse) || !allowed(person, reverse) || !reverse.enabled(changed)) return false;
+        return sameState(reverse.apply(changed), source);
+      }
+      function hashState(source) {
+        const mask = (1n << 64n) - 1n;
+        let hash = 14695981039346656037n;
+        hash = ((hash ^ 2n) * 1099511628211n) & mask;
+        [source.position, source.locked].forEach(number => {
+          let value = BigInt(number) & mask;
+          for (let byte = 0n; byte < 8n; byte++) {
+            hash = ((hash ^ ((value >> (byte * 8n)) & 255n)) * 1099511628211n) & mask;
+          }
+        });
+        return hash.toString();
+      }
+      function profile() {
+        const personKey = $('#cis-participant').value;
+        const actionKey = $('#cis-action').value;
+        const person = participants[personKey];
+        const action = actions[actionKey];
+        const selected = trace.some(event => event.person === personKey && event.action === actionKey);
+        const executed = trace.some(event => event.person === personKey && event.action === actionKey && event.executed);
+        const matching = trace.filter(event => event.person === personKey && event.action === actionKey);
+        const successful = matching.some(event => event.executed && event.outcome === 'success') ? true :
+          matching.some(event => event.executed && event.outcome === 'failure') ? false : null;
+        return {
+          domain: true,
+          capable: capable(person, action),
+          permitted: allowed(person, action),
+          enabled: action.enabled(state),
+          reachable: reachable(state, person, action.target, Number($('#cis-horizon').value)),
+          exposed: $('#cis-exposed').checked,
+          signaled: $('#cis-signaled').checked,
+          believed: $('#cis-believed').checked,
+          selected,
+          executed,
+          successful,
+          reversible: reversible(state, person, action)
+        };
+      }
+      function renderTrace() {
+        const svg = $('#cis-trace');
+        const laneY = [34, 78, 122];
+        const labels = ['Alice', 'Root', 'Visitor'];
+        let markup = '<desc id="cis-trace-desc">Events appear in participant lanes as actions are attempted.</desc>';
+        labels.forEach((label, index) => {
+          markup += `<text class="cis-muted-label" x="6" y="${laneY[index] + 4}">${label}</text><line class="cis-lane" x1="62" y1="${laneY[index]}" x2="710" y2="${laneY[index]}"></line>`;
+        });
+        trace.forEach((event, index) => {
+          const x = 82 + index * Math.min(56, 610 / Math.max(1, trace.length));
+          const y = laneY[participants[event.person].lane];
+          const eventClass = !event.executed ? 'cis-event-fail' : event.outcome === 'success' ? 'cis-event-ok' : 'cis-event-unknown';
+          markup += `<line class="cis-event-stem" x1="${x}" y1="${y}" x2="${x}" y2="${y - 14}"></line><circle class="${eventClass}" cx="${x}" cy="${y}" r="6"></circle><text class="cis-muted-label" x="${x}" y="${y - 18}" text-anchor="middle">${event.action}</text>`;
+        });
+        svg.innerHTML = markup;
+      }
+      function render() {
+        const current = profile();
+        const systemExecutable = current.domain && current.capable && current.permitted && current.enabled;
+        const projectedAvailable = systemExecutable && current.exposed;
+        const beliefAligned = current.believed === projectedAvailable;
+        $('#cis-horizon-value').textContent = $('#cis-horizon').value;
+        $('#cis-door-panel').classList.toggle('is-open', state.position === 1);
+        $('#cis-lock-mark').style.display = state.locked === 1 ? '' : 'none';
+        $('#cis-state-label').textContent = `${state.position ? 'open' : 'closed'} · ${state.locked ? 'locked' : 'unlocked'}`;
+        $('#cis-position-value').textContent = state.position ? 'open' : 'closed';
+        $('#cis-lock-value').textContent = state.locked ? 'engaged' : 'released';
+        $('#cis-projection-value').textContent = `${$('#cis-action').value}: ${current.exposed ? 'exposed' : 'hidden'}, ${current.signaled ? 'signaled' : 'unsignaled'}`;
+        const hash = hashState(state);
+        const expected = cVectors[`${state.position},${state.locked}`];
+        const parity = hash === expected;
+        $('#cis-parity-mark').classList.toggle('is-pass', parity);
+        $('#cis-parity-mark').textContent = parity ? '✓' : '×';
+        $('#cis-parity-label').textContent = parity ? 'Matches C conformance vector' : 'C conformance mismatch';
+        $('#cis-hash').textContent = `state hash ${hash}`;
+        const verdict = (selector, value) => {
+          const element = $(selector);
+          element.dataset.status = value ? 'yes' : 'no';
+          element.textContent = value ? 'Yes' : 'No';
+        };
+        verdict('#cis-executable-verdict', systemExecutable);
+        verdict('#cis-presented-verdict', projectedAvailable);
+        verdict('#cis-belief-verdict', beliefAligned);
+        let reason = 'All execution gates pass.';
+        if (!current.capable) reason = 'Blocked because the participant lacks the required capability.';
+        else if (!current.permitted) reason = 'Blocked because the participant role is not permitted.';
+        else if (!current.enabled) reason = 'Blocked because the current state does not satisfy the action preconditions.';
+        else if (!current.exposed) reason = 'Executable in the system, but this projection does not expose an action path.';
+        else if (!current.signaled) reason = 'Exposed and executable, but the projection does not signal the action.';
+        else if (!beliefAligned) reason = 'The participant report disagrees with projected availability.';
+        $('#cis-verdict-reason').textContent = reason;
+        $('#cis-opportunity').innerHTML = dimGroups.map(([groupLabel, keys]) => {
+          const items = keys.map(key => {
+            const dimension = dims.find(([dimensionKey]) => dimensionKey === key);
+            const value = current[key];
+            const status = value === null ? 'unknown' : value ? 'yes' : 'no';
+            const mark = status === 'yes' ? '✓' : status === 'no' ? '×' : '?';
+            const stateLabel = status === 'unknown' ? 'unknown' : status;
+            return `<div class="cis-dim" data-status="${status}"><span class="cis-dim-mark" aria-hidden="true">${mark}</span><span class="cis-dim-copy"><strong>${dimension[1]} · ${stateLabel}</strong><span>${dimension[2]}</span></span></div>`;
+          }).join('');
+          return `<div class="cis-dim-group"><div class="cis-section-label">${groupLabel}</div><div class="cis-dim-row">${items}</div></div>`;
+        }).join('');
+        $('#cis-selected-detail').textContent = trace.length ?
+          `${trace.length} recorded selection${trace.length === 1 ? '' : 's'} · last: ${trace[trace.length - 1].result} · outcome ${trace[trace.length - 1].outcome}` :
+          'No action selected in this episode.';
+        renderTrace();
+      }
+      function attempt() {
+        const personKey = $('#cis-participant').value;
+        const actionKey = $('#cis-action').value;
+        const person = participants[personKey];
+        const action = actions[actionKey];
+        let result;
+        let executed = false;
+        if (!capable(person, action)) result = 'capability absent';
+        else if (!allowed(person, action)) result = 'permission denied';
+        else if (!action.enabled(state)) result = 'precondition unsatisfied';
+        else {
+          state = action.apply(state);
+          executed = true;
+          result = 'transition committed';
+        }
+        trace.push({ person: personKey, action: actionKey, executed, outcome: executed ? $('#cis-outcome').value : 'unknown', result });
+        render();
+      }
+      root.querySelectorAll('select, input').forEach(control => control.addEventListener('input', render));
+      $('#cis-attempt').addEventListener('click', attempt);
+      $('#cis-reset').addEventListener('click', () => {
+        state = { position: 0, locked: 0 };
+        trace = [];
+        render();
+      });
+      render();
+    })();
+  </script>
+</div>
