@@ -1,0 +1,403 @@
+{
+  "study_id": "CIS-EX-008-SYNTHETIC-FIXTURE",
+  "schema_version": "0.3.0",
+  "study_version": "0.1.0",
+  "theory_version": "1.0.0",
+  "protocol_ref": { "id": "CIS-EX-008-PROTOCOL", "version": "0.1.0" },
+  "contract_refs": {
+    "interaction": { "id": "CIS-EX-008-INTERACTION", "version": "0.2.0" },
+    "projection": { "id": "CIS-EX-008-PROJECTION-SIGNALED", "version": "0.2.0" },
+    "opportunity": { "id": "CIS-EX-008-OPPORTUNITY", "version": "0.2.0" },
+    "behavioral_evidence": { "id": "CIS-EX-008-BEHAVIORAL-EVIDENCE", "version": "0.2.0" },
+    "measurement": { "id": "CIS-EX-008-MEASUREMENT-DISCOVERY", "version": "0.2.0" },
+    "similarity": null,
+    "transfer": null,
+    "strategy": null,
+    "prediction": null,
+    "comparison": null
+  },
+  "scope": {
+    "population": "synthetic participant fixture; no human observation",
+    "task": "bounded target-operation discovery task",
+    "projection": "CIS-EX-008 signaled condition fixture",
+    "context": "schema and lineage validation only"
+  },
+  "construct_refs": [
+    { "label": "Interaction episode", "identifier_status": "unratified", "canonical_id": null },
+    { "label": "Opportunity profile", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "participants": [
+    {
+      "participant_id": "CIS-EX-008-P-SYNTHETIC",
+      "participant_kind": "person",
+      "roles": ["study participant"],
+      "capabilities": ["invoke target operation"],
+      "authority": ["target operation", "recovery operation"],
+      "pseudonymous": true,
+      "consent_ref": "CIS-EX-008-CONSENT-SYNTHETIC-NOT-A-HUMAN-RECORD",
+      "local_state_schema_ref": null
+    },
+    {
+      "participant_id": "CIS-EX-008-TARGET-SYSTEM",
+      "participant_kind": "computational_process",
+      "roles": ["target system"],
+      "capabilities": ["apply frozen transition semantics", "emit feedback"],
+      "authority": ["commit valid target transitions"],
+      "pseudonymous": false,
+      "consent_ref": null,
+      "local_state_schema_ref": "CIS-EX-008-STATE-SCHEMA"
+    }
+  ],
+  "environments": [
+    {
+      "environment_id": "CIS-EX-008-ENV-SYNTHETIC",
+      "version": "0.1.0",
+      "boundary": "synthetic host, target state, projection, event recorder, and monotonic fixture clock",
+      "state_schema_ref": "CIS-EX-008-STATE-SCHEMA",
+      "authority": ["CIS-EX-008 proposed protocol"],
+      "sensitive_context": false,
+      "provenance": {
+        "source_id": "CIS-EX-008-SYNTHETIC-GENERATOR",
+        "method": "hand-authored deterministic validation fixture",
+        "recorded_at": "2000-01-01T00:00:00Z",
+        "software_version": "0.1.0",
+        "instrument_version": null
+      }
+    }
+  ],
+  "interaction_episodes": [
+    {
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "interaction_contract_ref": { "id": "CIS-EX-008-INTERACTION", "version": "0.2.0" },
+      "participant_refs": ["CIS-EX-008-P-SYNTHETIC", "CIS-EX-008-TARGET-SYSTEM"],
+      "boundary": "projection ready through explicit completion",
+      "timescale": "synthetic monotonic episode",
+      "start_time": "2000-01-01T00:00:00Z",
+      "end_time": "2000-01-01T00:00:03Z",
+      "initial_state_ref": "CIS-EX-008-STATE-000",
+      "final_state_ref": "CIS-EX-008-STATE-001",
+      "interaction_status": "candidate",
+      "coupling_evidence_refs": ["CIS-EX-008-EVENT-SELECT", "CIS-EX-008-EVENT-FEEDBACK"],
+      "reciprocal_constraint_evidence_refs": ["CIS-EX-008-EVENT-COMPLETE"],
+      "completion_status": "synthetic criterion satisfied"
+    }
+  ],
+  "states": [
+    {
+      "state_id": "CIS-EX-008-STATE-000",
+      "payload_schema_ref": "CIS-EX-008-STATE-SCHEMA",
+      "payload": { "target_complete": false },
+      "provenance": {
+        "source_id": "CIS-EX-008-TARGET-SYSTEM",
+        "method": "synthetic initial state",
+        "recorded_at": "2000-01-01T00:00:00Z",
+        "software_version": "0.1.0",
+        "instrument_version": null
+      }
+    },
+    {
+      "state_id": "CIS-EX-008-STATE-001",
+      "payload_schema_ref": "CIS-EX-008-STATE-SCHEMA",
+      "payload": { "target_complete": true },
+      "provenance": {
+        "source_id": "CIS-EX-008-TARGET-SYSTEM",
+        "method": "synthetic committed transition",
+        "recorded_at": "2000-01-01T00:00:02Z",
+        "software_version": "0.1.0",
+        "instrument_version": null
+      }
+    }
+  ],
+  "records": [
+    {
+      "record_id": "CIS-EX-008-REC-READY",
+      "study_id": "CIS-EX-008-SYNTHETIC-FIXTURE",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "participant_ref": null,
+      "timestamp": "2000-01-01T00:00:00Z",
+      "record_type": "projection.ready",
+      "source": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+      "payload_schema_ref": "CIS-EX-008-EVENT-PAYLOAD-SCHEMA",
+      "payload": { "projection_ref": "CIS-EX-008-PROJECTION-SIGNALED" },
+      "missingness": "not_missing",
+      "quality_flags": [],
+      "provenance": {
+        "source_id": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+        "method": "synthetic fixture event",
+        "recorded_at": "2000-01-01T00:00:00Z",
+        "software_version": "0.1.0",
+        "instrument_version": "0.1.0"
+      }
+    },
+    {
+      "record_id": "CIS-EX-008-REC-BELIEF",
+      "study_id": "CIS-EX-008-SYNTHETIC-FIXTURE",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "participant_ref": "CIS-EX-008-P-SYNTHETIC",
+      "timestamp": "2000-01-01T00:00:01Z",
+      "record_type": "belief.report",
+      "source": "CIS-EX-008-BELIEF-INSTRUMENT",
+      "payload_schema_ref": "CIS-EX-008-BELIEF-PAYLOAD-SCHEMA",
+      "payload": { "response": "yes" },
+      "missingness": "not_missing",
+      "quality_flags": [],
+      "provenance": {
+        "source_id": "CIS-EX-008-BELIEF-INSTRUMENT",
+        "method": "synthetic fixture response",
+        "recorded_at": "2000-01-01T00:00:01Z",
+        "software_version": null,
+        "instrument_version": "0.1.0"
+      }
+    },
+    {
+      "record_id": "CIS-EX-008-REC-SELECT",
+      "study_id": "CIS-EX-008-SYNTHETIC-FIXTURE",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "participant_ref": "CIS-EX-008-P-SYNTHETIC",
+      "timestamp": "2000-01-01T00:00:02Z",
+      "record_type": "action.select",
+      "source": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+      "payload_schema_ref": "CIS-EX-008-EVENT-PAYLOAD-SCHEMA",
+      "payload": { "action_ref": "CIS-EX-008-ACTION-TARGET", "prompted": false },
+      "missingness": "not_missing",
+      "quality_flags": [],
+      "provenance": {
+        "source_id": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+        "method": "synthetic fixture event",
+        "recorded_at": "2000-01-01T00:00:02Z",
+        "software_version": "0.1.0",
+        "instrument_version": "0.1.0"
+      }
+    },
+    {
+      "record_id": "CIS-EX-008-REC-FEEDBACK",
+      "study_id": "CIS-EX-008-SYNTHETIC-FIXTURE",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "participant_ref": null,
+      "timestamp": "2000-01-01T00:00:02.010Z",
+      "record_type": "feedback.present",
+      "source": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+      "payload_schema_ref": "CIS-EX-008-EVENT-PAYLOAD-SCHEMA",
+      "payload": { "result": "transition committed", "state_ref": "CIS-EX-008-STATE-001" },
+      "missingness": "not_missing",
+      "quality_flags": [],
+      "provenance": {
+        "source_id": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+        "method": "synthetic fixture event",
+        "recorded_at": "2000-01-01T00:00:02.010Z",
+        "software_version": "0.1.0",
+        "instrument_version": "0.1.0"
+      }
+    },
+    {
+      "record_id": "CIS-EX-008-REC-COMPLETE",
+      "study_id": "CIS-EX-008-SYNTHETIC-FIXTURE",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "participant_ref": "CIS-EX-008-P-SYNTHETIC",
+      "timestamp": "2000-01-01T00:00:03Z",
+      "record_type": "task.complete",
+      "source": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+      "payload_schema_ref": "CIS-EX-008-EVENT-PAYLOAD-SCHEMA",
+      "payload": { "criterion": true },
+      "missingness": "not_missing",
+      "quality_flags": [],
+      "provenance": {
+        "source_id": "CIS-EX-008-INSTRUMENT-EVENT-LOG",
+        "method": "synthetic fixture event",
+        "recorded_at": "2000-01-01T00:00:03Z",
+        "software_version": "0.1.0",
+        "instrument_version": "0.1.0"
+      }
+    }
+  ],
+  "coded_events": [
+    {
+      "event_id": "CIS-EX-008-EVENT-READY",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "record_refs": ["CIS-EX-008-REC-READY"],
+      "event_type": "projection.ready",
+      "participant_refs": ["CIS-EX-008-TARGET-SYSTEM"],
+      "coding_level": "verified_observation",
+      "coding_rules_ref": { "id": "CIS-EX-008-CODING-RULES", "version": "0.1.0" },
+      "coder_refs": ["CIS-EX-008-DETERMINISTIC-CODER"],
+      "coding_status": "provisional",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "provenance": { "source_id": "CIS-EX-008-REC-READY", "method": "synthetic deterministic coding", "recorded_at": "2000-01-01T00:00:00Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "event_id": "CIS-EX-008-EVENT-BELIEF",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "record_refs": ["CIS-EX-008-REC-BELIEF"],
+      "event_type": "belief.report",
+      "participant_refs": ["CIS-EX-008-P-SYNTHETIC"],
+      "coding_level": "verified_observation",
+      "coding_rules_ref": { "id": "CIS-EX-008-CODING-RULES", "version": "0.1.0" },
+      "coder_refs": ["CIS-EX-008-DETERMINISTIC-CODER"],
+      "coding_status": "provisional",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "provenance": { "source_id": "CIS-EX-008-REC-BELIEF", "method": "synthetic deterministic coding", "recorded_at": "2000-01-01T00:00:01Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "event_id": "CIS-EX-008-EVENT-SELECT",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "record_refs": ["CIS-EX-008-REC-SELECT"],
+      "event_type": "action.select",
+      "participant_refs": ["CIS-EX-008-P-SYNTHETIC"],
+      "coding_level": "attributed_action",
+      "coding_rules_ref": { "id": "CIS-EX-008-CODING-RULES", "version": "0.1.0" },
+      "coder_refs": ["CIS-EX-008-DETERMINISTIC-CODER"],
+      "coding_status": "provisional",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "provenance": { "source_id": "CIS-EX-008-REC-SELECT", "method": "synthetic deterministic coding", "recorded_at": "2000-01-01T00:00:02Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "event_id": "CIS-EX-008-EVENT-FEEDBACK",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "record_refs": ["CIS-EX-008-REC-FEEDBACK"],
+      "event_type": "feedback.present",
+      "participant_refs": ["CIS-EX-008-TARGET-SYSTEM", "CIS-EX-008-P-SYNTHETIC"],
+      "coding_level": "coded_observation",
+      "coding_rules_ref": { "id": "CIS-EX-008-CODING-RULES", "version": "0.1.0" },
+      "coder_refs": ["CIS-EX-008-DETERMINISTIC-CODER"],
+      "coding_status": "provisional",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "provenance": { "source_id": "CIS-EX-008-REC-FEEDBACK", "method": "synthetic deterministic coding", "recorded_at": "2000-01-01T00:00:02.010Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "event_id": "CIS-EX-008-EVENT-COMPLETE",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "record_refs": ["CIS-EX-008-REC-COMPLETE"],
+      "event_type": "task.complete",
+      "participant_refs": ["CIS-EX-008-P-SYNTHETIC", "CIS-EX-008-TARGET-SYSTEM"],
+      "coding_level": "coded_observation",
+      "coding_rules_ref": { "id": "CIS-EX-008-CODING-RULES", "version": "0.1.0" },
+      "coder_refs": ["CIS-EX-008-DETERMINISTIC-CODER"],
+      "coding_status": "provisional",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "provenance": { "source_id": "CIS-EX-008-REC-COMPLETE", "method": "synthetic deterministic coding", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    }
+  ],
+  "opportunity_profiles": [
+    {
+      "profile_id": "CIS-EX-008-OPP-SYNTHETIC-001",
+      "contract_ref": { "id": "CIS-EX-008-OPPORTUNITY", "version": "0.2.0" },
+      "participant_ref": "CIS-EX-008-P-SYNTHETIC",
+      "action_ref": "CIS-EX-008-ACTION-TARGET",
+      "state_ref": "CIS-EX-008-STATE-000",
+      "projection_ref": "CIS-EX-008-PROJECTION-SIGNALED",
+      "time": "2000-01-01T00:00:01Z",
+      "domain_valid": { "status": "true", "evidence_refs": ["CIS-EX-008-TARGET"], "uncertainty_ref": null },
+      "capable": { "status": "true", "evidence_refs": ["CIS-EX-008-P-SYNTHETIC"], "uncertainty_ref": null },
+      "permitted": { "status": "true", "evidence_refs": ["CIS-EX-008-AUTHORITY-MAP"], "uncertainty_ref": null },
+      "enabled": { "status": "true", "evidence_refs": ["CIS-EX-008-STATE-000"], "uncertainty_ref": null },
+      "reachable": { "status": "true", "evidence_refs": ["CIS-EX-008-TRANSITION-SEMANTICS"], "uncertainty_ref": null },
+      "exposed": { "status": "true", "evidence_refs": ["CIS-EX-008-PROJECTION-SIGNALED"], "uncertainty_ref": null },
+      "signaled": { "status": "true", "evidence_refs": ["CIS-EX-008-PROJECTION-SIGNALED"], "uncertainty_ref": null },
+      "believed_available": { "status": "true", "evidence_refs": ["CIS-EX-008-REC-BELIEF"], "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC" },
+      "selected": { "status": "true", "evidence_refs": ["CIS-EX-008-EVENT-SELECT"], "uncertainty_ref": null },
+      "executed": { "status": "true", "evidence_refs": ["CIS-EX-008-REC-FEEDBACK"], "uncertainty_ref": null },
+      "successful": { "status": "true", "evidence_refs": ["CIS-EX-008-EVENT-COMPLETE"], "uncertainty_ref": null },
+      "reversible": { "status": "unknown", "evidence_refs": [], "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC", "rationale": "recovery operation not exercised in this fixture" },
+      "expected_consequence": null,
+      "provenance": { "source_id": "CIS-EX-008-SYNTHETIC-FIXTURE", "method": "synthetic profile assembly", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    }
+  ],
+  "behavioral_traces": [
+    {
+      "trace_id": "CIS-EX-008-TRACE-SYNTHETIC-001",
+      "episode_id": "CIS-EX-008-EP-SYNTHETIC-001",
+      "behavioral_evidence_contract_ref": { "id": "CIS-EX-008-BEHAVIORAL-EVIDENCE", "version": "0.2.0" },
+      "event_refs": ["CIS-EX-008-EVENT-READY", "CIS-EX-008-EVENT-BELIEF", "CIS-EX-008-EVENT-SELECT", "CIS-EX-008-EVENT-FEEDBACK", "CIS-EX-008-EVENT-COMPLETE"],
+      "ordering": "total",
+      "ordering_relations": [],
+      "segmentation_version": "0.1.0",
+      "attribution_status": "formal_only",
+      "alternative_explanations": ["synthetic fixture has no behavioral evidentiary force"],
+      "uncertainty_refs": ["CIS-EX-008-UNCERTAINTY-SYNTHETIC"],
+      "provenance": { "source_id": "CIS-EX-008-SYNTHETIC-FIXTURE", "method": "synthetic ordered trace", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    }
+  ],
+  "measures": [
+    {
+      "measure_id": "CIS-EX-008-MEASURE-DISCOVERY-SYNTHETIC",
+      "measurement_contract_ref": { "id": "CIS-EX-008-MEASUREMENT-DISCOVERY", "version": "0.2.0" },
+      "measurand": "unprompted discovery event",
+      "level_of_analysis": "participant-condition episode",
+      "scale_type": "binary",
+      "value": { "value_type": "boolean", "value": true, "unit": null },
+      "missingness": "not_missing",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "evidence_refs": ["CIS-EX-008-EVENT-SELECT"],
+      "interpretation_status": "descriptive",
+      "provenance": { "source_id": "CIS-EX-008-EVENT-SELECT", "method": "synthetic deterministic derivation", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "measure_id": "CIS-EX-008-MEASURE-INVALID-ATTEMPT-SYNTHETIC",
+      "measurement_contract_ref": { "id": "CIS-EX-008-MEASUREMENT-INVALID-ATTEMPT", "version": "0.2.0" },
+      "measurand": "attempted unavailable action count",
+      "level_of_analysis": "participant-condition episode",
+      "scale_type": "count",
+      "value": { "value_type": "integer", "value": 0, "unit": "attempts" },
+      "missingness": "not_missing",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "evidence_refs": ["CIS-EX-008-TRACE-SYNTHETIC-001"],
+      "interpretation_status": "descriptive",
+      "provenance": { "source_id": "CIS-EX-008-TRACE-SYNTHETIC-001", "method": "synthetic deterministic count", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "measure_id": "CIS-EX-008-MEASURE-RECOVERY-SYNTHETIC",
+      "measurement_contract_ref": { "id": "CIS-EX-008-MEASUREMENT-RECOVERY", "version": "0.2.0" },
+      "measurand": "recovery duration",
+      "level_of_analysis": "recovery interval",
+      "scale_type": "duration",
+      "value": { "value_type": "duration", "value": null, "unit": "milliseconds" },
+      "missingness": "not_applicable",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "evidence_refs": [],
+      "interpretation_status": "descriptive",
+      "provenance": { "source_id": "CIS-EX-008-SYNTHETIC-FIXTURE", "method": "no qualifying failure in synthetic fixture", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "measure_id": "CIS-EX-008-MEASURE-COMPLETION-SYNTHETIC",
+      "measurement_contract_ref": { "id": "CIS-EX-008-MEASUREMENT-COMPLETION", "version": "0.2.0" },
+      "measurand": "task completion",
+      "level_of_analysis": "participant-condition episode",
+      "scale_type": "binary",
+      "value": { "value_type": "boolean", "value": true, "unit": null },
+      "missingness": "not_missing",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "evidence_refs": ["CIS-EX-008-EVENT-COMPLETE", "CIS-EX-008-STATE-001"],
+      "interpretation_status": "descriptive",
+      "provenance": { "source_id": "CIS-EX-008-EVENT-COMPLETE", "method": "synthetic deterministic criterion", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    },
+    {
+      "measure_id": "CIS-EX-008-MEASURE-BELIEF-SYNTHETIC",
+      "measurement_contract_ref": { "id": "CIS-EX-008-MEASUREMENT-BELIEF", "version": "0.2.0" },
+      "measurand": "reported believed availability",
+      "level_of_analysis": "participant-condition report",
+      "scale_type": "nominal",
+      "value": { "value_type": "category", "value": "yes", "unit": null },
+      "missingness": "not_missing",
+      "uncertainty_ref": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "evidence_refs": ["CIS-EX-008-EVENT-BELIEF"],
+      "interpretation_status": "descriptive",
+      "provenance": { "source_id": "CIS-EX-008-EVENT-BELIEF", "method": "synthetic categorical mapping", "recorded_at": "2000-01-01T00:00:03Z", "software_version": "0.1.0", "instrument_version": null }
+    }
+  ],
+  "uncertainties": [
+    {
+      "uncertainty_id": "CIS-EX-008-UNCERTAINTY-SYNTHETIC",
+      "kind": "qualitative",
+      "representation": { "status": "synthetic fixture only", "empirical_force": "none" },
+      "coverage": null,
+      "assumptions": ["All timestamps and records are deterministic invented fixture values.", "No participant or empirical observation exists."],
+      "provenance": { "source_id": "CIS-EX-008-SYNTHETIC-FIXTURE", "method": "fixture limitation declaration", "recorded_at": "2000-01-01T00:00:00Z", "software_version": "0.1.0", "instrument_version": null }
+    }
+  ],
+  "similarity_profiles": [],
+  "transfer_records": [],
+  "strategy_hypotheses": [],
+  "prediction_records": [],
+  "comparison_profiles": [],
+  "deviations": []
+}

@@ -1,0 +1,10 @@
+priority,workstream,primary_gap,required_test,comparison_baseline,decision_output
+1,Canonical consistency,Term and contract drift,Cross-paper schema and symbol audit,Version 1.0 canonical registry,Compatible or conflict report
+2,Boundary and identity,Boundary declarations lack adjudication,Adversarial episode segmentation study,Independent expert boundaries,Boundary validity criteria
+3,Construct validation,Analytical roles lack validation,Reliability and construct-validity studies,Simpler observable proxies,Validated or unsupported construct status
+4,Contract ablation,Ontology may exceed evidence,Field-removal ablation,Reduced contract variants,Retain simplify or remove recommendation
+5,Causal architecture,Causality underdeveloped,Intervention and identification studies,Associational models,Causal claim classes and estimands
+6,Strategy and transfer,Circular identity inference,Preregistered invariant tests,Policy and tactic baselines,Independent strategy identity rule
+7,Continuous interaction,Discrete bias,Hybrid and continuous case benchmark,Event-log discretization,Formal coverage limits
+8,Fundamental independence,Platform-shaped ontology,Adversarial non-Fundamental cases,Fundamental-native representations,External validity assessment
+9,Comparative gain,Distinct science not demonstrated,Multi-framework benchmark,Integrated adjacent theories,Incremental scientific gain estimate

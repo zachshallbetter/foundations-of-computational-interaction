@@ -1,0 +1,274 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "interaction_study.schema.json",
+  "title": "CompInt Interaction Study Dataset",
+  "description": "Exploratory modular dataset schema 0.3.0; validation does not establish empirical validity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "study_id",
+    "schema_version",
+    "study_version",
+    "theory_version",
+    "protocol_ref",
+    "contract_refs",
+    "scope",
+    "construct_refs",
+    "participants",
+    "environments",
+    "interaction_episodes",
+    "states",
+    "records",
+    "coded_events",
+    "behavioral_traces",
+    "measures",
+    "uncertainties"
+  ],
+  "properties": {
+    "study_id": {
+      "$ref": "schemas/common.schema.json#/$defs/non_empty_string"
+    },
+    "schema_version": {
+      "const": "0.3.0"
+    },
+    "study_version": {
+      "$ref": "schemas/common.schema.json#/$defs/semver"
+    },
+    "theory_version": {
+      "const": "1.0.0"
+    },
+    "protocol_ref": {
+      "$ref": "schemas/common.schema.json#/$defs/reference"
+    },
+    "contract_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "interaction",
+        "projection",
+        "opportunity",
+        "behavioral_evidence",
+        "measurement"
+      ],
+      "properties": {
+        "interaction": {
+          "$ref": "schemas/common.schema.json#/$defs/reference"
+        },
+        "projection": {
+          "$ref": "schemas/common.schema.json#/$defs/reference"
+        },
+        "opportunity": {
+          "$ref": "schemas/common.schema.json#/$defs/reference"
+        },
+        "behavioral_evidence": {
+          "$ref": "schemas/common.schema.json#/$defs/reference"
+        },
+        "measurement": {
+          "$ref": "schemas/common.schema.json#/$defs/reference"
+        },
+        "similarity": {
+          "oneOf": [
+            {
+              "$ref": "schemas/common.schema.json#/$defs/reference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transfer": {
+          "oneOf": [
+            {
+              "$ref": "schemas/common.schema.json#/$defs/reference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "strategy": {
+          "oneOf": [
+            {
+              "$ref": "schemas/common.schema.json#/$defs/reference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prediction": {
+          "oneOf": [
+            {
+              "$ref": "schemas/common.schema.json#/$defs/reference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "comparison": {
+          "oneOf": [
+            {
+              "$ref": "schemas/common.schema.json#/$defs/reference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "scope": {
+      "$ref": "schemas/common.schema.json#/$defs/scope"
+    },
+    "construct_refs": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/common.schema.json#/$defs/construct_reference"
+      },
+      "uniqueItems": true
+    },
+    "participants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "schemas/participant.schema.json"
+      }
+    },
+    "environments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "schemas/environment.schema.json"
+      }
+    },
+    "interaction_episodes": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/interaction-episode.schema.json"
+      }
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "state_id",
+          "payload_schema_ref",
+          "payload",
+          "provenance"
+        ],
+        "properties": {
+          "state_id": {
+            "type": "string"
+          },
+          "payload_schema_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "payload": {
+            "type": "object"
+          },
+          "provenance": {
+            "$ref": "schemas/common.schema.json#/$defs/provenance"
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/raw-record.schema.json"
+      }
+    },
+    "coded_events": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/coded-event.schema.json"
+      }
+    },
+    "opportunity_profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/opportunity-profile.schema.json"
+      }
+    },
+    "behavioral_traces": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/behavioral-trace.schema.json"
+      }
+    },
+    "measures": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/measure.schema.json"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/uncertainty.schema.json"
+      }
+    },
+    "similarity_profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/similarity-profile.schema.json"
+      }
+    },
+    "transfer_records": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/transfer-record.schema.json"
+      }
+    },
+    "strategy_hypotheses": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/strategy-hypothesis.schema.json"
+      }
+    },
+    "prediction_records": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/prediction-record.schema.json"
+      }
+    },
+    "comparison_profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "schemas/comparison-profile.schema.json"
+      }
+    },
+    "deviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "deviation_id",
+          "protocol_clause",
+          "description",
+          "recorded_at"
+        ],
+        "properties": {
+          "deviation_id": {
+            "type": "string"
+          },
+          "protocol_clause": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}

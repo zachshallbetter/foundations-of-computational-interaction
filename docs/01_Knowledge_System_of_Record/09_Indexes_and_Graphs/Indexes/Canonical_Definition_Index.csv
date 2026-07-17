@@ -1,0 +1,110 @@
+Canonical ID,Term,Definition,Boundary,Authority,Status
+domain-commitments,Domain commitments,"A set of commitments about admissible entities, categories, relations, identity conditions, modalities, and constraints in a domain. In computational work, these commitments may be approximated through ontologies, schemas, contracts, types, or model definitions, but none of those artifacts is automatically a philosophical ontology.","Domain commitments specify what the model admits. They do not by themselves assign meaning, produce a representation, or determine interpretation.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+system-state,System state,"The physical, computational, social, or modeled condition of a declared system at a particular time.","State is not synonymous with data, meaning, representation, or observation. A state becomes content-bearing only under a specified semantics.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+semantic-assignment,Semantic assignment,"A rule-governed assignment of content, denotation, truth conditions, inferential consequences, or transition behavior to expressions, states, signs, or operations within a specified system and domain.",Formal semantic assignment is distinct from a person’s interpretation or understanding.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+semantic-state,Semantic state,The content-bearing assignments and relations currently licensed by a specified semantics for a system or discourse state.,No observer-independent semantic state is assumed without an explicit theory and scope.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+information,Information,"A typed measure or characterization of distinctions, correlations, descriptions, or content relative to a specified source, code, semantic relation, probability model, or use.","Information is not a synonym for stored variables, data, meaning, semantic state, or interpretation. Every claim that information is preserved must name the information theory, source, code, task, or relevance criterion.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+representation,Representation,"A materially or formally realized vehicle that provides selective access to a declared target through a mapping or correspondence and an interpretive practice.
+
+A representation may preserve, transform, omit, or introduce structure.","A representation is not identical with its target. Equal reference does not imply semantic, inferential, behavioral, or interactional equivalence.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+projection,Projection,"A declared transformation from a target description, system state, or semantic assignment into an accessible representational form.
+
+A projection contract specifies:
+
+- target and authority;
+- mapping or construction rule;
+- interpretation assumptions;
+- preserved properties;
+- transformed properties;
+- omitted properties;
+- introduced properties;
+- available operations;
+- observer assumptions;
+- intended use;
+- context and scope;
+- uncertainty, tolerance, and failure conditions.","Projection coordinates established concepts such as views, abstractions, encodings, lenses, simulations, model morphisms, and renderings. It is not a new metaphysical substance.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed analytical role
+scoped-invariance,Scoped invariance,"A declared property remains invariant across projections when independently specified comparison rules show that it is preserved for a stated target, observer class, context, metric, and tolerance.
+
+Invariance must be typed. Relevant types include:
+
+- ontological;
+- semantic;
+- informational;
+- structural;
+- topological;
+- computational;
+- inferential;
+- task;
+- behavioral;
+- interactional.",No one invariance type implies another.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed theory
+interpretation,Interpretation,"The application, recovery, construction, negotiation, or revision of semantic relations by an interpreting system under a context, competence, history, and purpose.",Interpretation is a process or event. Semantics specifies or stabilizes admissible relations; interpretation applies or revises them.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+interaction-participant,Interaction participant,"Any bounded person, collective, organism, computational process, artificial system, institution, or hybrid arrangement occupying a consequential role within an interaction.
+
+A participant may observe, interpret, act, constrain, authorize, mediate, represent, store, or transform state. Participation does not imply autonomy, intelligence, consciousness, or learning.","Interaction participant is the top-level role. More specific terms such as human participant, computational participant, institution, observer, mediator, autonomous agent, and AI agent should be used when their additional commitments matter.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+agent,Agent,"An acting interaction participant that selects or produces actions through a policy, rule, control process, intention, or other action-selection organization.","Agent is not the universal term for every participant. An AI model is not automatically an agent; it becomes part of an agentic system when observations, action-selection, and consequential operations are supplied.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed subtype
+environment,Environment,"The declared physical, computational, social, symbolic, or mixed system within which action and state transition occur.",The environment is not identical with what an agent can observe through a representation.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+affordance,Affordance,"An action-relevant relation between an agent’s effectivities or capabilities and environmental structure that makes a class of action possible. In the Gibsonian sense, perception is not required for the affordance to exist.","Affordance is not synonymous with permission, signaling, belief, execution success, or reversibility.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Established external construct
+opportunity,Opportunity,"A typed and indexed analytical profile coordinating action-availability relations under declared system, agent, projection, task, authority, state, and temporal conditions.
+
+Opportunity is not a new primitive. It coordinates established relations such as feasibility, capability, permission, enablement, reachability, exposure, signaling, belief, expected consequence, reversibility, and uncertainty.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed coordination framework
+opportunity-profile,Opportunity profile,"For an agent, action, state, projection, and time, an opportunity profile records the relevant typed relations:
+
+- domain-valid;
+- effectively capable;
+- permitted;
+- enabled;
+- reachable outcomes;
+- exposed;
+- signaled;
+- believed available;
+- expected consequences;
+- selected;
+- executed;
+- successful;
+- reversible or recoverable;
+- uncertainty and provenance.
+
+Selected, executed, and successful are trace predicates rather than availability sets.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+capability,Capability,The effective capacity or resources required for an agent-system coupling to execute an action or bring about an outcome under declared conditions.,Capability is distinct from permission. Security capability tokens must be named explicitly when that narrower meaning is intended.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+permission,Permission,"Authorization under a policy, role, rule, authority, or institutional condition for a subject to perform an operation.",A prohibited action may remain technically possible.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+enablement,Enablement,The condition in which an action’s current-state preconditions are satisfied.,Enablement is local to the current state and differs from multi-step reachability.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+reachability,Reachability,The existence of at least one admissible transition sequence from a declared initial state to a target state or outcome within specified constraints and horizon.,,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+exposure,Exposure,Provision by the current projection of an executable access path to an operation.,"An exposed operation may be hidden, poorly signaled, unknown, or inaccessible to a particular observer.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+signaling,Signaling,"Perceivable information indicating an operation, condition, consequence, state, or recovery path.","A signal may be true, incomplete, ambiguous, or false.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+discoverability,Discoverability,"The empirically observed probability and process by which an agent identifies an action or relation under declared task, projection, knowledge, modality, context, and time conditions.",Discoverability is not a static visual property.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+believed-action,Believed action,"An action represented by an agent as available, with an associated confidence and expected consequence.",Belief cannot be read directly from non-selection or task completion. It requires elicitation or a validated inferential model.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed latent variable
+action,Action,"A declared intervention, command, operation, or behavior capable of participating in a state transition.",A low-level input such as a click or touch is not necessarily the semantic action under study.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+state-transition,State transition,"A change from one declared system state to another under a transition relation, process, or event.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+observation,Observation,"A recorded or accessible distinction about state, transition, representation, or outcome available through a specified measurement or observation process.","Observation is not interpretation, inference, or evidence by itself.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+situated-behavior,Situated behavior,"A bounded, temporally extended trajectory of observable or instrumentally recoverable changes, outputs, or regulated persistence attributed to a system in relation to its environment under a declared observation and attribution model.",Representation does not determine behavior directly.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+behavioral-evidence,Behavioral evidence,"A provenance-preserving chain connecting direct observations, system-derived features, latent interpretations, alternative explanations, uncertainty, and falsifying evidence to a bounded research claim.","A trace is evidence of what occurred. It is not direct evidence of intention, understanding, culture, personality, or protected identity.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Candidate
+behavioral-equivalence,Behavioral equivalence,"Equivalence of declared action or outcome distributions for a specified population, task, context, metric, and tolerance.","Behavioral equivalence does not imply semantic, interpretive, strategy, learning, transfer, or interactional equivalence.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Candidate
+interactional-equivalence,Interactional equivalence,"Equivalence of the available operation-transition-observation structure under specified agent, task, projection, authority, state, context, and tolerance conditions.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Candidate
+interaction,Interaction,"A family of bounded coupling phenomena in which distinguishable systems or participants become mutually consequential through perturbation, constraint, uptake, response, and recurrence.","Interaction is not reducible to action, behavior, communication, computation, observation, state transition, feedback, or causation alone. Ordinary-language usage may be broader than the strict research definition.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed scientific target
+interaction-episode,Interaction episode,"A bounded interval in which two or more distinguishable systems are coupled such that perturbations originating in, or mediated by, one system alter the possible or actual state trajectory of another, and the resulting configuration constrains a later trajectory of an originating or co-participating system within a declared boundary and timescale.
+
+Reciprocal closure may be direct, indirect, asymmetric, delayed, probabilistic, or environmentally mediated.",A single isolated one-way causal effect is not an interaction episode under the strict definition unless it enters a recurrent or reciprocally constraining structure.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed canonical unit
+coupling,Coupling,"A relation or pathway through which a participant or shared medium can alter another participant's transition structure, reachable states, probabilities, timing, or constraints.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+perturbation,Perturbation,"A difference propagated through a coupling relation that may change state, transition conditions, probabilities, timing, or reachable outcomes.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+uptake,Uptake,"Incorporation of a perturbation into a participant's state, transition process, control process, or interpreted situation. Uptake need not be semantic or conscious.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+recurrence,Recurrence,"Return influence through which a response constrains an originating participant, a co-participant, or the shared coupling configuration.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+interaction-contract,Interaction contract,"A declaration of interaction identity, participants and roles, boundary, timescale, state, coupling, preconditions, events, transitions, protocol, invariants, evidence, failure, recovery, and completion conditions.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed reusable artifact
+interaction-morphology,Interaction morphology,"The measurable structural properties of a representation or interaction surface, such as hierarchy, topology, density, alignment, rhythm, symmetry, enclosure, continuity, direction, visual weight, temporal organization, and modality.",Morphology is not independent of all semantics or interpretation. A study must declare which content and operations are controlled.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Candidate
+interaction-grammar,Interaction grammar,A typed vocabulary and composition structure for semantic actions and transitions independent of any one input modality or rendering implementation.,,Canonical Glossary v0.4 reconciled with Ontology v0.3,Candidate
+interaction-history,Interaction history,"The accumulated experience, training, conventions, outcomes, failures, practices, and prior exposure that may change an agent’s later beliefs, policies, and interpretation.",Interaction history biases later behavior but does not fully explain or determine an individual.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Candidate
+trace,Trace,"A temporally ordered or partially ordered record of observable or attributed events under declared boundaries, granularity, and observation rules.","A trace is not identical with behavior, action, policy, strategy, intention, or mechanism.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+measurement-contract,Measurement contract,"A declaration of the measurand, observation process, operationalization, scale, uncertainty, validity evidence, population, task, projection, comparison conditions, and permitted interpretation.",A metric is not a construct. Numerical output does not justify a latent interpretation without a validated measurement relation.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed reusable artifact
+interaction-similarity,Interaction similarity,"A comparison of interaction tokens, types, structures, protocols, opportunities, traces, behaviors, policies, strategies, outcomes, causes, or measurements under an explicit frame, correspondence mapping, admissible transformations, metrics, tolerances, uncertainty, and validity domain.",There is no context-free universal similarity score.,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed typed comparison framework
+token-identity,Token identity,"Historical identity of one bounded interaction episode under declared continuity, participant, boundary, and timescale criteria.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+type-identity,Type identity,Membership in the same abstraction-defined interaction class under explicit classification rules.,,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+equivalence,Equivalence,Exact preservation under a declared comparison contract and observable set. Equivalence is always typed.,,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+similarity,Similarity,"Graded proximity under declared dimensions, representations, alignment rules, metrics, weights, tolerances, and uncertainty.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+incomparability,Incomparability,"Failure to establish a defensible common comparison space because boundaries, targets, mappings, scales, observation processes, uncertainty, or validity domains cannot be aligned without unsupported assumptions.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+similarity-contract,Similarity contract,"A declaration of comparison target, frame, representations, correspondence mapping, invariants, variants, observables, admissible and prohibited transformations, typed metrics or predicates, tolerances, uncertainty, validity domain, and final typed profile.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed reusable artifact
+strategy,Strategy,"An inferred, temporally extended organization of conditional action selection, information use, resource allocation, and contingency response that tends to preserve or improve one or more criteria across a declared class of interaction states.","A strategy is not a single action, raw trace, repeated sequence, explicit plan, policy alone, skill, habit, or intention. It must be supported through rival discrimination, diagnostic contingencies, uncertainty, and evidence appropriate to the claim.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed latent explanatory construct
+strategy-contract,Strategy contract,"A declaration of strategy-bearing system, domain, timescale, criteria, state and observation model, state abstraction, opportunity assumptions, action repertoire, selection policy, information policy, commitments, contingency and recovery rules, switching and stopping conditions, resources, authority, identity invariants, rival strategies, uncertainty, and validity domain.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed reusable artifact
+policy,Policy,"A conditional relation from represented states, observations, or beliefs to action distributions.","A policy may be one component of a strategy. Strategy may additionally include information acquisition, commitment, resource allocation, switching, recovery, and stopping rules.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed
+fundamental,Fundamental,"A representation-independent computational substrate for declaring domain commitments, evolving system state, assigning operational semantics, and producing governed projections whose preservation, transformation, omission, introduced structure, operations, snapshots, and replay can be inspected.","Fundamental is not the scientific theory, a philosophical ontology, proof of CIS, or a guarantee of shared human meaning.",Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed research substrate
+computational-interaction-science,Computational Interaction Science,"A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
+
+CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.",,Canonical Glossary v0.4 reconciled with Ontology v0.3,Proposed research program; disciplinary autonomy unproven

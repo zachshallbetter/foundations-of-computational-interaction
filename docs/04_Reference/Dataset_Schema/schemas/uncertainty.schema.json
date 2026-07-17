@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "uncertainty.schema.json",
+  "title": "CompInt Uncertainty",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "uncertainty_id",
+    "kind",
+    "representation",
+    "provenance"
+  ],
+  "properties": {
+    "uncertainty_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "kind": {
+      "enum": [
+        "standard",
+        "interval",
+        "distribution",
+        "qualitative",
+        "budget"
+      ]
+    },
+    "representation": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "coverage": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

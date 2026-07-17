@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Behavioral_Evidence_Contract.schema.json",
+  "title": "CompInt Behavioral Evidence Contract",
+  "allOf": [
+    {
+      "$ref": "Contract_Common.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "raw_source_refs",
+        "instrument_refs",
+        "observation_model",
+        "detection_rules",
+        "event_coding_rules",
+        "segmentation_rules",
+        "attribution_rules",
+        "ordering_rule",
+        "missingness_rules",
+        "alternative_explanations",
+        "uncertainty_model_ref",
+        "falsifying_evidence",
+        "claim_limits",
+        "review_requirements",
+        "evidence_lineage_rule",
+        "provenance_requirements"
+      ],
+      "properties": {
+        "raw_source_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "instrument_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "observation_model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detection_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "event_coding_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "segmentation_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "attribution_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "ordering_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "missingness_rules": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "alternative_explanations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "uncertainty_model_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "falsifying_evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_limits": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "review_requirements": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "evidence_lineage_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance_requirements": {
+          "type": "object",
+          "minProperties": 1
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

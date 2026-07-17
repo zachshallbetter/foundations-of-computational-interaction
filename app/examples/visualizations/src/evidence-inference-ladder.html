@@ -1,0 +1,94 @@
+<div id="cis-evidence-ladder" data-example-id="CIS-EX-005" data-theory-version="1.0.0">
+  <style>
+    #cis-evidence-ladder { color: var(--foreground); display: grid; gap: 18px; }
+    #cis-evidence-ladder .el-identity { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    #cis-evidence-ladder .el-path { display: flex; align-items: center; justify-content: center; gap: 7px; flex-wrap: wrap; color: var(--muted-foreground); }
+    #cis-evidence-ladder .el-path strong { color: var(--foreground); font-weight: 500; }
+    #cis-evidence-ladder .el-controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 16px; }
+    #cis-evidence-ladder .el-record { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
+    #cis-evidence-ladder .el-record-item { display: grid; gap: 2px; padding: 9px; background: var(--muted); border-radius: 6px; }
+    #cis-evidence-ladder .el-record-item span { color: var(--muted-foreground); font-size: 11px; }
+    #cis-evidence-ladder .el-record-item strong { font-weight: 500; }
+    #cis-evidence-ladder .el-ladder { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 16px; align-items: stretch; }
+    #cis-evidence-ladder .el-level { min-height: 88px; display: grid; align-content: space-between; gap: 7px; padding: 8px 0; border-top: 2px solid var(--border); color: var(--muted-foreground); }
+    #cis-evidence-ladder .el-level[data-reached="true"] { background: color-mix(in srgb, var(--primary) 14%, var(--card)); color: var(--foreground); }
+    #cis-evidence-ladder .el-level[data-frontier="true"] { border-top-color: var(--primary); }
+    #cis-evidence-ladder .el-number { font-size: 11px; color: var(--muted-foreground); }
+    #cis-evidence-ladder .el-level strong { font-weight: 500; }
+    #cis-evidence-ladder .el-level span:last-child { font-size: 11px; }
+    #cis-evidence-ladder .el-claim { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+    #cis-evidence-ladder .el-claim strong { font-weight: 500; }
+    #cis-evidence-ladder .el-block { color: var(--destructive); }
+    #cis-evidence-ladder .el-section-label { color: var(--muted-foreground); font-size: 11px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
+    @media (max-width: 620px) {
+      #cis-evidence-ladder .el-controls { grid-template-columns: 1fr 1fr; }
+      #cis-evidence-ladder .el-record { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #cis-evidence-ladder .el-ladder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 380px) {
+      #cis-evidence-ladder .el-controls { grid-template-columns: 1fr; }
+      #cis-evidence-ladder .el-ladder { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <div class="el-identity text-small text-muted"><code>CIS-EX-005</code><span>Evidence and inference ladder</span><span>·</span><span>Measurement Handbook</span></div>
+  <div class="el-path text-small" aria-label="Evidence sequence"><strong>What was recorded?</strong><span>→</span><strong>What was established?</strong><span>→</span><strong>How far may the claim go?</strong></div>
+
+  <div class="el-section-label">Recorded event · fixed input</div>
+  <div class="el-record" aria-label="Raw event record">
+    <div class="el-record-item"><span>record_type</span><strong>control.activate</strong></div>
+    <div class="el-record-item"><span>participant</span><strong>P-017</strong></div>
+    <div class="el-record-item"><span>latency</span><strong>240 ms</strong></div>
+    <div class="el-record-item"><span>result</span><strong>completed</strong></div>
+  </div>
+
+  <div class="el-section-label">Evidence gates · each licenses only the next level</div>
+  <div class="el-controls" aria-label="Evidence gates">
+    <label class="form-check form-switch"><input class="form-check-input" id="el-verified" type="checkbox"><span class="form-check-label">Instrument verified</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="el-coded" type="checkbox"><span class="form-check-label">Coding independently checked</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="el-derived" type="checkbox"><span class="form-check-label">Estimator preregistered</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="el-model" type="checkbox"><span class="form-check-label">Model calibrated</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="el-valid" type="checkbox"><span class="form-check-label">Construct validity supported</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="el-causal" type="checkbox"><span class="form-check-label">Causal alternatives tested</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="el-replicated" type="checkbox"><span class="form-check-label">Scope independently replicated</span></label>
+  </div>
+
+  <div class="el-ladder" id="el-ladder" aria-label="Eight evidence levels"></div>
+  <div class="el-claim" aria-live="polite">
+    <div><div class="el-section-label">Highest defensible statement</div><strong id="el-claim"></strong></div>
+    <div class="text-small el-block" id="el-block"></div>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.getElementById('cis-evidence-ladder');
+      const $ = selector => root.querySelector(selector);
+      const levels = [
+        ['Raw record', 'The instrument emitted this row.', 'record exists'],
+        ['Verified observation', 'Activation and latency were observed.', 'verify instrument'],
+        ['Coded observation', 'The event satisfies the declared action code.', 'check coding'],
+        ['Derived measure', 'Observed activation latency is 240 ms.', 'preregister estimator'],
+        ['Model estimate', 'Estimated latency for this task is model-bounded.', 'calibrate model'],
+        ['Construct evidence', 'Results support the declared construct in this scope.', 'support validity'],
+        ['Mechanism evidence', 'The tested intervention affected the proposed pathway.', 'test alternatives'],
+        ['Generalized claim', 'The bounded result transports to the replicated scope.', 'replicate scope']
+      ];
+      const gateIds = ['el-verified', 'el-coded', 'el-derived', 'el-model', 'el-valid', 'el-causal', 'el-replicated'];
+      function render() {
+        let highest = 1;
+        for (let index = 0; index < gateIds.length; index++) {
+          if (highest === index + 1 && $(`#${gateIds[index]}`).checked) highest++;
+        }
+        $('#el-ladder').innerHTML = levels.map(([label, claim, gate], index) => {
+          const reached = index + 1 <= highest;
+          const frontier = index + 1 === highest;
+          return `<div class="el-level" data-reached="${reached}" data-frontier="${frontier}"><span class="el-number">LEVEL ${index + 1}</span><strong>${reached ? '✓' : '—'} ${label}</strong><span>${reached ? claim : gate}</span></div>`;
+        }).join('');
+        $('#el-claim').textContent = levels[highest - 1][1];
+        $('#el-block').textContent = highest < 8 ? `Blocked next: ${levels[highest][2]}` : 'All declared gates satisfied';
+      }
+      root.querySelectorAll('input').forEach(control => control.addEventListener('input', render));
+      render();
+    })();
+  </script>
+</div>

@@ -1,0 +1,55 @@
+{
+  "contract_id": "CIS-EX-008-BEHAVIORAL-EVIDENCE",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Behavioral evidence", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery and recovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": [
+    "Instrument events do not directly reveal awareness, understanding, intention, trust, or strategy."
+  ],
+  "raw_source_refs": ["CIS-EX-008-INSTRUMENT-EVENT-LOG", "CIS-EX-008-BELIEF-INSTRUMENT"],
+  "instrument_refs": ["CIS-EX-008-INSTRUMENT-EVENT-LOG", "CIS-EX-008-BELIEF-INSTRUMENT"],
+  "observation_model": "Versioned host instrumentation records projection, participant input, system result, state transition, feedback, and monotonic time; participant reports are separate records.",
+  "detection_rules": ["Accept only records whose payload schema, instrument version, episode identity, and monotonic time resolve.", "Retain duplicate, late, and malformed records with an explicit invalid status."],
+  "event_coding_rules": ["Code selection from a resolved participant input record.", "Code execution only from a committed transition.", "Code success only from a verified terminal state and frozen completion predicate."],
+  "segmentation_rules": [
+    "Start an episode at the first valid projection.ready event for the assigned condition.",
+    "End at the first valid task.complete, task.abandon, invalidity, or timeout event.",
+    "Retain late and duplicate records with invalid status rather than silently deleting them."
+  ],
+  "attribution_rules": [
+    "Attribute an input only when its participant, episode, projection, and instrument identifiers resolve.",
+    "Code execution only from a committed system transition record.",
+    "Code success only when the explicit completion criterion resolves true."
+  ],
+  "ordering_rule": "Order by monotonic instrument time, then frozen source sequence; unresolved ties remain unknown for order-dependent measures.",
+  "missingness_rules": {
+    "missing_required_record": "mark the affected event or measure missing_unknown",
+    "invalid_record": "retain for audit and exclude only under the frozen rule",
+    "absence_of_event": "encode observed absence only when the full observation window is valid"
+  },
+  "alternative_explanations": ["prior familiarity", "order and carryover", "latency difference", "uncontrolled host signifier", "instruction or training difference", "device or accessibility mismatch"],
+  "uncertainty_model_ref": { "id": "CIS-EX-008-UNCERTAINTY-EVIDENCE", "version": "0.1.0" },
+  "falsifying_evidence": ["Independent recoding does not reproduce primary event labels within the frozen tolerance.", "Required event identity or ordering cannot be resolved.", "Condition assignment and recorded projection version disagree."],
+  "claim_limits": ["Non-selection cannot be coded as non-awareness.", "A trace cannot be labeled a strategy.", "Condition differences do not identify a universal perceptual mechanism."],
+  "review_requirements": {
+    "technical": "verify identity resolution, ordering, replay, and condition assignment",
+    "human": "independent review of ambiguous coding and primary-claim boundary before release"
+  },
+  "evidence_lineage_rule": "Every coded event names its source records and rule version; every derived measure names its coded events, contract, estimator, and software version.",
+  "provenance_requirements": {
+    "raw": "append-only source identifier, instrument version, recorded time, and payload schema",
+    "coded": "coder or deterministic rule version, input record references, adjudication status, and transformation time",
+    "derived": "contract, estimator, code, and environment versions"
+  }
+}

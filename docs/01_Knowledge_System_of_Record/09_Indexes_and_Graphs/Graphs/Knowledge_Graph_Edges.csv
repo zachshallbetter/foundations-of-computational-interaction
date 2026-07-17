@@ -1,0 +1,43 @@
+source,target,relation,authority
+domain-commitments,system-state,constrains,Canonical ontology/glossary
+domain-commitments,semantic-assignment,constrains,Canonical ontology/glossary
+semantic-assignment,semantic-state,licenses,Canonical ontology/glossary
+system-state,projection,source for,Canonical ontology/glossary
+semantic-assignment,projection,source for,Canonical ontology/glossary
+projection,representation,realizes,Canonical ontology/glossary
+representation,interpretation,supports,Canonical ontology/glossary
+interpretation,opportunity-profile,informs,Canonical ontology/glossary
+system-state,opportunity-profile,constrains,Canonical ontology/glossary
+projection,opportunity-profile,exposes,Canonical ontology/glossary
+opportunity-profile,interaction-episode,conditions,Canonical ontology/glossary
+coupling,interaction-episode,constitutes,Canonical ontology/glossary
+interaction-participant,coupling,participates in,Canonical ontology/glossary
+observation,trace,records,Canonical ontology/glossary
+trace,measurement-contract,input to,Canonical ontology/glossary
+measurement-contract,interaction-similarity,supports,Canonical ontology/glossary
+interaction-similarity,equivalence,types,Canonical ontology/glossary
+policy,strategy,component of,Canonical ontology/glossary
+interaction-history,strategy,updates,Canonical ontology/glossary
+interaction-history,interpretation,conditions,Canonical ontology/glossary
+interaction-history,believed-action,conditions,Canonical ontology/glossary
+affordance,opportunity-profile,contributes,Canonical ontology/glossary
+capability,opportunity-profile,component,Canonical ontology/glossary
+permission,opportunity-profile,component,Canonical ontology/glossary
+enablement,opportunity-profile,component,Canonical ontology/glossary
+reachability,opportunity-profile,component,Canonical ontology/glossary
+exposure,opportunity-profile,component,Canonical ontology/glossary
+signaling,opportunity-profile,component,Canonical ontology/glossary
+believed-action,opportunity-profile,component,Canonical ontology/glossary
+action,state-transition,may produce,Canonical ontology/glossary
+state-transition,system-state,changes,Canonical ontology/glossary
+agent,interaction-participant,subtype of,Canonical ontology/glossary
+environment,coupling,mediates,Canonical ontology/glossary
+token-identity,interaction-episode,identifies,Canonical ontology/glossary
+type-identity,interaction-episode,classifies,Canonical ontology/glossary
+similarity-contract,interaction-similarity,specifies,Canonical ontology/glossary
+strategy-contract,strategy,specifies,Canonical ontology/glossary
+interaction-contract,interaction-episode,specifies,Canonical ontology/glossary
+measurement-contract,behavioral-evidence,governs,Canonical ontology/glossary
+projection,scoped-invariance,tested across,Canonical ontology/glossary
+equivalence,scoped-invariance,expresses,Canonical ontology/glossary
+computational-interaction-science,interaction,studies,Canonical ontology/glossary

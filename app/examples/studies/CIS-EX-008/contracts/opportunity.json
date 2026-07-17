@@ -1,0 +1,56 @@
+{
+  "contract_id": "CIS-EX-008-OPPORTUNITY",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Opportunity profile", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": [
+    "No single opportunity predicate implies another, and non-selection does not imply non-awareness."
+  ],
+  "system_ref": "CIS-EX-008-TARGET",
+  "participant_ref": "CIS-EX-008-PARTICIPANT",
+  "action_ref": "CIS-EX-008-ACTION-TARGET",
+  "action_vocabulary_ref": { "id": "CIS-EX-008-ACTION-VOCABULARY", "version": "0.1.0" },
+  "projection_ref": "CIS-EX-008-PROJECTION-CONDITION",
+  "task_ref": "CIS-EX-008-TASK-DISCOVERY",
+  "authority_ref": "CIS-EX-008-AUTHORITY-MAP",
+  "state_ref": "CIS-EX-008-STATE-AT-EVENT",
+  "time_basis": "monotonic instrument time relative to condition start",
+  "relation_definitions": {
+    "domain_valid": "The target action exists in the frozen target operation vocabulary.",
+    "capable": "The participant and assigned apparatus satisfy the target action capability requirements.",
+    "permitted": "The frozen authority map permits the participant role to invoke the target action.",
+    "enabled": "The recorded pre-action state satisfies every target action precondition.",
+    "reachable": "A permitted target state is reachable within the preregistered action horizon under frozen semantics.",
+    "exposed": "The active projection contains an executable path to the target action.",
+    "signaled": "The active projection contains the audited target-operation signifier.",
+    "believed_available": "The participant reports availability through the frozen instrument before outcome disclosure.",
+    "selected": "The instrument records a target action selection event.",
+    "executed": "The system records a committed target transition.",
+    "successful": "A committed transition satisfies the frozen task completion criterion.",
+    "reversible": "The frozen recovery operation restores the exact preregistered state fields under the participant authority."
+  },
+  "expected_consequence_definition": "The target operation is expected to commit the frozen target transition and present the declared feedback without changing unrelated state.",
+  "recovery_definition": "The recovery operation must restore every preregistered recoverable state field and emit a verifiable transition record.",
+  "evidence_requirements": {
+    "system_relations": "frozen target, authority, state, and execution records",
+    "projection_relations": "versioned projection audit",
+    "belief_relation": "time-linked participant report",
+    "trace_relations": "verified and coded instrument events"
+  },
+  "uncertainty_requirements": {
+    "timing": "record clock resolution and synchronization error",
+    "coding": "retain unknown when evidence cannot distinguish states",
+    "belief": "record response scale, missingness, and administration time"
+  }
+}

@@ -1,0 +1,1372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Interaction Substrate Lab</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Interaction Substrate Lab" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Interaction Substrate Lab&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(--background) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: light-dark(rgb(255 255 255), rgb(24 24 24));
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 12.5px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--viz-font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed=&quot;true&quot;],
+    [aria-selected=&quot;true&quot;],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;cis-experience&quot; data-example-id=&quot;CIS-EX-003&quot; data-theory-version=&quot;1.0.0&quot;&gt;
+  &lt;style&gt;
+    #cis-experience { color: var(--foreground); display: grid; gap: 20px; }
+    #cis-experience .cis-identity { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    #cis-experience .cis-theory-path { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; color: var(--muted-foreground); }
+    #cis-experience .cis-theory-path strong { color: var(--foreground); font-weight: 500; }
+    #cis-experience .cis-control-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: end; }
+    #cis-experience .cis-control-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    #cis-experience .cis-switches { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    #cis-experience .cis-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    #cis-experience .cis-layout { display: grid; grid-template-columns: minmax(220px, .72fr) minmax(360px, 1.28fr); gap: 24px; align-items: stretch; }
+    #cis-experience .cis-state { display: grid; gap: 10px; justify-items: center; align-content: start; padding: 14px; }
+    #cis-experience .cis-state svg { width: 100%; max-width: 240px; height: auto; color: var(--foreground); }
+    #cis-experience .cis-door-frame { fill: var(--muted); stroke: var(--border); stroke-width: 2; }
+    #cis-experience .cis-door { fill: color-mix(in srgb, var(--viz-series-1) 20%, var(--card)); stroke: var(--viz-series-1); stroke-width: 2; transform-origin: 78px 24px; transition: transform 260ms ease; }
+    #cis-experience .cis-door.is-open { transform: perspective(220px) rotateY(-58deg); }
+    #cis-experience .cis-knob { fill: var(--foreground); }
+    #cis-experience .cis-lock { fill: color-mix(in srgb, var(--viz-series-3) 26%, transparent); stroke: var(--viz-series-3); stroke-width: 2; }
+    #cis-experience .cis-label { fill: var(--foreground); font-size: 12px; }
+    #cis-experience .cis-muted-label { fill: var(--muted-foreground); font-size: 11px; }
+    #cis-experience .cis-state-data { width: 100%; display: grid; gap: 5px; }
+    #cis-experience .cis-state-row { display: flex; justify-content: space-between; gap: 12px; }
+    #cis-experience .cis-state-row span:last-child { color: var(--foreground); }
+    #cis-experience .cis-opportunity { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    #cis-experience .cis-verdict { display: grid; gap: 9px; padding: 14px; }
+    #cis-experience .cis-verdict-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    #cis-experience .cis-verdict-row strong { font-weight: 500; }
+    #cis-experience .cis-verdict-value { white-space: nowrap; }
+    #cis-experience .cis-verdict-value[data-status=&quot;yes&quot;] { color: var(--foreground); }
+    #cis-experience .cis-verdict-value[data-status=&quot;no&quot;] { color: var(--destructive); }
+    #cis-experience .cis-verdict-value[data-status=&quot;unknown&quot;] { color: var(--muted-foreground); }
+    #cis-experience .cis-dim-group { display: grid; gap: 6px; }
+    #cis-experience .cis-dim-row { display: grid; gap: 0; }
+    #cis-experience .cis-dim { min-height: 38px; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 16px minmax(0, 1fr); column-gap: 7px; align-items: center; padding: 5px 0; }
+    #cis-experience .cis-dim:last-child { border-bottom: 0; }
+    #cis-experience .cis-dim-mark { color: var(--muted-foreground); font-weight: 500; }
+    #cis-experience .cis-dim[data-status=&quot;yes&quot;] .cis-dim-mark { color: var(--foreground); }
+    #cis-experience .cis-dim[data-status=&quot;no&quot;] .cis-dim-mark { color: var(--destructive); }
+    #cis-experience .cis-dim-copy { display: grid; gap: 1px; min-width: 0; }
+    #cis-experience .cis-dim-copy strong { font-weight: 500; }
+    #cis-experience .cis-dim-copy span { color: var(--muted-foreground); font-size: 11px; }
+    #cis-experience .cis-trace { width: 100%; height: auto; min-height: 124px; }
+    #cis-experience .cis-lane { stroke: var(--border); stroke-width: 1; }
+    #cis-experience .cis-event-ok { fill: var(--viz-series-2); }
+    #cis-experience .cis-event-fail { fill: var(--destructive); }
+    #cis-experience .cis-event-unknown { fill: var(--muted-foreground); }
+    #cis-experience .cis-event-stem { stroke: var(--border); stroke-width: 1; }
+    #cis-experience .cis-parity { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+    #cis-experience .cis-parity-mark { color: var(--destructive); font-weight: 500; }
+    #cis-experience .cis-parity-mark.is-pass { color: var(--foreground); }
+    #cis-experience .cis-section { display: grid; gap: 8px; }
+    #cis-experience .cis-section-label { color: var(--muted-foreground); font-size: 11px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
+    @media (max-width: 620px) {
+      #cis-experience .cis-layout { grid-template-columns: 1fr; }
+      #cis-experience .cis-control-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #cis-experience .cis-opportunity { grid-template-columns: 1fr; gap: 12px; }
+    }
+    @media (max-width: 380px) {
+      #cis-experience .cis-control-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #cis-experience .cis-door { transition: none; }
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;cis-identity text-small text-muted&quot;&gt;&lt;code&gt;CIS-EX-003&lt;/code&gt;&lt;span&gt;Executable concept model&lt;/span&gt;&lt;span&gt;·&lt;/span&gt;&lt;span&gt;Theory Version 1.0.0&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;cis-theory-path text-small&quot; aria-label=&quot;Analytical sequence&quot;&gt;
+    &lt;strong&gt;Can it happen?&lt;/strong&gt;&lt;span&gt;→&lt;/span&gt;&lt;strong&gt;Can this participant find it?&lt;/strong&gt;&lt;span&gt;→&lt;/span&gt;&lt;strong&gt;What actually occurred?&lt;/strong&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cis-control-grid&quot; aria-label=&quot;Simulation controls&quot;&gt;
+    &lt;label class=&quot;form-label&quot;&gt;Participant
+      &lt;select class=&quot;form-select&quot; id=&quot;cis-participant&quot;&gt;
+        &lt;option value=&quot;alice&quot;&gt;Alice · user · move&lt;/option&gt;
+        &lt;option value=&quot;root&quot;&gt;Root · admin · move + lock&lt;/option&gt;
+        &lt;option value=&quot;visitor&quot;&gt;Visitor · user · no capabilities&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot;&gt;Intended action
+      &lt;select class=&quot;form-select&quot; id=&quot;cis-action&quot;&gt;
+        &lt;option value=&quot;open&quot;&gt;Open → door open&lt;/option&gt;
+        &lt;option value=&quot;close&quot;&gt;Close → door closed&lt;/option&gt;
+        &lt;option value=&quot;lock&quot;&gt;Lock → lock engaged&lt;/option&gt;
+        &lt;option value=&quot;unlock&quot;&gt;Unlock → lock released&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot;&gt;Outcome after execution
+      &lt;select class=&quot;form-select&quot; id=&quot;cis-outcome&quot;&gt;
+        &lt;option value=&quot;unknown&quot;&gt;Not observed&lt;/option&gt;
+        &lt;option value=&quot;success&quot;&gt;Success&lt;/option&gt;
+        &lt;option value=&quot;failure&quot;&gt;Failure&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot;&gt;Search horizon &lt;span id=&quot;cis-horizon-value&quot;&gt;1&lt;/span&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;cis-horizon&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;4&quot; value=&quot;1&quot;&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cis-control-bar&quot; aria-label=&quot;Projection and belief controls&quot;&gt;
+    &lt;div class=&quot;cis-switches&quot;&gt;
+      &lt;label class=&quot;form-check form-switch&quot;&gt;&lt;input class=&quot;form-check-input&quot; id=&quot;cis-exposed&quot; type=&quot;checkbox&quot; checked&gt;&lt;span class=&quot;form-check-label&quot;&gt;Interface exposes action&lt;/span&gt;&lt;/label&gt;
+      &lt;label class=&quot;form-check form-switch&quot;&gt;&lt;input class=&quot;form-check-input&quot; id=&quot;cis-signaled&quot; type=&quot;checkbox&quot; checked&gt;&lt;span class=&quot;form-check-label&quot;&gt;Interface signals action&lt;/span&gt;&lt;/label&gt;
+      &lt;label class=&quot;form-check form-switch&quot;&gt;&lt;input class=&quot;form-check-input&quot; id=&quot;cis-believed&quot; type=&quot;checkbox&quot; checked&gt;&lt;span class=&quot;form-check-label&quot;&gt;Participant believes available&lt;/span&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cis-actions&quot;&gt;
+      &lt;button class=&quot;btn btn-primary&quot; id=&quot;cis-attempt&quot; type=&quot;button&quot;&gt;Try action&lt;/button&gt;
+      &lt;button class=&quot;btn btn-ghost&quot; id=&quot;cis-reset&quot; type=&quot;button&quot;&gt;Reset episode&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cis-layout&quot;&gt;
+    &lt;section class=&quot;card cis-state&quot; aria-label=&quot;Current system and projection state&quot;&gt;
+      &lt;div class=&quot;cis-section-label&quot;&gt;System now&lt;/div&gt;
+      &lt;svg viewBox=&quot;0 0 220 180&quot; role=&quot;img&quot; aria-label=&quot;Door system state&quot;&gt;
+        &lt;desc id=&quot;cis-door-desc&quot;&gt;A door shows the current open and locked state.&lt;/desc&gt;
+        &lt;rect class=&quot;cis-door-frame&quot; x=&quot;72&quot; y=&quot;18&quot; width=&quot;82&quot; height=&quot;136&quot; rx=&quot;3&quot;&gt;&lt;/rect&gt;
+        &lt;g id=&quot;cis-door-panel&quot; class=&quot;cis-door&quot;&gt;
+          &lt;rect x=&quot;78&quot; y=&quot;24&quot; width=&quot;70&quot; height=&quot;124&quot; rx=&quot;2&quot;&gt;&lt;/rect&gt;
+          &lt;circle class=&quot;cis-knob&quot; cx=&quot;136&quot; cy=&quot;88&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g id=&quot;cis-lock-mark&quot; transform=&quot;translate(160 68)&quot;&gt;
+          &lt;path class=&quot;cis-lock&quot; d=&quot;M4 16V10a10 10 0 0 1 20 0v6h-5v-6a5 5 0 0 0-10 0v6z&quot;&gt;&lt;/path&gt;
+          &lt;rect class=&quot;cis-lock&quot; x=&quot;0&quot; y=&quot;16&quot; width=&quot;28&quot; height=&quot;24&quot; rx=&quot;3&quot;&gt;&lt;/rect&gt;
+        &lt;/g&gt;
+        &lt;text class=&quot;cis-label&quot; id=&quot;cis-state-label&quot; x=&quot;110&quot; y=&quot;170&quot; text-anchor=&quot;middle&quot;&gt;closed · unlocked&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;div class=&quot;cis-state-data text-small text-muted&quot;&gt;
+        &lt;div class=&quot;cis-state-row&quot;&gt;&lt;span&gt;Position&lt;/span&gt;&lt;span id=&quot;cis-position-value&quot;&gt;closed&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;cis-state-row&quot;&gt;&lt;span&gt;Lock&lt;/span&gt;&lt;span id=&quot;cis-lock-value&quot;&gt;released&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;cis-state-row&quot;&gt;&lt;span&gt;Projection&lt;/span&gt;&lt;span id=&quot;cis-projection-value&quot;&gt;open signaled&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;cis-parity text-small&quot; aria-live=&quot;polite&quot;&gt;
+        &lt;span class=&quot;cis-parity-mark&quot; id=&quot;cis-parity-mark&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
+        &lt;span id=&quot;cis-parity-label&quot;&gt;Checking C reference vector&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;code class=&quot;text-small&quot; id=&quot;cis-hash&quot;&gt;&lt;/code&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;cis-section&quot; aria-label=&quot;Opportunity profile and conclusion&quot;&gt;
+      &lt;div class=&quot;card cis-verdict&quot; aria-live=&quot;polite&quot;&gt;
+        &lt;div class=&quot;cis-verdict-row&quot;&gt;&lt;span&gt;System can execute this action now&lt;/span&gt;&lt;strong class=&quot;cis-verdict-value&quot; id=&quot;cis-executable-verdict&quot;&gt;&lt;/strong&gt;&lt;/div&gt;
+        &lt;div class=&quot;cis-verdict-row&quot;&gt;&lt;span&gt;Action is available through this projection&lt;/span&gt;&lt;strong class=&quot;cis-verdict-value&quot; id=&quot;cis-presented-verdict&quot;&gt;&lt;/strong&gt;&lt;/div&gt;
+        &lt;div class=&quot;cis-verdict-row&quot;&gt;&lt;span&gt;Participant belief matches projected availability&lt;/span&gt;&lt;strong class=&quot;cis-verdict-value&quot; id=&quot;cis-belief-verdict&quot;&gt;&lt;/strong&gt;&lt;/div&gt;
+        &lt;div class=&quot;text-small text-muted&quot; id=&quot;cis-verdict-reason&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;cis-section-label&quot;&gt;Why · each dimension answers a different question&lt;/div&gt;
+      &lt;div class=&quot;cis-opportunity&quot; id=&quot;cis-opportunity&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+
+  &lt;section class=&quot;cis-section&quot; aria-label=&quot;Interaction trace&quot;&gt;
+    &lt;div class=&quot;cis-section-label&quot;&gt;What happened · selection is not execution; execution is not success&lt;/div&gt;
+    &lt;svg class=&quot;cis-trace&quot; id=&quot;cis-trace&quot; viewBox=&quot;0 0 720 136&quot; role=&quot;img&quot; aria-label=&quot;Participant event trace&quot;&gt;
+      &lt;desc id=&quot;cis-trace-desc&quot;&gt;Events appear in participant lanes as actions are attempted.&lt;/desc&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;text-small text-muted&quot; id=&quot;cis-selected-detail&quot;&gt;No action selected in this episode.&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;script&gt;
+    (() =&gt; {
+      const root = document.getElementById(&#x27;cis-experience&#x27;);
+      const $ = (selector) =&gt; root.querySelector(selector);
+      const participants = {
+        alice: { label: &#x27;Alice&#x27;, role: 0, caps: 1, lane: 0 },
+        root: { label: &#x27;Root&#x27;, role: 1, caps: 3, lane: 1 },
+        visitor: { label: &#x27;Visitor&#x27;, role: 0, caps: 0, lane: 2 }
+      };
+      const actions = {
+        open: { label: &#x27;open&#x27;, cap: 1, roles: 1, reverse: &#x27;close&#x27;, target: s =&gt; s.position === 1, enabled: s =&gt; s.position === 0 &amp;&amp; s.locked === 0, apply: s =&gt; ({ position: 1, locked: s.locked }) },
+        close: { label: &#x27;close&#x27;, cap: 1, roles: 1, reverse: &#x27;open&#x27;, target: s =&gt; s.position === 0, enabled: s =&gt; s.position === 1, apply: s =&gt; ({ position: 0, locked: s.locked }) },
+        lock: { label: &#x27;lock&#x27;, cap: 2, roles: 2, reverse: &#x27;unlock&#x27;, target: s =&gt; s.locked === 1, enabled: s =&gt; s.position === 0, apply: s =&gt; ({ position: s.position, locked: 1 }) },
+        unlock: { label: &#x27;unlock&#x27;, cap: 2, roles: 2, reverse: &#x27;lock&#x27;, target: s =&gt; s.locked === 0, enabled: s =&gt; true, apply: s =&gt; ({ position: s.position, locked: 0 }) }
+      };
+      const cVectors = {
+        &#x27;0,0&#x27;: &#x27;16981056525137609861&#x27;,
+        &#x27;0,1&#x27;: &#x27;14748741118170020452&#x27;,
+        &#x27;1,0&#x27;: &#x27;11289045597036932164&#x27;,
+        &#x27;1,1&#x27;: &#x27;13521361004004521573&#x27;
+      };
+      const dims = [
+        [&#x27;domain&#x27;, &#x27;Domain-valid&#x27;, &#x27;declared action&#x27;],
+        [&#x27;capable&#x27;, &#x27;Capable&#x27;, &#x27;required resources&#x27;],
+        [&#x27;permitted&#x27;, &#x27;Permitted&#x27;, &#x27;role authority&#x27;],
+        [&#x27;enabled&#x27;, &#x27;Enabled&#x27;, &#x27;state preconditions&#x27;],
+        [&#x27;reachable&#x27;, &#x27;Reachable&#x27;, &#x27;target within horizon&#x27;],
+        [&#x27;exposed&#x27;, &#x27;Exposed&#x27;, &#x27;executable path shown&#x27;],
+        [&#x27;signaled&#x27;, &#x27;Signaled&#x27;, &#x27;operation indicated&#x27;],
+        [&#x27;believed&#x27;, &#x27;Believed&#x27;, &#x27;participant report&#x27;],
+        [&#x27;selected&#x27;, &#x27;Selected&#x27;, &#x27;attempt in trace&#x27;],
+        [&#x27;executed&#x27;, &#x27;Executed&#x27;, &#x27;transition committed&#x27;],
+        [&#x27;successful&#x27;, &#x27;Successful&#x27;, &#x27;explicit outcome&#x27;],
+        [&#x27;reversible&#x27;, &#x27;Reversible&#x27;, &#x27;exact round trip&#x27;]
+      ];
+      const dimGroups = [
+        [&#x27;Structural availability&#x27;, [&#x27;domain&#x27;, &#x27;capable&#x27;, &#x27;permitted&#x27;, &#x27;enabled&#x27;, &#x27;reachable&#x27;]],
+        [&#x27;Projection and belief&#x27;, [&#x27;exposed&#x27;, &#x27;signaled&#x27;, &#x27;believed&#x27;]],
+        [&#x27;Trace and consequence&#x27;, [&#x27;selected&#x27;, &#x27;executed&#x27;, &#x27;successful&#x27;, &#x27;reversible&#x27;]]
+      ];
+      let state = { position: 0, locked: 0 };
+      let trace = [];
+
+      function allowed(person, action) {
+        return (action.roles &amp; (1 &lt;&lt; person.role)) !== 0;
+      }
+      function capable(person, action) {
+        return (person.caps &amp; action.cap) === action.cap;
+      }
+      function sameState(a, b) {
+        return a.position === b.position &amp;&amp; a.locked === b.locked;
+      }
+      function successors(source, person) {
+        const next = [];
+        Object.values(actions).forEach(action =&gt; {
+          if (capable(person, action) &amp;&amp; allowed(person, action) &amp;&amp; action.enabled(source)) {
+            const candidate = action.apply(source);
+            if (!next.some(value =&gt; sameState(value, candidate))) next.push(candidate);
+          }
+        });
+        return next;
+      }
+      function reachable(source, person, target, horizon) {
+        const queue = [{ state: source, depth: 0 }];
+        const seen = new Set([`${source.position},${source.locked}`]);
+        while (queue.length) {
+          const current = queue.shift();
+          if (target(current.state)) return true;
+          if (current.depth &gt;= horizon) continue;
+          successors(current.state, person).forEach(next =&gt; {
+            const key = `${next.position},${next.locked}`;
+            if (!seen.has(key)) {
+              seen.add(key);
+              queue.push({ state: next, depth: current.depth + 1 });
+            }
+          });
+        }
+        return false;
+      }
+      function reversible(source, person, action) {
+        const reverse = actions[action.reverse];
+        if (!capable(person, action) || !allowed(person, action) || !action.enabled(source)) return false;
+        const changed = action.apply(source);
+        if (!capable(person, reverse) || !allowed(person, reverse) || !reverse.enabled(changed)) return false;
+        return sameState(reverse.apply(changed), source);
+      }
+      function hashState(source) {
+        const mask = (1n &lt;&lt; 64n) - 1n;
+        let hash = 14695981039346656037n;
+        hash = ((hash ^ 2n) * 1099511628211n) &amp; mask;
+        [source.position, source.locked].forEach(number =&gt; {
+          let value = BigInt(number) &amp; mask;
+          for (let byte = 0n; byte &lt; 8n; byte++) {
+            hash = ((hash ^ ((value &gt;&gt; (byte * 8n)) &amp; 255n)) * 1099511628211n) &amp; mask;
+          }
+        });
+        return hash.toString();
+      }
+      function profile() {
+        const personKey = $(&#x27;#cis-participant&#x27;).value;
+        const actionKey = $(&#x27;#cis-action&#x27;).value;
+        const person = participants[personKey];
+        const action = actions[actionKey];
+        const selected = trace.some(event =&gt; event.person === personKey &amp;&amp; event.action === actionKey);
+        const executed = trace.some(event =&gt; event.person === personKey &amp;&amp; event.action === actionKey &amp;&amp; event.executed);
+        const matching = trace.filter(event =&gt; event.person === personKey &amp;&amp; event.action === actionKey);
+        const successful = matching.some(event =&gt; event.executed &amp;&amp; event.outcome === &#x27;success&#x27;) ? true :
+          matching.some(event =&gt; event.executed &amp;&amp; event.outcome === &#x27;failure&#x27;) ? false : null;
+        return {
+          domain: true,
+          capable: capable(person, action),
+          permitted: allowed(person, action),
+          enabled: action.enabled(state),
+          reachable: reachable(state, person, action.target, Number($(&#x27;#cis-horizon&#x27;).value)),
+          exposed: $(&#x27;#cis-exposed&#x27;).checked,
+          signaled: $(&#x27;#cis-signaled&#x27;).checked,
+          believed: $(&#x27;#cis-believed&#x27;).checked,
+          selected,
+          executed,
+          successful,
+          reversible: reversible(state, person, action)
+        };
+      }
+      function renderTrace() {
+        const svg = $(&#x27;#cis-trace&#x27;);
+        const laneY = [34, 78, 122];
+        const labels = [&#x27;Alice&#x27;, &#x27;Root&#x27;, &#x27;Visitor&#x27;];
+        let markup = &#x27;&lt;desc id=&quot;cis-trace-desc&quot;&gt;Events appear in participant lanes as actions are attempted.&lt;/desc&gt;&#x27;;
+        labels.forEach((label, index) =&gt; {
+          markup += `&lt;text class=&quot;cis-muted-label&quot; x=&quot;6&quot; y=&quot;${laneY[index] + 4}&quot;&gt;${label}&lt;/text&gt;&lt;line class=&quot;cis-lane&quot; x1=&quot;62&quot; y1=&quot;${laneY[index]}&quot; x2=&quot;710&quot; y2=&quot;${laneY[index]}&quot;&gt;&lt;/line&gt;`;
+        });
+        trace.forEach((event, index) =&gt; {
+          const x = 82 + index * Math.min(56, 610 / Math.max(1, trace.length));
+          const y = laneY[participants[event.person].lane];
+          const eventClass = !event.executed ? &#x27;cis-event-fail&#x27; : event.outcome === &#x27;success&#x27; ? &#x27;cis-event-ok&#x27; : &#x27;cis-event-unknown&#x27;;
+          markup += `&lt;line class=&quot;cis-event-stem&quot; x1=&quot;${x}&quot; y1=&quot;${y}&quot; x2=&quot;${x}&quot; y2=&quot;${y - 14}&quot;&gt;&lt;/line&gt;&lt;circle class=&quot;${eventClass}&quot; cx=&quot;${x}&quot; cy=&quot;${y}&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;text class=&quot;cis-muted-label&quot; x=&quot;${x}&quot; y=&quot;${y - 18}&quot; text-anchor=&quot;middle&quot;&gt;${event.action}&lt;/text&gt;`;
+        });
+        svg.innerHTML = markup;
+      }
+      function render() {
+        const current = profile();
+        const systemExecutable = current.domain &amp;&amp; current.capable &amp;&amp; current.permitted &amp;&amp; current.enabled;
+        const projectedAvailable = systemExecutable &amp;&amp; current.exposed;
+        const beliefAligned = current.believed === projectedAvailable;
+        $(&#x27;#cis-horizon-value&#x27;).textContent = $(&#x27;#cis-horizon&#x27;).value;
+        $(&#x27;#cis-door-panel&#x27;).classList.toggle(&#x27;is-open&#x27;, state.position === 1);
+        $(&#x27;#cis-lock-mark&#x27;).style.display = state.locked === 1 ? &#x27;&#x27; : &#x27;none&#x27;;
+        $(&#x27;#cis-state-label&#x27;).textContent = `${state.position ? &#x27;open&#x27; : &#x27;closed&#x27;} · ${state.locked ? &#x27;locked&#x27; : &#x27;unlocked&#x27;}`;
+        $(&#x27;#cis-position-value&#x27;).textContent = state.position ? &#x27;open&#x27; : &#x27;closed&#x27;;
+        $(&#x27;#cis-lock-value&#x27;).textContent = state.locked ? &#x27;engaged&#x27; : &#x27;released&#x27;;
+        $(&#x27;#cis-projection-value&#x27;).textContent = `${$(&#x27;#cis-action&#x27;).value}: ${current.exposed ? &#x27;exposed&#x27; : &#x27;hidden&#x27;}, ${current.signaled ? &#x27;signaled&#x27; : &#x27;unsignaled&#x27;}`;
+        const hash = hashState(state);
+        const expected = cVectors[`${state.position},${state.locked}`];
+        const parity = hash === expected;
+        $(&#x27;#cis-parity-mark&#x27;).classList.toggle(&#x27;is-pass&#x27;, parity);
+        $(&#x27;#cis-parity-mark&#x27;).textContent = parity ? &#x27;✓&#x27; : &#x27;×&#x27;;
+        $(&#x27;#cis-parity-label&#x27;).textContent = parity ? &#x27;Matches C conformance vector&#x27; : &#x27;C conformance mismatch&#x27;;
+        $(&#x27;#cis-hash&#x27;).textContent = `state hash ${hash}`;
+        const verdict = (selector, value) =&gt; {
+          const element = $(selector);
+          element.dataset.status = value ? &#x27;yes&#x27; : &#x27;no&#x27;;
+          element.textContent = value ? &#x27;Yes&#x27; : &#x27;No&#x27;;
+        };
+        verdict(&#x27;#cis-executable-verdict&#x27;, systemExecutable);
+        verdict(&#x27;#cis-presented-verdict&#x27;, projectedAvailable);
+        verdict(&#x27;#cis-belief-verdict&#x27;, beliefAligned);
+        let reason = &#x27;All execution gates pass.&#x27;;
+        if (!current.capable) reason = &#x27;Blocked because the participant lacks the required capability.&#x27;;
+        else if (!current.permitted) reason = &#x27;Blocked because the participant role is not permitted.&#x27;;
+        else if (!current.enabled) reason = &#x27;Blocked because the current state does not satisfy the action preconditions.&#x27;;
+        else if (!current.exposed) reason = &#x27;Executable in the system, but this projection does not expose an action path.&#x27;;
+        else if (!current.signaled) reason = &#x27;Exposed and executable, but the projection does not signal the action.&#x27;;
+        else if (!beliefAligned) reason = &#x27;The participant report disagrees with projected availability.&#x27;;
+        $(&#x27;#cis-verdict-reason&#x27;).textContent = reason;
+        $(&#x27;#cis-opportunity&#x27;).innerHTML = dimGroups.map(([groupLabel, keys]) =&gt; {
+          const items = keys.map(key =&gt; {
+            const dimension = dims.find(([dimensionKey]) =&gt; dimensionKey === key);
+            const value = current[key];
+            const status = value === null ? &#x27;unknown&#x27; : value ? &#x27;yes&#x27; : &#x27;no&#x27;;
+            const mark = status === &#x27;yes&#x27; ? &#x27;✓&#x27; : status === &#x27;no&#x27; ? &#x27;×&#x27; : &#x27;?&#x27;;
+            const stateLabel = status === &#x27;unknown&#x27; ? &#x27;unknown&#x27; : status;
+            return `&lt;div class=&quot;cis-dim&quot; data-status=&quot;${status}&quot;&gt;&lt;span class=&quot;cis-dim-mark&quot; aria-hidden=&quot;true&quot;&gt;${mark}&lt;/span&gt;&lt;span class=&quot;cis-dim-copy&quot;&gt;&lt;strong&gt;${dimension[1]} · ${stateLabel}&lt;/strong&gt;&lt;span&gt;${dimension[2]}&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;`;
+          }).join(&#x27;&#x27;);
+          return `&lt;div class=&quot;cis-dim-group&quot;&gt;&lt;div class=&quot;cis-section-label&quot;&gt;${groupLabel}&lt;/div&gt;&lt;div class=&quot;cis-dim-row&quot;&gt;${items}&lt;/div&gt;&lt;/div&gt;`;
+        }).join(&#x27;&#x27;);
+        $(&#x27;#cis-selected-detail&#x27;).textContent = trace.length ?
+          `${trace.length} recorded selection${trace.length === 1 ? &#x27;&#x27; : &#x27;s&#x27;} · last: ${trace[trace.length - 1].result} · outcome ${trace[trace.length - 1].outcome}` :
+          &#x27;No action selected in this episode.&#x27;;
+        renderTrace();
+      }
+      function attempt() {
+        const personKey = $(&#x27;#cis-participant&#x27;).value;
+        const actionKey = $(&#x27;#cis-action&#x27;).value;
+        const person = participants[personKey];
+        const action = actions[actionKey];
+        let result;
+        let executed = false;
+        if (!capable(person, action)) result = &#x27;capability absent&#x27;;
+        else if (!allowed(person, action)) result = &#x27;permission denied&#x27;;
+        else if (!action.enabled(state)) result = &#x27;precondition unsatisfied&#x27;;
+        else {
+          state = action.apply(state);
+          executed = true;
+          result = &#x27;transition committed&#x27;;
+        }
+        trace.push({ person: personKey, action: actionKey, executed, outcome: executed ? $(&#x27;#cis-outcome&#x27;).value : &#x27;unknown&#x27;, result });
+        render();
+      }
+      root.querySelectorAll(&#x27;select, input&#x27;).forEach(control =&gt; control.addEventListener(&#x27;input&#x27;, render));
+      $(&#x27;#cis-attempt&#x27;).addEventListener(&#x27;click&#x27;, attempt);
+      $(&#x27;#cis-reset&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; {
+        state = { position: 0, locked: 0 };
+        trace = [];
+        render();
+      });
+      render();
+    })();
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>

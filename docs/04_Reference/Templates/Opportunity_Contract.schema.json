@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Opportunity_Contract.schema.json",
+  "title": "CompInt Opportunity Contract",
+  "allOf": [
+    {
+      "$ref": "Contract_Common.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "system_ref",
+        "participant_ref",
+        "action_ref",
+        "action_vocabulary_ref",
+        "projection_ref",
+        "task_ref",
+        "authority_ref",
+        "state_ref",
+        "time_basis",
+        "relation_definitions",
+        "expected_consequence_definition",
+        "recovery_definition",
+        "evidence_requirements",
+        "uncertainty_requirements"
+      ],
+      "properties": {
+        "system_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participant_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action_vocabulary_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "projection_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authority_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "time_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relation_definitions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "domain_valid",
+            "capable",
+            "permitted",
+            "enabled",
+            "reachable",
+            "exposed",
+            "signaled",
+            "believed_available",
+            "selected",
+            "executed",
+            "successful",
+            "reversible"
+          ],
+          "properties": {
+            "domain_valid": {
+              "type": "string",
+              "minLength": 1
+            },
+            "capable": {
+              "type": "string",
+              "minLength": 1
+            },
+            "permitted": {
+              "type": "string",
+              "minLength": 1
+            },
+            "enabled": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reachable": {
+              "type": "string",
+              "minLength": 1
+            },
+            "exposed": {
+              "type": "string",
+              "minLength": 1
+            },
+            "signaled": {
+              "type": "string",
+              "minLength": 1
+            },
+            "believed_available": {
+              "type": "string",
+              "minLength": 1
+            },
+            "selected": {
+              "type": "string",
+              "minLength": 1
+            },
+            "executed": {
+              "type": "string",
+              "minLength": 1
+            },
+            "successful": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reversible": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "expected_consequence_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recovery_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_requirements": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "uncertainty_requirements": {
+          "type": "object",
+          "minProperties": 1
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

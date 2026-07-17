@@ -1,0 +1,38 @@
+field,type,definition
+schema_version,semver,Dataset schema version; currently 0.3.0
+study_id,string,Stable study identifier
+study_version,semver,Immutable study package version
+theory_version,semver,CompInt theory version; currently 1.0.0
+protocol_ref,reference,Immutable protocol identifier and version
+contract_refs,object,Versioned references to instantiated research contracts
+construct_refs,list,Canonical labels with explicit ratified or unratified identifier status
+participant_id,string,Pseudonymous interaction participant identifier
+participant_kind,enum,person|collective|organism|computational_process|artificial_system|institution|hybrid
+roles,list,Declared participant roles
+capabilities,list,Declared effective capabilities
+authority,list,Declared authorization sources or scopes
+consent_ref,string|null,Versioned consent record reference when applicable
+episode_id,string,Interaction episode identifier
+interaction_status,enum,not_assessed|criteria_not_met|candidate|established_under_contract
+state_id,string,Declared state snapshot identifier
+payload_schema_ref,string,Schema governing an otherwise domain-specific payload
+record_id,string,Raw instrument record identifier
+timestamp,ISO-8601,Instrument observation time
+record_type,string,Instrument-specific type governed by payload schema
+missingness,enum,not_missing|missing_unknown|not_applicable|not_observed|withheld|invalid
+event_id,string,Coded event identifier
+coding_level,enum,verified_observation|coded_observation|attributed_action|attributed_behavior
+coding_status,enum,provisional|adjudicated|rejected
+trace_id,string,Formal or behavioral trace identifier
+attribution_status,enum,formal_only|provisional_behavioral|adjudicated_behavioral
+profile_id,string,Opportunity similarity or comparison profile identifier
+relation_status,enum,true|false|unknown with evidence and uncertainty
+measure_id,string,Derived measure identifier
+measurement_contract_ref,reference,Versioned measurement contract reference
+scale_type,enum,nominal|ordinal|interval|ratio|count|binary|duration
+value,typed object,Value with declared type and unit
+uncertainty_id,string,Typed uncertainty record identifier
+evidence_refs,list,Upstream records supporting a code measure or claim
+provenance,object,Source method time software and instrument versions
+prediction_id,string,Scoped prediction identifier with cutoff and calibration status
+comparison_id,string,Gate-and-profile comparison identifier

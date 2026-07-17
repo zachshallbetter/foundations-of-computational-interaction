@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Similarity_Contract.schema.json",
+  "title": "CompInt Similarity Contract",
+  "allOf": [
+    {
+      "$ref": "Contract_Common.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "comparison_target",
+        "frame",
+        "left_representation_ref",
+        "right_representation_ref",
+        "correspondence_mapping",
+        "invariants",
+        "variants",
+        "observables",
+        "admissible_transformations",
+        "prohibited_transformations",
+        "metrics",
+        "tolerances",
+        "uncertainty_model_ref",
+        "incomparability_rules",
+        "validity_domain",
+        "profile_rule",
+        "result_profile_ref"
+      ],
+      "properties": {
+        "comparison_target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame": {
+          "type": "string",
+          "minLength": 1
+        },
+        "left_representation_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "right_representation_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correspondence_mapping": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "left",
+              "right",
+              "rule"
+            ],
+            "properties": {
+              "left": {
+                "type": "string",
+                "minLength": 1
+              },
+              "right": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rule": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "invariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "observables": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "admissible_transformations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "prohibited_transformations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object"
+          }
+        },
+        "tolerances": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object"
+          }
+        },
+        "uncertainty_model_ref": {
+          "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/reference"
+        },
+        "incomparability_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "validity_domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result_profile_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

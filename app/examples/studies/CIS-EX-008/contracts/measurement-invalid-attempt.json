@@ -1,0 +1,49 @@
+{
+  "contract_id": "CIS-EX-008-MEASUREMENT-INVALID-ATTEMPT",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Attempted unavailable action", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery and recovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": ["A rejected attempt does not establish misunderstanding, carelessness, or participant deficit."],
+  "measurand": "count of valid selections rejected for capability, permission, or enablement before episode termination",
+  "unit": "attempts",
+  "level_of_analysis": "participant-condition episode",
+  "observation_model": "Each resolved selection is linked to the pre-action opportunity profile and typed execution result.",
+  "instrument_ref": { "id": "CIS-EX-008-INSTRUMENT-EVENT-LOG", "version": "0.1.0" },
+  "operationalization": "Count selections with a resolved rejection result of capability absent, permission denied, or precondition unsatisfied; exclude instrument-invalid selections and report them separately.",
+  "coding_rules": ["Resolve the pre-action state and authority version before classifying.", "Do not treat a hidden or unsignaled executable action as system-unavailable."],
+  "estimator": "preregistered condition contrast for episode counts with exposure time or opportunity count declared",
+  "scale_type": "count",
+  "permissible_transformations": ["rate per declared opportunity count when preregistered"],
+  "permissible_comparisons": ["condition contrast with identical target semantics and authority"],
+  "permitted_interpretations": ["The count reports resolved selections rejected for one of the frozen system-availability predicates during a valid observation window."],
+  "uncertainty_model_ref": { "id": "CIS-EX-008-UNCERTAINTY-INVALID-ATTEMPT", "version": "0.1.0" },
+  "uncertainty_budget": {
+    "state_resolution": "unresolved pre-action state invalidates the affected classification",
+    "authority_resolution": "unresolved authority invalidates the affected classification",
+    "exposure": "censored windows retain observed counts and explicit censoring status"
+  },
+  "reliability_evidence_requirements": ["replay reproduces state, authority, and typed rejection"],
+  "validity_evidence_requirements": ["rejection types are distinguishable from transport and instrumentation failures"],
+  "comparison_scope": {
+    "population": "reviewed and adequately supported study population",
+    "task": "frozen target-operation discovery and recovery task",
+    "projection": "frozen CIS-EX-008 condition versions",
+    "context": "reviewed devices, instructions, training, and setting"
+  },
+  "missingness_rules": {
+    "unresolved_state_or_authority": "mark invalid",
+    "no_attempt": "record observed zero only when the complete episode was validly observed",
+    "abandonment": "retain observed count and mark exposure as censored"
+  }
+}

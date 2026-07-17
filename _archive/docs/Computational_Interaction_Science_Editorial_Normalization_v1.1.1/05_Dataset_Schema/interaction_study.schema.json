@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Computational Interaction Study Dataset",
+  "type": "object",
+  "required": [
+    "study_id",
+    "interaction_episodes",
+    "records"
+  ],
+  "properties": {
+    "study_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "construct_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "population": {
+      "type": "object"
+    },
+    "task": {
+      "type": "object"
+    },
+    "context": {
+      "type": "object"
+    },
+    "projection": {
+      "type": "object"
+    },
+    "interaction_episodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "episode_id",
+          "start_time",
+          "end_time",
+          "participants"
+        ],
+        "properties": {
+          "episode_id": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "end_time": {
+            "type": "string"
+          },
+          "participants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "boundary": {
+            "type": "string"
+          },
+          "initial_state": {},
+          "final_state": {},
+          "completion_status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "record_id",
+          "episode_id",
+          "timestamp",
+          "record_type"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "episode_id": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "record_type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "payload": {},
+          "quality_flags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "coded_events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "measures": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+digraph CompIntContracts {
+  graph [rankdir=LR, bgcolor="#ffffff", pad="0.25", nodesep="0.38", ranksep="0.62", splines=polyline, fontname="Helvetica", label="CompInt contract architecture 0.2.0", labelloc=t, fontsize=18];
+  node [shape=component, style="filled", fillcolor="#eef2ff", color="#4b5563", fontcolor="#111827", fontname="Helvetica", fontsize=10, margin="0.14,0.09"];
+  edge [color="#374151", fontcolor="#374151", fontname="Helvetica", fontsize=9, arrowsize=0.65];
+
+  projection [label="Projection Contract\nunary"];
+  opportunity [label="Opportunity Contract\nunary"];
+  interaction [label="Interaction Contract\nrelational"];
+  behavioral [label="Behavioral Evidence Contract\nevidence-governed"];
+  measurement [label="Measurement Contract\nevidence-governed"];
+  similarity [label="Similarity Contract\nrelational"];
+  transfer [label="Transfer Contract\nrelational"];
+  strategy [label="Strategy Contract\nmulti-episode"];
+  prediction [label="Prediction Contract\ntarget + horizon"];
+  comparison [label="Comparison Contract\nrelational"];
+
+  raw [label="Raw instrument record", shape=box, fillcolor="#f4f1e8"];
+  coded [label="Verified / coded event", shape=box, fillcolor="#f4f1e8"];
+  trace [label="Attributed trace", shape=box, fillcolor="#f4f1e8"];
+  measure [label="Measure + uncertainty", shape=box, fillcolor="#f4f1e8"];
+  claim [label="Bounded comparison, transfer,\nstrategy, or prediction claim", shape=box, fillcolor="#fff0d8"];
+
+  projection -> opportunity [label="representation + operations"];
+  opportunity -> interaction [label="availability predicates"];
+  interaction -> behavioral [label="episode boundary + events"];
+  behavioral -> measurement [label="attribution + lineage"];
+  measurement -> similarity [label="typed measures"];
+  measurement -> transfer [label="baseline + outcome"];
+  behavioral -> strategy [label="multi-episode evidence"];
+  measurement -> prediction [label="target + evaluation"];
+  similarity -> comparison [label="typed profile"];
+  transfer -> comparison [label="transport limits"];
+  strategy -> comparison [label="rival discrimination"];
+  prediction -> comparison [label="calibration + scope"];
+
+  raw -> coded -> trace -> measure -> claim [color="#8b5e3c", penwidth=1.4, label="evidence lineage"];
+  behavioral -> coded [style=dotted, arrowhead=none];
+  behavioral -> trace [style=dotted, arrowhead=none];
+  measurement -> measure [style=dotted, arrowhead=none];
+  comparison -> claim [style=dotted, arrowhead=none];
+}

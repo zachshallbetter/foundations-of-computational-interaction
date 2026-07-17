@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "opportunity-profile.schema.json",
+  "title": "CompInt Opportunity Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_id",
+    "contract_ref",
+    "participant_ref",
+    "action_ref",
+    "state_ref",
+    "projection_ref",
+    "time",
+    "domain_valid",
+    "capable",
+    "permitted",
+    "enabled",
+    "reachable",
+    "exposed",
+    "signaled",
+    "believed_available",
+    "selected",
+    "executed",
+    "successful",
+    "reversible"
+  ],
+  "properties": {
+    "profile_id": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "contract_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "participant_ref": {
+      "type": "string"
+    },
+    "action_ref": {
+      "type": "string"
+    },
+    "state_ref": {
+      "type": "string"
+    },
+    "projection_ref": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "domain_valid": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "capable": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "permitted": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "enabled": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "reachable": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "exposed": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "signaled": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "believed_available": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "selected": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "executed": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "successful": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "reversible": {
+      "$ref": "common.schema.json#/$defs/relation_evidence"
+    },
+    "expected_consequence": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Contract_Common.schema.json",
+  "title": "CompInt Contract Common Fields",
+  "type": "object",
+  "required": [
+    "contract_id",
+    "schema_version",
+    "contract_version",
+    "theory_version",
+    "status",
+    "authority",
+    "construct_refs",
+    "scope",
+    "prohibited_interpretations"
+  ],
+  "properties": {
+    "contract_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "contract_version": {
+      "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/semver"
+    },
+    "theory_version": {
+      "const": "1.0.0"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "frozen",
+        "superseded"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "construct_refs": {
+      "type": "array",
+      "items": {
+        "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/construct_reference"
+      },
+      "uniqueItems": true
+    },
+    "scope": {
+      "$ref": "../Dataset_Schema/schemas/common.schema.json#/$defs/scope"
+    },
+    "prohibited_interpretations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "frozen_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}

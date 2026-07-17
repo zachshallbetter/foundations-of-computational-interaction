@@ -1,0 +1,45 @@
+{
+  "contract_id": "CIS-EX-008-PROJECTION-SIGNALED",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Projection", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery task",
+    "projection": "signaled action condition",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": [
+    "Exposure or signaling does not establish perception, understanding, usability, or accessibility."
+  ],
+  "target_ref": { "id": "CIS-EX-008-TARGET", "version": "0.1.0" },
+  "target_host": "CIS-EX-008-HOST-CONTROLLED",
+  "modality": ["visual", "pointer", "keyboard"],
+  "mapping_rule": "Preserve target state and operation semantics; expose the target operation and render one declared signifier adjacent to its control.",
+  "interpretation_assumptions": [
+    "The signifier label is understandable only within the reviewed participant and task scope."
+  ],
+  "preserved_properties": ["target state", "operation identity", "transition semantics", "feedback latency bound"],
+  "transformed_properties": ["host-specific control geometry"],
+  "omitted_properties": ["implementation internals"],
+  "introduced_properties": ["target-operation signifier"],
+  "exposed_operations": ["target operation", "recovery operation"],
+  "signifiers": ["adjacent target-operation text label"],
+  "feedback_channels": ["visible state transition", "typed execution result"],
+  "observer_class": "reviewed study participants after standardized training",
+  "intended_use": "test the effect of declared signaling while holding target semantics and exposed operations constant",
+  "tolerances": [
+    { "property": "feedback latency", "maximum_difference_ms": 10 }
+  ],
+  "uncertainty_refs": ["CIS-EX-008-UNCERTAINTY-INSTRUMENT"],
+  "failure_conditions": [
+    "Target or recovery operation differs between conditions.",
+    "Measured feedback latency exceeds the preregistered equivalence bound.",
+    "The target signifier is absent or appears in the unsignaled condition."
+  ]
+}

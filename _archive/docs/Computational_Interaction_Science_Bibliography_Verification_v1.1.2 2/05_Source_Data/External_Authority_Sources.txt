@@ -1,0 +1,5 @@
+https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+https://www.crossref.org/documentation/retrieve-metadata/simple-text-query/
+https://www.loc.gov/marc/bibliographic/
+https://mitpress.mit.edu/9780262026499/principles-of-model-checking/
+https://doi.org/10.1002/asi.5090190103

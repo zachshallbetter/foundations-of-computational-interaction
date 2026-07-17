@@ -1,0 +1,9 @@
+example_id,title,type,source,theory_version,run_or_open,validation_definition
+CIS-EX-001,Minimal Door Transition,C,examples/door.c,1.0.0,make demo,examples/README.md#cis-ex-001--minimal-door-transition
+CIS-EX-002,Door State Conformance Vectors,C,examples/conformance.c,1.0.0,make conformance,examples/README.md#cis-ex-002--door-state-conformance-vectors
+CIS-EX-003,Interaction Substrate Lab,HTML,examples/visualizations/src/interaction-substrate-lab.html,1.0.0,open examples/visualizations/interaction-substrate-lab.html in browser,examples/README.md#cis-ex-003--interaction-substrate-lab
+CIS-EX-004,Projection and Invariance Workbench,HTML,examples/visualizations/src/projection-invariance-workbench.html,1.0.0,open examples/visualizations/projection-invariance-workbench.html in browser,examples/README.md#cis-ex-004--projection-and-invariance-workbench
+CIS-EX-005,Evidence and Inference Ladder,HTML,examples/visualizations/src/evidence-inference-ladder.html,1.0.0,open examples/visualizations/evidence-inference-ladder.html in browser,examples/README.md#cis-ex-005--evidence-and-inference-ladder
+CIS-EX-006,GUI/CLI Projection Benchmark,C,examples/benchmarks/projection-benchmark.c,1.0.0,make benchmarks,examples/README.md#cis-ex-006--guicli-projection-benchmark
+CIS-EX-007,Conversational Overclaim Benchmark,C,examples/benchmarks/overclaim-benchmark.c,1.0.0,make benchmarks,examples/README.md#cis-ex-007--conversational-overclaim-benchmark
+CIS-EX-008,Projection Signaling Study Protocol,STUDY_PROTOCOL,examples/studies/CIS-EX-008_projection-signaling-study.md,1.0.0,read protocol,examples/README.md#cis-ex-008--projection-signaling-study-protocol

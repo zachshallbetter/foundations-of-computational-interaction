@@ -1,0 +1,49 @@
+{
+  "contract_id": "CIS-EX-008-MEASUREMENT-DISCOVERY",
+  "schema_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "theory_version": "1.0.0",
+  "status": "draft",
+  "authority": "CIS-EX-008 proposed protocol; not authorized for collection",
+  "construct_refs": [
+    { "label": "Unprompted discovery event", "identifier_status": "unratified", "canonical_id": null }
+  ],
+  "scope": {
+    "population": "population pending methods and accessibility review",
+    "task": "bounded target-operation discovery task",
+    "projection": "CIS-EX-008 signaled and unsignaled conditions",
+    "context": "controlled technical pilot"
+  },
+  "prohibited_interpretations": ["Selection is not proof of awareness before selection, understanding, or general discoverability."],
+  "measurand": "whether the first valid target-action selection preceded any prompt or target-operation disclosure",
+  "unit": null,
+  "level_of_analysis": "participant-condition episode",
+  "observation_model": "Time-linked prompt, disclosure, and valid selection events are observed by the frozen instrument and coded under the Behavioral Evidence Contract.",
+  "instrument_ref": { "id": "CIS-EX-008-INSTRUMENT-EVENT-LOG", "version": "0.1.0" },
+  "operationalization": "One when a valid target selection occurs before every prompt or disclosure event in the episode; zero when a prompt or disclosure occurs first; missing when ordering or required capture is unresolved.",
+  "coding_rules": ["Use monotonic event order after identity resolution.", "Do not convert unresolved ordering, abandonment before observability, or invalid capture to zero."],
+  "estimator": "preregistered condition contrast in episode-level probability with participant repeated structure",
+  "scale_type": "binary",
+  "permissible_transformations": ["logical complement with relabeled estimand"],
+  "permissible_comparisons": ["signaled versus unsignaled condition inside the reviewed scope"],
+  "permitted_interpretations": ["Within the frozen observation window, the recorded target selection preceded every detected prompt or target-operation disclosure."],
+  "uncertainty_model_ref": { "id": "CIS-EX-008-UNCERTAINTY-DISCOVERY", "version": "0.1.0" },
+  "uncertainty_budget": {
+    "event_order": "bounded by verified monotonic-clock resolution",
+    "prompt_detection": "unresolved prompts invalidate the primary episode measure",
+    "instrument_capture": "missing required records produce missing_unknown"
+  },
+  "reliability_evidence_requirements": ["independent reproduction of event ordering and prompt classification"],
+  "validity_evidence_requirements": ["audit that prompts and uncontrolled target signifiers are detected", "manipulation check that the declared signifier differs between conditions"],
+  "comparison_scope": {
+    "population": "reviewed and adequately supported study population",
+    "task": "frozen target-operation discovery task",
+    "projection": "frozen CIS-EX-008 condition versions",
+    "context": "reviewed devices, instructions, training, and setting"
+  },
+  "missingness_rules": {
+    "invalid_capture": "mark invalid and retain audit count",
+    "unresolved_order": "mark missing_unknown",
+    "abandonment": "report separately; do not recode automatically"
+  }
+}

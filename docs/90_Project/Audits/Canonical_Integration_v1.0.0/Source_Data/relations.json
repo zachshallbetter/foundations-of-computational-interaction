@@ -1,0 +1,338 @@
+[
+  {
+    "source": "domain-commitments",
+    "target": "system-state",
+    "source_term": "Domain commitments",
+    "target_term": "System state",
+    "relation": "constrains",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "domain-commitments",
+    "target": "semantic-assignment",
+    "source_term": "Domain commitments",
+    "target_term": "Semantic assignment",
+    "relation": "constrains",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "semantic-assignment",
+    "target": "semantic-state",
+    "source_term": "Semantic assignment",
+    "target_term": "Semantic state",
+    "relation": "licenses",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "system-state",
+    "target": "projection",
+    "source_term": "System state",
+    "target_term": "Projection",
+    "relation": "source for",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "semantic-assignment",
+    "target": "projection",
+    "source_term": "Semantic assignment",
+    "target_term": "Projection",
+    "relation": "source for",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "projection",
+    "target": "representation",
+    "source_term": "Projection",
+    "target_term": "Representation",
+    "relation": "realizes",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "representation",
+    "target": "interpretation",
+    "source_term": "Representation",
+    "target_term": "Interpretation",
+    "relation": "supports",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interpretation",
+    "target": "opportunity-profile",
+    "source_term": "Interpretation",
+    "target_term": "Opportunity profile",
+    "relation": "informs",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "system-state",
+    "target": "opportunity-profile",
+    "source_term": "System state",
+    "target_term": "Opportunity profile",
+    "relation": "constrains",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "projection",
+    "target": "opportunity-profile",
+    "source_term": "Projection",
+    "target_term": "Opportunity profile",
+    "relation": "exposes",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "opportunity-profile",
+    "target": "interaction-episode",
+    "source_term": "Opportunity profile",
+    "target_term": "Interaction episode",
+    "relation": "conditions",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "coupling",
+    "target": "interaction-episode",
+    "source_term": "Coupling",
+    "target_term": "Interaction episode",
+    "relation": "constitutes",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interaction-participant",
+    "target": "coupling",
+    "source_term": "Interaction participant",
+    "target_term": "Coupling",
+    "relation": "participates in",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "observation",
+    "target": "trace",
+    "source_term": "Observation",
+    "target_term": "Trace",
+    "relation": "records",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "trace",
+    "target": "measurement-contract",
+    "source_term": "Trace",
+    "target_term": "Measurement contract",
+    "relation": "input to",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "measurement-contract",
+    "target": "interaction-similarity",
+    "source_term": "Measurement contract",
+    "target_term": "Interaction similarity",
+    "relation": "supports",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interaction-similarity",
+    "target": "equivalence",
+    "source_term": "Interaction similarity",
+    "target_term": "Equivalence",
+    "relation": "types",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "policy",
+    "target": "strategy",
+    "source_term": "Policy",
+    "target_term": "Strategy",
+    "relation": "component of",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interaction-history",
+    "target": "strategy",
+    "source_term": "Interaction history",
+    "target_term": "Strategy",
+    "relation": "updates",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interaction-history",
+    "target": "interpretation",
+    "source_term": "Interaction history",
+    "target_term": "Interpretation",
+    "relation": "conditions",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interaction-history",
+    "target": "believed-action",
+    "source_term": "Interaction history",
+    "target_term": "Believed action",
+    "relation": "conditions",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "affordance",
+    "target": "opportunity-profile",
+    "source_term": "Affordance",
+    "target_term": "Opportunity profile",
+    "relation": "contributes",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "capability",
+    "target": "opportunity-profile",
+    "source_term": "Capability",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "permission",
+    "target": "opportunity-profile",
+    "source_term": "Permission",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "enablement",
+    "target": "opportunity-profile",
+    "source_term": "Enablement",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "reachability",
+    "target": "opportunity-profile",
+    "source_term": "Reachability",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "exposure",
+    "target": "opportunity-profile",
+    "source_term": "Exposure",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "signaling",
+    "target": "opportunity-profile",
+    "source_term": "Signaling",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "believed-action",
+    "target": "opportunity-profile",
+    "source_term": "Believed action",
+    "target_term": "Opportunity profile",
+    "relation": "component",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "action",
+    "target": "state-transition",
+    "source_term": "Action",
+    "target_term": "State transition",
+    "relation": "may produce",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "state-transition",
+    "target": "system-state",
+    "source_term": "State transition",
+    "target_term": "System state",
+    "relation": "changes",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "agent",
+    "target": "interaction-participant",
+    "source_term": "Agent",
+    "target_term": "Interaction participant",
+    "relation": "subtype of",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "environment",
+    "target": "coupling",
+    "source_term": "Environment",
+    "target_term": "Coupling",
+    "relation": "mediates",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "token-identity",
+    "target": "interaction-episode",
+    "source_term": "Token identity",
+    "target_term": "Interaction episode",
+    "relation": "identifies",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "type-identity",
+    "target": "interaction-episode",
+    "source_term": "Type identity",
+    "target_term": "Interaction episode",
+    "relation": "classifies",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "similarity-contract",
+    "target": "interaction-similarity",
+    "source_term": "Similarity contract",
+    "target_term": "Interaction similarity",
+    "relation": "specifies",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "strategy-contract",
+    "target": "strategy",
+    "source_term": "Strategy contract",
+    "target_term": "Strategy",
+    "relation": "specifies",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "interaction-contract",
+    "target": "interaction-episode",
+    "source_term": "Interaction contract",
+    "target_term": "Interaction episode",
+    "relation": "specifies",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "measurement-contract",
+    "target": "behavioral-evidence",
+    "source_term": "Measurement contract",
+    "target_term": "Behavioral evidence",
+    "relation": "governs",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "projection",
+    "target": "scoped-invariance",
+    "source_term": "Projection",
+    "target_term": "Scoped invariance",
+    "relation": "tested across",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "equivalence",
+    "target": "scoped-invariance",
+    "source_term": "Equivalence",
+    "target_term": "Scoped invariance",
+    "relation": "expresses",
+    "authority": "Canonical ontology/glossary"
+  },
+  {
+    "source": "computational-interaction-science",
+    "target": "interaction",
+    "source_term": "Computational Interaction Science",
+    "target_term": "Interaction",
+    "relation": "studies",
+    "authority": "Canonical ontology/glossary"
+  }
+]

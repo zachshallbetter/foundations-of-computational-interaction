@@ -1,0 +1,127 @@
+<div id="cis-projection-workbench" data-example-id="CIS-EX-004" data-theory-version="1.0.0">
+  <style>
+    #cis-projection-workbench { color: var(--foreground); display: grid; gap: 18px; }
+    #cis-projection-workbench .pi-identity { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    #cis-projection-workbench .pi-path { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; color: var(--muted-foreground); }
+    #cis-projection-workbench .pi-path strong { color: var(--foreground); font-weight: 500; }
+    #cis-projection-workbench .pi-controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: end; }
+    #cis-projection-workbench .pi-stage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: stretch; }
+    #cis-projection-workbench .pi-card { display: grid; gap: 10px; padding: 14px; align-content: start; }
+    #cis-projection-workbench .pi-card[data-kind="target"] { background: color-mix(in srgb, var(--viz-series-1) 8%, var(--card)); }
+    #cis-projection-workbench .pi-card[data-kind="projection"] { background: var(--card); }
+    #cis-projection-workbench .pi-label { color: var(--muted-foreground); font-size: 11px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
+    #cis-projection-workbench .pi-field-list { display: grid; gap: 6px; }
+    #cis-projection-workbench .pi-field { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: baseline; padding: 7px 8px; background: var(--muted); border-radius: 6px; }
+    #cis-projection-workbench .pi-field strong { font-weight: 500; }
+    #cis-projection-workbench .pi-field span { color: var(--muted-foreground); }
+    #cis-projection-workbench .pi-field[data-kind="transformed"] { background: color-mix(in srgb, var(--viz-series-3) 12%, var(--card)); }
+    #cis-projection-workbench .pi-field[data-kind="introduced"] { background: color-mix(in srgb, var(--viz-series-4) 12%, var(--card)); }
+    #cis-projection-workbench .pi-field[data-kind="omitted"] { opacity: .58; }
+    #cis-projection-workbench .pi-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+    #cis-projection-workbench .pi-result { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    #cis-projection-workbench .pi-result strong { font-weight: 500; }
+    #cis-projection-workbench .pi-result span { color: var(--muted-foreground); font-size: 11px; }
+    #cis-projection-workbench .pi-verdict { min-height: 24px; padding-top: 8px; font-weight: 500; }
+    @media (max-width: 620px) {
+      #cis-projection-workbench .pi-controls { grid-template-columns: 1fr; }
+      #cis-projection-workbench .pi-stage { grid-template-columns: 1fr; }
+      #cis-projection-workbench .pi-results { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <div class="pi-identity text-small text-muted"><code>CIS-EX-004</code><span>Projection and invariance workbench</span><span>·</span><span>Theory Version 1.0.0</span></div>
+  <div class="pi-path text-small" aria-label="Comparison sequence"><strong>What stayed the same?</strong><span>→</span><strong>What changed?</strong><span>→</span><strong>Which comparison is licensed?</strong></div>
+
+  <div class="pi-controls" aria-label="Projection B controls">
+    <label class="form-label">How Projection B handles temperature
+      <select class="form-select" id="pi-temperature">
+        <option value="celsius">Preserve Celsius</option>
+        <option value="fahrenheit">Transform to Fahrenheit</option>
+        <option value="omit">Omit temperature</option>
+      </select>
+    </label>
+    <label class="form-check form-switch"><input class="form-check-input" id="pi-alarm" type="checkbox" checked><span class="form-check-label">Include alarm state</span></label>
+    <label class="form-check form-switch"><input class="form-check-input" id="pi-summary" type="checkbox"><span class="form-check-label">Introduce summary label</span></label>
+  </div>
+
+  <div class="pi-stage">
+    <section class="card pi-card" data-kind="target" aria-label="Declared target state">
+      <div class="pi-label">Target state · authority</div>
+      <div class="pi-field-list">
+        <div class="pi-field"><strong>temperature_c</strong><span>20</span></div>
+        <div class="pi-field"><strong>alarm</strong><span>active</span></div>
+        <div class="pi-field"><strong>mode</strong><span>automatic</span></div>
+      </div>
+      <div class="text-small text-muted">All comparison claims are relative to these declared fields.</div>
+    </section>
+
+    <section class="card pi-card" data-kind="projection" aria-label="Projection A">
+      <div class="pi-label">Projection A · operations</div>
+      <div class="pi-field-list">
+        <div class="pi-field"><strong>temperature_c</strong><span>20 · preserved</span></div>
+        <div class="pi-field"><strong>alarm</strong><span>active · preserved</span></div>
+        <div class="pi-field" data-kind="omitted"><strong>mode</strong><span>omitted</span></div>
+      </div>
+      <div class="text-small text-muted">Observer: trained operator · task: alarm response</div>
+    </section>
+
+    <section class="card pi-card" data-kind="projection" aria-label="Projection B">
+      <div class="pi-label">Projection B · adjustable</div>
+      <div class="pi-field-list" id="pi-projection-b"></div>
+      <div class="text-small text-muted">Every transform, omission, and introduction remains visible.</div>
+    </section>
+  </div>
+
+  <section aria-label="Typed comparison results">
+    <div class="pi-results" id="pi-results"></div>
+    <div class="pi-verdict text-small" id="pi-verdict" aria-live="polite"></div>
+  </section>
+
+  <script>
+    (() => {
+      const root = document.getElementById('cis-projection-workbench');
+      const $ = selector => root.querySelector(selector);
+      function render() {
+        const temperature = $('#pi-temperature').value;
+        const alarm = $('#pi-alarm').checked;
+        const summary = $('#pi-summary').checked;
+        const fields = [];
+        if (temperature === 'celsius') fields.push(['temperature_c', '20 · preserved', 'preserved']);
+        if (temperature === 'fahrenheit') fields.push(['temperature_f', '68 · transformed', 'transformed']);
+        if (temperature === 'omit') fields.push(['temperature', 'omitted', 'omitted']);
+        fields.push(alarm ? ['alarm', 'active · preserved', 'preserved'] : ['alarm', 'omitted', 'omitted']);
+        fields.push(['mode', 'omitted', 'omitted']);
+        if (summary) fields.push(['summary', 'attention required · introduced', 'introduced']);
+        $('#pi-projection-b').innerHTML = fields.map(([name, value, kind]) =>
+          `<div class="pi-field" data-kind="${kind}"><strong>${name}</strong><span>${value}</span></div>`
+        ).join('');
+
+        const temperatureComparable = temperature !== 'omit';
+        const alarmComparable = alarm;
+        const anyCommon = temperatureComparable || alarmComparable;
+        const structureEquivalent = temperature === 'celsius' && alarm && !summary;
+        const informationPreserved = temperatureComparable;
+        const taskInvariant = alarmComparable;
+        const results = [
+          ['Common space', anyCommon, anyCommon ? 'at least one mapped observable' : 'no mapped observables'],
+          ['Temperature', informationPreserved, temperature === 'fahrenheit' ? 'preserved after inverse transform' : temperatureComparable ? 'preserved directly' : 'not comparable'],
+          ['Alarm task', taskInvariant, taskInvariant ? 'decision signal preserved' : 'task evidence omitted'],
+          ['Structure', structureEquivalent, structureEquivalent ? 'same fields and kinds' : 'representation differs']
+        ];
+        $('#pi-results').innerHTML = results.map(([label, on, detail]) =>
+          `<div class="pi-result" data-on="${on}"><strong>${on ? '✓' : '×'} ${label}</strong><span>${detail}</span></div>`
+        ).join('');
+        if (!anyCommon) {
+          $('#pi-verdict').textContent = 'Incomparable: no defensible correspondence remains between the projections.';
+        } else if (structureEquivalent) {
+          $('#pi-verdict').textContent = 'Exact projection equivalence holds for this declared field contract; mode remains jointly omitted.';
+        } else {
+          const scope = [informationPreserved ? 'temperature information' : '', taskInvariant ? 'alarm task' : ''].filter(Boolean).join(' and ');
+          $('#pi-verdict').textContent = `Partial scoped invariance${scope ? `: ${scope} preserved` : ''}. No overall equivalence claim is licensed.`;
+        }
+      }
+      root.querySelectorAll('select, input').forEach(control => control.addEventListener('input', render));
+      render();
+    })();
+  </script>
+</div>

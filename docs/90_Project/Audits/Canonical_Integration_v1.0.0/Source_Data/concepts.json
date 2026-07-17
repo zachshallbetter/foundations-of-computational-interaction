@@ -1,0 +1,3588 @@
+[
+  {
+    "id": "domain-commitments",
+    "term": "Domain commitments",
+    "status": "Proposed",
+    "definition": "A set of commitments about admissible entities, categories, relations, identity conditions, modalities, and constraints in a domain. In computational work, these commitments may be approximated through ontologies, schemas, contracts, types, or model definitions, but none of those artifacts is automatically a philosophical ontology.",
+    "boundary": "Domain commitments specify what the model admits. They do not by themselves assign meaning, produce a representation, or determine interpretation.",
+    "paper_hits": [
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        3
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ]
+    ],
+    "originating_paper": "Ontology, Semantics, Representation, and Interpretation",
+    "supporting_papers": [
+      "Ontology, Semantics, Representation, and Interpretation",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?"
+    ],
+    "aliases": [
+      "ontology commitments"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "System state",
+      "Semantic assignment"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "system-state",
+    "term": "System state",
+    "status": "Proposed",
+    "definition": "The physical, computational, social, or modeled condition of a declared system at a particular time.",
+    "boundary": "State is not synonymous with data, meaning, representation, or observation. A state becomes content-bearing only under a specified semantics.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        3
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        2
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        1
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Interaction",
+      "Interaction Strategies",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "state"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Domain commitments",
+      "State transition"
+    ],
+    "dependents": [
+      "Projection",
+      "Opportunity profile"
+    ],
+    "contracts": [
+      "Projection Contract",
+      "Opportunity Contract",
+      "Interaction Contract",
+      "Behavioral Evidence Contract",
+      "Measurement Contract",
+      "Similarity Contract",
+      "Transfer Contract",
+      "Strategy Contract",
+      "Prediction Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "semantic-assignment",
+    "term": "Semantic assignment",
+    "status": "Proposed",
+    "definition": "A rule-governed assignment of content, denotation, truth conditions, inferential consequences, or transition behavior to expressions, states, signs, or operations within a specified system and domain.",
+    "boundary": "Formal semantic assignment is distinct from a person’s interpretation or understanding.",
+    "paper_hits": [
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        2
+      ]
+    ],
+    "originating_paper": "Ontology, Semantics, Representation, and Interpretation",
+    "supporting_papers": [
+      "Ontology, Semantics, Representation, and Interpretation"
+    ],
+    "aliases": [
+      "formal semantics"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Domain commitments"
+    ],
+    "dependents": [
+      "Semantic state",
+      "Projection"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "semantic-state",
+    "term": "Semantic state",
+    "status": "Proposed",
+    "definition": "The content-bearing assignments and relations currently licensed by a specified semantics for a system or discourse state.",
+    "boundary": "No observer-independent semantic state is assumed without an explicit theory and scope.",
+    "paper_hits": [
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        7
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "Ontology, Semantics, Representation, and Interpretation",
+    "supporting_papers": [
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Representation, Invariance, and Projection",
+      "Computational Interaction Science"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "No - latent/inferred",
+    "latent": "Yes",
+    "measurement": "Requires latent-variable model",
+    "dependencies": [
+      "Semantic assignment"
+    ],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "information",
+    "term": "Information",
+    "status": "Proposed",
+    "definition": "A typed measure or characterization of distinctions, correlations, descriptions, or content relative to a specified source, code, semantic relation, probability model, or use.",
+    "boundary": "Information is not a synonym for stored variables, data, meaning, semantic state, or interpretation. Every claim that information is preserved must name the information theory, source, code, task, or relevance criterion.",
+    "paper_hits": [
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        29
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        24
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        21
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        13
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        10
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        10
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        6
+      ],
+      [
+        "09",
+        "Measurement",
+        4
+      ],
+      [
+        "07",
+        "Interaction",
+        3
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        3
+      ],
+      [
+        "03",
+        "How Sciences Define Their Objects",
+        2
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Ontology, Semantics, Representation, and Interpretation",
+    "supporting_papers": [
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Representation, Invariance, and Projection",
+      "Interaction Strategies",
+      "Predicting Interaction",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "representation",
+    "term": "Representation",
+    "status": "Proposed",
+    "definition": "A materially or formally realized vehicle that provides selective access to a declared target through a mapping or correspondence and an interpretive practice.\n\nA representation may preserve, transform, omit, or introduce structure.",
+    "boundary": "A representation is not identical with its target. Equal reference does not imply semantic, inferential, behavioral, or interactional equivalence.",
+    "paper_hits": [
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        60
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        30
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        25
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        15
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        12
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        10
+      ],
+      [
+        "09",
+        "Measurement",
+        8
+      ],
+      [
+        "03",
+        "How Sciences Define Their Objects",
+        6
+      ],
+      [
+        "08",
+        "Behavior",
+        6
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        6
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        5
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        4
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        4
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        3
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        3
+      ],
+      [
+        "07",
+        "Interaction",
+        2
+      ]
+    ],
+    "originating_paper": "Representation, Invariance, and Projection",
+    "supporting_papers": [
+      "Representation, Invariance, and Projection",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Interaction Transfer",
+      "Computational Interaction Science"
+    ],
+    "aliases": [
+      "representational vehicle"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Projection"
+    ],
+    "dependents": [
+      "Interpretation"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [
+      "A table and graph that selectively expose the same declared target."
+    ],
+    "counterexamples": [
+      "The target itself, treated as identical with its representation."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "projection",
+    "term": "Projection",
+    "status": "Proposed analytical role",
+    "definition": "A declared transformation from a target description, system state, or semantic assignment into an accessible representational form.\n\nA projection contract specifies:\n\n- target and authority;\n- mapping or construction rule;\n- interpretation assumptions;\n- preserved properties;\n- transformed properties;\n- omitted properties;\n- introduced properties;\n- available operations;\n- observer assumptions;\n- intended use;\n- context and scope;\n- uncertainty, tolerance, and failure conditions.",
+    "boundary": "Projection coordinates established concepts such as views, abstractions, encodings, lenses, simulations, model morphisms, and renderings. It is not a new metaphysical substance.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        32
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        24
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        14
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        10
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        7
+      ],
+      [
+        "09",
+        "Measurement",
+        6
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        5
+      ],
+      [
+        "08",
+        "Behavior",
+        3
+      ],
+      [
+        "07",
+        "Interaction",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        2
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Representation, Invariance, and Projection",
+      "Formal Models of Computational Interaction",
+      "Computational Interaction Science",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "view",
+      "encoding",
+      "rendering"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "System state",
+      "Semantic assignment"
+    ],
+    "dependents": [
+      "Representation",
+      "Opportunity profile",
+      "Scoped invariance"
+    ],
+    "contracts": [
+      "Projection Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [
+      "A declared mapping from a system state to a GUI, API, or auditory form."
+    ],
+    "counterexamples": [
+      "An implementation artifact with no declared target, mapping, or scope."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "scoped-invariance",
+    "term": "Scoped invariance",
+    "status": "Proposed theory",
+    "definition": "A declared property remains invariant across projections when independently specified comparison rules show that it is preserved for a stated target, observer class, context, metric, and tolerance.\n\nInvariance must be typed. Relevant types include:\n\n- ontological;\n- semantic;\n- informational;\n- structural;\n- topological;\n- computational;\n- inferential;\n- task;\n- behavioral;\n- interactional.",
+    "boundary": "No one invariance type implies another.",
+    "paper_hits": [],
+    "originating_paper": "Canonical glossary",
+    "supporting_papers": [],
+    "aliases": [],
+    "deprecated": [
+      "semantic invariance"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Projection",
+      "Equivalence"
+    ],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interpretation",
+    "term": "Interpretation",
+    "status": "Proposed",
+    "definition": "The application, recovery, construction, negotiation, or revision of semantic relations by an interpreting system under a context, competence, history, and purpose.",
+    "boundary": "Interpretation is a process or event. Semantics specifies or stabilizes admissible relations; interpretation applies or revises them.",
+    "paper_hits": [
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        47
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        24
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        20
+      ],
+      [
+        "09",
+        "Measurement",
+        19
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        9
+      ],
+      [
+        "07",
+        "Interaction",
+        7
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        6
+      ],
+      [
+        "08",
+        "Behavior",
+        4
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        3
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        3
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        2
+      ]
+    ],
+    "originating_paper": "Ontology, Semantics, Representation, and Interpretation",
+    "supporting_papers": [
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Representation, Invariance, and Projection",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Measurement",
+      "Computational Interaction Science"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "No - latent/inferred",
+    "latent": "Yes",
+    "measurement": "Requires latent-variable model",
+    "dependencies": [
+      "Representation",
+      "Interaction history"
+    ],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [
+      "An agent applies conventions and context to a signaled operation."
+    ],
+    "counterexamples": [
+      "Formal semantics treated as identical to a participant’s understanding."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction-participant",
+    "term": "Interaction participant",
+    "status": "Proposed",
+    "definition": "Any bounded person, collective, organism, computational process, artificial system, institution, or hybrid arrangement occupying a consequential role within an interaction.\n\nA participant may observe, interpret, act, constrain, authorize, mediate, represent, store, or transform state. Participation does not imply autonomy, intelligence, consciousness, or learning.",
+    "boundary": "Interaction participant is the top-level role. More specific terms such as human participant, computational participant, institution, observer, mediator, autonomous agent, and AI agent should be used when their additional commitments matter.",
+    "paper_hits": [],
+    "originating_paper": "Canonical glossary",
+    "supporting_papers": [],
+    "aliases": [
+      "participant"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Agent"
+    ],
+    "dependents": [
+      "Coupling"
+    ],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "agent",
+    "term": "Agent",
+    "status": "Proposed subtype",
+    "definition": "An acting interaction participant that selects or produces actions through a policy, rule, control process, intention, or other action-selection organization.",
+    "boundary": "Agent is not the universal term for every participant. An AI model is not automatically an agent; it becomes part of an agentic system when observations, action-selection, and consequential operations are supplied.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        21
+      ],
+      [
+        "07",
+        "Interaction",
+        9
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        8
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        8
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        6
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        6
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        5
+      ],
+      [
+        "08",
+        "Behavior",
+        4
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        4
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        2
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Interaction",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "Formal Models of Computational Interaction",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Interaction participant"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "environment",
+    "term": "Environment",
+    "status": "Proposed",
+    "definition": "The declared physical, computational, social, symbolic, or mixed system within which action and state transition occur.",
+    "boundary": "The environment is not identical with what an agent can observe through a representation.",
+    "paper_hits": [
+      [
+        "08",
+        "Behavior",
+        13
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        11
+      ],
+      [
+        "07",
+        "Interaction",
+        8
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        7
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        5
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        3
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        3
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        2
+      ],
+      [
+        "09",
+        "Measurement",
+        1
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        1
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "Behavior",
+    "supporting_papers": [
+      "Behavior",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "Interaction",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Ontology, Semantics, Representation, and Interpretation"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Coupling"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "affordance",
+    "term": "Affordance",
+    "status": "Established external construct",
+    "definition": "An action-relevant relation between an agent’s effectivities or capabilities and environmental structure that makes a class of action possible. In the Gibsonian sense, perception is not required for the affordance to exist.",
+    "boundary": "Affordance is not synonymous with permission, signaling, belief, execution success, or reversibility.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        28
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        2
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        1
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        1
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Representation, Invariance, and Projection",
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Predicting Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [
+      "perceived affordance"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "opportunity",
+    "term": "Opportunity",
+    "status": "Proposed coordination framework",
+    "definition": "A typed and indexed analytical profile coordinating action-availability relations under declared system, agent, projection, task, authority, state, and temporal conditions.\n\nOpportunity is not a new primitive. It coordinates established relations such as feasibility, capability, permission, enablement, reachability, exposure, signaling, belief, expected consequence, reversibility, and uncertainty.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        32
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        15
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        14
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        14
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        13
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        9
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        8
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        8
+      ],
+      [
+        "09",
+        "Measurement",
+        7
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        6
+      ],
+      [
+        "08",
+        "Behavior",
+        6
+      ],
+      [
+        "07",
+        "Interaction",
+        3
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        1
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Interaction Similarity",
+      "Interaction Strategies",
+      "Computational Interaction Science",
+      "Predicting Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [
+      "opportunity as a primitive"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [
+      "Opportunity Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "opportunity-profile",
+    "term": "Opportunity profile",
+    "status": "Proposed",
+    "definition": "For an agent, action, state, projection, and time, an opportunity profile records the relevant typed relations:\n\n- domain-valid;\n- effectively capable;\n- permitted;\n- enabled;\n- reachable outcomes;\n- exposed;\n- signaled;\n- believed available;\n- expected consequences;\n- selected;\n- executed;\n- successful;\n- reversible or recoverable;\n- uncertainty and provenance.\n\nSelected, executed, and successful are trace predicates rather than availability sets.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        1
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        1
+      ],
+      [
+        "08",
+        "Behavior",
+        1
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "Representation, Invariance, and Projection",
+    "supporting_papers": [
+      "Representation, Invariance, and Projection",
+      "Opportunity, Affordance, and Action Availability",
+      "Behavior",
+      "Interaction Similarity",
+      "Interaction Strategies"
+    ],
+    "aliases": [
+      "typed opportunity profile"
+    ],
+    "deprecated": [
+      "opportunity as a primitive"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [
+      "Interpretation",
+      "System state",
+      "Projection",
+      "Affordance",
+      "Capability",
+      "Permission",
+      "Enablement",
+      "Reachability",
+      "Exposure",
+      "Signaling",
+      "Believed action"
+    ],
+    "dependents": [
+      "Interaction episode"
+    ],
+    "contracts": [
+      "Opportunity Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [
+      "A profile distinguishing permitted, enabled, exposed, signaled, and believed actions."
+    ],
+    "counterexamples": [
+      "A visible control treated as proof that an action is feasible or believed."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "capability",
+    "term": "Capability",
+    "status": "Proposed",
+    "definition": "The effective capacity or resources required for an agent-system coupling to execute an action or bring about an outcome under declared conditions.",
+    "boundary": "Capability is distinct from permission. Security capability tokens must be named explicitly when that narrower meaning is intended.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        16
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        1
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        1
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Computational Interaction Science",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "permission",
+    "term": "Permission",
+    "status": "Proposed",
+    "definition": "Authorization under a policy, role, rule, authority, or institutional condition for a subject to perform an operation.",
+    "boundary": "A prohibited action may remain technically possible.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        13
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        3
+      ],
+      [
+        "08",
+        "Behavior",
+        1
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        1
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Computational Interaction Science",
+      "Behavior",
+      "Interaction Similarity",
+      "Interaction Strategies"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "enablement",
+    "term": "Enablement",
+    "status": "Proposed",
+    "definition": "The condition in which an action’s current-state preconditions are satisfied.",
+    "boundary": "Enablement is local to the current state and differs from multi-step reachability.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        8
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Formal Models of Computational Interaction"
+    ],
+    "aliases": [
+      "enabled action"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "reachability",
+    "term": "Reachability",
+    "status": "Proposed",
+    "definition": "The existence of at least one admissible transition sequence from a declared initial state to a target state or outcome within specified constraints and horizon.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        14
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        5
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Formal Models of Computational Interaction",
+      "Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "exposure",
+    "term": "Exposure",
+    "status": "Proposed",
+    "definition": "Provision by the current projection of an executable access path to an operation.",
+    "boundary": "An exposed operation may be hidden, poorly signaled, unknown, or inaccessible to a particular observer.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        29
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        8
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        5
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        3
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        2
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "09",
+        "Measurement",
+        1
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Interaction Transfer",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Predicting Interaction",
+      "Formal Models of Computational Interaction"
+    ],
+    "aliases": [
+      "operation exposure"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "signaling",
+    "term": "Signaling",
+    "status": "Proposed",
+    "definition": "Perceivable information indicating an operation, condition, consequence, state, or recovery path.",
+    "boundary": "A signal may be true, incomplete, ambiguous, or false.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        21
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        3
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        2
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        2
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ],
+      [
+        "09",
+        "Measurement",
+        1
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Computational Interaction Science",
+      "Formal Models of Computational Interaction",
+      "Predicting Interaction",
+      "Comparative Interaction"
+    ],
+    "aliases": [
+      "signifier"
+    ],
+    "deprecated": [
+      "perceived affordance"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "discoverability",
+    "term": "Discoverability",
+    "status": "Proposed",
+    "definition": "The empirically observed probability and process by which an agent identifies an action or relation under declared task, projection, knowledge, modality, context, and time conditions.",
+    "boundary": "Discoverability is not a static visual property.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        7
+      ],
+      [
+        "09",
+        "Measurement",
+        4
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        2
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "Measurement",
+      "Representation, Invariance, and Projection",
+      "Interaction Transfer",
+      "Comparative Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [
+      "perceived affordance"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "believed-action",
+    "term": "Believed action",
+    "status": "Proposed latent variable",
+    "definition": "An action represented by an agent as available, with an associated confidence and expected consequence.",
+    "boundary": "Belief cannot be read directly from non-selection or task completion. It requires elicitation or a validated inferential model.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        5
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        3
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        1
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Interaction Similarity",
+      "Interaction Transfer",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "believed availability"
+    ],
+    "deprecated": [
+      "perceived affordance"
+    ],
+    "observable": "No - latent/inferred",
+    "latent": "Yes",
+    "measurement": "Requires latent-variable model",
+    "dependencies": [
+      "Interaction history"
+    ],
+    "dependents": [
+      "Opportunity profile"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "action",
+    "term": "Action",
+    "status": "Proposed",
+    "definition": "A declared intervention, command, operation, or behavior capable of participating in a state transition.",
+    "boundary": "A low-level input such as a click or touch is not necessarily the semantic action under study.",
+    "paper_hits": [
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        68
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        56
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        35
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        25
+      ],
+      [
+        "08",
+        "Behavior",
+        19
+      ],
+      [
+        "07",
+        "Interaction",
+        18
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        13
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        11
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        9
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        8
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        7
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        5
+      ],
+      [
+        "09",
+        "Measurement",
+        4
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        4
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        3
+      ]
+    ],
+    "originating_paper": "Opportunity, Affordance, and Action Availability",
+    "supporting_papers": [
+      "Opportunity, Affordance, and Action Availability",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Interaction Strategies",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "Behavior"
+    ],
+    "aliases": [],
+    "deprecated": [
+      "perceived affordance",
+      "interaction causes behavior"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "State transition"
+    ],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "state-transition",
+    "term": "State transition",
+    "status": "Proposed",
+    "definition": "A change from one declared system state to another under a transition relation, process, or event.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        3
+      ],
+      [
+        "08",
+        "Behavior",
+        2
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        1
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "Behavior",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?"
+    ],
+    "aliases": [
+      "transition"
+    ],
+    "deprecated": [],
+    "observable": "Directly/Instrumentally",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Action"
+    ],
+    "dependents": [
+      "System state"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "observation",
+    "term": "Observation",
+    "status": "Proposed",
+    "definition": "A recorded or accessible distinction about state, transition, representation, or outcome available through a specified measurement or observation process.",
+    "boundary": "Observation is not interpretation, inference, or evidence by itself.",
+    "paper_hits": [
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        21
+      ],
+      [
+        "09",
+        "Measurement",
+        12
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        11
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        11
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        10
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        10
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        9
+      ],
+      [
+        "08",
+        "Behavior",
+        9
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        7
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        7
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        6
+      ],
+      [
+        "07",
+        "Interaction",
+        5
+      ],
+      [
+        "03",
+        "How Sciences Define Their Objects",
+        2
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        2
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        1
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        1
+      ]
+    ],
+    "originating_paper": "Formal Models of Computational Interaction",
+    "supporting_papers": [
+      "Formal Models of Computational Interaction",
+      "Measurement",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Interaction Strategies",
+      "Interaction Similarity"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Directly/Instrumentally",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Trace"
+    ],
+    "contracts": [
+      "Projection Contract",
+      "Opportunity Contract",
+      "Interaction Contract",
+      "Behavioral Evidence Contract",
+      "Measurement Contract",
+      "Similarity Contract",
+      "Transfer Contract",
+      "Strategy Contract",
+      "Prediction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "situated-behavior",
+    "term": "Situated behavior",
+    "status": "Proposed",
+    "definition": "A bounded, temporally extended trajectory of observable or instrumentally recoverable changes, outputs, or regulated persistence attributed to a system in relation to its environment under a declared observation and attribution model.",
+    "boundary": "Representation does not determine behavior directly.",
+    "paper_hits": [],
+    "originating_paper": "Canonical glossary",
+    "supporting_papers": [],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "behavioral-evidence",
+    "term": "Behavioral evidence",
+    "status": "Candidate",
+    "definition": "A provenance-preserving chain connecting direct observations, system-derived features, latent interpretations, alternative explanations, uncertainty, and falsifying evidence to a bounded research claim.",
+    "boundary": "A trace is evidence of what occurred. It is not direct evidence of intention, understanding, culture, personality, or protected identity.",
+    "paper_hits": [
+      [
+        "08",
+        "Behavior",
+        3
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        3
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        1
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Behavior",
+    "supporting_papers": [
+      "Behavior",
+      "Computational Interaction Science",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Formal Models of Computational Interaction",
+      "Comparative Interaction"
+    ],
+    "aliases": [
+      "behavior evidence"
+    ],
+    "deprecated": [],
+    "observable": "Directly/Instrumentally",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Measurement contract"
+    ],
+    "dependents": [],
+    "contracts": [
+      "Behavioral Evidence Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "behavioral-equivalence",
+    "term": "Behavioral equivalence",
+    "status": "Candidate",
+    "definition": "Equivalence of declared action or outcome distributions for a specified population, task, context, metric, and tolerance.",
+    "boundary": "Behavioral equivalence does not imply semantic, interpretive, strategy, learning, transfer, or interactional equivalence.",
+    "paper_hits": [
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        4
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        3
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        2
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        1
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        1
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "Representation, Invariance, and Projection",
+    "supporting_papers": [
+      "Representation, Invariance, and Projection",
+      "Interaction Similarity",
+      "Formal Models of Computational Interaction",
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Opportunity, Affordance, and Action Availability"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [
+      "Behavioral Evidence Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interactional-equivalence",
+    "term": "Interactional equivalence",
+    "status": "Candidate",
+    "definition": "Equivalence of the available operation-transition-observation structure under specified agent, task, projection, authority, state, context, and tolerance conditions.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        2
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        1
+      ]
+    ],
+    "originating_paper": "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+    "supporting_papers": [
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Representation, Invariance, and Projection",
+      "Interaction Similarity"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction",
+    "term": "Interaction",
+    "status": "Proposed scientific target",
+    "definition": "A family of bounded coupling phenomena in which distinguishable systems or participants become mutually consequential through perturbation, constraint, uptake, response, and recurrence.",
+    "boundary": "Interaction is not reducible to action, behavior, communication, computation, observation, state transition, feedback, or causation alone. Ordinary-language usage may be broader than the strict research definition.",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        123
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        116
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        83
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        38
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        34
+      ],
+      [
+        "09",
+        "Measurement",
+        31
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        30
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        28
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        28
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        21
+      ],
+      [
+        "08",
+        "Behavior",
+        20
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        19
+      ],
+      [
+        "03",
+        "How Sciences Define Their Objects",
+        17
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        7
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        6
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Computational Interaction Science",
+      "Predicting Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [
+      "interaction causes behavior"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Computational Interaction Science"
+    ],
+    "dependents": [],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": [
+      "(1982) Human-computer interaction: a preliminary RUDD,J., STERN, K. R. AND ISENSEE, S. (1996) Low social psychological analysis. Behavior Research: vs. High-fidelity Prototyping Debate. ACM Inter- Methods and Instrumentation,13, (2), 210-220. actions Magazine, January, 76-85. References 501",
+      "(1993) Human-Computer Interaction (2nd ed.). Analysis: Verbal Reports as Data. Cambridge, MA: London: Prentice-Hall Europe. The MIT Press.",
+      "(1993) Project Ernestine: validating a GOMS J. (1993) Unpacking collaboration: the interac- analysis for predicting and explaining real-world tional organization of trading in a city dealing performance. Human-Computer Interaction, 8(3), room. In Proceedings of the Third European Con- 237-309. ference on Computer-Supported Cooperative",
+      "1. Interview: reproduced by permission of IDEO. (1997) Tangible Bits: towards seamless interfaces, in CH1'97 Proceedings, reprinted by permission of Chapter 2 Association for Computing Machinery, Inc.",
+      "Figure Figure 2.1 (on Color Plate 2): gif from www.ai.mit. 2.1 1 (ii) gif from www.almaden.ibm.com/cs/blueeyes/ edu/projects/medical-visionlsurgeryl reproduced by permission of IBM",
+      "Figure 2.11 (iii): gif surgical-navigation.htm1 reproduced by permission from www.parc.xerox.com/red/members/richgold/ of Michael E. Leventon",
+      "Figure 2.6(a): gif from livingdoc/slide6. html, reproduced by permission of http://vibes.cs.uiuc.edu/ProjectNRIVirtuelVirtueOve Rich Gold of PARC Communications",
+      "Figure 2.12: rview.htm, reproduced by permission of Dr Daniel A. gif from www.mbay.net/-brendaWarticleslPDA. Reed (University of Illinois at Urbana-Champaign) Mar.951 reproduced by permission of General Magic, from work on the Collaborative Virtual Inc."
+    ]
+  },
+  {
+    "id": "interaction-episode",
+    "term": "Interaction episode",
+    "status": "Proposed canonical unit",
+    "definition": "A bounded interval in which two or more distinguishable systems are coupled such that perturbations originating in, or mediated by, one system alter the possible or actual state trajectory of another, and the resulting configuration constrains a later trajectory of an originating or co-participating system within a declared boundary and timescale.\n\nReciprocal closure may be direct, indirect, asymmetric, delayed, probabilistic, or environmentally mediated.",
+    "boundary": "A single isolated one-way causal effect is not an interaction episode under the strict definition unless it enters a recurrent or reciprocally constraining structure.",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        5
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        3
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        3
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "Formal Models of Computational Interaction",
+      "Computational Interaction Science",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "strict interaction episode"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [
+      "Opportunity profile",
+      "Coupling",
+      "Token identity",
+      "Type identity",
+      "Interaction contract"
+    ],
+    "dependents": [],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [
+      "A request, response, and later state-dependent continuation within a declared protocol boundary."
+    ],
+    "counterexamples": [
+      "A one-way message with no reciprocal or recurrent constraint inside the declared episode."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "coupling",
+    "term": "Coupling",
+    "status": "Proposed",
+    "definition": "A relation or pathway through which a participant or shared medium can alter another participant's transition structure, reachable states, probabilities, timing, or constraints.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        36
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        18
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        9
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        6
+      ],
+      [
+        "03",
+        "How Sciences Define Their Objects",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        2
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        1
+      ],
+      [
+        "08",
+        "Behavior",
+        1
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Formal Models of Computational Interaction",
+      "How Sciences Define Their Objects"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Interaction participant",
+      "Environment"
+    ],
+    "dependents": [
+      "Interaction episode"
+    ],
+    "contracts": [],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "perturbation",
+    "term": "Perturbation",
+    "status": "Proposed",
+    "definition": "A difference propagated through a coupling relation that may change state, transition conditions, probabilities, timing, or reachable outcomes.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        9
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "uptake",
+    "term": "Uptake",
+    "status": "Proposed",
+    "definition": "Incorporation of a perturbation into a participant's state, transition process, control process, or interpreted situation. Uptake need not be semantic or conscious.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        11
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        1
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "Ontology, Semantics, Representation, and Interpretation",
+      "Opportunity, Affordance, and Action Availability"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "recurrence",
+    "term": "Recurrence",
+    "status": "Proposed",
+    "definition": "Return influence through which a response constrains an originating participant, a co-participant, or the shared coupling configuration.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        9
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        2
+      ],
+      [
+        "08",
+        "Behavior",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "Interaction Strategies",
+      "Behavior"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction-contract",
+    "term": "Interaction contract",
+    "status": "Proposed reusable artifact",
+    "definition": "A declaration of interaction identity, participants and roles, boundary, timescale, state, coupling, preconditions, events, transitions, protocol, invariants, evidence, failure, recovery, and completion conditions.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        3
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "Computational Interaction Science",
+      "Comparative Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Interaction episode"
+    ],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction-morphology",
+    "term": "Interaction morphology",
+    "status": "Candidate",
+    "definition": "The measurable structural properties of a representation or interaction surface, such as hierarchy, topology, density, alignment, rhythm, symmetry, enclosure, continuity, direction, visual weight, temporal organization, and modality.",
+    "boundary": "Morphology is not independent of all semantics or interpretation. A study must declare which content and operations are controlled.",
+    "paper_hits": [],
+    "originating_paper": "Canonical glossary",
+    "supporting_papers": [],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction-grammar",
+    "term": "Interaction grammar",
+    "status": "Candidate",
+    "definition": "A typed vocabulary and composition structure for semantic actions and transitions independent of any one input modality or rendering implementation.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        1
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+    "supporting_papers": [
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction-history",
+    "term": "Interaction history",
+    "status": "Candidate",
+    "definition": "The accumulated experience, training, conventions, outcomes, failures, practices, and prior exposure that may change an agent’s later beliefs, policies, and interpretation.",
+    "boundary": "Interaction history biases later behavior but does not fully explain or determine an individual.",
+    "paper_hits": [
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        3
+      ]
+    ],
+    "originating_paper": "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+    "supporting_papers": [
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Strategy",
+      "Interpretation",
+      "Believed action"
+    ],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "trace",
+    "term": "Trace",
+    "status": "Proposed",
+    "definition": "A temporally ordered or partially ordered record of observable or attributed events under declared boundaries, granularity, and observation rules.",
+    "boundary": "A trace is not identical with behavior, action, policy, strategy, intention, or mechanism.",
+    "paper_hits": [
+      [
+        "10",
+        "Interaction Similarity",
+        20
+      ],
+      [
+        "08",
+        "Behavior",
+        14
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        8
+      ],
+      [
+        "07",
+        "Interaction",
+        5
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        5
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        5
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        4
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        4
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        3
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        3
+      ],
+      [
+        "09",
+        "Measurement",
+        1
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction Similarity",
+    "supporting_papers": [
+      "Interaction Similarity",
+      "Behavior",
+      "Interaction Strategies",
+      "Interaction",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "interaction trace",
+      "behavioral trace"
+    ],
+    "deprecated": [],
+    "observable": "Directly/Instrumentally",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [
+      "Observation"
+    ],
+    "dependents": [
+      "Measurement contract"
+    ],
+    "contracts": [
+      "Projection Contract",
+      "Opportunity Contract",
+      "Interaction Contract",
+      "Behavioral Evidence Contract",
+      "Measurement Contract",
+      "Similarity Contract",
+      "Transfer Contract",
+      "Strategy Contract",
+      "Prediction Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "measurement-contract",
+    "term": "Measurement contract",
+    "status": "Proposed reusable artifact",
+    "definition": "A declaration of the measurand, observation process, operationalization, scale, uncertainty, validity evidence, population, task, projection, comparison conditions, and permitted interpretation.",
+    "boundary": "A metric is not a construct. Numerical output does not justify a latent interpretation without a validated measurement relation.",
+    "paper_hits": [
+      [
+        "09",
+        "Measurement",
+        4
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        3
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ],
+      [
+        "08",
+        "Behavior",
+        1
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Measurement",
+    "supporting_papers": [
+      "Measurement",
+      "Formal Models of Computational Interaction",
+      "Computational Interaction Science",
+      "Behavior",
+      "Interaction Transfer"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [
+      "Trace"
+    ],
+    "dependents": [
+      "Interaction similarity",
+      "Behavioral evidence"
+    ],
+    "contracts": [
+      "Measurement Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [
+      "A declaration of measurand, observation process, scale, uncertainty, and admissible inference."
+    ],
+    "counterexamples": [
+      "A response-time column treated as a construct without validity conditions."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "interaction-similarity",
+    "term": "Interaction similarity",
+    "status": "Proposed typed comparison framework",
+    "definition": "A comparison of interaction tokens, types, structures, protocols, opportunities, traces, behaviors, policies, strategies, outcomes, causes, or measurements under an explicit frame, correspondence mapping, admissible transformations, metrics, tolerances, uncertainty, and validity domain.",
+    "boundary": "There is no context-free universal similarity score.",
+    "paper_hits": [
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+    "supporting_papers": [
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Interaction Similarity",
+      "Predicting Interaction",
+      "Comparative Interaction",
+      "Computational Interaction Science"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Operationalizable by contract",
+    "dependencies": [
+      "Measurement contract",
+      "Similarity contract"
+    ],
+    "dependents": [
+      "Equivalence"
+    ],
+    "contracts": [
+      "Interaction Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [
+      "A typed profile comparing protocol, opportunity, trace, and outcome dimensions."
+    ],
+    "counterexamples": [
+      "One aggregate score presented without a comparison contract."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "token-identity",
+    "term": "Token identity",
+    "status": "Proposed",
+    "definition": "Historical identity of one bounded interaction episode under declared continuity, participant, boundary, and timescale criteria.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "07",
+        "Interaction",
+        2
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        2
+      ]
+    ],
+    "originating_paper": "Interaction",
+    "supporting_papers": [
+      "Interaction",
+      "Interaction Similarity",
+      "Comparative Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Interaction episode"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "type-identity",
+    "term": "Type identity",
+    "status": "Proposed",
+    "definition": "Membership in the same abstraction-defined interaction class under explicit classification rules.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction Similarity",
+    "supporting_papers": [
+      "Interaction Similarity",
+      "Interaction",
+      "Comparative Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Interaction episode"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "equivalence",
+    "term": "Equivalence",
+    "status": "Proposed",
+    "definition": "Exact preservation under a declared comparison contract and observable set. Equivalence is always typed.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "10",
+        "Interaction Similarity",
+        46
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        31
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        19
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        16
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        11
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        8
+      ],
+      [
+        "07",
+        "Interaction",
+        6
+      ],
+      [
+        "09",
+        "Measurement",
+        6
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        6
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        5
+      ],
+      [
+        "08",
+        "Behavior",
+        3
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        3
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        2
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        2
+      ]
+    ],
+    "originating_paper": "Interaction Similarity",
+    "supporting_papers": [
+      "Interaction Similarity",
+      "Representation, Invariance, and Projection",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Comparative Interaction",
+      "Formal Models of Computational Interaction"
+    ],
+    "aliases": [
+      "typed equivalence"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [
+      "Interaction similarity"
+    ],
+    "dependents": [
+      "Scoped invariance"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "similarity",
+    "term": "Similarity",
+    "status": "Proposed",
+    "definition": "Graded proximity under declared dimensions, representations, alignment rules, metrics, weights, tolerances, and uncertainty.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "10",
+        "Interaction Similarity",
+        51
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        6
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        6
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        5
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        5
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        4
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        4
+      ],
+      [
+        "08",
+        "Behavior",
+        2
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        2
+      ],
+      [
+        "07",
+        "Interaction",
+        1
+      ],
+      [
+        "09",
+        "Measurement",
+        1
+      ],
+      [
+        "12",
+        "Interaction Strategies",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction Similarity",
+    "supporting_papers": [
+      "Interaction Similarity",
+      "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+      "Computational Interaction Science",
+      "Interaction Transfer",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "typed similarity"
+    ],
+    "deprecated": [
+      "universal similarity score"
+    ],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [
+      "Similarity Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "incomparability",
+    "term": "Incomparability",
+    "status": "Proposed",
+    "definition": "Failure to establish a defensible common comparison space because boundaries, targets, mappings, scales, observation processes, uncertainty, or validity domains cannot be aligned without unsupported assumptions.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "15",
+        "Comparative Interaction",
+        7
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        5
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        2
+      ]
+    ],
+    "originating_paper": "Comparative Interaction",
+    "supporting_papers": [
+      "Comparative Interaction",
+      "Interaction Similarity",
+      "Computational Interaction Science"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "similarity-contract",
+    "term": "Similarity contract",
+    "status": "Proposed reusable artifact",
+    "definition": "A declaration of comparison target, frame, representations, correspondence mapping, invariants, variants, observables, admissible and prohibited transformations, typed metrics or predicates, tolerances, uncertainty, validity domain, and final typed profile.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "10",
+        "Interaction Similarity",
+        2
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction Similarity",
+    "supporting_papers": [
+      "Interaction Similarity",
+      "Predicting Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Interaction similarity"
+    ],
+    "contracts": [
+      "Similarity Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "strategy",
+    "term": "Strategy",
+    "status": "Proposed latent explanatory construct",
+    "definition": "An inferred, temporally extended organization of conditional action selection, information use, resource allocation, and contingency response that tends to preserve or improve one or more criteria across a declared class of interaction states.",
+    "boundary": "A strategy is not a single action, raw trace, repeated sequence, explicit plan, policy alone, skill, habit, or intention. It must be supported through rival discrimination, diagnostic contingencies, uncertainty, and evidence appropriate to the claim.",
+    "paper_hits": [
+      [
+        "12",
+        "Interaction Strategies",
+        102
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        14
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        12
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        10
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        8
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        6
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        6
+      ],
+      [
+        "15",
+        "Comparative Interaction",
+        5
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        4
+      ],
+      [
+        "08",
+        "Behavior",
+        4
+      ],
+      [
+        "09",
+        "Measurement",
+        4
+      ],
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        2
+      ]
+    ],
+    "originating_paper": "Interaction Strategies",
+    "supporting_papers": [
+      "Interaction Strategies",
+      "Predicting Interaction",
+      "Interaction Transfer",
+      "Formal Models of Computational Interaction",
+      "Computational Interaction Science"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "No - latent/inferred",
+    "latent": "Yes",
+    "measurement": "Requires latent-variable model",
+    "dependencies": [
+      "Policy",
+      "Interaction history",
+      "Strategy contract"
+    ],
+    "dependents": [],
+    "contracts": [
+      "Strategy Contract"
+    ],
+    "formal_mappings": [
+      "Layered observation-enriched probabilistic labeled transition system"
+    ],
+    "examples": [
+      "An inferred pattern of conditional search, commitment, and recovery across episodes."
+    ],
+    "counterexamples": [
+      "A single successful action labeled as a strategy."
+    ],
+    "supporting_literature": []
+  },
+  {
+    "id": "strategy-contract",
+    "term": "Strategy contract",
+    "status": "Proposed reusable artifact",
+    "definition": "A declaration of strategy-bearing system, domain, timescale, criteria, state and observation model, state abstraction, opportunity assumptions, action repertoire, selection policy, information policy, commitments, contingency and recovery rules, switching and stopping conditions, resources, authority, identity invariants, rival strategies, uncertainty, and validity domain.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "12",
+        "Interaction Strategies",
+        3
+      ]
+    ],
+    "originating_paper": "Interaction Strategies",
+    "supporting_papers": [
+      "Interaction Strategies"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Strategy"
+    ],
+    "contracts": [
+      "Strategy Contract"
+    ],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "policy",
+    "term": "Policy",
+    "status": "Proposed",
+    "definition": "A conditional relation from represented states, observations, or beliefs to action distributions.",
+    "boundary": "A policy may be one component of a strategy. Strategy may additionally include information acquisition, commitment, resource allocation, switching, recovery, and stopping rules.",
+    "paper_hits": [
+      [
+        "12",
+        "Interaction Strategies",
+        26
+      ],
+      [
+        "06",
+        "Opportunity, Affordance, and Action Availability",
+        14
+      ],
+      [
+        "13",
+        "Formal Models of Computational Interaction",
+        12
+      ],
+      [
+        "08",
+        "Behavior",
+        10
+      ],
+      [
+        "10",
+        "Interaction Similarity",
+        7
+      ],
+      [
+        "11",
+        "Interaction Transfer",
+        6
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        6
+      ],
+      [
+        "01",
+        "INTERACTION AS A\nSCIENTIFIC EXPLANANDUM",
+        5
+      ],
+      [
+        "05",
+        "Ontology, Semantics, Representation, and Interpretation",
+        4
+      ],
+      [
+        "07",
+        "Interaction",
+        2
+      ],
+      [
+        "09",
+        "Measurement",
+        1
+      ],
+      [
+        "16",
+        "Computational Interaction Science",
+        1
+      ]
+    ],
+    "originating_paper": "Interaction Strategies",
+    "supporting_papers": [
+      "Interaction Strategies",
+      "Opportunity, Affordance, and Action Availability",
+      "Formal Models of Computational Interaction",
+      "Behavior",
+      "Interaction Similarity"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "No - latent/inferred",
+    "latent": "Yes",
+    "measurement": "Requires latent-variable model",
+    "dependencies": [],
+    "dependents": [
+      "Strategy"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "fundamental",
+    "term": "Fundamental",
+    "status": "Proposed research substrate",
+    "definition": "A representation-independent computational substrate for declaring domain commitments, evolving system state, assigning operational semantics, and producing governed projections whose preservation, transformation, omission, introduced structure, operations, snapshots, and replay can be inspected.",
+    "boundary": "Fundamental is not the scientific theory, a philosophical ontology, proof of CIS, or a guarantee of shared human meaning.",
+    "paper_hits": [
+      [
+        "02",
+        "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+        3
+      ],
+      [
+        "03",
+        "How Sciences Define Their Objects",
+        1
+      ],
+      [
+        "04",
+        "Representation, Invariance, and Projection",
+        1
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+    "supporting_papers": [
+      "CAN INTERACTION BECOME A\nPRIMARY SCIENTIFIC OBJECT?",
+      "How Sciences Define Their Objects",
+      "Representation, Invariance, and Projection",
+      "Predicting Interaction"
+    ],
+    "aliases": [],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  },
+  {
+    "id": "computational-interaction-science",
+    "term": "Computational Interaction Science",
+    "status": "Proposed research program; disciplinary autonomy unproven",
+    "definition": "A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.\n\nCIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.",
+    "boundary": "",
+    "paper_hits": [
+      [
+        "16",
+        "Computational Interaction Science",
+        5
+      ],
+      [
+        "14",
+        "Predicting Interaction",
+        1
+      ]
+    ],
+    "originating_paper": "Computational Interaction Science",
+    "supporting_papers": [
+      "Computational Interaction Science",
+      "Predicting Interaction"
+    ],
+    "aliases": [
+      "CompInt"
+    ],
+    "deprecated": [],
+    "observable": "Conditional on observation model",
+    "latent": "No or not inherently",
+    "measurement": "Measure only under declared operationalization",
+    "dependencies": [],
+    "dependents": [
+      "Interaction"
+    ],
+    "contracts": [],
+    "formal_mappings": [],
+    "examples": [],
+    "counterexamples": [],
+    "supporting_literature": []
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "environment.schema.json",
+  "title": "CompInt Interaction Environment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["environment_id", "version", "boundary", "state_schema_ref", "authority", "provenance"],
+  "properties": {
+    "environment_id": { "$ref": "common.schema.json#/$defs/non_empty_string" },
+    "version": { "$ref": "common.schema.json#/$defs/semver" },
+    "boundary": { "$ref": "common.schema.json#/$defs/non_empty_string" },
+    "state_schema_ref": { "$ref": "common.schema.json#/$defs/non_empty_string" },
+    "authority": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/non_empty_string" }, "uniqueItems": true },
+    "sensitive_context": { "type": "boolean", "default": false },
+    "provenance": { "$ref": "common.schema.json#/$defs/provenance" }
+  }
+}

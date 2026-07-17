@@ -1,0 +1,5472 @@
+[
+  {
+    "id": "abate2017",
+    "type": "article-journal",
+    "title": "On the relationship between bisimulation and trace equivalence in an approximate probabilistic context",
+    "author": [
+      {
+        "family": "Abate",
+        "given": "A., Bacci, G., Bacci, G.,"
+      },
+      {
+        "family": "Larsen",
+        "given": "K. G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    }
+  },
+  {
+    "id": "abbott2001",
+    "type": "article-journal",
+    "title": "Chaos of disciplines",
+    "author": [
+      {
+        "family": "Abbott",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    }
+  },
+  {
+    "id": "abramsky2013",
+    "type": "article-journal",
+    "title": "Semantics of interaction",
+    "author": [
+      {
+        "family": "Abramsky",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    }
+  },
+  {
+    "id": "alur2002",
+    "type": "article-journal",
+    "title": "Alternating-time temporal logic",
+    "author": [
+      {
+        "family": "Alur",
+        "given": "R., Henzinger, T. A.,"
+      },
+      {
+        "family": "Kupferman",
+        "given": "O"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "volume": "49",
+    "issue": "5",
+    "page": "672-713"
+  },
+  {
+    "id": "americanchemicalsociety2026",
+    "type": "article-journal",
+    "title": "Chemistry is everywhere: What is chemistry? American Psychological Association",
+    "author": [
+      {
+        "literal": "American Chemical Society"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    }
+  },
+  {
+    "id": "anderson1982",
+    "type": "article-journal",
+    "title": "Acquisition of cognitive skill",
+    "author": [
+      {
+        "family": "Anderson",
+        "given": "J. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    },
+    "page": "369-406"
+  },
+  {
+    "id": "anderson2007",
+    "type": "article-journal",
+    "title": "How Can the Human Mind Occur in the Physical Universe? Oxford University Press",
+    "author": [
+      {
+        "family": "Anderson",
+        "given": "J. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    }
+  },
+  {
+    "id": "angelopoulos2021",
+    "type": "book",
+    "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+    "author": [
+      {
+        "family": "Angelopoulos",
+        "given": "A. N.,"
+      },
+      {
+        "family": "Bates",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ashby1956",
+    "type": "book",
+    "title": "An Introduction to Cybernetics",
+    "author": [
+      {
+        "family": "Ashby",
+        "given": "W. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1956
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bacon2017",
+    "type": "article-journal",
+    "title": "The option-critic architecture",
+    "author": [
+      {
+        "family": "Bacon",
+        "given": "P.-L., Harb, J.,"
+      },
+      {
+        "family": "Precup",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    }
+  },
+  {
+    "id": "baez2010",
+    "type": "article-journal",
+    "title": "Physics, topology, logic and computation: A Rosetta Stone",
+    "author": [
+      {
+        "family": "Baez",
+        "given": "J. C.,"
+      },
+      {
+        "family": "Stay",
+        "given": "M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    }
+  },
+  {
+    "id": "baez2021",
+    "type": "article-journal",
+    "title": "Categories of nets",
+    "author": [
+      {
+        "family": "Baez",
+        "given": "J. C., Genovese, F., Master, J.,"
+      },
+      {
+        "family": "Shulman",
+        "given": "M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bahr2016",
+    "type": "article-journal",
+    "title": "What is interaction science? Revisiting the aims and scope of JoIS",
+    "author": [
+      {
+        "family": "Bahr",
+        "given": "G. S.,"
+      },
+      {
+        "family": "Stary",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "016-0015",
+    "DOI": "10.1186/s40166-016-0015-5",
+    "URL": "https://doi.org/10.1186/s40166-016-0015-5"
+  },
+  {
+    "id": "baier2008",
+    "type": "book",
+    "title": "Principles of Model Checking",
+    "author": [
+      {
+        "family": "Baier",
+        "given": "C.,"
+      },
+      {
+        "family": "Katoen",
+        "given": "J.-P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "page": "975",
+    "publisher": "MIT Press",
+    "ISBN": "9780262026499"
+  },
+  {
+    "id": "barhillel1953",
+    "type": "article-journal",
+    "title": "Semantic information",
+    "author": [
+      {
+        "family": "Bar-Hillel",
+        "given": "Y.,"
+      },
+      {
+        "family": "Carnap",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "page": "147-157"
+  },
+  {
+    "id": "barnett2002",
+    "type": "article-journal",
+    "title": "When and where do we apply what we learn? A taxonomy for far transfer",
+    "author": [
+      {
+        "family": "Barnett",
+        "given": "S. M.,"
+      },
+      {
+        "family": "Ceci",
+        "given": "S. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "volume": "128",
+    "issue": "4",
+    "page": "612-637"
+  },
+  {
+    "id": "bateson1972",
+    "type": "article-journal",
+    "title": "Steps to an Ecology of Mind",
+    "author": [
+      {
+        "family": "Bateson",
+        "given": "G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    }
+  },
+  {
+    "id": "beach1999",
+    "type": "article-journal",
+    "title": "Consequential transitions: A sociocultural expedition beyond transfer in education",
+    "author": [
+      {
+        "family": "Beach",
+        "given": "K"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "page": "101-139"
+  },
+  {
+    "id": "beer1995",
+    "type": "article-journal",
+    "title": "A dynamical systems perspective on agent-environment interaction",
+    "author": [
+      {
+        "family": "Beer",
+        "given": "R. D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    },
+    "page": "173-215"
+  },
+  {
+    "id": "bell1973",
+    "type": "article-journal",
+    "title": "Secure Computer Systems: Mathematical Foundations",
+    "author": [
+      {
+        "family": "Bell",
+        "given": "D. E.,"
+      },
+      {
+        "family": "LaPadula",
+        "given": "L. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1973
+        ]
+      ]
+    }
+  },
+  {
+    "id": "belton2002",
+    "type": "article-journal",
+    "title": "Multiple Criteria Decision Analysis: An Integrated Approach",
+    "author": [
+      {
+        "family": "Belton",
+        "given": "V.,"
+      },
+      {
+        "family": "Stewart",
+        "given": "T. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bertalanffy1968",
+    "type": "article-journal",
+    "title": "General system theory",
+    "author": [
+      {
+        "family": "Bertalanffy",
+        "given": "L. von"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1968
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bertalanffy1968general",
+    "type": "article-journal",
+    "title": "General system theory: Foundations, development, applications",
+    "author": [
+      {
+        "family": "Bertalanffy",
+        "given": "L. von"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1968
+        ]
+      ]
+    }
+  },
+  {
+    "id": "blackwell2015",
+    "type": "article-journal",
+    "title": "HCI as an inter-discipline",
+    "author": [
+      {
+        "family": "Blackwell",
+        "given": "A. F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "503-516",
+    "DOI": "10.1145/2702613.2732505",
+    "URL": "https://doi.org/10.1145/2702613.2732505"
+  },
+  {
+    "id": "blunden2015",
+    "type": "article-journal",
+    "title": "Engeström's activity theory and social theory [Critical essay]",
+    "author": [
+      {
+        "family": "Blunden",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bohannon2006",
+    "type": "article-journal",
+    "title": "Relational lenses: A language for updatable views",
+    "author": [
+      {
+        "family": "Bohannon",
+        "given": "A., Pierce, B. C.,"
+      },
+      {
+        "family": "Vaughan",
+        "given": "J. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    }
+  },
+  {
+    "id": "borko1968",
+    "type": "article-journal",
+    "title": "Information science: What is it? American Documentation, 19(1), 3-5",
+    "author": [
+      {
+        "family": "Borko",
+        "given": "H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1968
+        ]
+      ]
+    },
+    "volume": "19",
+    "issue": "1",
+    "page": "3-5",
+    "DOI": "10.1002/asi.5090190103",
+    "URL": "https://doi.org/10.1002/asi.5090190103"
+  },
+  {
+    "id": "borst1997",
+    "type": "article-journal",
+    "title": "Construction of Engineering Ontologies for Knowledge Sharing and Reuse",
+    "author": [
+      {
+        "family": "Borst",
+        "given": "W. N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    }
+  },
+  {
+    "id": "boyd1991",
+    "type": "article-journal",
+    "title": "Realism, anti-foundationalism and the enthusiasm for natural kinds",
+    "author": [
+      {
+        "family": "Boyd",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    },
+    "page": "127-148"
+  },
+  {
+    "id": "bransford2000",
+    "type": "article-journal",
+    "title": "How People Learn",
+    "author": [
+      {
+        "family": "Bransford",
+        "given": "J. D., Brown, A. L.,"
+      },
+      {
+        "family": "Cocking",
+        "given": "R. R. (Eds.)"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bratman1987",
+    "type": "article-journal",
+    "title": "Intention, Plans, and Practical Reason",
+    "author": [
+      {
+        "family": "Bratman",
+        "given": "M. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    }
+  },
+  {
+    "id": "brennan2001",
+    "type": "article-journal",
+    "title": "Generalizability Theory",
+    "author": [
+      {
+        "family": "Brennan",
+        "given": "R. L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    }
+  },
+  {
+    "id": "brooke1996",
+    "type": "article-journal",
+    "title": "SUS: A quick and dirty usability scale",
+    "author": [
+      {
+        "family": "Brooke",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bunke1997",
+    "type": "article-journal",
+    "title": "On a relation between graph edit distance and maximum common subgraph",
+    "author": [
+      {
+        "family": "Bunke",
+        "given": "H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    },
+    "page": "689-694"
+  },
+  {
+    "id": "campbell1959",
+    "type": "article-journal",
+    "title": "Convergent and discriminant validation by the multitrait-multimethod matrix",
+    "author": [
+      {
+        "family": "Campbell",
+        "given": "D. T.,"
+      },
+      {
+        "family": "Fiske",
+        "given": "D. W"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1959
+        ]
+      ]
+    },
+    "volume": "56",
+    "issue": "2",
+    "page": "81-105"
+  },
+  {
+    "id": "card1983",
+    "type": "book",
+    "title": "The Psychology of Human-Computer Interaction",
+    "author": [
+      {
+        "family": "Card",
+        "given": "S. K., Moran, T. P.,"
+      },
+      {
+        "family": "Newell",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    }
+  },
+  {
+    "id": "card1986",
+    "type": "article-journal",
+    "title": "The Model Human Processor: A Model for Making Engineering Calculations of Human Performance",
+    "author": [
+      {
+        "family": "Card",
+        "given": "S. K"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    }
+  },
+  {
+    "id": "card1999",
+    "type": "article-journal",
+    "title": "Readings in information visualization",
+    "author": [
+      {
+        "family": "Card",
+        "given": "S. K., Mackinlay, J. D.,"
+      },
+      {
+        "family": "Shneiderman",
+        "given": "B. (Eds.)"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cartwright1983",
+    "type": "article-journal",
+    "title": "How the laws of physics lie",
+    "author": [
+      {
+        "family": "Cartwright",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cartwright1989",
+    "type": "article-journal",
+    "title": "Nature's capacities and their measurement",
+    "author": [
+      {
+        "family": "Cartwright",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cassandras2008",
+    "type": "book",
+    "title": "Introduction to Discrete Event Systems (2nd ed.)",
+    "author": [
+      {
+        "family": "Cassandras",
+        "given": "C. G.,"
+      },
+      {
+        "family": "Lafortune",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    }
+  },
+  {
+    "id": "chemero2003",
+    "type": "article-journal",
+    "title": "An outline of a theory of affordances",
+    "author": [
+      {
+        "family": "Chemero",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    },
+    "volume": "15",
+    "issue": "2",
+    "page": "181-195"
+  },
+  {
+    "id": "chemero2009",
+    "type": "article-journal",
+    "title": "Radical embodied cognitive science",
+    "author": [
+      {
+        "family": "Chemero",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    }
+  },
+  {
+    "id": "clark1991",
+    "type": "article-journal",
+    "title": "Grounding in communication",
+    "author": [
+      {
+        "family": "Clark",
+        "given": "H. H.,"
+      },
+      {
+        "family": "Brennan",
+        "given": "S. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    },
+    "page": "127-149"
+  },
+  {
+    "id": "clark1996",
+    "type": "article-journal",
+    "title": "Using language",
+    "author": [
+      {
+        "family": "Clark",
+        "given": "H. H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    }
+  },
+  {
+    "id": "clark1998",
+    "type": "article-journal",
+    "title": "The extended mind",
+    "author": [
+      {
+        "family": "Clark",
+        "given": "A.,"
+      },
+      {
+        "family": "Chalmers",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "volume": "58",
+    "issue": "1",
+    "page": "7-19"
+  },
+  {
+    "id": "clarke1999",
+    "type": "article-journal",
+    "title": "Model Checking",
+    "author": [
+      {
+        "family": "Clarke",
+        "given": "E. M., Grumberg, O.,"
+      },
+      {
+        "family": "Peled",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cleveland1984",
+    "type": "article-journal",
+    "title": "Graphical perception: Theory, experimentation, and application to the development of graphical methods",
+    "author": [
+      {
+        "family": "Cleveland",
+        "given": "W. S.,"
+      },
+      {
+        "family": "McGill",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1984
+        ]
+      ]
+    },
+    "volume": "79",
+    "issue": "387",
+    "page": "531-554"
+  },
+  {
+    "id": "codd1970",
+    "type": "article-journal",
+    "title": "A relational model of data for large shared data banks",
+    "author": [
+      {
+        "family": "Codd",
+        "given": "E. F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1970
+        ]
+      ]
+    },
+    "page": "377-387"
+  },
+  {
+    "id": "cohen1990",
+    "type": "article-journal",
+    "title": "Intention is choice with commitment",
+    "author": [
+      {
+        "family": "Cohen",
+        "given": "P. R.,"
+      },
+      {
+        "family": "Levesque",
+        "given": "H. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1990
+        ]
+      ]
+    },
+    "page": "2-3"
+  },
+  {
+    "id": "cook1979",
+    "type": "article-journal",
+    "title": "Quasi-Experimentation",
+    "author": [
+      {
+        "family": "Cook",
+        "given": "T. D.,"
+      },
+      {
+        "family": "Campbell",
+        "given": "D. T"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cousot1977",
+    "type": "article-journal",
+    "title": "Abstract interpretation: A unified lattice model for static analysis of programs by construction or approximation of fixpoints",
+    "author": [
+      {
+        "family": "Cousot",
+        "given": "P.,"
+      },
+      {
+        "family": "Cousot",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1977
+        ]
+      ]
+    },
+    "page": "238-252"
+  },
+  {
+    "id": "cousot1977abstract",
+    "type": "article-journal",
+    "title": "Abstract interpretation: A unified lattice model for static analysis",
+    "author": [
+      {
+        "family": "Cousot",
+        "given": "P.,"
+      },
+      {
+        "family": "Cousot",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1977
+        ]
+      ]
+    }
+  },
+  {
+    "id": "craver2007",
+    "type": "article-journal",
+    "title": "Explaining the brain",
+    "author": [
+      {
+        "family": "Craver",
+        "given": "C. F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cronbach1955",
+    "type": "article-journal",
+    "title": "Construct validity in psychological tests",
+    "author": [
+      {
+        "family": "Cronbach",
+        "given": "L. J.,"
+      },
+      {
+        "family": "Meehl",
+        "given": "P. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1955
+        ]
+      ]
+    },
+    "volume": "52",
+    "issue": "4",
+    "page": "281-302"
+  },
+  {
+    "id": "daston2000",
+    "type": "article-journal",
+    "title": "Biographies of scientific objects",
+    "author": [
+      {
+        "family": "Daston",
+        "given": "L. (Ed.)"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    }
+  },
+  {
+    "id": "daston2007",
+    "type": "article-journal",
+    "title": "Objectivity",
+    "author": [
+      {
+        "family": "Daston",
+        "given": "L.,"
+      },
+      {
+        "family": "Galison",
+        "given": "P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    }
+  },
+  {
+    "id": "davidson1980",
+    "type": "article-journal",
+    "title": "Essays on Actions and Events",
+    "author": [
+      {
+        "family": "Davidson",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1980
+        ]
+      ]
+    }
+  },
+  {
+    "id": "desouza2005",
+    "type": "article-journal",
+    "title": "The semiotic engineering of human-computer interaction",
+    "author": [
+      {
+        "family": "de Souza",
+        "given": "C. S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dewey1896",
+    "type": "article-journal",
+    "title": "The reflex arc concept in psychology",
+    "author": [
+      {
+        "family": "Dewey",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1896
+        ]
+      ]
+    },
+    "page": "357-370"
+  },
+  {
+    "id": "dey2001",
+    "type": "article-journal",
+    "title": "Understanding and using context",
+    "author": [
+      {
+        "family": "Dey",
+        "given": "A. K"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "page": "4-7"
+  },
+  {
+    "id": "dourish2001",
+    "type": "article-journal",
+    "title": "Where the Action Is: The Foundations of Embodied Interaction",
+    "author": [
+      {
+        "family": "Dourish",
+        "given": "P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dretske1981",
+    "type": "article-journal",
+    "title": "Knowledge and the Flow of Information",
+    "author": [
+      {
+        "family": "Dretske",
+        "given": "F. I"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1981
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dupr1993",
+    "type": "article-journal",
+    "title": "The disorder of things",
+    "author": [
+      {
+        "family": "Dupré",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    }
+  },
+  {
+    "id": "eco1976",
+    "type": "article-journal",
+    "title": "A theory of semiotics",
+    "author": [
+      {
+        "family": "Eco",
+        "given": "U"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1976
+        ]
+      ]
+    }
+  },
+  {
+    "id": "engelhardt2002",
+    "type": "article-journal",
+    "title": "The language of graphics",
+    "author": [
+      {
+        "family": "Engelhardt",
+        "given": "Y"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    }
+  },
+  {
+    "id": "engestrm1987",
+    "type": "book",
+    "title": "Learning by expanding: An activity-theoretical approach to developmental research",
+    "author": [
+      {
+        "family": "Engeström",
+        "given": "Y"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    }
+  },
+  {
+    "id": "engestrom1987",
+    "type": "book",
+    "title": "Learning by Expanding",
+    "author": [
+      {
+        "family": "Engestrom",
+        "given": "Y"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ericsson1993",
+    "type": "article-journal",
+    "title": "The role of deliberate practice in the acquisition of expert performance",
+    "author": [
+      {
+        "family": "Ericsson",
+        "given": "K. A., Krampe, R. T.,"
+      },
+      {
+        "family": "Tesch-Romer",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "page": "363-406"
+  },
+  {
+    "id": "fagin1995",
+    "type": "article-journal",
+    "title": "Reasoning About Knowledge",
+    "author": [
+      {
+        "family": "Fagin",
+        "given": "R., Halpern, J. Y., Moses, Y.,"
+      },
+      {
+        "family": "Vardi",
+        "given": "M. Y"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    }
+  },
+  {
+    "id": "farrell2018",
+    "type": "article-journal",
+    "title": "Computational modeling of cognition and behavior",
+    "author": [
+      {
+        "family": "Farrell",
+        "given": "S.,"
+      },
+      {
+        "family": "Lewandowsky",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "DOI": "10.1017/9781316272503",
+    "ISBN": "9781316272503",
+    "URL": "https://doi.org/10.1017/9781316272503"
+  },
+  {
+    "id": "ferraiolo2003",
+    "type": "article-journal",
+    "title": "Role-Based Access Control",
+    "author": [
+      {
+        "family": "Ferraiolo",
+        "given": "D. F., Kuhn, D. R.,"
+      },
+      {
+        "family": "Chandramouli",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ferrando2019",
+    "type": "article-journal",
+    "title": "On the enactability of agent interaction protocols: Toward a unified approach",
+    "author": [
+      {
+        "family": "Ferrando",
+        "given": "A., Winikoff, M., Cranefield, S., Dignum, F.,"
+      },
+      {
+        "family": "Mascardi",
+        "given": "V"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    }
+  },
+  {
+    "id": "fidel2012",
+    "type": "article-journal",
+    "title": "Human information interaction: An ecological approach to information behavior",
+    "author": [
+      {
+        "family": "Fidel",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    }
+  },
+  {
+    "id": "fikes1971",
+    "type": "article-journal",
+    "title": "STRIPS: A new approach to the application of theorem proving to problem solving",
+    "author": [
+      {
+        "family": "Fikes",
+        "given": "R. E.,"
+      },
+      {
+        "family": "Nilsson",
+        "given": "N. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1971
+        ]
+      ]
+    },
+    "page": "189-208"
+  },
+  {
+    "id": "fipa2002",
+    "type": "article-journal",
+    "title": "FIPA Agent Communication Language Specifications and Interaction Protocol Specifications",
+    "author": [
+      {
+        "literal": "FIPA"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    }
+  },
+  {
+    "id": "fitts1954",
+    "type": "article-journal",
+    "title": "The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement",
+    "author": [
+      {
+        "family": "Fitts",
+        "given": "P. M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1954
+        ]
+      ]
+    },
+    "volume": "47",
+    "issue": "6",
+    "page": "381-391"
+  },
+  {
+    "id": "fitts1967",
+    "type": "article-journal",
+    "title": "Human Performance",
+    "author": [
+      {
+        "family": "Fitts",
+        "given": "P. M.,"
+      },
+      {
+        "family": "Posner",
+        "given": "M. I"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1967
+        ]
+      ]
+    }
+  },
+  {
+    "id": "fleck1979",
+    "type": "article-journal",
+    "title": "Genesis and development of a scientific fact (original work published 1935)",
+    "author": [
+      {
+        "family": "Fleck",
+        "given": "L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    }
+  },
+  {
+    "id": "floridi2004",
+    "type": "article-journal",
+    "title": "Outline of a theory of strongly semantic information",
+    "author": [
+      {
+        "family": "Floridi",
+        "given": "L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2004
+        ]
+      ]
+    },
+    "page": "197-221"
+  },
+  {
+    "id": "frigg2020",
+    "type": "book",
+    "title": "Modelling nature: An opinionated introduction to scientific representation",
+    "author": [
+      {
+        "family": "Frigg",
+        "given": "R.,"
+      },
+      {
+        "family": "Nguyen",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    }
+  },
+  {
+    "id": "garcabauelos2018",
+    "type": "article-journal",
+    "title": "Complete and interpretable conformance checking of business processes",
+    "author": [
+      {
+        "family": "García-Bañuelos",
+        "given": "L., van Beest, N. R. T. P., Dumas, M., La Rosa, M.,"
+      },
+      {
+        "family": "Mertens",
+        "given": "W"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "volume": "44",
+    "issue": "3",
+    "page": "262-290"
+  },
+  {
+    "id": "gaver1991technology",
+    "type": "article-journal",
+    "title": "Technology affordances",
+    "author": [
+      {
+        "family": "Gaver",
+        "given": "W. W"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    },
+    "page": "79-84"
+  },
+  {
+    "id": "geertz1973",
+    "type": "article-journal",
+    "title": "The interpretation of cultures",
+    "author": [
+      {
+        "family": "Geertz",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1973
+        ]
+      ]
+    }
+  },
+  {
+    "id": "gentner1983",
+    "type": "article-journal",
+    "title": "Structure-mapping: A theoretical framework for analogy",
+    "author": [
+      {
+        "family": "Gentner",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "page": "155-170"
+  },
+  {
+    "id": "gershman2015",
+    "type": "article-journal",
+    "title": "Computational rationality: A converging paradigm for intelligence in brains, minds, and machines",
+    "author": [
+      {
+        "family": "Gershman",
+        "given": "S. J., Horvitz, E. J.,"
+      },
+      {
+        "family": "Tenenbaum",
+        "given": "J. B"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "volume": "349",
+    "issue": "6245",
+    "page": "273-278",
+    "DOI": "10.1126/science.aac6076",
+    "URL": "https://doi.org/10.1126/science.aac6076"
+  },
+  {
+    "id": "gibson1979",
+    "type": "article-journal",
+    "title": "The Ecological Approach to Visual Perception",
+    "author": [
+      {
+        "family": "Gibson",
+        "given": "J. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    }
+  },
+  {
+    "id": "gick1983",
+    "type": "article-journal",
+    "title": "Schema induction and analogical transfer",
+    "author": [
+      {
+        "family": "Gick",
+        "given": "M. L.,"
+      },
+      {
+        "family": "Holyoak",
+        "given": "K. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "page": "1-38"
+  },
+  {
+    "id": "giere2006",
+    "type": "article-journal",
+    "title": "Scientific perspectivism",
+    "author": [
+      {
+        "family": "Giere",
+        "given": "R. N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    }
+  },
+  {
+    "id": "gieryn1983",
+    "type": "article-journal",
+    "title": "Boundary-work and the demarcation of science from non-science",
+    "author": [
+      {
+        "family": "Gieryn",
+        "given": "T. F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "page": "781-795"
+  },
+  {
+    "id": "gigerenzer2011",
+    "type": "article-journal",
+    "title": "Heuristic decision making",
+    "author": [
+      {
+        "family": "Gigerenzer",
+        "given": "G.,"
+      },
+      {
+        "family": "Gaissmaier",
+        "given": "W"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "page": "451-482"
+  },
+  {
+    "id": "goodman1976",
+    "type": "article-journal",
+    "title": "Languages of art (2nd ed.)",
+    "author": [
+      {
+        "family": "Goodman",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1976
+        ]
+      ]
+    }
+  },
+  {
+    "id": "goodwin2000",
+    "type": "article-journal",
+    "title": "Action and embodiment within situated human interaction",
+    "author": [
+      {
+        "family": "Goodwin",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "volume": "32",
+    "issue": "10",
+    "page": "1489-1522"
+  },
+  {
+    "id": "gower1971",
+    "type": "article-journal",
+    "title": "A general coefficient of similarity and some of its properties",
+    "author": [
+      {
+        "family": "Gower",
+        "given": "J. C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1971
+        ]
+      ]
+    },
+    "page": "857-871"
+  },
+  {
+    "id": "green1996",
+    "type": "article-journal",
+    "title": "Usability analysis of visual programming environments: A cognitive dimensions framework",
+    "author": [
+      {
+        "family": "Green",
+        "given": "T. R. G.,"
+      },
+      {
+        "family": "Petre",
+        "given": "M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "page": "131-174"
+  },
+  {
+    "id": "greeno1993",
+    "type": "article-journal",
+    "title": "Transfer of situated learning",
+    "author": [
+      {
+        "family": "Greeno",
+        "given": "J. G., Smith, D. R.,"
+      },
+      {
+        "family": "Moore",
+        "given": "J. L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    }
+  },
+  {
+    "id": "greeno1994",
+    "type": "article-journal",
+    "title": "Gibson’s affordances",
+    "author": [
+      {
+        "family": "Greeno",
+        "given": "J. G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    },
+    "volume": "101",
+    "issue": "2",
+    "page": "336-342"
+  },
+  {
+    "id": "grice1957",
+    "type": "article-journal",
+    "title": "Meaning",
+    "author": [
+      {
+        "family": "Grice",
+        "given": "H. P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1957
+        ]
+      ]
+    },
+    "page": "377-388"
+  },
+  {
+    "id": "gruber1993a",
+    "type": "article-journal",
+    "title": "A translation approach to portable ontology specifications",
+    "author": [
+      {
+        "family": "Gruber",
+        "given": "T. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "page": "199-220"
+  },
+  {
+    "id": "guarino1998",
+    "type": "article-journal",
+    "title": "Formal ontology and information systems",
+    "author": [
+      {
+        "family": "Guarino",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "page": "3-15"
+  },
+  {
+    "id": "hacking1983",
+    "type": "article-journal",
+    "title": "Representing and intervening",
+    "author": [
+      {
+        "family": "Hacking",
+        "given": "I"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    }
+  },
+  {
+    "id": "hacking1999",
+    "type": "article-journal",
+    "title": "The social construction of what? Harvard University Press",
+    "author": [
+      {
+        "family": "Hacking",
+        "given": "I"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    }
+  },
+  {
+    "id": "harel1987statecharts",
+    "type": "article-journal",
+    "title": "Statecharts: A visual formalism for complex systems",
+    "author": [
+      {
+        "family": "Harel",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    },
+    "page": "231-274"
+  },
+  {
+    "id": "hart1988",
+    "type": "article-journal",
+    "title": "Development of NASA-TLX",
+    "author": [
+      {
+        "family": "Hart",
+        "given": "S. G.,"
+      },
+      {
+        "family": "Staveland",
+        "given": "L. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    }
+  },
+  {
+    "id": "hartson2003",
+    "type": "article-journal",
+    "title": "Cognitive, physical, sensory, and functional affordances in interaction design",
+    "author": [
+      {
+        "family": "Hartson",
+        "given": "H. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    },
+    "volume": "22",
+    "issue": "5",
+    "page": "315-338"
+  },
+  {
+    "id": "hempel1948",
+    "type": "article-journal",
+    "title": "Studies in the logic of explanation",
+    "author": [
+      {
+        "family": "Hempel",
+        "given": "C. G.,"
+      },
+      {
+        "family": "Oppenheim",
+        "given": "P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1948
+        ]
+      ]
+    },
+    "page": "135-175"
+  },
+  {
+    "id": "hick1952",
+    "type": "article-journal",
+    "title": "On the Rate of Gain of Information",
+    "author": [
+      {
+        "family": "Hick",
+        "given": "W. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1952
+        ]
+      ]
+    },
+    "volume": "4",
+    "issue": "1",
+    "page": "11-26"
+  },
+  {
+    "id": "hoare1985",
+    "type": "article-journal",
+    "title": "Communicating Sequential Processes",
+    "author": [
+      {
+        "family": "Hoare",
+        "given": "C. A. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1985
+        ]
+      ]
+    }
+  },
+  {
+    "id": "hollan2000",
+    "type": "article-journal",
+    "title": "Distributed cognition: Toward a new foundation for human-computer interaction research",
+    "author": [
+      {
+        "family": "Hollan",
+        "given": "J., Hutchins, E.,"
+      },
+      {
+        "family": "Kirsh",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "volume": "7",
+    "issue": "2",
+    "page": "174-196",
+    "DOI": "10.1145/353485.353487",
+    "URL": "https://doi.org/10.1145/353485.353487"
+  },
+  {
+    "id": "hollnagel2005",
+    "type": "article-journal",
+    "title": "Joint cognitive systems: Foundations of cognitive systems engineering",
+    "author": [
+      {
+        "family": "Hollnagel",
+        "given": "E.,"
+      },
+      {
+        "family": "Woods",
+        "given": "D. D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    }
+  },
+  {
+    "id": "hornbk2017",
+    "type": "article-journal",
+    "title": "What is interaction? In Proceedings of CHI 2017 (pp",
+    "author": [
+      {
+        "family": "Hornbæk",
+        "given": "K.,"
+      },
+      {
+        "family": "Oulasvirta",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "5040-5052",
+    "DOI": "10.1145/3025453.3025765",
+    "URL": "https://doi.org/10.1145/3025453.3025765"
+  },
+  {
+    "id": "hornbk2017what",
+    "type": "article-journal",
+    "title": "What is interaction? In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (pp",
+    "author": [
+      {
+        "family": "Hornbæk",
+        "given": "K.,"
+      },
+      {
+        "family": "Oulasvirta",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "5040-5052",
+    "DOI": "10.1145/3025453.3025765",
+    "URL": "https://doi.org/10.1145/3025453.3025765"
+  },
+  {
+    "id": "hornbk2019",
+    "type": "article-journal",
+    "title": "What do we mean by “interaction”? An analysis of 35 years of CHI",
+    "author": [
+      {
+        "family": "Hornbæk",
+        "given": "K., Mottelson, A., Knibbe, J.,"
+      },
+      {
+        "family": "Vogel",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "volume": "26",
+    "issue": "4",
+    "DOI": "10.1145/3325285",
+    "URL": "https://doi.org/10.1145/3325285"
+  },
+  {
+    "id": "hornbk2025",
+    "type": "book",
+    "title": "Introduction to human-computer interaction",
+    "author": [
+      {
+        "family": "Hornbæk",
+        "given": "K., Kristensson, P. O.,"
+      },
+      {
+        "family": "Oulasvirta",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "DOI": "10.1093/oso/9780192864543.001.0001",
+    "ISBN": "9780192864543",
+    "URL": "https://doi.org/10.1093/oso/9780192864543.001.0001"
+  },
+  {
+    "id": "hutchins1995",
+    "type": "book",
+    "title": "Cognition in the Wild",
+    "author": [
+      {
+        "family": "Hutchins",
+        "given": "E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    }
+  },
+  {
+    "id": "hyman1953",
+    "type": "article-journal",
+    "title": "Stimulus Information as a Determinant of Reaction Time",
+    "author": [
+      {
+        "family": "Hyman",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "volume": "45",
+    "issue": "3",
+    "page": "188-196"
+  },
+  {
+    "id": "internationalergonomicsassociation2000",
+    "type": "article-journal",
+    "title": "Definition and domains of ergonomics",
+    "author": [
+      {
+        "literal": "International Ergonomics Association"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    }
+  },
+  {
+    "id": "jastrzembski2007",
+    "type": "article-journal",
+    "title": "The Model Human Processor and the Older Adult: Parameter Estimation and Validation Within a Mobile Phone Task",
+    "author": [
+      {
+        "family": "Jastrzembski",
+        "given": "T. S.,"
+      },
+      {
+        "family": "Charness",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "volume": "13",
+    "issue": "4",
+    "page": "224-248"
+  },
+  {
+    "id": "jcgm2008",
+    "type": "article-journal",
+    "title": "Evaluation of measurement data - Guide to the expression of uncertainty in measurement",
+    "author": [
+      {
+        "literal": "JCGM"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    }
+  },
+  {
+    "id": "johnsonlaird1983",
+    "type": "article-journal",
+    "title": "Mental models",
+    "author": [
+      {
+        "family": "Johnson-Laird",
+        "given": "P. N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    }
+  },
+  {
+    "id": "judd1908",
+    "type": "article-journal",
+    "title": "The relation of special training to general intelligence",
+    "author": [
+      {
+        "family": "Judd",
+        "given": "C. H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1908
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kaelbling1998planning",
+    "type": "article-journal",
+    "title": "Planning and acting in partially observable stochastic domains",
+    "author": [
+      {
+        "family": "Kaelbling",
+        "given": "L. P., Littman, M. L.,"
+      },
+      {
+        "family": "Cassandra",
+        "given": "A. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "page": "99-134"
+  },
+  {
+    "id": "kahneman1979",
+    "type": "article-journal",
+    "title": "Prospect theory: An analysis of decision under risk",
+    "author": [
+      {
+        "family": "Kahneman",
+        "given": "D.,"
+      },
+      {
+        "family": "Tversky",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    },
+    "volume": "47",
+    "issue": "2",
+    "page": "263-291"
+  },
+  {
+    "id": "kalman1960",
+    "type": "article-journal",
+    "title": "Contributions to the theory of optimal control",
+    "author": [
+      {
+        "family": "Kalman",
+        "given": "R. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1960
+        ]
+      ]
+    },
+    "page": "102-119"
+  },
+  {
+    "id": "kaptelinin2006",
+    "type": "article-journal",
+    "title": "Acting with technology: Activity theory and interaction design",
+    "author": [
+      {
+        "family": "Kaptelinin",
+        "given": "V.,"
+      },
+      {
+        "family": "Nardi",
+        "given": "B. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kelso1995",
+    "type": "article-journal",
+    "title": "Dynamic patterns: The self-organization of brain and behavior",
+    "author": [
+      {
+        "family": "Kelso",
+        "given": "J. A. S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kendon1990",
+    "type": "article-journal",
+    "title": "Conducting Interaction: Patterns of Behavior in Focused Encounters",
+    "author": [
+      {
+        "family": "Kendon",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1990
+        ]
+      ]
+    }
+  },
+  {
+    "id": "khetarpal2020",
+    "type": "article-journal",
+    "title": "What can I do here? A theory of affordances in reinforcement learning",
+    "author": [
+      {
+        "family": "Khetarpal",
+        "given": "K., Ahmed, Z., Comanici, G., Abel, D.,"
+      },
+      {
+        "family": "Precup",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kirsh2010",
+    "type": "article-journal",
+    "title": "Thinking with external representations",
+    "author": [
+      {
+        "family": "Kirsh",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "441-454"
+  },
+  {
+    "id": "kitcher1981",
+    "type": "article-journal",
+    "title": "Explanatory unification",
+    "author": [
+      {
+        "family": "Kitcher",
+        "given": "P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1981
+        ]
+      ]
+    },
+    "page": "507-531"
+  },
+  {
+    "id": "kolchinsky2018",
+    "type": "article-journal",
+    "title": "Semantic information, autonomous agency, and nonequilibrium statistical physics",
+    "author": [
+      {
+        "family": "Kolchinsky",
+        "given": "A.,"
+      },
+      {
+        "family": "Wolpert",
+        "given": "D. H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "volume": "8",
+    "issue": "6"
+  },
+  {
+    "id": "kosslyn1994",
+    "type": "article-journal",
+    "title": "Image and brain",
+    "author": [
+      {
+        "family": "Kosslyn",
+        "given": "S. M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    }
+  },
+  {
+    "id": "krantz1971",
+    "type": "article-journal",
+    "title": "Foundations of Measurement, Volume I",
+    "author": [
+      {
+        "family": "Krantz",
+        "given": "D. H., Luce, R. D., Suppes, P.,"
+      },
+      {
+        "family": "Tversky",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1971
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kruskal1978",
+    "type": "article-journal",
+    "title": "Multidimensional Scaling",
+    "author": [
+      {
+        "family": "Kruskal",
+        "given": "J. B.,"
+      },
+      {
+        "family": "Wish",
+        "given": "M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1978
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kuhn1970",
+    "type": "article-journal",
+    "title": "The structure of scientific revolutions (2nd ed.; original work published 1962)",
+    "author": [
+      {
+        "family": "Kuhn",
+        "given": "T. S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1970
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kuutti1996",
+    "type": "article-journal",
+    "title": "Activity theory as a potential framework for human-computer interaction research",
+    "author": [
+      {
+        "family": "Kuutti",
+        "given": "K"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "page": "17-44"
+  },
+  {
+    "id": "lakatos1978",
+    "type": "article-journal",
+    "title": "The methodology of scientific research programmes",
+    "author": [
+      {
+        "family": "Lakatos",
+        "given": "I"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1978
+        ]
+      ]
+    }
+  },
+  {
+    "id": "lange2013",
+    "type": "article-journal",
+    "title": "Model-checking process equivalences",
+    "author": [
+      {
+        "family": "Lange",
+        "given": "M., Lozes, E.,"
+      },
+      {
+        "family": "Vargas Guzman",
+        "given": "M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "page": "326-347"
+  },
+  {
+    "id": "larkin1987",
+    "type": "article-journal",
+    "title": "Why a diagram is (sometimes) worth ten thousand words",
+    "author": [
+      {
+        "family": "Larkin",
+        "given": "J. H.,"
+      },
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    },
+    "volume": "11",
+    "issue": "1",
+    "page": "65-100"
+  },
+  {
+    "id": "lave1988",
+    "type": "article-journal",
+    "title": "Cognition in Practice",
+    "author": [
+      {
+        "family": "Lave",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    }
+  },
+  {
+    "id": "lave1991",
+    "type": "article-journal",
+    "title": "Situated learning: Legitimate peripheral participation",
+    "author": [
+      {
+        "family": "Lave",
+        "given": "J.,"
+      },
+      {
+        "family": "Wenger",
+        "given": "E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    },
+    "DOI": "10.1017/CBO9780511815355",
+    "ISBN": "9780511815355",
+    "URL": "https://doi.org/10.1017/CBO9780511815355"
+  },
+  {
+    "id": "lei2018",
+    "type": "article-journal",
+    "title": "Distribution-Free Predictive Inference for Regression",
+    "author": [
+      {
+        "family": "Lei",
+        "given": "J., G'Sell, M., Rinaldo, A., Tibshirani, R. J.,"
+      },
+      {
+        "family": "Wasserman",
+        "given": "L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "volume": "113",
+    "issue": "523",
+    "page": "1094-1111"
+  },
+  {
+    "id": "levenshtein1966",
+    "type": "article-journal",
+    "title": "Binary codes capable of correcting deletions, insertions, and reversals",
+    "author": [
+      {
+        "family": "Levenshtein",
+        "given": "V. I"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1966
+        ]
+      ]
+    },
+    "page": "707-710"
+  },
+  {
+    "id": "logan1988",
+    "type": "article-journal",
+    "title": "Toward an instance theory of automatization",
+    "author": [
+      {
+        "family": "Logan",
+        "given": "G. D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    },
+    "volume": "95",
+    "issue": "4",
+    "page": "492-527"
+  },
+  {
+    "id": "lord1968",
+    "type": "article-journal",
+    "title": "Statistical Theories of Mental Test Scores",
+    "author": [
+      {
+        "family": "Lord",
+        "given": "F. M.,"
+      },
+      {
+        "family": "Novick",
+        "given": "M. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1968
+        ]
+      ]
+    }
+  },
+  {
+    "id": "luhmann1995",
+    "type": "article-journal",
+    "title": "Social Systems",
+    "author": [
+      {
+        "family": "Luhmann",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    }
+  },
+  {
+    "id": "lynch1996",
+    "type": "article-journal",
+    "title": "Distributed Algorithms",
+    "author": [
+      {
+        "family": "Lynch",
+        "given": "N. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    }
+  },
+  {
+    "id": "machamer2000",
+    "type": "article-journal",
+    "title": "Thinking about mechanisms",
+    "author": [
+      {
+        "family": "Machamer",
+        "given": "P., Darden, L.,"
+      },
+      {
+        "family": "Craver",
+        "given": "C. F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "page": "1-25"
+  },
+  {
+    "id": "macmillan2005",
+    "type": "article-journal",
+    "title": "Detection Theory: A User's Guide",
+    "author": [
+      {
+        "family": "Macmillan",
+        "given": "N. A.,"
+      },
+      {
+        "family": "Creelman",
+        "given": "C. D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    }
+  },
+  {
+    "id": "marr1982",
+    "type": "article-journal",
+    "title": "Vision",
+    "author": [
+      {
+        "family": "Marr",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    }
+  },
+  {
+    "id": "maturana2002",
+    "type": "article-journal",
+    "title": "Autopoiesis, structural coupling and cognition",
+    "author": [
+      {
+        "family": "Maturana",
+        "given": "H. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "3-4"
+  },
+  {
+    "id": "mayr1982",
+    "type": "article-journal",
+    "title": "The growth of biological thought",
+    "author": [
+      {
+        "family": "Mayr",
+        "given": "E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    }
+  },
+  {
+    "id": "mead1934",
+    "type": "article-journal",
+    "title": "Mind, Self, and Society",
+    "author": [
+      {
+        "family": "Mead",
+        "given": "G. H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1934
+        ]
+      ]
+    }
+  },
+  {
+    "id": "messick1995",
+    "type": "article-journal",
+    "title": "Validity of psychological assessment",
+    "author": [
+      {
+        "family": "Messick",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    },
+    "volume": "50",
+    "issue": "9",
+    "page": "741-749"
+  },
+  {
+    "id": "millsap2011",
+    "type": "article-journal",
+    "title": "Statistical approaches to measurement invariance",
+    "author": [
+      {
+        "family": "Millsap",
+        "given": "R. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    }
+  },
+  {
+    "id": "milner1980",
+    "type": "article-journal",
+    "title": "A Calculus of Communicating Systems",
+    "author": [
+      {
+        "family": "Milner",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1980
+        ]
+      ]
+    }
+  },
+  {
+    "id": "milner1989",
+    "type": "article-journal",
+    "title": "Communication and concurrency",
+    "author": [
+      {
+        "family": "Milner",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    }
+  },
+  {
+    "id": "morris1938",
+    "type": "article-journal",
+    "title": "Foundations of the Theory of Signs",
+    "author": [
+      {
+        "family": "Morris",
+        "given": "C. W"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1938
+        ]
+      ]
+    }
+  },
+  {
+    "id": "murata1989",
+    "type": "article-journal",
+    "title": "Petri nets: Properties, analysis and applications",
+    "author": [
+      {
+        "family": "Murata",
+        "given": "T"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    },
+    "volume": "77",
+    "issue": "4",
+    "page": "541-580"
+  },
+  {
+    "id": "nationalacademiesofsciences2018",
+    "type": "article-journal",
+    "title": "How People Learn II",
+    "author": [
+      {
+        "family": "National Academies of Sciences",
+        "given": "Engineering,"
+      },
+      {
+        "literal": "Medicine"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    }
+  },
+  {
+    "id": "newell1958",
+    "type": "article-journal",
+    "title": "Elements of a theory of human problem solving",
+    "author": [
+      {
+        "family": "Newell",
+        "given": "A., Shaw, J. C.,"
+      },
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1958
+        ]
+      ]
+    },
+    "page": "151-166"
+  },
+  {
+    "id": "newell1972",
+    "type": "article-journal",
+    "title": "Human Problem Solving",
+    "author": [
+      {
+        "family": "Newell",
+        "given": "A.,"
+      },
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    }
+  },
+  {
+    "id": "newell1976",
+    "type": "article-journal",
+    "title": "Computer science as empirical inquiry: Symbols and search",
+    "author": [
+      {
+        "family": "Newell",
+        "given": "A.,"
+      },
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1976
+        ]
+      ]
+    },
+    "page": "113-126"
+  },
+  {
+    "id": "newell1985",
+    "type": "article-journal",
+    "title": "The prospects for psychological science in human-computer interaction",
+    "author": [
+      {
+        "family": "Newell",
+        "given": "A.,"
+      },
+      {
+        "family": "Card",
+        "given": "S. K"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1985
+        ]
+      ]
+    },
+    "volume": "1",
+    "issue": "3",
+    "page": "209-242"
+  },
+  {
+    "id": "norman1983",
+    "type": "article-journal",
+    "title": "Some observations on mental models",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "page": "7-14"
+  },
+  {
+    "id": "norman1986",
+    "type": "article-journal",
+    "title": "Cognitive engineering",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    }
+  },
+  {
+    "id": "norman1988",
+    "type": "article-journal",
+    "title": "The psychology of everyday things",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    }
+  },
+  {
+    "id": "norman2013",
+    "type": "book",
+    "title": "The design of everyday things (Rev",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    }
+  },
+  {
+    "id": "norman2013the2",
+    "type": "book",
+    "title": "The Design of Everyday Things, revised and expanded edition",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    }
+  },
+  {
+    "id": "norman2013the3",
+    "type": "book",
+    "title": "The Design of Everyday Things, revised edition",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    }
+  },
+  {
+    "id": "norman2013the5",
+    "type": "book",
+    "title": "The Design of Everyday Things",
+    "author": [
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    }
+  },
+  {
+    "id": "opensciencecollaboration2015",
+    "type": "article-journal",
+    "title": "Estimating the reproducibility of psychological science",
+    "author": [
+      {
+        "literal": "Open Science Collaboration"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "volume": "349",
+    "issue": "6251"
+  },
+  {
+    "id": "oulasvirta2018",
+    "type": "article-journal",
+    "title": "Computational interaction",
+    "author": [
+      {
+        "family": "Oulasvirta",
+        "given": "A., Kristensson, P. O., Bi, X.,"
+      },
+      {
+        "family": "Howes",
+        "given": "A. (Eds.)"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    }
+  },
+  {
+    "id": "oulasvirta2022",
+    "type": "article-journal",
+    "title": "Computational rationality as a theory of interaction",
+    "author": [
+      {
+        "family": "Oulasvirta",
+        "given": "A., Jokinen, J. P. P.,"
+      },
+      {
+        "family": "Howes",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "1-14",
+    "DOI": "10.1145/3491102.3517739",
+    "URL": "https://doi.org/10.1145/3491102.3517739"
+  },
+  {
+    "id": "palmer1978",
+    "type": "article-journal",
+    "title": "Fundamental aspects of cognitive representation",
+    "author": [
+      {
+        "family": "Palmer",
+        "given": "S. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1978
+        ]
+      ]
+    },
+    "page": "1931-1958"
+  },
+  {
+    "id": "pan2010",
+    "type": "article-journal",
+    "title": "A survey on transfer learning",
+    "author": [
+      {
+        "family": "Pan",
+        "given": "S. J.,"
+      },
+      {
+        "family": "Yang",
+        "given": "Q"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "volume": "22",
+    "issue": "10",
+    "page": "1345-1359"
+  },
+  {
+    "id": "parasuraman2000",
+    "type": "article-journal",
+    "title": "A model for types and levels of human interaction with automation",
+    "author": [
+      {
+        "family": "Parasuraman",
+        "given": "R., Sheridan, T. B.,"
+      },
+      {
+        "family": "Wickens",
+        "given": "C. D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "volume": "30",
+    "issue": "3",
+    "page": "286-297"
+  },
+  {
+    "id": "park1981",
+    "type": "article-journal",
+    "title": "Concurrency and automata on infinite sequences",
+    "author": [
+      {
+        "family": "Park",
+        "given": "D"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1981
+        ]
+      ]
+    }
+  },
+  {
+    "id": "pearl2000",
+    "type": "book",
+    "title": "Causality",
+    "author": [
+      {
+        "family": "Pearl",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    }
+  },
+  {
+    "id": "pearl2009",
+    "type": "book",
+    "title": "Causality, 2nd ed",
+    "author": [
+      {
+        "family": "Pearl",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    }
+  },
+  {
+    "id": "pearl2009causality",
+    "type": "book",
+    "title": "Causality: Models, Reasoning, and Inference (2nd ed.)",
+    "author": [
+      {
+        "family": "Pearl",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    }
+  },
+  {
+    "id": "pearl2012",
+    "type": "article-journal",
+    "title": "The Do-Calculus Revisited",
+    "author": [
+      {
+        "family": "Pearl",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    }
+  },
+  {
+    "id": "pirolli1999",
+    "type": "article-journal",
+    "title": "Information foraging",
+    "author": [
+      {
+        "family": "Pirolli",
+        "given": "P.,"
+      },
+      {
+        "family": "Card",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "volume": "106",
+    "issue": "4",
+    "page": "643-675"
+  },
+  {
+    "id": "popper1959",
+    "type": "article-journal",
+    "title": "The logic of scientific discovery",
+    "author": [
+      {
+        "family": "Popper",
+        "given": "K. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1959
+        ]
+      ]
+    }
+  },
+  {
+    "id": "preece2015",
+    "type": "article-journal",
+    "title": "Interaction Design: Beyond Human-Computer Interaction",
+    "author": [
+      {
+        "family": "Preece",
+        "given": "J., Rogers, Y.,"
+      },
+      {
+        "family": "Sharp",
+        "given": "H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ramadge1987",
+    "type": "article-journal",
+    "title": "Supervisory control of a class of discrete event processes",
+    "author": [
+      {
+        "family": "Ramadge",
+        "given": "P. J.,"
+      },
+      {
+        "family": "Wonham",
+        "given": "W. M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "1",
+    "page": "206-230"
+  },
+  {
+    "id": "rao1995",
+    "type": "article-journal",
+    "title": "BDI agents: From theory to practice",
+    "author": [
+      {
+        "family": "Rao",
+        "given": "A. S.,"
+      },
+      {
+        "family": "Georgeff",
+        "given": "M. P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rasmussen1983",
+    "type": "article-journal",
+    "title": "Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models",
+    "author": [
+      {
+        "family": "Rasmussen",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "volume": "13",
+    "issue": "3",
+    "page": "257-266"
+  },
+  {
+    "id": "reason1990",
+    "type": "article-journal",
+    "title": "Human Error",
+    "author": [
+      {
+        "family": "Reason",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1990
+        ]
+      ]
+    }
+  },
+  {
+    "id": "reeves2015",
+    "type": "article-journal",
+    "title": "Human-computer interaction as science",
+    "author": [
+      {
+        "family": "Reeves",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "73-84"
+  },
+  {
+    "id": "reisig2013",
+    "type": "article-journal",
+    "title": "Understanding Petri Nets",
+    "author": [
+      {
+        "family": "Reisig",
+        "given": "W"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rheinberger1997",
+    "type": "article-journal",
+    "title": "Toward a history of epistemic things",
+    "author": [
+      {
+        "family": "Rheinberger",
+        "given": "H.-J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    }
+  },
+  {
+    "id": "roast2001",
+    "type": "article-journal",
+    "title": "Cognitive dimensions of notations: Design tools for cognitive technology",
+    "author": [
+      {
+        "family": "Roast",
+        "given": "C., Roes, C., Wong, A.,"
+      },
+      {
+        "family": "Young",
+        "given": "R. M"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rogers2011",
+    "type": "article-journal",
+    "title": "Interaction design: Beyond human-computer interaction (3rd ed.)",
+    "author": [
+      {
+        "family": "Rogers",
+        "given": "Y., Sharp, H.,"
+      },
+      {
+        "family": "Preece",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rosenbaum2020",
+    "type": "book",
+    "title": "Design of Observational Studies (2nd ed.)",
+    "author": [
+      {
+        "family": "Rosenbaum",
+        "given": "P. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rosenblueth1943",
+    "type": "article-journal",
+    "title": "Behavior, purpose and teleology",
+    "author": [
+      {
+        "family": "Rosenblueth",
+        "given": "A., Wiener, N.,"
+      },
+      {
+        "family": "Bigelow",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1943
+        ]
+      ]
+    },
+    "page": "18-24"
+  },
+  {
+    "id": "rosenfeld2015",
+    "type": "article-journal",
+    "title": "Information architecture: For the web and beyond (4th ed.)",
+    "author": [
+      {
+        "family": "Rosenfeld",
+        "given": "L., Morville, P.,"
+      },
+      {
+        "family": "Arango",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rothenberg1989",
+    "type": "article-journal",
+    "title": "The nature of modeling",
+    "author": [
+      {
+        "family": "Rothenberg",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    }
+  },
+  {
+    "id": "roy1991",
+    "type": "article-journal",
+    "title": "The outranking approach and the foundations of ELECTRE methods",
+    "author": [
+      {
+        "family": "Roy",
+        "given": "B"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    },
+    "page": "49-73"
+  },
+  {
+    "id": "ryle1949",
+    "type": "article-journal",
+    "title": "The Concept of Mind",
+    "author": [
+      {
+        "family": "Ryle",
+        "given": "G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1949
+        ]
+      ]
+    }
+  },
+  {
+    "id": "sacks1974",
+    "type": "article-journal",
+    "title": "A simplest systematics for the organization of turn-taking for conversation",
+    "author": [
+      {
+        "family": "Sacks",
+        "given": "H., Schegloff, E. A.,"
+      },
+      {
+        "family": "Jefferson",
+        "given": "G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1974
+        ]
+      ]
+    },
+    "volume": "50",
+    "issue": "4",
+    "page": "696-735"
+  },
+  {
+    "id": "sakoe1978",
+    "type": "article-journal",
+    "title": "Dynamic programming algorithm optimization for spoken word recognition",
+    "author": [
+      {
+        "family": "Sakoe",
+        "given": "H.,"
+      },
+      {
+        "family": "Chiba",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1978
+        ]
+      ]
+    },
+    "volume": "26",
+    "issue": "1",
+    "page": "43-49"
+  },
+  {
+    "id": "salmon1984",
+    "type": "article-journal",
+    "title": "Scientific explanation and the causal structure of the world",
+    "author": [
+      {
+        "family": "Salmon",
+        "given": "W. C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1984
+        ]
+      ]
+    }
+  },
+  {
+    "id": "sandhu1996",
+    "type": "article-journal",
+    "title": "Role-based access control models",
+    "author": [
+      {
+        "family": "Sandhu",
+        "given": "R. S., Coyne, E. J., Feinstein, H. L.,"
+      },
+      {
+        "family": "Youman",
+        "given": "C. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "volume": "29",
+    "issue": "2",
+    "page": "38-47"
+  },
+  {
+    "id": "sanfeliu1983",
+    "type": "article-journal",
+    "title": "A distance measure between attributed relational graphs for pattern recognition",
+    "author": [
+      {
+        "family": "Sanfeliu",
+        "given": "A.,"
+      },
+      {
+        "family": "Fu",
+        "given": "K. S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "volume": "13",
+    "issue": "3",
+    "page": "353-362"
+  },
+  {
+    "id": "sauro2016",
+    "type": "article-journal",
+    "title": "Quantifying the User Experience",
+    "author": [
+      {
+        "family": "Sauro",
+        "given": "J.,"
+      },
+      {
+        "family": "Lewis",
+        "given": "J. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    }
+  },
+  {
+    "id": "saussure1983",
+    "type": "article-journal",
+    "title": "Course in general linguistics",
+    "author": [
+      {
+        "family": "Saussure",
+        "given": "F. de"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    }
+  },
+  {
+    "id": "scott1971",
+    "type": "article-journal",
+    "title": "Toward a Mathematical Semantics for Computer Languages",
+    "author": [
+      {
+        "family": "Scott",
+        "given": "D.,"
+      },
+      {
+        "family": "Strachey",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1971
+        ]
+      ]
+    }
+  },
+  {
+    "id": "searle1980",
+    "type": "article-journal",
+    "title": "Minds, brains, and programs",
+    "author": [
+      {
+        "family": "Searle",
+        "given": "J. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1980
+        ]
+      ]
+    },
+    "page": "417-457"
+  },
+  {
+    "id": "sen2016",
+    "type": "article-journal",
+    "title": "Race as a bundle of sticks: Designs that estimate effects of seemingly immutable characteristics",
+    "author": [
+      {
+        "family": "Sen",
+        "given": "M.,"
+      },
+      {
+        "family": "Wasow",
+        "given": "O"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "499-522",
+    "DOI": "10.1146/annurev-polisci-032015-",
+    "URL": "https://doi.org/10.1146/annurev-polisci-032015-"
+  },
+  {
+    "id": "shannon1948a",
+    "type": "article-journal",
+    "title": "A mathematical theory of communication",
+    "author": [
+      {
+        "family": "Shannon",
+        "given": "C. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1948
+        ]
+      ]
+    },
+    "page": "379-423"
+  },
+  {
+    "id": "shepard1987",
+    "type": "article-journal",
+    "title": "Toward a universal law of generalization for psychological science",
+    "author": [
+      {
+        "family": "Shepard",
+        "given": "R. N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    },
+    "page": "1317-1323"
+  },
+  {
+    "id": "shimojima2015",
+    "type": "article-journal",
+    "title": "Semantic properties of diagrams and their cognitive potentials",
+    "author": [
+      {
+        "family": "Shimojima",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    }
+  },
+  {
+    "id": "shmueli2010",
+    "type": "article-journal",
+    "title": "To Explain or to Predict? Statistical Science, 25(3), 289-310",
+    "author": [
+      {
+        "family": "Shmueli",
+        "given": "G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "3",
+    "page": "289-310"
+  },
+  {
+    "id": "shneiderman1983",
+    "type": "article-journal",
+    "title": "Direct manipulation: A step beyond programming languages",
+    "author": [
+      {
+        "family": "Shneiderman",
+        "given": "B"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "volume": "16",
+    "issue": "8",
+    "page": "57-69"
+  },
+  {
+    "id": "simon1955",
+    "type": "article-journal",
+    "title": "A behavioral model of rational choice",
+    "author": [
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1955
+        ]
+      ]
+    },
+    "volume": "69",
+    "issue": "1",
+    "page": "99-118"
+  },
+  {
+    "id": "simon1962",
+    "type": "article-journal",
+    "title": "The architecture of complexity",
+    "author": [
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1962
+        ]
+      ]
+    },
+    "volume": "106",
+    "issue": "6",
+    "page": "467-482"
+  },
+  {
+    "id": "simon1996",
+    "type": "article-journal",
+    "title": "The sciences of the artificial (3rd ed.)",
+    "author": [
+      {
+        "family": "Simon",
+        "given": "H. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    }
+  },
+  {
+    "id": "singley1989",
+    "type": "article-journal",
+    "title": "The Transfer of Cognitive Skill",
+    "author": [
+      {
+        "family": "Singley",
+        "given": "M. K.,"
+      },
+      {
+        "family": "Anderson",
+        "given": "J. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    }
+  },
+  {
+    "id": "skinner1938",
+    "type": "article-journal",
+    "title": "The Behavior of Organisms",
+    "author": [
+      {
+        "family": "Skinner",
+        "given": "B. F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1938
+        ]
+      ]
+    }
+  },
+  {
+    "id": "spence2007",
+    "type": "article-journal",
+    "title": "Information visualization: Design for interaction (2nd ed.)",
+    "author": [
+      {
+        "family": "Spence",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    }
+  },
+  {
+    "id": "stevens1946",
+    "type": "article-journal",
+    "title": "On the theory of scales of measurement",
+    "author": [
+      {
+        "family": "Stevens",
+        "given": "S. S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1946
+        ]
+      ]
+    },
+    "volume": "103",
+    "issue": "2684",
+    "page": "677-680"
+  },
+  {
+    "id": "stichweh1992",
+    "type": "article-journal",
+    "title": "The sociology of scientific disciplines",
+    "author": [
+      {
+        "family": "Stichweh",
+        "given": "R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "page": "3-15"
+  },
+  {
+    "id": "stoffregen2003",
+    "type": "article-journal",
+    "title": "Affordances as properties of the animal-environment system",
+    "author": [
+      {
+        "family": "Stoffregen",
+        "given": "T. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    },
+    "volume": "15",
+    "issue": "2",
+    "page": "115-134"
+  },
+  {
+    "id": "suchman1987",
+    "type": "book",
+    "title": "Plans and Situated Actions",
+    "author": [
+      {
+        "family": "Suchman",
+        "given": "L. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    }
+  },
+  {
+    "id": "suchman1987plans5",
+    "type": "book",
+    "title": "Plans and situated actions: The problem of human-machine communication",
+    "author": [
+      {
+        "family": "Suchman",
+        "given": "L. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    }
+  },
+  {
+    "id": "suppes1963",
+    "type": "article-journal",
+    "title": "Basic measurement theory",
+    "author": [
+      {
+        "family": "Suppes",
+        "given": "P.,"
+      },
+      {
+        "family": "Zinnes",
+        "given": "J. L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1963
+        ]
+      ]
+    }
+  },
+  {
+    "id": "suppes1989",
+    "type": "article-journal",
+    "title": "Foundations of Measurement, Vol",
+    "author": [
+      {
+        "family": "Suppes",
+        "given": "P., Krantz, D. H., Luce, R. D.,"
+      },
+      {
+        "family": "Tversky",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    }
+  },
+  {
+    "id": "sutton1999",
+    "type": "article-journal",
+    "title": "Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning",
+    "author": [
+      {
+        "family": "Sutton",
+        "given": "R. S., Precup, D.,"
+      },
+      {
+        "family": "Singh",
+        "given": "S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "page": "181-211"
+  },
+  {
+    "id": "sutton2018",
+    "type": "book",
+    "title": "Reinforcement Learning: An Introduction (2nd ed.)",
+    "author": [
+      {
+        "family": "Sutton",
+        "given": "R. S.,"
+      },
+      {
+        "family": "Barto",
+        "given": "A. G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    }
+  },
+  {
+    "id": "syring2019",
+    "type": "article-journal",
+    "title": "Evaluating conformance measures in process mining using conformance propositions",
+    "author": [
+      {
+        "family": "Syring",
+        "given": "A. F., Tax, N.,"
+      },
+      {
+        "family": "van der Aalst",
+        "given": "W. M. P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    }
+  },
+  {
+    "id": "tarski1944",
+    "type": "article-journal",
+    "title": "The semantic conception of truth and the foundations of semantics",
+    "author": [
+      {
+        "family": "Tarski",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1944
+        ]
+      ]
+    },
+    "page": "341-376"
+  },
+  {
+    "id": "taylor1994",
+    "type": "article-journal",
+    "title": "Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results",
+    "author": [
+      {
+        "family": "Taylor",
+        "given": "B. N.,"
+      },
+      {
+        "family": "Kuyatt",
+        "given": "C. E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    }
+  },
+  {
+    "id": "taylor2009",
+    "type": "article-journal",
+    "title": "Transfer learning for reinforcement learning domains: A survey",
+    "author": [
+      {
+        "family": "Taylor",
+        "given": "M. E.,"
+      },
+      {
+        "family": "Stone",
+        "given": "P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "page": "1633-1685"
+  },
+  {
+    "id": "thelen1994",
+    "type": "article-journal",
+    "title": "A dynamic systems approach to the development of cognition and action",
+    "author": [
+      {
+        "family": "Thelen",
+        "given": "E.,"
+      },
+      {
+        "family": "Smith",
+        "given": "L. B"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    }
+  },
+  {
+    "id": "thorndike1901",
+    "type": "article-journal",
+    "title": "The influence of improvement in one mental function upon the efficiency of other functions",
+    "author": [
+      {
+        "family": "Thorndike",
+        "given": "E. L.,"
+      },
+      {
+        "family": "Woodworth",
+        "given": "R. S"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1901
+        ]
+      ]
+    }
+  },
+  {
+    "id": "thorndike1949",
+    "type": "article-journal",
+    "title": "Personnel Selection: Test and Measurement Techniques",
+    "author": [
+      {
+        "family": "Thorndike",
+        "given": "R. L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1949
+        ]
+      ]
+    }
+  },
+  {
+    "id": "tinbergen1963on",
+    "type": "article-journal",
+    "title": "On aims and methods of ethology",
+    "author": [
+      {
+        "family": "Tinbergen",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1963
+        ]
+      ]
+    },
+    "page": "410-433"
+  },
+  {
+    "id": "treisman1980",
+    "type": "article-journal",
+    "title": "A feature-integration theory of attention",
+    "author": [
+      {
+        "family": "Treisman",
+        "given": "A. M.,"
+      },
+      {
+        "family": "Gelade",
+        "given": "G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1980
+        ]
+      ]
+    },
+    "volume": "12",
+    "issue": "1",
+    "page": "97-136"
+  },
+  {
+    "id": "tufte1983",
+    "type": "article-journal",
+    "title": "The visual display of quantitative information",
+    "author": [
+      {
+        "family": "Tufte",
+        "given": "E. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    }
+  },
+  {
+    "id": "turvey1992",
+    "type": "article-journal",
+    "title": "Affordances and prospective control: An outline of the ontology",
+    "author": [
+      {
+        "family": "Turvey",
+        "given": "M. T"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "volume": "4",
+    "issue": "3",
+    "page": "173-187"
+  },
+  {
+    "id": "tversky1977",
+    "type": "article-journal",
+    "title": "Features of similarity",
+    "author": [
+      {
+        "family": "Tversky",
+        "given": "A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1977
+        ]
+      ]
+    },
+    "volume": "84",
+    "issue": "4",
+    "page": "327-352"
+  },
+  {
+    "id": "vanderaalst1998",
+    "type": "article-journal",
+    "title": "The application of Petri nets to workflow management",
+    "author": [
+      {
+        "family": "van der Aalst",
+        "given": "W. M. P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "volume": "8",
+    "issue": "1",
+    "page": "21-66"
+  },
+  {
+    "id": "vanderaalst2016",
+    "type": "article-journal",
+    "title": "Process Mining: Data Science in Action (2nd ed.)",
+    "author": [
+      {
+        "family": "van der Aalst",
+        "given": "W. M. P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    }
+  },
+  {
+    "id": "vanderaalst2016process",
+    "type": "article-journal",
+    "title": "Process Mining: Data Science in Action",
+    "author": [
+      {
+        "family": "van der Aalst",
+        "given": "W. M. P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    }
+  },
+  {
+    "id": "vanderweele2014",
+    "type": "article-journal",
+    "title": "On the causal interpretation of race in regressions adjusting for confounding and mediating variables",
+    "author": [
+      {
+        "family": "VanderWeele",
+        "given": "T. J.,"
+      },
+      {
+        "family": "Robinson",
+        "given": "W. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "4",
+    "page": "473-484",
+    "DOI": "10.1097/EDE.0000000000000105",
+    "URL": "https://doi.org/10.1097/EDE.0000000000000105"
+  },
+  {
+    "id": "vanglabbeek1990",
+    "type": "article-journal",
+    "title": "The linear time-branching time spectrum",
+    "author": [
+      {
+        "family": "van Glabbeek",
+        "given": "R. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1990
+        ]
+      ]
+    }
+  },
+  {
+    "id": "varela1991",
+    "type": "article-journal",
+    "title": "The embodied mind",
+    "author": [
+      {
+        "family": "Varela",
+        "given": "F. J., Thompson, E.,"
+      },
+      {
+        "family": "Rosch",
+        "given": "E"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    }
+  },
+  {
+    "id": "vicente1999",
+    "type": "article-journal",
+    "title": "Cognitive work analysis: Toward safe, productive, and healthy computer-based work",
+    "author": [
+      {
+        "family": "Vicente",
+        "given": "K. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    }
+  },
+  {
+    "id": "vonwright1971",
+    "type": "article-journal",
+    "title": "Explanation and Understanding",
+    "author": [
+      {
+        "family": "von Wright",
+        "given": "G. H"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1971
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ware2012",
+    "type": "article-journal",
+    "title": "Information visualization: Perception for design (3rd ed.)",
+    "author": [
+      {
+        "family": "Ware",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ware2012information",
+    "type": "article-journal",
+    "title": "Information Visualization: Perception for Design",
+    "author": [
+      {
+        "family": "Ware",
+        "given": "C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wc2012",
+    "type": "article-journal",
+    "title": "OWL 2 Web Ontology Language: Structural Specification and Functional-Style Syntax, Second Edition",
+    "author": [
+      {
+        "literal": "W3C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wc2023",
+    "type": "article-journal",
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "author": [
+      {
+        "literal": "W3C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wegner1997",
+    "type": "article-journal",
+    "title": "Why interaction is more powerful than algorithms",
+    "author": [
+      {
+        "family": "Wegner",
+        "given": "P"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    },
+    "volume": "40",
+    "issue": "5",
+    "page": "80-91"
+  },
+  {
+    "id": "wiener1948",
+    "type": "article-journal",
+    "title": "Cybernetics",
+    "author": [
+      {
+        "family": "Wiener",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1948
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wiener1948cybernetics2",
+    "type": "article-journal",
+    "title": "Cybernetics: Or control and communication in the animal and the machine",
+    "author": [
+      {
+        "family": "Wiener",
+        "given": "N"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1948
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wimsatt2007",
+    "type": "article-journal",
+    "title": "Re-engineering philosophy for limited beings",
+    "author": [
+      {
+        "family": "Wimsatt",
+        "given": "W. C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    }
+  },
+  {
+    "id": "winograd1986",
+    "type": "article-journal",
+    "title": "Understanding computers and cognition",
+    "author": [
+      {
+        "family": "Winograd",
+        "given": "T.,"
+      },
+      {
+        "family": "Flores",
+        "given": "F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    }
+  },
+  {
+    "id": "winskel1987",
+    "type": "article-journal",
+    "title": "Event structures",
+    "author": [
+      {
+        "family": "Winskel",
+        "given": "G"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wittgenstein1953",
+    "type": "article-journal",
+    "title": "Philosophical Investigations",
+    "author": [
+      {
+        "family": "Wittgenstein",
+        "given": "L"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wobbrock2011",
+    "type": "article-journal",
+    "title": "The aligned rank transform for nonparametric factorial analyses",
+    "author": [
+      {
+        "family": "Wobbrock",
+        "given": "J. O., Findlater, L., Gergle, D.,"
+      },
+      {
+        "family": "Higgins",
+        "given": "J. J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    }
+  },
+  {
+    "id": "woodward2003",
+    "type": "article-journal",
+    "title": "Making things happen",
+    "author": [
+      {
+        "family": "Woodward",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    }
+  },
+  {
+    "id": "woodward2003making",
+    "type": "article-journal",
+    "title": "Making things happen: A theory of causal explanation",
+    "author": [
+      {
+        "family": "Woodward",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wooldridge1995",
+    "type": "article-journal",
+    "title": "Intelligent agents: Theory and practice",
+    "author": [
+      {
+        "family": "Wooldridge",
+        "given": "M.,"
+      },
+      {
+        "family": "Jennings",
+        "given": "N. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    },
+    "volume": "10",
+    "issue": "2",
+    "page": "115-152"
+  },
+  {
+    "id": "yarkoni2017",
+    "type": "article-journal",
+    "title": "Choosing Prediction Over Explanation in Psychology: Lessons From Machine Learning",
+    "author": [
+      {
+        "family": "Yarkoni",
+        "given": "T.,"
+      },
+      {
+        "family": "Westfall",
+        "given": "J"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "volume": "12",
+    "issue": "6",
+    "page": "1100-1122"
+  },
+  {
+    "id": "zhang1994",
+    "type": "article-journal",
+    "title": "Representations in distributed cognitive tasks",
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "J.,"
+      },
+      {
+        "family": "Norman",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    },
+    "volume": "18",
+    "issue": "1",
+    "page": "87-122"
+  }
+]

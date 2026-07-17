@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "interaction-episode.schema.json",
+  "title": "CompInt Interaction Episode",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "episode_id",
+    "interaction_contract_ref",
+    "participant_refs",
+    "boundary",
+    "timescale",
+    "start_time",
+    "end_time",
+    "initial_state_ref",
+    "final_state_ref",
+    "interaction_status"
+  ],
+  "properties": {
+    "episode_id": {
+      "type": "string"
+    },
+    "interaction_contract_ref": {
+      "$ref": "common.schema.json#/$defs/reference"
+    },
+    "participant_refs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "boundary": {
+      "type": "string"
+    },
+    "timescale": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "initial_state_ref": {
+      "type": "string"
+    },
+    "final_state_ref": {
+      "type": "string"
+    },
+    "interaction_status": {
+      "enum": [
+        "not_assessed",
+        "criteria_not_met",
+        "candidate",
+        "established_under_contract"
+      ]
+    },
+    "coupling_evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reciprocal_constraint_evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "completion_status": {
+      "type": "string"
+    }
+  }
+}
