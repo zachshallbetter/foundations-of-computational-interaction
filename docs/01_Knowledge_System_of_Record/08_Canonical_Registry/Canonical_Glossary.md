@@ -1,4 +1,4 @@
-# Computational Interaction Science - Canonical Glossary
+# Foundations of Computational Interaction - Canonical Glossary
 
 **Version:** 1.0.0-integration.1
 **Status:** Reconciled candidate system of record
@@ -83,7 +83,7 @@ The content-bearing assignments and relations currently licensed by a specified 
 
 **Dependencies:** Semantic assignment  
 **Originating paper:** Ontology, Semantics, Representation, and Interpretation  
-**Supporting papers:** Ontology, Semantics, Representation, and Interpretation; Representation, Invariance, and Projection; Computational Interaction Science  
+**Supporting papers:** Ontology, Semantics, Representation, and Interpretation; Representation, Invariance, and Projection; Foundations of Computational Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
@@ -127,7 +127,7 @@ A representation may preserve, transform, omit, or introduce structure.
 **Dependencies:** Projection  
 **Originating paper:** Representation, Invariance, and Projection  
 **Supporting papers:** Representation, Invariance, and Projection; INTERACTION AS A
-SCIENTIFIC EXPLANANDUM; Ontology, Semantics, Representation, and Interpretation; Interaction Transfer; Computational Interaction Science  
+SCIENTIFIC EXPLANANDUM; Ontology, Semantics, Representation, and Interpretation; Interaction Transfer; Foundations of Computational Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
@@ -167,7 +167,7 @@ A projection contract specifies:
 
 **Dependencies:** System state, Semantic assignment  
 **Originating paper:** Opportunity, Affordance, and Action Availability  
-**Supporting papers:** Opportunity, Affordance, and Action Availability; Representation, Invariance, and Projection; Formal Models of Computational Interaction; Computational Interaction Science; Predicting Interaction  
+**Supporting papers:** Opportunity, Affordance, and Action Availability; Representation, Invariance, and Projection; Formal Models of Computational Interaction; Foundations of Computational Interaction; Predicting Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Projection Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -225,7 +225,7 @@ The application, recovery, construction, negotiation, or revision of semantic re
 **Dependencies:** Representation, Interaction history  
 **Originating paper:** Ontology, Semantics, Representation, and Interpretation  
 **Supporting papers:** Ontology, Semantics, Representation, and Interpretation; Representation, Invariance, and Projection; INTERACTION AS A
-SCIENTIFIC EXPLANANDUM; Measurement; Computational Interaction Science  
+SCIENTIFIC EXPLANANDUM; Measurement; Foundations of Computational Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
@@ -337,7 +337,7 @@ Opportunity is not a new primitive. It coordinates established relations such as
 
 **Dependencies:** None declared  
 **Originating paper:** Opportunity, Affordance, and Action Availability  
-**Supporting papers:** Opportunity, Affordance, and Action Availability; Interaction Similarity; Interaction Strategies; Computational Interaction Science; Predicting Interaction  
+**Supporting papers:** Opportunity, Affordance, and Action Availability; Interaction Similarity; Interaction Strategies; Foundations of Computational Interaction; Predicting Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Opportunity Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -398,7 +398,7 @@ The effective capacity or resources required for an agent-system coupling to exe
 
 **Dependencies:** None declared  
 **Originating paper:** Opportunity, Affordance, and Action Availability  
-**Supporting papers:** Opportunity, Affordance, and Action Availability; Computational Interaction Science; INTERACTION AS A
+**Supporting papers:** Opportunity, Affordance, and Action Availability; Foundations of Computational Interaction; INTERACTION AS A
 SCIENTIFIC EXPLANANDUM; CAN INTERACTION BECOME A
 PRIMARY SCIENTIFIC OBJECT?; Interaction  
 **Supporting literature:** See master bibliography and originating paper  
@@ -419,7 +419,7 @@ Authorization under a policy, role, rule, authority, or institutional condition 
 
 **Dependencies:** None declared  
 **Originating paper:** Opportunity, Affordance, and Action Availability  
-**Supporting papers:** Opportunity, Affordance, and Action Availability; Computational Interaction Science; Behavior; Interaction Similarity; Interaction Strategies  
+**Supporting papers:** Opportunity, Affordance, and Action Availability; Foundations of Computational Interaction; Behavior; Interaction Similarity; Interaction Strategies  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
@@ -502,7 +502,7 @@ Perceivable information indicating an operation, condition, consequence, state, 
 
 **Dependencies:** None declared  
 **Originating paper:** Opportunity, Affordance, and Action Availability  
-**Supporting papers:** Opportunity, Affordance, and Action Availability; Computational Interaction Science; Formal Models of Computational Interaction; Predicting Interaction; Comparative Interaction  
+**Supporting papers:** Opportunity, Affordance, and Action Availability; Foundations of Computational Interaction; Formal Models of Computational Interaction; Predicting Interaction; Comparative Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
@@ -651,7 +651,7 @@ A provenance-preserving chain connecting direct observations, system-derived fea
 
 **Dependencies:** Measurement contract  
 **Originating paper:** Behavior  
-**Supporting papers:** Behavior; Computational Interaction Science; INTERACTION AS A
+**Supporting papers:** Behavior; Foundations of Computational Interaction; INTERACTION AS A
 SCIENTIFIC EXPLANANDUM; Formal Models of Computational Interaction; Comparative Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Behavioral Evidence Contract  
@@ -709,11 +709,11 @@ A family of bounded coupling phenomena in which distinguishable systems or parti
 
 **Deprecated terminology:** interaction causes behavior
 
-**Dependencies:** Computational Interaction Science  
+**Dependencies:** Foundations of Computational Interaction  
 **Originating paper:** Interaction  
 **Supporting papers:** Interaction; CAN INTERACTION BECOME A
 PRIMARY SCIENTIFIC OBJECT?; INTERACTION AS A
-SCIENTIFIC EXPLANANDUM; Computational Interaction Science; Predicting Interaction  
+SCIENTIFIC EXPLANANDUM; Foundations of Computational Interaction; Predicting Interaction  
 **Supporting literature:** (1982) Human-computer interaction: a preliminary RUDD,J., STERN, K. R. AND ISENSEE, S. (1996) Low social psychological analysis. Behavior Research: vs. High-fidelity Prototyping Debate. ACM Inter- Methods and Instrumentation,13, (2), 210-220. actions Magazine, January, 76-85. References 501; (1993) Human-Computer Interaction (2nd ed.). Analysis: Verbal Reports as Data. Cambridge, MA: London: Prentice-Hall Europe. The MIT Press.; (1993) Project Ernestine: validating a GOMS J. (1993) Unpacking collaboration: the interac- analysis for predicting and explaining real-world tional organization of trading in a city dealing performance. Human-Computer Interaction, 8(3), room. In Proceedings of the Third European Con- 237-309. ference on Computer-Supported Cooperative; 1. Interview: reproduced by permission of IDEO. (1997) Tangible Bits: towards seamless interfaces, in CH1'97 Proceedings, reprinted by permission of Chapter 2 Association for Computing Machinery, Inc.; Figure Figure 2.1 (on Color Plate 2): gif from www.ai.mit. 2.1 1 (ii) gif from www.almaden.ibm.com/cs/blueeyes/ edu/projects/medical-visionlsurgeryl reproduced by permission of IBM; Figure 2.11 (iii): gif surgical-navigation.htm1 reproduced by permission from www.parc.xerox.com/red/members/richgold/ of Michael E. Leventon; Figure 2.6(a): gif from livingdoc/slide6. html, reproduced by permission of http://vibes.cs.uiuc.edu/ProjectNRIVirtuelVirtueOve Rich Gold of PARC Communications; Figure 2.12: rview.htm, reproduced by permission of Dr Daniel A. gif from www.mbay.net/-brendaWarticleslPDA. Reed (University of Illinois at Urbana-Champaign) Mar.951 reproduced by permission of General Magic, from work on the Collaborative Virtual Inc.  
 **Contracts:** Interaction Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -737,7 +737,7 @@ Reciprocal closure may be direct, indirect, asymmetric, delayed, probabilistic, 
 **Dependencies:** Opportunity profile, Coupling, Token identity, Type identity, Interaction contract  
 **Originating paper:** Interaction  
 **Supporting papers:** Interaction; CAN INTERACTION BECOME A
-PRIMARY SCIENTIFIC OBJECT?; Formal Models of Computational Interaction; Computational Interaction Science; Predicting Interaction  
+PRIMARY SCIENTIFIC OBJECT?; Formal Models of Computational Interaction; Foundations of Computational Interaction; Predicting Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Interaction Contract  
 **Formal mappings:** Layered observation-enriched probabilistic labeled transition system
@@ -829,7 +829,7 @@ A declaration of interaction identity, participants and roles, boundary, timesca
 
 **Dependencies:** None declared  
 **Originating paper:** Interaction  
-**Supporting papers:** Interaction; Computational Interaction Science; Comparative Interaction  
+**Supporting papers:** Interaction; Foundations of Computational Interaction; Comparative Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Interaction Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -928,7 +928,7 @@ A declaration of the measurand, observation process, operationalization, scale, 
 
 **Dependencies:** Trace  
 **Originating paper:** Measurement  
-**Supporting papers:** Measurement; Formal Models of Computational Interaction; Computational Interaction Science; Behavior; Interaction Transfer  
+**Supporting papers:** Measurement; Formal Models of Computational Interaction; Foundations of Computational Interaction; Behavior; Interaction Transfer  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Measurement Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -953,7 +953,7 @@ A comparison of interaction tokens, types, structures, protocols, opportunities,
 **Originating paper:** INTERACTION AS A
 SCIENTIFIC EXPLANANDUM  
 **Supporting papers:** INTERACTION AS A
-SCIENTIFIC EXPLANANDUM; Interaction Similarity; Predicting Interaction; Comparative Interaction; Computational Interaction Science  
+SCIENTIFIC EXPLANANDUM; Interaction Similarity; Predicting Interaction; Comparative Interaction; Foundations of Computational Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Interaction Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -1033,7 +1033,7 @@ Graded proximity under declared dimensions, representations, alignment rules, me
 **Dependencies:** None declared  
 **Originating paper:** Interaction Similarity  
 **Supporting papers:** Interaction Similarity; INTERACTION AS A
-SCIENTIFIC EXPLANANDUM; Computational Interaction Science; Interaction Transfer; Predicting Interaction  
+SCIENTIFIC EXPLANANDUM; Foundations of Computational Interaction; Interaction Transfer; Predicting Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Similarity Contract  
 **Formal mappings:** No unique formal mapping declared
@@ -1050,7 +1050,7 @@ Failure to establish a defensible common comparison space because boundaries, ta
 
 **Dependencies:** None declared  
 **Originating paper:** Comparative Interaction  
-**Supporting papers:** Comparative Interaction; Interaction Similarity; Computational Interaction Science  
+**Supporting papers:** Comparative Interaction; Interaction Similarity; Foundations of Computational Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
@@ -1086,7 +1086,7 @@ An inferred, temporally extended organization of conditional action selection, i
 
 **Dependencies:** Policy, Interaction history, Strategy contract  
 **Originating paper:** Interaction Strategies  
-**Supporting papers:** Interaction Strategies; Predicting Interaction; Interaction Transfer; Formal Models of Computational Interaction; Computational Interaction Science  
+**Supporting papers:** Interaction Strategies; Predicting Interaction; Interaction Transfer; Formal Models of Computational Interaction; Foundations of Computational Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** Strategy Contract  
 **Formal mappings:** Layered observation-enriched probabilistic labeled transition system
@@ -1152,7 +1152,7 @@ PRIMARY SCIENTIFIC OBJECT?; How Sciences Define Their Objects; Representation, I
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared
 
-## Computational Interaction Science
+## Foundations of Computational Interaction
 
 **Canonical ID:** `computational-interaction-science`  
 **Maturity:** Proposed research program; disciplinary autonomy unproven  
@@ -1164,11 +1164,11 @@ A research program that studies interaction as an explanatory target by separati
 
 CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
 
-**Aliases:** CompInt
+**Aliases:** the proposed model
 
 **Dependencies:** None declared  
-**Originating paper:** Computational Interaction Science  
-**Supporting papers:** Computational Interaction Science; Predicting Interaction  
+**Originating paper:** Foundations of Computational Interaction  
+**Supporting papers:** Foundations of Computational Interaction; Predicting Interaction  
 **Supporting literature:** See master bibliography and originating paper  
 **Contracts:** None directly assigned  
 **Formal mappings:** No unique formal mapping declared

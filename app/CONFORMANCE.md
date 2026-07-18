@@ -1,4 +1,4 @@
-# CompInt Conformance Specification 0.1.0
+# the proposed model Conformance Specification 0.1.0
 
 Conformance is layered. No layer inherits another layer's status.
 
@@ -6,7 +6,7 @@ Conformance is layered. No layer inherits another layer's status.
 
 ### T — Theory alignment
 
-An artifact states the CompInt 1.0.0 interdisciplinary-synthesis determination,
+An artifact states the proposed model 1.0.0 interdisciplinary-synthesis determination,
 uses the canonical ontology labels, distinguishes analytical dependency from
 causal direction, and makes no disciplinary-independence claim.
 

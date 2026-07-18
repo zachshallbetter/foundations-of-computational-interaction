@@ -1,10 +1,10 @@
-# Wikipedia Readiness Review: Computational Interaction Science
+# Wikipedia Readiness Review: Foundations of Computational Interaction
 
 ## Decision
 
 The article should remain a canonical encyclopedia-style project document, not a Wikipedia mainspace submission.
 
-Wikipedia's general notability guideline requires significant coverage in reliable sources that are independent of the subject. The exact term *Computational Interaction Science* does not presently appear to have such coverage. Project papers, Fundamental documentation, personal websites, and statements by Zachary Shallbetter are primary or affiliated sources and cannot establish notability.
+Wikipedia's general notability guideline requires significant coverage in reliable sources that are independent of the subject. The exact term *Foundations of Computational Interaction* does not presently appear to have such coverage. Project papers, Fundamental documentation, personal websites, and statements by Zachary Shallbetter are primary or affiliated sources and cannot establish notability.
 
 ## Current canonical status
 
@@ -12,7 +12,7 @@ The internal project article has advanced through completed work on strict inter
 
 ## Updates made
 
-The revised article describes CompInt as a proposed research program, avoids claims that it is established or proven, gives substantial space to adjacent disciplines, adds criticism and unresolved questions, separates project-documented provenance from independent public history, and treats formulas as proposed analytical models rather than accepted scientific laws.
+The revised article describes the proposed model as a proposed research program, avoids claims that it is established or proven, gives substantial space to adjacent disciplines, adds criticism and unresolved questions, separates project-documented provenance from independent public history, and treats formulas as proposed analytical models rather than accepted scientific laws.
 
 ## Conflict of interest
 
@@ -20,9 +20,9 @@ Zachary Shallbetter has a direct professional and intellectual connection to the
 
 ## What would establish notability
 
-A standalone article would require multiple independent secondary sources discussing CompInt itself in depth. Suitable evidence could include peer-reviewed papers by unaffiliated researchers, scholarly books or chapters, independent journal or conference reviews, substantial reporting by reputable publications, or independent adoption and criticism of the terminology and framework.
+A standalone article would require multiple independent secondary sources discussing the proposed model itself in depth. Suitable evidence could include peer-reviewed papers by unaffiliated researchers, scholarly books or chapters, independent journal or conference reviews, substantial reporting by reputable publications, or independent adoption and criticism of the terminology and framework.
 
-Citations to Gibson, Norman, Shannon, Suchman, Hacking, Hutchins, and related scholarship support the discussion of neighboring ideas. They do not establish the notability of CompInt.
+Citations to Gibson, Norman, Shannon, Suchman, Hacking, Hutchins, and related scholarship support the discussion of neighboring ideas. They do not establish the notability of the proposed model.
 
 ## Attribution of coinage
 

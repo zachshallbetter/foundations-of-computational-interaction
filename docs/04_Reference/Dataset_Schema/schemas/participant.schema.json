@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "participant.schema.json",
-  "title": "CompInt Interaction Participant",
+  "title": "Computational Interaction Interaction Participant",
   "type": "object",
   "additionalProperties": false,
   "required": [

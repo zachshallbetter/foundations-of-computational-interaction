@@ -1,4 +1,4 @@
-# Computational Interaction Science - Canonical Ontology
+# Foundations of Computational Interaction - Canonical Ontology
 
 **Version:** 1.0.0-integration.1
 **Status:** Reconciled candidate system of record
@@ -285,7 +285,7 @@ Equivalence of the available operation-transition-observation structure under sp
 
 A family of bounded coupling phenomena in which distinguishable systems or participants become mutually consequential through perturbation, constraint, uptake, response, and recurrence.
 
-**Dependencies:** Computational Interaction Science
+**Dependencies:** Foundations of Computational Interaction
 **Dependents:** None declared
 
 ### Interaction episode (`interaction-episode`)
@@ -444,7 +444,7 @@ A representation-independent computational substrate for declaring domain commit
 **Dependencies:** None declared
 **Dependents:** None declared
 
-### Computational Interaction Science (`computational-interaction-science`)
+### Foundations of Computational Interaction (`computational-interaction-science`)
 
 A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
 
@@ -498,11 +498,11 @@ CIS must justify itself through comparative explanatory gain, empirical validity
 | Measurement contract | governs | Behavioral evidence | Canonical ontology/glossary |
 | Projection | tested across | Scoped invariance | Canonical ontology/glossary |
 | Equivalence | expresses | Scoped invariance | Canonical ontology/glossary |
-| Computational Interaction Science | studies | Interaction | Canonical ontology/glossary |
+| Foundations of Computational Interaction | studies | Interaction | Canonical ontology/glossary |
 
 ## Contract stack
 
-# Computational Interaction Science Contracts
+# Foundations of Computational Interaction Contracts
 
 Version: 1.0.0-structure.1
 Status: Derivative consolidation; source papers remain authoritative until normative ratification.

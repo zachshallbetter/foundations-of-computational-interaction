@@ -1,19 +1,10 @@
-# CompInt Deterministic Reference Substrate
+# Bounded Reference Substrate for Computational Interaction
 
-Computational Interaction Science, or CompInt, is an interdisciplinary scientific
-synthesis for describing, measuring, comparing, modeling, and predicting
-computational interaction. It coordinates established theories and methods around
-computational interaction as a shared explanatory object. It is not presently
-established as an independent scientific discipline.
+Foundations of Computational Interaction is an interdisciplinary scientific program for describing, measuring, comparing, modeling, and predicting human-computer interaction. It coordinates established theories and methods around computational interaction as a shared explanatory object, framing the work as a foundational model rather than a proposal for a new academic field.
 
-This repository implements a deterministic, fixed-capacity reference kernel for a
-selected subset of the CompInt ontology. It demonstrates separability and internal
-computational coherence; it does not implement or validate the complete empirical,
-probabilistic, concurrent, causal, comparative, or predictive framework.
+This repository implements a deterministic, fixed-capacity reference kernel for a selected subset of the proposed model's ontology. It demonstrates separability and internal computational coherence; it does not implement or validate the complete empirical, probabilistic, concurrent, causal, comparative, or predictive framework.
 
-For a plain-language walkthrough, start with
-[`../docs/04_Reference/Handbooks/Explaining_CompInt.md`](../docs/04_Reference/Handbooks/Explaining_CompInt.md), then use CIS-EX-003
-to test each distinction directly.
+For a plain-language walkthrough, start with [`../docs/04_Reference/Handbooks/Explaining_CompInt.md`](../docs/04_Reference/Handbooks/Explaining_CompInt.md), then use the example implementation files to test each distinction directly.
 
 ## What it validates
 
@@ -104,7 +95,7 @@ print their results.
 - `../docs/04_Reference/Handbooks/Explaining_CompInt.md` — plain-language conceptual walkthrough
 - `CONFORMANCE.md` — layered theory, schema, implementation, and empirical claims
 - `VERSIONING.md` — independent version lines and compatibility rules
-- `NAMING.md` — CompInt terminology and legacy C namespace policy
+- `NAMING.md` — the proposed model terminology and legacy C namespace policy
 - `AUTHORITY.md` — conflict, supersession, deprecation, and errata control
 - `DOCUMENT_MAP.md` — canonical/supporting/historical artifact registry
 - `../docs/01_Knowledge_System_of_Record/10_Governance/` — research data and protocol governance minimum

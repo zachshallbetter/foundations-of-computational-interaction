@@ -1,4 +1,4 @@
-# Computational Interaction Science Study Report
+# Foundations of Computational Interaction Study Report
 
 ## Metadata
 

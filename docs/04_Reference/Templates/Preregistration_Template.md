@@ -1,4 +1,4 @@
-# Computational Interaction Science Preregistration
+# Foundations of Computational Interaction Preregistration
 
 ## Metadata
 

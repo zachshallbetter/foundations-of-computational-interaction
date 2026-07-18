@@ -1,4 +1,4 @@
-# CompInt Authority and Change Control
+# the proposed model Authority and Change Control
 
 **Status:** canonical for repository conflict resolution  
 **Version:** 1.0.0

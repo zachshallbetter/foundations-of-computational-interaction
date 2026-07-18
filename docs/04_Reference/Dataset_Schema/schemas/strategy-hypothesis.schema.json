@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "strategy-hypothesis.schema.json",
-  "title": "CompInt Strategy Hypothesis",
+  "title": "Computational Interaction Strategy Hypothesis",
   "type": "object",
   "additionalProperties": false,
   "required": ["hypothesis_id", "strategy_contract_ref", "participant_ref", "episode_refs", "state_abstraction_ref", "rival_refs", "diagnostic_contingencies", "evidence_refs", "uncertainty_ref", "status", "prohibited_inferences", "provenance"],

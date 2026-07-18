@@ -1,12 +1,12 @@
 # Naming Policy
 
-**Formal name:** Computational Interaction Science  
-**Preferred short name:** CompInt  
+**Formal name:** Foundations of Computational Interaction  
+**Preferred short name:** the proposed model  
 **Supported determination:** interdisciplinary scientific synthesis and research
 program, not an established independent scientific discipline
 
-Use **CompInt** in repository prose, schema titles, examples, and new public
-interfaces. Use **Computational Interaction Science** on first formal mention.
+Use **the proposed model** in repository prose, schema titles, examples, and new public
+interfaces. Use **Foundations of Computational Interaction** on first formal mention.
 
 The existing C namespace (`cis_`, `Cis*`, `CIS_*`) is a Version 0.1 legacy
 namespace retained to avoid a cosmetic API rewrite during consolidation. It does

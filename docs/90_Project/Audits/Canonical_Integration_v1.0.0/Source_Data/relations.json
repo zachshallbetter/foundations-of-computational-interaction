@@ -330,7 +330,7 @@
   {
     "source": "computational-interaction-science",
     "target": "interaction",
-    "source_term": "Computational Interaction Science",
+    "source_term": "Foundations of Computational Interaction",
     "target_term": "Interaction",
     "relation": "studies",
     "authority": "Canonical ontology/glossary"

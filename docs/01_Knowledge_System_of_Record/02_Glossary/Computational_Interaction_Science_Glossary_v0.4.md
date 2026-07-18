@@ -1,10 +1,10 @@
-# Computational Interaction Science Glossary
+# Foundations of Computational Interaction Glossary
 
 **Version:** Draft 0.4  
 **Status:** Provisional System of Record  
 **Governance:** Concept Lifecycle and Theory Governance
 
-This glossary is the canonical vocabulary for the current Computational Interaction Science research program. Terms are organized by explanatory role rather than as a fixed implementation stack. Definitions remain provisional until empirically validated.
+This glossary is the canonical vocabulary for the current Foundations of Computational Interaction research program. Terms are organized by explanatory role rather than as a fixed implementation stack. Definitions remain provisional until empirically validated.
 
 ## Maturity labels
 
@@ -456,7 +456,7 @@ A representation-independent computational substrate for declaring domain commit
 
 **Boundary:** Fundamental is not the scientific theory, a philosophical ontology, proof of CIS, or a guarantee of shared human meaning.
 
-## Computational Interaction Science
+## Foundations of Computational Interaction
 
 **Status:** Proposed research program; disciplinary autonomy unproven
 

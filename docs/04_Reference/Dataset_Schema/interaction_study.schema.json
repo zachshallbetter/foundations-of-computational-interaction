@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "interaction_study.schema.json",
-  "title": "CompInt Interaction Study Dataset",
+  "title": "Computational Interaction Interaction Study Dataset",
   "description": "Exploratory modular dataset schema 0.3.0; validation does not establish empirical validity.",
   "type": "object",
   "additionalProperties": false,

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "Transfer_Contract.schema.json",
-  "title": "CompInt Transfer Contract",
+  "title": "Computational Interaction Transfer Contract",
   "allOf": [
     {
       "$ref": "Contract_Common.schema.json"

@@ -1,6 +1,6 @@
 # Research Governance Minimum
 
-This directory defines the minimum operational controls for CompInt studies. It
+This directory defines the minimum operational controls for the proposed model studies. It
 does not replace institutional, legal, ethical-review, accessibility, security,
 or community-specific requirements.
 

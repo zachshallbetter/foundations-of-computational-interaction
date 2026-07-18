@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "Measurement_Contract.schema.json",
-  "title": "CompInt Measurement Contract",
+  "title": "Computational Interaction Measurement Contract",
   "allOf": [
     {
       "$ref": "Contract_Common.schema.json"

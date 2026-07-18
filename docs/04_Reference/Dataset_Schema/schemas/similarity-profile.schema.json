@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "similarity-profile.schema.json",
-  "title": "CompInt Similarity Profile",
+  "title": "Computational Interaction Similarity Profile",
   "type": "object",
   "additionalProperties": false,
   "required": [

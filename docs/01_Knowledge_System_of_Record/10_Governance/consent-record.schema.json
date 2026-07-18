@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "consent-record.schema.json",
-  "title": "CompInt Consent Record",
+  "title": "Computational Interaction Consent Record",
   "type": "object",
   "additionalProperties": false,
   "required": [

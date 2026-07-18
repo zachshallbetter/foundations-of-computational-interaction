@@ -1,4 +1,4 @@
-# Computational Interaction Science Editorial Style Guide
+# Foundations of Computational Interaction Editorial Style Guide
 
 ## Authority and scope
 

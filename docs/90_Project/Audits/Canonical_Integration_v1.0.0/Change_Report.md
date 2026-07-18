@@ -15,6 +15,6 @@
 
 ## Appendix A - Candidate Version 2.0 Changes
 
-- Consider whether “Computational Interaction Science” remains the preferred program name after empirical validation; current evidence supports interdisciplinary synthesis rather than disciplinary autonomy.
+- Consider whether “Foundations of Computational Interaction” remains the preferred program name after empirical validation; current evidence supports interdisciplinary synthesis rather than disciplinary autonomy.
 - Consider a formally ratified distinction between broad ordinary-language interaction and the strict interaction-episode research definition.
 - Evaluate whether transfer should become a first-class ontology node in a future normative revision; it is presently represented primarily through contracts and papers.

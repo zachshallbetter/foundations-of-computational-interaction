@@ -10,7 +10,7 @@ Computational interaction is modeled as a recursive relational system rather tha
 
 Interaction is not a primitive substance. A strict interaction episode is a bounded interval of reciprocal or recurrent constraint among distinguishable systems through coupling. Behavior is an attributed trajectory under an observation model. Measurement governs how observations become variables and claims. Similarity is typed rather than universal. Strategy is an inferred organization across contingencies rather than an observed sequence.
 
-The ontology coordinates established concepts and reusable contracts. It does not claim metaphysical universality, direct access to cognition, or disciplinary autonomy for Computational Interaction Science.
+The ontology coordinates established concepts and reusable contracts. It does not claim metaphysical universality, direct access to cognition, or disciplinary autonomy for Foundations of Computational Interaction.
 
 ## 1. Explanatory target
 
@@ -210,7 +210,7 @@ Language, skill, training, conventions, prior outcomes, tools, practices, goals,
 
 ## 9. Non-claims
 
-This ontology does not claim that culture determines behavior, interaction history explains entire persons, cognition is directly observed, one grammar captures all interaction, representation is the sole cause of behavior, formalization eliminates ambiguity, one ontology replaces adjacent disciplines, or Fundamental proves CompInt.
+This ontology does not claim that culture determines behavior, interaction history explains entire persons, cognition is directly observed, one grammar captures all interaction, representation is the sole cause of behavior, formalization eliminates ambiguity, one ontology replaces adjacent disciplines, or Fundamental proves the proposed model.
 
 ## 10. Current maturity
 
@@ -229,7 +229,7 @@ This ontology does not claim that culture determines behavior, interaction histo
 | Formal foundation | Under investigation |
 | Predictive theory | Open |
 | Fundamental as research substrate | Proposed application |
-| CompInt disciplinary autonomy | Unproven |
+| the proposed model disciplinary autonomy | Unproven |
 
 ## Conclusion
 

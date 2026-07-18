@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "common.schema.json",
-  "title": "CompInt Common Definitions",
+  "title": "Computational Interaction Common Definitions",
   "type": "object",
   "$defs": {
     "non_empty_string": {

@@ -1,4 +1,4 @@
-# Computational Interaction Science Reading Guide
+# Foundations of Computational Interaction Reading Guide
 
 ## Tier 1 - Cross-cutting foundations
 

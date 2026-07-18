@@ -1,4 +1,4 @@
-# Computational Interaction Science Contracts
+# Foundations of Computational Interaction Contracts
 
 Version: 1.0.0-structure.1
 Status: Derivative consolidation; source papers remain authoritative until normative ratification.

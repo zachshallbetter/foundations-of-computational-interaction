@@ -1,4 +1,4 @@
-# Computational Interaction Science Bibliography Verification v1.1.2
+# Foundations of Computational Interaction Bibliography Verification v1.1.2
 
 This package normalizes and audits the Version 1.1.1 bibliography without modifying theory.
 

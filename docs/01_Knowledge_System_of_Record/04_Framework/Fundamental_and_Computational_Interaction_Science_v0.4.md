@@ -1,4 +1,4 @@
-# Fundamental and Computational Interaction Science
+# Fundamental and Foundations of Computational Interaction
 
 ## Declared Worlds, Governed Projections, and Empirical Interaction
 
@@ -7,13 +7,13 @@
 
 ## Abstract
 
-Fundamental and Computational Interaction Science are complementary but distinct.
+Fundamental and Foundations of Computational Interaction are complementary but distinct.
 
-Computational Interaction Science is a proposed research program for studying interaction as an explanatory target. It separates domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, interaction episodes, behavior, measurement, similarity, strategy, and evidence so that their relationships can be examined rather than assumed.
+Foundations of Computational Interaction is a proposed research program for studying interaction as an explanatory target. It separates domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, interaction episodes, behavior, measurement, similarity, strategy, and evidence so that their relationships can be examined rather than assumed.
 
 Fundamental is a representation-independent computational substrate. It can declare model commitments, evolve state, apply operational semantics, generate governed projections, expose typed operations, and preserve inspectable snapshots, diffs, and replay. It is not a philosophical ontology, a theory of human meaning, or evidence that CIS is correct.
 
-The connection is methodological. CompInt requires controlled distinctions and contract-based provenance. Fundamental can make a subset of those distinctions executable, including projection, opportunity, interaction-state, replay, and comparison inputs.
+The connection is methodological. the proposed model requires controlled distinctions and contract-based provenance. Fundamental can make a subset of those distinctions executable, including projection, opportunity, interaction-state, replay, and comparison inputs.
 
 ## 1. The shared problem
 
@@ -205,7 +205,7 @@ Fundamental should not own:
 
 Those belong to a separate research layer.
 
-## 10. Relationship to CompInt
+## 10. Relationship to the proposed model
 
 CIS supplies the explanatory questions:
 
@@ -227,7 +227,7 @@ A concise description is:
 
 A concise statement of the relationship is:
 
-> Computational Interaction Science studies the relations among declared systems, projections, interpretation, opportunity, coupling, behavior, measurement, similarity, and strategy; Fundamental makes a bounded subset of those relations executable, replayable, and inspectable.
+> Foundations of Computational Interaction studies the relations among declared systems, projections, interpretation, opportunity, coupling, behavior, measurement, similarity, and strategy; Fundamental makes a bounded subset of those relations executable, replayable, and inspectable.
 
 ## 12. Falsification and limits
 

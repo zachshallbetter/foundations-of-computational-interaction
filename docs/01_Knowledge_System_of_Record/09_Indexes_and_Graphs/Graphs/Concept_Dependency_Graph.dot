@@ -56,7 +56,7 @@ edge [fontname="Arial", fontsize=7, color="#555555"];
 "strategy-contract" [label="Strategy contract"];
 "policy" [label="Policy"];
 "fundamental" [label="Fundamental"];
-"computational-interaction-science" [label="Computational Interaction Science"];
+"computational-interaction-science" [label="Foundations of Computational Interaction"];
 "domain-commitments" -> "system-state" [label="constrains"];
 "domain-commitments" -> "semantic-assignment" [label="constrains"];
 "semantic-assignment" -> "semantic-state" [label="licenses"];

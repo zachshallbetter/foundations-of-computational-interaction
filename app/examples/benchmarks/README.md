@@ -1,4 +1,4 @@
-# CompInt Benchmark Suite 0.1.0
+# the proposed model Benchmark Suite 0.1.0
 
 Benchmarks are identified examples with executable assertions. They remain
 deterministic reference tests, not empirical studies.
