@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "Interaction_Contract.schema.json",
-  "title": "CompInt Interaction Contract",
+  "title": "Computational Interaction Interaction Contract",
   "allOf": [
     {
       "$ref": "Contract_Common.schema.json"

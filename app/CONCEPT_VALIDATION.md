@@ -82,7 +82,7 @@ is deliberately not inferred by the substrate.
 | Strategy contract | Research layer | State abstraction, policy, contingencies, rivals, and evidence must be supplied by a study. |
 | Policy | Represented | A caller can select actions conditionally; the substrate does not learn or infer a policy. |
 | Fundamental | Executed | Freestanding state, semantics, projection, inspection, snapshots, deterministic hashing, and replay are the implementation's center. |
-| Computational Interaction Science | Research layer | The substrate makes the program testable; comparative explanatory gain and empirical validity require actual studies. |
+| Foundations of Computational Interaction | Research layer | The substrate makes the program testable; comparative explanatory gain and empirical validity require actual studies. |
 
 ## Mechanical validation
 

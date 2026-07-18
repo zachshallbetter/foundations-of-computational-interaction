@@ -1,40 +1,40 @@
-# Computational Interaction Science
+# Foundations of Computational Interaction
 
-> **Editorial status:** Canonical encyclopedia-style draft, version 0.3. This is not yet suitable for Wikipedia mainspace because *Computational Interaction Science* does not presently have significant independent secondary coverage. The origin statement concerning Zachary Shallbetter and Fundamental should remain project-documented provenance until independently sourced.
+> **Editorial status:** Canonical encyclopedia-style draft, version 0.3. This is not yet suitable for Wikipedia mainspace because *Foundations of Computational Interaction* does not presently have significant independent secondary coverage. The origin statement concerning Zachary Shallbetter and Fundamental should remain project-documented provenance until independently sourced.
 
-**Computational Interaction Science** (**CompInt**) is a proposed interdisciplinary research program concerned with the systematic study of computational interaction, including its representation, coupling, behavioral organization, measurement, and comparison. It examines how human, computational, collective, institutional, and hybrid participants become mutually consequential through computationally mediated representations, interpretations, opportunities, actions, state transitions, and feedback.
+**Foundations of Computational Interaction** (**the proposed model**) is a proposed interdisciplinary research program concerned with the systematic study of computational interaction, including its representation, coupling, behavioral organization, measurement, and comparison. It examines how human, computational, collective, institutional, and hybrid participants become mutually consequential through computationally mediated representations, interpretations, opportunities, actions, state transitions, and feedback.
 
-CompInt treats **interaction** as its principal explanatory target rather than reducing it to interface use, individual behavior, communication, or machine execution. Its research program seeks to determine which properties of an interaction remain stable, which change, and why, when the system, representation, modality, participant, context, authority, history, or implementation changes.
+the proposed model treats **interaction** as its principal explanatory target rather than reducing it to interface use, individual behavior, communication, or machine execution. Its research program seeks to determine which properties of an interaction remain stable, which change, and why, when the system, representation, modality, participant, context, authority, history, or implementation changes.
 
 The proposed field draws on [[human–computer interaction]], [[computer science]], [[cognitive science]], [[artificial intelligence]], [[information science]], [[ecological psychology]], [[cybernetics]], [[control theory]], [[formal methods]], [[distributed cognition]], and the [[philosophy of science]]. It remains a developing theoretical program rather than a recognized independent academic discipline.
 
 ## Terminology
 
-The full name is **Computational Interaction Science**. The shortened form **CompInt** is used as a practical name for the research program and as an adjective in phrases such as *CompInt model* and *CompInt experiment*.
+The full name is **Foundations of Computational Interaction**. The shortened form **the proposed model** is used as a practical name for the research program and as an adjective in phrases such as *the proposed model model* and *the proposed model experiment*.
 
-The adjective *computational* identifies both the phenomenon and the method. CompInt includes interaction in which computation participates directly, as in software, AI, robotics, protocols, and computational infrastructure. It also uses computational methods such as simulation, formal modeling, trace analysis, replay, and reproducible comparison.
+The adjective *computational* identifies both the phenomenon and the method. the proposed model includes interaction in which computation participates directly, as in software, AI, robotics, protocols, and computational infrastructure. It also uses computational methods such as simulation, formal modeling, trace analysis, replay, and reproducible comparison.
 
-CompInt uses **interaction participant** as its broadest term for an entity occupying a consequential role in an interaction. This avoids using *agent* as a universal category. In contemporary artificial intelligence, *agent* commonly denotes a computational system that selects and performs actions with some autonomy. CompInt therefore reserves *agent* for participant types whose action-selection properties are relevant and explicitly stated.
+the proposed model uses **interaction participant** as its broadest term for an entity occupying a consequential role in an interaction. This avoids using *agent* as a universal category. In contemporary artificial intelligence, *agent* commonly denotes a computational system that selects and performs actions with some autonomy. the proposed model therefore reserves *agent* for participant types whose action-selection properties are relevant and explicitly stated.
 
 An interaction participant may be a person, software service, AI system, robot, team, institution, organization, sensor, policy engine, or hybrid arrangement. Participation does not imply consciousness, intelligence, autonomy, or learning. A participant may instead observe, mediate, authorize, constrain, translate, store, represent, or transform state.
 
 ## Origins and development
 
-The term *Computational Interaction Science* was introduced in project documentation by **Zachary Shallbetter** during the development of **Fundamental**, a representation-independent computational substrate, in 2025–2026. The initial engineering problem concerned how one declared computational world could be realized across games, user interfaces, data systems, native applications, simulations, and other hosts without being defined by any one representation.
+The term *Foundations of Computational Interaction* was introduced in project documentation by **Zachary Shallbetter** during the development of **Fundamental**, a representation-independent computational substrate, in 2025–2026. The initial engineering problem concerned how one declared computational world could be realized across games, user interfaces, data systems, native applications, simulations, and other hosts without being defined by any one representation.
 
 Questions raised by that architecture moved beyond software design. If the same target system could be expressed through different representations, researchers could ask what each representation preserved, transformed, omitted, or introduced. If the underlying operations remained stable while visibility, signaling, or interaction changed, those differences could be treated as experimental variables rather than aesthetic judgments. Fundamental consequently became one possible research substrate for the emerging theory rather than the theory itself.
 
-This provenance is documented within the CompInt project. It should not be presented as independently established public history unless reliable secondary sources attribute the term and its origin.
+This provenance is documented within the proposed model project. It should not be presented as independently established public history unless reliable secondary sources attribute the term and its origin.
 
-Early CompInt research examined how sciences stabilize explanatory targets, how representations differ from their targets, and how ontology, semantics, information, interpretation, and behavior should be separated. Later work developed a typed account of action opportunity connecting system-relative possibility to what participants can perceive, believe, execute, and recover from.
+Early the proposed model research examined how sciences stabilize explanatory targets, how representations differ from their targets, and how ontology, semantics, information, interpretation, and behavior should be separated. Later work developed a typed account of action opportunity connecting system-relative possibility to what participants can perceive, believe, execute, and recover from.
 
 These studies weakened several strong initial claims. Representation was not found to determine behavior; semantic equivalence did not imply equivalent interpretation or action; opportunity did not emerge as a new primitive; and interaction did not yet justify an autonomous discipline. The surviving contribution was a relational architecture coordinating established concepts while preserving their distinct sources of truth and evidence.
 
 ## Scientific object
 
-CompInt studies computational interaction as an **explanatory target**. An explanatory target is the event, pattern, capacity, regularity, outcome, or contrast for which an account is sought. Treating interaction as a target does not imply that interaction belongs exclusively to one discipline or that it is a natural kind with a single essence.
+the proposed model studies computational interaction as an **explanatory target**. An explanatory target is the event, pattern, capacity, regularity, outcome, or contrast for which an account is sought. Treating interaction as a target does not imply that interaction belongs exclusively to one discipline or that it is a natural kind with a single essence.
 
-In broad usage, computational interaction is a temporally situated coupling in which computationally mediated participants, systems, representations, actions, and feedback become mutually consequential. For research requiring a discriminating episode boundary, CompInt uses a stricter definition:
+In broad usage, computational interaction is a temporally situated coupling in which computationally mediated participants, systems, representations, actions, and feedback become mutually consequential. For research requiring a discriminating episode boundary, the proposed model uses a stricter definition:
 
 > **An interaction episode is a bounded interval in which two or more distinguishable systems are coupled such that perturbations originating in, or mediated by, one system alter the possible or actual state trajectory of another, and the resulting configuration constrains a later trajectory of an originating or co-participating system within a declared boundary and timescale.**
 
@@ -46,7 +46,7 @@ Interaction is distinguished from neighboring concepts. An **action** is an inte
 
 ## Theoretical framework
 
-CompInt uses a relational rather than strictly layered model. It distinguishes roles that are frequently combined in software systems or research accounts while allowing them to constrain and revise one another.
+the proposed model uses a relational rather than strictly layered model. It distinguishes roles that are frequently combined in software systems or research accounts while allowing them to constrain and revise one another.
 
 ### Domain commitments, state, and semantics
 
@@ -56,7 +56,7 @@ CompInt uses a relational rather than strictly layered model. It distinguishes r
 
 **Semantic assignment** is the rule-governed assignment of content, denotation, truth conditions, inferential consequences, or transition behavior to expressions, states, signs, or operations. In logic, an interpretation supplies truth conditions. In programming-language theory, denotational, operational, and axiomatic semantics provide different accounts of program behavior. These formal assignments can be specified independently of whether a human participant understands them.
 
-A **semantic state** is the set of content-bearing assignments and relations currently licensed by a specified semantics. CompInt does not assume that every semantic state is observer-independent.
+A **semantic state** is the set of content-bearing assignments and relations currently licensed by a specified semantics. the proposed model does not assume that every semantic state is observer-independent.
 
 ### Representation and projection
 
@@ -70,7 +70,7 @@ A projection contract specifies the target, mapping, interpretation rules, prese
 
 ### Scoped invariance
 
-CompInt rejects unqualified claims that two representations have “the same meaning” or contain “the same information.” Invariance is typed and scoped.
+the proposed model rejects unqualified claims that two representations have “the same meaning” or contain “the same information.” Invariance is typed and scoped.
 
 Let \(T\) be a declared target domain, \(R_1\) and \(R_2\) representation domains, and \(p_1:T\rightarrow R_1\) and \(p_2:T\rightarrow R_2\) projection functions. Let \(J_1\) and \(J_2\) be independently specified interpretation or comparison functions, \(Q\) the property family claimed invariant, and \(\varepsilon\) the permitted tolerance. Scoped invariance holds when
 
@@ -92,7 +92,7 @@ This distinction constrains behavioral inference: equivalent actions or outcomes
 
 ### Opportunity and action availability
 
-CompInt uses **opportunity** as a typed coordination framework rather than a new primitive. The model integrates concepts from ecological affordance theory, planning, control, access control, decision theory, reinforcement learning, formal methods, and HCI.
+the proposed model uses **opportunity** as a typed coordination framework rather than a new primitive. The model integrates concepts from ecological affordance theory, planning, control, access control, decision theory, reinforcement learning, formal methods, and HCI.
 
 For an action \(a\), participant \(x\), state \(s\), projection \(p\), and time \(t\), an opportunity profile may record whether the action is domain-valid, within the participant-system capability, permitted, currently enabled, capable of reaching a target outcome, exposed by the projection, signaled, believed available, expected to have particular consequences, reversible, selected, executed, and successful.
 
@@ -125,7 +125,7 @@ The resulting action changes the system through a transition relation:
 X_{t+1}=T(X_t,B_t)
 \]
 
-The transition may also alter later permissions, representations, interpretations, beliefs, and recovery paths. CompInt therefore treats interaction as recursive.
+The transition may also alter later permissions, representations, interpretations, beliefs, and recovery paths. the proposed model therefore treats interaction as recursive.
 
 ## Computational interaction model
 
@@ -150,9 +150,9 @@ through system transitions, changed representations, revised beliefs, learning, 
 
 ## Behavior, measurement, similarity, and strategy
 
-CompInt distinguishes behavior from raw records. **Behavior** is treated as a bounded, temporally extended trajectory of observable or instrumentally recoverable changes, outputs, or regulated persistence attributed to a system in relation to its environment under a declared observation model. A log record may support detection of an event; an event may support an attributed trace; neither alone establishes an action, policy, strategy, intention, or understanding.
+the proposed model distinguishes behavior from raw records. **Behavior** is treated as a bounded, temporally extended trajectory of observable or instrumentally recoverable changes, outputs, or regulated persistence attributed to a system in relation to its environment under a declared observation model. A log record may support detection of an event; an event may support an attributed trace; neither alone establishes an action, policy, strategy, intention, or understanding.
 
-Measurement supplies the bridge from observation to scientific claim. A **Measurement Contract** declares the measurand, observation process, operationalization, scale, uncertainty, validity evidence, population, task, projection, and permitted interpretation. CompInt therefore treats a metric and a construct as different objects. Completion time, for example, is a measured duration; it is not by itself a measure of comprehension, confidence, fluency, or quality.
+Measurement supplies the bridge from observation to scientific claim. A **Measurement Contract** declares the measurand, observation process, operationalization, scale, uncertainty, validity evidence, population, task, projection, and permitted interpretation. the proposed model therefore treats a metric and a construct as different objects. Completion time, for example, is a measured duration; it is not by itself a measure of comprehension, confidence, fluency, or quality.
 
 Interaction comparison is typed rather than universal. Token identity concerns the same historical episode. Type identity concerns membership in the same abstraction-defined class. Equivalence concerns exact preservation under declared observables and admissible transformations. Similarity concerns graded proximity under specified dimensions and metrics. Incomparability occurs when no defensible common comparison space can be established.
 
@@ -186,7 +186,7 @@ The term **observer** identifies a role occupied by a participant when it receiv
 
 ## Evidence and methodology
 
-CompInt distinguishes direct observations from derived features, latent interpretations, and research conclusions.
+the proposed model distinguishes direct observations from derived features, latent interpretations, and research conclusions.
 
 \[
 \text{observation}
@@ -200,13 +200,13 @@ CompInt distinguishes direct observations from derived features, latent interpre
 
 Each step requires provenance, uncertainty, alternative explanations, and falsifying conditions. A pause in an action trace is an observed duration, not direct evidence of hesitation. Failure to select an action does not prove that the participant was unaware of it. Successful completion does not establish understanding. Cultural, demographic, or protected identities cannot be inferred from interaction behavior.
 
-Methods proposed for CompInt include controlled experiments, formal verification, simulation, trace analysis, replay, observational studies, qualitative inquiry, mixed methods, and longitudinal research. The program now coordinates Projection, Opportunity, Interaction, Behavioral Evidence, Measurement, Similarity, and Strategy Contracts so that each inferential transition remains inspectable.
+Methods proposed for the proposed model include controlled experiments, formal verification, simulation, trace analysis, replay, observational studies, qualitative inquiry, mixed methods, and longitudinal research. The program now coordinates Projection, Opportunity, Interaction, Behavioral Evidence, Measurement, Similarity, and Strategy Contracts so that each inferential transition remains inspectable.
 
 A projection comparison should declare the target model, operation semantics, authority rules, starting states, participant population, tasks, equivalence type, measurement procedures, tolerances, and implementation differences. Formal claims may be tested through query equivalence, reconstruction, refinement, bisimulation, model checking, or verified transition correspondence. Empirical claims may involve discovery, latency, action awareness, belief calibration, sequence choice, error, recovery, learning, transfer, accessibility, effort, and coordination.
 
 ## Applications
 
-In **human–AI interaction**, CompInt can compare what an AI system can execute with what its language implies, what policy permits, and what users believe. This distinguishes fluent explanation from actual authority and capability.
+In **human–AI interaction**, the proposed model can compare what an AI system can execute with what its language implies, what policy permits, and what users believe. This distinguishes fluent explanation from actual authority and capability.
 
 In **accessibility**, one transit system may be exposed through a visual map, structured speech, tactile output, and a programmatic interface. Route semantics may remain stable while search cost, spatial overview, memory demand, privacy, recovery, and independent verification differ.
 
@@ -222,47 +222,47 @@ In **games and simulation**, one declared world may be projected through particl
 
 ## Relationship to adjacent fields
 
-CompInt overlaps substantially with existing disciplines and does not claim to replace them.
+the proposed model overlaps substantially with existing disciplines and does not claim to replace them.
 
-[[Human–computer interaction]] studies the design, use, and consequences of interactive computational systems. CompInt proposes a more general explanatory architecture intended to apply across human, computational, institutional, and hybrid participants. Whether this difference warrants a separate field remains unresolved.
+[[Human–computer interaction]] studies the design, use, and consequences of interactive computational systems. the model proposes a more general explanatory architecture intended to apply across human, computational, institutional, and hybrid participants. Whether this difference warrants a separate field remains unresolved.
 
-[[Cybernetics]] studies communication, control, and feedback in animals, machines, and organizations. CompInt inherits this concern with coupled systems while giving explicit attention to representation, interpretation, typed opportunity, and cross-projection equivalence.
+[[Cybernetics]] studies communication, control, and feedback in animals, machines, and organizations. the proposed model inherits this concern with coupled systems while giving explicit attention to representation, interpretation, typed opportunity, and cross-projection equivalence.
 
-[[Cognitive science]] studies perception, reasoning, learning, language, and action. CompInt may use cognitive theories but does not require every interaction explanation to posit internal cognition.
+[[Cognitive science]] studies perception, reasoning, learning, language, and action. the proposed model may use cognitive theories but does not require every interaction explanation to posit internal cognition.
 
-[[Artificial intelligence]] and [[multi-agent system]] research study intelligent action, coordination, planning, learning, and autonomous systems. CompInt includes non-autonomous participants and focuses on how representations, authority, interpretation, and action availability structure interaction.
+[[Artificial intelligence]] and [[multi-agent system]] research study intelligent action, coordination, planning, learning, and autonomous systems. the proposed model includes non-autonomous participants and focuses on how representations, authority, interpretation, and action availability structure interaction.
 
-[[Information science]] studies the creation, representation, organization, retrieval, flow, and use of information. CompInt treats information as a typed component of a broader interaction account.
+[[Information science]] studies the creation, representation, organization, retrieval, flow, and use of information. the proposed model treats information as a typed component of a broader interaction account.
 
-[[Formal methods]] and programming-language theory supply precise accounts of state, transition, semantics, refinement, equivalence, and verification. CompInt attempts to connect these formal relations with human interpretation, accessibility, institutional authority, and empirical behavior.
+[[Formal methods]] and programming-language theory supply precise accounts of state, transition, semantics, refinement, equivalence, and verification. the proposed model attempts to connect these formal relations with human interpretation, accessibility, institutional authority, and empirical behavior.
 
-[[Ecological psychology]] supplies the relational concept of affordance, while activity theory, situated action, and distributed cognition emphasize tools, practices, communities, and material organization. CompInt integrates these with computational transition systems, access control, and projection analysis.
+[[Ecological psychology]] supplies the relational concept of affordance, while activity theory, situated action, and distributed cognition emphasize tools, practices, communities, and material organization. the proposed model integrates these with computational transition systems, access control, and projection analysis.
 
-[[Computational social science]] uses computation to study social systems and behavior. CompInt instead takes computational interaction itself as the target and can include non-social cases such as compiler interfaces, machine protocols, or robot-control systems.
+[[Computational social science]] uses computation to study social systems and behavior. the proposed model instead takes computational interaction itself as the target and can include non-social cases such as compiler interfaces, machine protocols, or robot-control systems.
 
 ## Fundamental
 
-**Fundamental** is a computational substrate associated with the origins of CompInt. It separates declared model commitments, system state, operational behavior, projection, and host realization. Its concepts include bodies, relationships, patterns, contracts, projections, queries, snapshots, and replay.
+**Fundamental** is a computational substrate associated with the origins of the proposed model. It separates declared model commitments, system state, operational behavior, projection, and host realization. Its concepts include bodies, relationships, patterns, contracts, projections, queries, snapshots, and replay.
 
-Within CompInt, Fundamental is treated as one possible research instrument. It can help researchers hold declared model state constant while generating different projections, verify formal preservation properties, expose operations, and connect behavioral traces to the alternatives and state present at the time of action.
+Within the proposed model, Fundamental is treated as one possible research instrument. It can help researchers hold declared model state constant while generating different projections, verify formal preservation properties, expose operations, and connect behavioral traces to the alternatives and state present at the time of action.
 
-Fundamental does not validate CompInt, guarantee shared interpretation, or replace participant research, consent, statistical analysis, qualitative methods, or causal identification.
+Fundamental does not validate the proposed model, guarantee shared interpretation, or replace participant research, consent, statistical analysis, qualitative methods, or causal identification.
 
 ## Criticism and open questions
 
-The principal criticism of CompInt is that it may represent a synthesis of existing theories rather than a distinct explanatory program. Its major concepts already exist in philosophy, computer science, HCI, psychology, control theory, and formal methods. The framework must therefore demonstrate that its relational integration produces measurable explanatory, predictive, or intervention gains rather than merely reorganizing vocabulary.
+The principal criticism of the proposed model is that it may represent a synthesis of existing theories rather than a distinct explanatory program. Its major concepts already exist in philosophy, computer science, HCI, psychology, control theory, and formal methods. The framework must therefore demonstrate that its relational integration produces measurable explanatory, predictive, or intervention gains rather than merely reorganizing vocabulary.
 
-A related concern is overformalization. Typed models can create false precision when interpretation, culture, social practice, or institutional power cannot be adequately expressed as variables. CompInt treats its formal models as analytical commitments and requires qualitative and contextual methods where appropriate, but the adequacy of that response remains empirical.
+A related concern is overformalization. Typed models can create false precision when interpretation, culture, social practice, or institutional power cannot be adequately expressed as variables. the proposed model treats its formal models as analytical commitments and requires qualitative and contextual methods where appropriate, but the adequacy of that response remains empirical.
 
 Measurement has been specified as a contract-based framework, but empirical validation remains unresolved. Believed action availability, interpretation, expected consequence, perceived reversibility, strategy, and transfer are not directly observable. Their reliability and measurement invariance across tasks, languages, cultures, modalities, and populations have not been established.
 
-The status of interaction as a distinct explanatory level also remains unsettled. Existing theories may explain interaction phenomena sufficiently when integrated, leaving CompInt as a useful cross-disciplinary framework rather than an autonomous science.
+The status of interaction as a distinct explanatory level also remains unsettled. Existing theories may explain interaction phenomena sufficiently when integrated, leaving the proposed model as a useful cross-disciplinary framework rather than an autonomous science.
 
 Other open questions include formal model selection, strategy identifiability, interaction transfer, predictive limits, interaction grammar and morphology, causal equivalence, longitudinal history, and generalization beyond structured computational tasks.
 
 ## Current status
 
-Computational Interaction Science is a proposed research program. Its current contributions are theoretical synthesis, a strict interaction definition, behavior and evidence hierarchies, measurement requirements, typed similarity and strategy frameworks, reusable contracts, operational hypotheses, and a research agenda. It has not established a recognized discipline, a validated universal ontology, or a demonstrated body of predictive laws.
+Foundations of Computational Interaction is a proposed research program. Its current contributions are theoretical synthesis, a strict interaction definition, behavior and evidence hierarchies, measurement requirements, typed similarity and strategy frameworks, reusable contracts, operational hypotheses, and a research agenda. It has not established a recognized discipline, a validated universal ontology, or a demonstrated body of predictive laws.
 
 Its strongest current claim is methodological:
 

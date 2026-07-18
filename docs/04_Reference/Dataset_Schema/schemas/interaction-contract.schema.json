@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "interaction-contract.schema.json",
-  "title": "CompInt interaction-contract.schema.json",
+  "title": "Computational Interaction interaction-contract.schema.json",
   "$ref": "../../Templates/Interaction_Contract.schema.json"
 }

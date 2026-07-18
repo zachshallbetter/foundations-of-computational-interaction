@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "transfer-record.schema.json",
-  "title": "CompInt Transfer Record",
+  "title": "Computational Interaction Transfer Record",
   "type": "object",
   "additionalProperties": false,
   "required": ["transfer_id", "transfer_contract_ref", "source_episode_ref", "target_episode_ref", "experience_state_ref", "baseline_ref", "counterfactual_ref", "outcome", "classification", "uncertainty_ref", "transport_limits", "provenance"],

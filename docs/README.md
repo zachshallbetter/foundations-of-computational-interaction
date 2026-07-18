@@ -1,8 +1,8 @@
-# Computational Interaction Science
+# Foundations of Computational Interaction
 
 Version **1.0.0**
 
-This repository contains the Computational Interaction Science research corpus, its knowledge system of record, supporting research infrastructure, and external literature.
+This repository contains the Foundations of Computational Interaction research corpus, its knowledge system of record, supporting research infrastructure, and external literature.
 
 ## Structure
 

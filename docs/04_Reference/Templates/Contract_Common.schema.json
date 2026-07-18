@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "Contract_Common.schema.json",
-  "title": "CompInt Contract Common Fields",
+  "title": "Computational Interaction Contract Common Fields",
   "type": "object",
   "required": [
     "contract_id",

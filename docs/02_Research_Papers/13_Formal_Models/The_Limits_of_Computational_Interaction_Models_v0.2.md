@@ -1,7 +1,7 @@
 # The Limits of Computational Interaction Models
 
 **Version:** Draft 0.2  
-**Project:** Computational Interaction Science  
+**Project:** Foundations of Computational Interaction  
 **Status:** Foundational Position Paper
 
 ---
@@ -10,7 +10,7 @@
 
 Every scientific framework is defined not only by what it explains, but by what it refuses to claim.
 
-This document establishes the epistemic boundaries for Computational Interaction Science. It argues that interaction models should seek structure without determinism, formalization without false certainty, generality without reductionism, and integration without replacing adjacent disciplines.
+This document establishes the epistemic boundaries for Foundations of Computational Interaction. It argues that interaction models should seek structure without determinism, formalization without false certainty, generality without reductionism, and integration without replacing adjacent disciplines.
 
 The purpose of these limits is not to weaken the discipline. It is to make its claims scientifically defensible.
 
@@ -20,7 +20,7 @@ The purpose of these limits is not to weaken the discipline. It is to make its c
 
 New disciplines often fail by overextending their explanatory authority.
 
-If Computational Interaction Science attempts to explain culture, cognition, personality, intelligence, organizations, and society through interaction alone, it will become another grand unified theory with little empirical value.
+If Foundations of Computational Interaction attempts to explain culture, cognition, personality, intelligence, organizations, and society through interaction alone, it will become another grand unified theory with little empirical value.
 
 Instead, the discipline should explicitly define where its authority begins and ends.
 
@@ -175,7 +175,7 @@ Its contribution is inspectable uncertainty.
 
 # 8. One Ontology Should Not Replace Existing Disciplines
 
-Computational Interaction Science should integrate findings across:
+Foundations of Computational Interaction should integrate findings across:
 
 - Human–Computer Interaction;
 - Psychology;
@@ -213,7 +213,7 @@ Projection, Opportunity, Interaction, Behavioral Evidence, Measurement, Similari
 
 # 13. A Doctrine of Bounded Explanation
 
-Computational Interaction Science should adopt the following doctrine:
+Foundations of Computational Interaction should adopt the following doctrine:
 
 - Seek structure without determinism.
 - Seek formalization without false certainty.
@@ -229,7 +229,7 @@ These principles define the epistemic limits of the discipline.
 
 # 14. Conclusion
 
-The long-term credibility of Computational Interaction Science will depend as much on the claims it refuses to make as the claims it advances.
+The long-term credibility of Foundations of Computational Interaction will depend as much on the claims it refuses to make as the claims it advances.
 
 A disciplined ontology should clarify what interaction models can explain, what they may only suggest, and what remains outside their authority.
 

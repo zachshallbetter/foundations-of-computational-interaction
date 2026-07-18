@@ -1,4 +1,4 @@
-digraph CompIntOntology {
+digraph ComputationalInteractionOntology {
   graph [
     rankdir=LR,
     bgcolor="#ffffff",
@@ -7,7 +7,7 @@ digraph CompIntOntology {
     ranksep="0.56",
     splines=polyline,
     fontname="Helvetica",
-    label="CompInt 1.0.0 — canonical analytical dependency graph",
+    label="Computational Interaction 1.0.0 — canonical analytical dependency graph",
     labelloc=t,
     fontsize=18
   ];

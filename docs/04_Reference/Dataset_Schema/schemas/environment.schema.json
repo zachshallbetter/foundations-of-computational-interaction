@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "environment.schema.json",
-  "title": "CompInt Interaction Environment",
+  "title": "Computational Interaction Interaction Environment",
   "type": "object",
   "additionalProperties": false,
   "required": ["environment_id", "version", "boundary", "state_schema_ref", "authority", "provenance"],

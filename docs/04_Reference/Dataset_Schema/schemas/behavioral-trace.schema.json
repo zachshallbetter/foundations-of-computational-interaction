@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "behavioral-trace.schema.json",
-  "title": "CompInt Behavioral Trace",
+  "title": "Computational Interaction Behavioral Trace",
   "type": "object",
   "additionalProperties": false,
   "required": [

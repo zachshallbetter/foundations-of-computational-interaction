@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "uncertainty.schema.json",
-  "title": "CompInt Uncertainty",
+  "title": "Computational Interaction Uncertainty",
   "type": "object",
   "additionalProperties": false,
   "required": [

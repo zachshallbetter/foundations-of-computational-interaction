@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "Similarity_Contract.schema.json",
-  "title": "CompInt Similarity Contract",
+  "title": "Computational Interaction Similarity Contract",
   "allOf": [
     {
       "$ref": "Contract_Common.schema.json"

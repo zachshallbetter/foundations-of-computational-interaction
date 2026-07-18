@@ -1,4 +1,4 @@
-# CompInt Internal Consolidation Candidate 1.0.0
+# the proposed model Internal Consolidation Candidate 1.0.0
 
 This candidate freezes the interdisciplinary-synthesis determination, authority
 order, naming policy, ontology labels, conformance levels, and C reference scope.

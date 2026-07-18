@@ -1,4 +1,4 @@
-# Computational Interaction Science Citation Map
+# Foundations of Computational Interaction Citation Map
 
 This map links canonical concepts to likely supporting bibliography entries. Mappings are corpus-derived and require human confirmation before publication.
 
@@ -484,12 +484,12 @@ PRIMARY SCIENTIFIC OBJECT?
 
 **Candidate sources:** wc2023; tarski1944; palmer1978; yarkoni2017; shannon1948a; wiener1948cybernetics; fitts1954; bertalanffy1968
 
-## Computational Interaction Science
+## Foundations of Computational Interaction
 
 A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
 
 CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
 
-**Origin:** Computational Interaction Science
+**Origin:** Foundations of Computational Interaction
 
 **Candidate sources:** yarkoni2017; wc2023; opensciencecollaboration2015; tarski1944; park1981; newell1976; card1983; card1983the

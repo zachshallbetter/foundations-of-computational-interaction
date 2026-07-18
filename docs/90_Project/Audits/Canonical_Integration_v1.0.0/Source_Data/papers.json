@@ -1029,7 +1029,7 @@
       "11. Prediction Protocol",
       "12. Evaluation and Falsification",
       "13. Threats to Validity",
-      "14. Implications for Computational Interaction Science",
+      "14. Implications for Foundations of Computational Interaction",
       "15. Conclusion",
       "Reusable Artifacts",
       "A. Prediction Contract",
@@ -1133,7 +1133,7 @@
   {
     "id": "16",
     "folder": "16_Program_Synthesis",
-    "title": "Computational Interaction Science",
+    "title": "Foundations of Computational Interaction",
     "docx": "02_Research_Papers/16_Program_Synthesis/Computational_Interaction_Science_Foundations.docx",
     "pdf": "02_Research_Papers/16_Program_Synthesis/Computational_Interaction_Science_Foundations.pdf",
     "mds": [],
