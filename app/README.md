@@ -2,7 +2,7 @@
 
 Foundations of Computational Interaction is an interdisciplinary scientific program for describing, measuring, comparing, modeling, and predicting human-computer interaction. It coordinates established theories and methods around computational interaction as a shared explanatory object, framing the work as a foundational model rather than a proposal for a new academic field.
 
-This repository implements a deterministic, fixed-capacity reference kernel for a selected subset of the proposed model's ontology. It demonstrates separability and internal computational coherence; it does not implement or validate the complete empirical, probabilistic, concurrent, causal, comparative, or predictive framework.
+This repository implements a deterministic, fixed-capacity reference kernel for a selected subset of FCI's ontology. It demonstrates separability and internal computational coherence; it does not implement or validate the complete empirical, probabilistic, concurrent, causal, comparative, or predictive framework.
 
 For a plain-language walkthrough, start with [`../docs/04_Reference/Handbooks/Explaining_CompInt.md`](../docs/04_Reference/Handbooks/Explaining_CompInt.md), then use the example implementation files to test each distinction directly.
 
@@ -95,7 +95,7 @@ print their results.
 - `../docs/04_Reference/Handbooks/Explaining_CompInt.md` — plain-language conceptual walkthrough
 - `CONFORMANCE.md` — layered theory, schema, implementation, and empirical claims
 - `VERSIONING.md` — independent version lines and compatibility rules
-- `NAMING.md` — the proposed model terminology and legacy C namespace policy
+- `NAMING.md` — FCI terminology and legacy C namespace policy
 - `AUTHORITY.md` — conflict, supersession, deprecation, and errata control
 - `DOCUMENT_MAP.md` — canonical/supporting/historical artifact registry
 - `../docs/01_Knowledge_System_of_Record/10_Governance/` — research data and protocol governance minimum

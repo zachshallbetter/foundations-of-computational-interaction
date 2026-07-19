@@ -32,3 +32,6 @@ __pycache__/
 
 # Preserved input package (171MB) — kept on disk, not tracked
 docs/90_Project/Previous_Releases/docs_with_scientific_audit_standard.zip
+
+# macOS archive metadata
+__MACOSX/

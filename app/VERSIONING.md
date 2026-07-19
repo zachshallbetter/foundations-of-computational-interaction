@@ -1,12 +1,12 @@
 # Versioning Policy
 
-the proposed model versions theory, specifications, software, publication infrastructure,
+FCI versions theory, specifications, software, publication infrastructure,
 and examples independently. A shared number never implies cross-layer
 conformance.
 
 | Layer | Current version | Stability | Compatibility rule |
 |---|---:|---|---|
-| the proposed model theory | 1.0.0 | frozen determination; ontology labels pending identifier ratification | Patch clarifies without changing commitments; minor adds backward-compatible theory; major changes commitments. |
+| FCI theory | 1.0.0 | frozen determination; ontology labels pending identifier ratification | Patch clarifies without changing commitments; minor adds backward-compatible theory; major changes commitments. |
 | Contract schemas | 0.2.0 | draft normative candidates | Any incompatible field, meaning, or validation change increments minor until 1.0.0. |
 | Dataset schema | 0.3.0 | exploratory, not piloted | Breaking record or reference changes increment minor until 1.0.0. |
 | C reference substrate | 0.1.0 | experimental API | No compatibility guarantee before 1.0.0; every breaking change is recorded. |

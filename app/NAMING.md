@@ -1,11 +1,11 @@
 # Naming Policy
 
 **Formal name:** Foundations of Computational Interaction  
-**Preferred short name:** the proposed model  
+**Preferred short name:** FCI  
 **Supported determination:** interdisciplinary scientific synthesis and research
 program, not an established independent scientific discipline
 
-Use **the proposed model** in repository prose, schema titles, examples, and new public
+Use **FCI** in repository prose, schema titles, examples, and new public
 interfaces. Use **Foundations of Computational Interaction** on first formal mention.
 
 The existing C namespace (`cis_`, `Cis*`, `CIS_*`) is a Version 0.1 legacy
