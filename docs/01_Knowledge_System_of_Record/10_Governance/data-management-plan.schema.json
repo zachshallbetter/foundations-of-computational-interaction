@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "data-management-plan.schema.json",
+  "title": "Foundations of Computational Interaction Participant Data Management Plan",
+  "description": "A frozen, study-specific instance of the Participant Data Management Plan (Participant_Data_Management_Plan.md). No study is authorized by the plan template alone; this instance must be frozen before collection. Controls are recorded as explicit attestations rather than defaults, so an unattested control reads as not-satisfied.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "schema_version",
+    "study_ref",
+    "frozen_at",
+    "responsible_owner",
+    "review_authority",
+    "protocol_version",
+    "consent_version",
+    "participant_population",
+    "purpose",
+    "data_categories",
+    "retention",
+    "reuse_scope",
+    "incident_contact",
+    "controls"
+  ],
+  "properties": {
+    "record_id": { "type": "string", "minLength": 1 },
+    "schema_version": { "const": "0.1.0" },
+    "study_ref": { "type": "string", "minLength": 1 },
+    "frozen_at": { "type": "string", "format": "date-time" },
+    "responsible_owner": { "type": "string", "minLength": 1 },
+    "review_authority": { "type": "string", "minLength": 1 },
+    "protocol_version": { "type": "string", "minLength": 1 },
+    "consent_version": { "type": "string", "minLength": 1 },
+    "participant_population": { "type": "string", "minLength": 1 },
+    "purpose": { "type": "string", "minLength": 1 },
+    "data_categories": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Declared classes of data collected. Full prompts, direct identifiers, protected attributes, free-form sensitive text, and precise location are prohibited unless named here as specifically approved and necessary."
+    },
+    "instruments": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "storage_locations": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "processors": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "access_roles": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Named roles authorized under deny-by-default access."
+    },
+    "retention": {
+      "type": "array",
+      "minItems": 1,
+      "description": "A retention and deletion rule for every declared data class.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["data_class", "basis", "delete_by", "deletion_mechanism"],
+        "properties": {
+          "data_class": { "type": "string", "minLength": 1 },
+          "basis": { "type": "string", "minLength": 1, "description": "Frozen outcome or governance requirement justifying retention." },
+          "delete_by": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Calendar date or named triggering event."
+          },
+          "deletion_mechanism": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Must cover primary, derivative, export, and backup handling, with an auditable disposition record."
+          }
+        }
+      }
+    },
+    "export_rules": {
+      "type": ["string", "null"],
+      "description": "Logging of recipient, purpose, fields, transformations, agreement, consent basis, and expiration for any export."
+    },
+    "reuse_scope": {
+      "enum": ["not_permitted", "study_only", "specified_reuse", "broad_reuse"],
+      "description": "Aligned with the consent record's future_reuse enum. New use outside consent or authority requires review before transfer."
+    },
+    "incident_contact": { "type": "string", "minLength": 1 },
+    "approved_exceptions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Explicit attestation for each required control. Every control must be attested true for a plan to be complete.",
+      "required": [
+        "minimize",
+        "pseudonymize",
+        "separate",
+        "authorize",
+        "retain_and_delete",
+        "export_and_reuse_logged",
+        "audit"
+      ],
+      "properties": {
+        "minimize": { "const": true },
+        "pseudonymize": { "const": true },
+        "separate": { "const": true },
+        "authorize": { "const": true },
+        "retain_and_delete": { "const": true },
+        "export_and_reuse_logged": { "const": true },
+        "audit": { "const": true }
+      }
+    },
+    "withdrawal_process": {
+      "type": ["string", "null"],
+      "description": "Append-only withdrawal handling; original consent records are never overwritten."
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

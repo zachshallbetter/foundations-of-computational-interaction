@@ -1,6 +1,6 @@
 # Research Governance Minimum
 
-This directory defines the minimum operational controls for the proposed model studies. It
+This directory defines the minimum operational controls for FCI studies. It
 does not replace institutional, legal, ethical-review, accessibility, security,
 or community-specific requirements.
 
@@ -19,6 +19,16 @@ and reuse terms, incident contact, and protocol-deviation procedure.
 - prohibit raw sensitive records in examples, logs, prompts, and public bundles;
 - honor withdrawal, correction, deletion, and reuse terms defined by the study;
 - review subgroup, accessibility, and community harms before release.
+
+## Machine-checkable instruments
+
+Governance records validate against draft-2020-12 JSON Schemas in this directory:
+
+- `consent-record.schema.json` — per-participant consent, amendment, and withdrawal records.
+- `ethics-gate-assessment.schema.json` — the eight non-compensatory ethics and power gates; any applicable gate that is failed or unassessed requires a recorded resolution before release.
+- `data-management-plan.schema.json` — the frozen, study-specific instance of the Participant Data Management Plan.
+
+Schema validation checks structure only; it does not establish that a study's controls, consent, or gate resolutions are substantively adequate.
 
 ## Incident and deviation handling
 

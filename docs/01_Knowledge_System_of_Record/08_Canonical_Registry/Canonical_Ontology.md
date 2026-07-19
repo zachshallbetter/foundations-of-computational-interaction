@@ -448,7 +448,7 @@ A representation-independent computational substrate for declaring domain commit
 
 A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
 
-CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
+FCI must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
 
 **Dependencies:** None declared
 **Dependents:** Interaction

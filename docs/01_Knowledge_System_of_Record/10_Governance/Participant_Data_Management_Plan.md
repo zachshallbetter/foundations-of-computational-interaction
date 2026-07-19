@@ -2,6 +2,8 @@
 
 **Status:** required template; no study is authorized by this document alone
 
+Frozen study-specific instances are recorded against `data-management-plan.schema.json`.
+
 ## Study declaration
 
 Before collection, freeze a study-specific instance naming the responsible
