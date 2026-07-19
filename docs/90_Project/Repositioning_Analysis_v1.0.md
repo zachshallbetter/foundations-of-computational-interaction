@@ -86,9 +86,9 @@ Explanation and prediction are not produced directly by the foundational model i
 ## 4. Terminology Changes Log
 
 Precise case-sensitive replacements were executed across the Markdown corpus to ensure alignment:
-*   **"Foundations of Computational Interaction"** $\rightarrow$ **"Foundations of Computational Interaction"** (when referring to the scholarly program) or **"formal model of computational interaction"** (when referring to the core scientific contribution).
-*   **"the proposed model"** $\rightarrow$ **"the proposed model"** or **"the model"** (to minimize branded improper nouns).
-*   Institutional advocacy phrases (e.g., *"the model proposes..."*) were replaced with scientific phrases (e.g., *"the proposed model...", "this work develops..."*).
+*   **"Computational Interaction Science"** $\rightarrow$ **"Foundations of Computational Interaction"** (the scholarly program name).
+*   The branded acronym **"CIS"** was first softened to **"the proposed model"** / **"the model"** to minimize branded improper nouns, then standardized to the defined acronym **"FCI"** (Foundations of Computational Interaction) for readability and consistency; the acronym is defined on first use in each document.
+*   Institutional advocacy phrases (e.g., *"the model proves..."*) were replaced with scientific phrases (e.g., *"this work develops...", "the framework proposes..."*).
 
 ---
 
