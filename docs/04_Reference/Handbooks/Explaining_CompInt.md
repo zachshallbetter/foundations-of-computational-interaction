@@ -1,6 +1,6 @@
 # Explaining the Foundational Model
 
-The proposed model is designed to answer one central question:
+FCI is designed to answer one central question:
 
 > What happened when a participant encountered a computational system, and
 > which conclusions are justified by the available evidence?
@@ -16,7 +16,7 @@ might expose the action without making it noticeable. The participant might
 believe it is available when it is not. An attempt might be rejected. An
 executed transition might still fail its stated outcome criterion.
 
-The proposed model preserves those differences instead of calling all of them
+FCI preserves those differences instead of calling all of them
 “interaction.”
 
 ## Five questions
@@ -35,7 +35,7 @@ The proposed model preserves those differences instead of calling all of them
 
 ## Closely related terms remain separate
 
-| Plain-language question | the proposed model distinction |
+| Plain-language question | FCI distinction |
 |---|---|
 | Does the action exist? | domain-valid |
 | Does this participant have what it requires? | capable |
@@ -80,6 +80,6 @@ failure-sensitive benchmarks.
 
 ## Short definition
 
-> the proposed model is an interdisciplinary scientific synthesis for describing,
+> FCI is an interdisciplinary scientific synthesis for describing,
 > measuring, modeling, comparing, and predicting computational interaction
 > without claiming more than the system and evidence show.

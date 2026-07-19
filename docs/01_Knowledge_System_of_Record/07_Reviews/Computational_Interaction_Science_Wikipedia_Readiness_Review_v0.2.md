@@ -12,7 +12,7 @@ The internal project article has advanced through completed work on strict inter
 
 ## Updates made
 
-The revised article describes the proposed model as a proposed research program, avoids claims that it is established or proven, gives substantial space to adjacent disciplines, adds criticism and unresolved questions, separates project-documented provenance from independent public history, and treats formulas as proposed analytical models rather than accepted scientific laws.
+The revised article describes FCI as a proposed research program, avoids claims that it is established or proven, gives substantial space to adjacent disciplines, adds criticism and unresolved questions, separates project-documented provenance from independent public history, and treats formulas as proposed analytical models rather than accepted scientific laws.
 
 ## Conflict of interest
 
@@ -20,9 +20,9 @@ Zachary Shallbetter has a direct professional and intellectual connection to the
 
 ## What would establish notability
 
-A standalone article would require multiple independent secondary sources discussing the proposed model itself in depth. Suitable evidence could include peer-reviewed papers by unaffiliated researchers, scholarly books or chapters, independent journal or conference reviews, substantial reporting by reputable publications, or independent adoption and criticism of the terminology and framework.
+A standalone article would require multiple independent secondary sources discussing FCI itself in depth. Suitable evidence could include peer-reviewed papers by unaffiliated researchers, scholarly books or chapters, independent journal or conference reviews, substantial reporting by reputable publications, or independent adoption and criticism of the terminology and framework.
 
-Citations to Gibson, Norman, Shannon, Suchman, Hacking, Hutchins, and related scholarship support the discussion of neighboring ideas. They do not establish the notability of the proposed model.
+Citations to Gibson, Norman, Shannon, Suchman, Hacking, Hutchins, and related scholarship support the discussion of neighboring ideas. They do not establish the notability of FCI.
 
 ## Attribution of coinage
 

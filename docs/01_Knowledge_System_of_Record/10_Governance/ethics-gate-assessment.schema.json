@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ethics-gate-assessment.schema.json",
+  "title": "Foundations of Computational Interaction Ethics and Power Gate Assessment",
+  "description": "A non-compensatory assessment record for the eight ethics and power gates defined in Ethics_and_Power_Gates.md. A favorable aggregate score cannot offset a failed gate: every applicable gate that is failed or unassessed vetoes a comparative recommendation, deployment claim, or public release until the responsible review authority records a resolution. The Comparison Contract must reference this record when human or community consequences are in scope.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "schema_version",
+    "subject_ref",
+    "assessed_at",
+    "review_authority",
+    "gates",
+    "overall_decision"
+  ],
+  "properties": {
+    "record_id": { "type": "string", "minLength": 1 },
+    "schema_version": { "const": "0.1.0" },
+    "subject_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the study, comparison, deployment claim, or release under assessment."
+    },
+    "comparison_contract_ref": {
+      "type": ["string", "null"],
+      "description": "Reference to the Comparison Contract that must cite this record when human or community consequences are in scope."
+    },
+    "assessed_at": { "type": "string", "format": "date-time" },
+    "review_authority": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The responsible review authority accountable for the gate results and any resolutions."
+    },
+    "gates": {
+      "type": "array",
+      "description": "Exactly one evaluation per named gate. minItems 8 with uniqueItems over an 8-value enum forces all eight gates to be present.",
+      "minItems": 8,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/gate_evaluation" }
+    },
+    "overall_decision": {
+      "enum": ["released", "vetoed", "pending"],
+      "description": "released is permissible only when every gate is pass or (not_applicable with justification); any applicable gate that is fail or unassessed requires vetoed or pending until resolved."
+    },
+    "notes": { "type": ["string", "null"] }
+  },
+  "$defs": {
+    "gate_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gate", "status", "evidence_ref", "required_record_ref"],
+      "properties": {
+        "gate": {
+          "enum": [
+            "coercion",
+            "manipulation",
+            "exclusion-and-accessibility",
+            "authority-and-institutional-power",
+            "asymmetric-risk",
+            "subgroup-preservation",
+            "cultural-claim",
+            "reversibility"
+          ]
+        },
+        "status": {
+          "enum": ["pass", "fail", "unassessed", "not_applicable"]
+        },
+        "evidence_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reference to the evidence supporting the status determination."
+        },
+        "required_record_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reference to the gate's required record, e.g. recruitment and withdrawal review, manipulation inventory, accessibility and exclusion audit, authority map, distributional risk review, subgroup evidence record, community review or limitation statement, or harm and recovery plan."
+        },
+        "not_applicable_justification": {
+          "type": ["string", "null"],
+          "description": "Required in prose when status is not_applicable."
+        },
+        "resolution_ref": {
+          "type": ["string", "null"],
+          "description": "Reference to the review authority's recorded resolution. Required (non-null) when status is fail or unassessed, because such a gate otherwise vetoes release."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "enum": ["fail", "unassessed"] } },
+            "required": ["status"]
+          },
+          "then": {
+            "required": ["resolution_ref"],
+            "properties": { "resolution_ref": { "type": "string", "minLength": 1 } }
+          }
+        },
+        {
+          "if": {
+            "properties": { "status": { "const": "not_applicable" } },
+            "required": ["status"]
+          },
+          "then": {
+            "required": ["not_applicable_justification"],
+            "properties": { "not_applicable_justification": { "type": "string", "minLength": 1 } }
+          }
+        }
+      ]
+    }
+  }
+}

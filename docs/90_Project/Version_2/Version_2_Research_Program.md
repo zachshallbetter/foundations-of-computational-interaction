@@ -42,7 +42,7 @@ Test improvised social interaction, contested meaning, changing ontology, distri
 
 ## Workstream 9 — Comparative scientific gain
 
-Compare transition-system, HCI/cognitive-science, process-mining, full the proposed model, and ablated the proposed model accounts. Evaluate annotation agreement, construct recovery, explanatory fit, held-out prediction, intervention prediction, transfer prediction, cost, complexity, reporting burden, error detection, and decision utility.
+Compare transition-system, HCI/cognitive-science, process-mining, full FCI, and ablated FCI accounts. Evaluate annotation agreement, construct recovery, explanatory fit, held-out prediction, intervention prediction, transfer prediction, cost, complexity, reporting burden, error detection, and decision utility.
 
 ## Conformance profiles to evaluate
 

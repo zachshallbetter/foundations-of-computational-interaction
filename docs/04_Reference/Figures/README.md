@@ -1,6 +1,6 @@
 # Figure Library
 
-This directory contains the reusable the proposed model figure set. `FIG-001` is regenerated from its checked-in Graphviz source; the PNG, SVG, and PDF are derivatives and must not be edited directly.
+This directory contains the reusable FCI figure set. `FIG-001` is regenerated from its checked-in Graphviz source; the PNG, SVG, and PDF are derivatives and must not be edited directly.
 
 ## FIG-001 — Canonical analytical dependency graph
 

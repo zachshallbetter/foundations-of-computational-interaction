@@ -18,3 +18,7 @@ Any failed or unassessed applicable gate vetoes a comparative recommendation,
 deployment claim, or public release until the responsible review authority
 records a resolution. The Comparison Contract must reference this record when
 human or community consequences are in scope.
+
+Gate assessments are recorded against `ethics-gate-assessment.schema.json`, which
+requires all eight gates to be present and requires a resolution reference for
+any gate that is failed or unassessed.

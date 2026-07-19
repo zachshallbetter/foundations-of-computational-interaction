@@ -3,7 +3,7 @@
 ## Consolidation decisions
 
 - `Computational-Interaction-Science-v1.0.0.zip` supplied the base Knowledge System of Record, research papers, and external literature.
-- `the proposed model.zip` was not copied because it substantially duplicates the base release, contains macOS metadata, and uses a flatter pre-release layout.
+- `CompInt.zip` was not copied because it substantially duplicates the base release, contains macOS metadata, and uses a flatter pre-release layout.
 - `Computational_Interaction_Science_Canonical_Corpus_v1.0.0.zip` supplied canonical indexes, graphs, and integration reports.
 - `Computational_Interaction_Science_Publication_Infrastructure_v1.0.0.zip` was superseded by the editorial normalization package.
 - `Computational_Interaction_Science_Editorial_Normalization_v1.1.1.zip` supplied the publication infrastructure and editorial reports.

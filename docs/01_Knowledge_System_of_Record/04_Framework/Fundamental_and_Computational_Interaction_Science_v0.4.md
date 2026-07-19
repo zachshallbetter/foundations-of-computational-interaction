@@ -9,11 +9,11 @@
 
 Fundamental and Foundations of Computational Interaction are complementary but distinct.
 
-Foundations of Computational Interaction is a proposed research program for studying interaction as an explanatory target. It separates domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, interaction episodes, behavior, measurement, similarity, strategy, and evidence so that their relationships can be examined rather than assumed.
+Foundations of Computational Interaction (FCI) is a proposed research program for studying interaction as an explanatory target. It separates domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, interaction episodes, behavior, measurement, similarity, strategy, and evidence so that their relationships can be examined rather than assumed.
 
-Fundamental is a representation-independent computational substrate. It can declare model commitments, evolve state, apply operational semantics, generate governed projections, expose typed operations, and preserve inspectable snapshots, diffs, and replay. It is not a philosophical ontology, a theory of human meaning, or evidence that CIS is correct.
+Fundamental is a representation-independent computational substrate. It can declare model commitments, evolve state, apply operational semantics, generate governed projections, expose typed operations, and preserve inspectable snapshots, diffs, and replay. It is not a philosophical ontology, a theory of human meaning, or evidence that FCI is correct.
 
-The connection is methodological. the proposed model requires controlled distinctions and contract-based provenance. Fundamental can make a subset of those distinctions executable, including projection, opportunity, interaction-state, replay, and comparison inputs.
+The connection is methodological. FCI requires controlled distinctions and contract-based provenance. Fundamental can make a subset of those distinctions executable, including projection, opportunity, interaction-state, replay, and comparison inputs.
 
 ## 1. The shared problem
 
@@ -28,7 +28,7 @@ Most software systems tightly bind:
 
 When these move together, a representation change often changes the modeled system, executable action set, or instrumentation. Researchers cannot determine whether a behavioral difference came from projection, implementation, authority, latency, semantics, or task structure.
 
-CIS requires those sources of variation to be declared separately.
+FCI requires those sources of variation to be declared separately.
 
 Fundamental supplies an architecture in which they can be separated enough to inspect and manipulate.
 
@@ -163,7 +163,7 @@ This does not imply that every implementation is behaviorally or operationally e
 
 ## 7. Fundamental as a research instrument
 
-Fundamental can support CIS by enabling researchers to:
+Fundamental can support FCI by enabling researchers to:
 
 1. declare one target model;
 2. preserve stable identities and transitions;
@@ -205,9 +205,9 @@ Fundamental should not own:
 
 Those belong to a separate research layer.
 
-## 10. Relationship to the proposed model
+## 10. Relationship to FCI
 
-CIS supplies the explanatory questions:
+FCI supplies the explanatory questions:
 
 - Which properties remain invariant?
 - Which projection properties reorganize epistemic access?
@@ -258,4 +258,4 @@ model commitments
 
 That separation makes projection replaceable, preservation claims testable, and interaction experiments less confounded.
 
-CIS explains why those distinctions matter scientifically. Fundamental provides one way to instantiate them computationally.
+FCI explains why those distinctions matter scientifically. Fundamental provides one way to instantiate them computationally.

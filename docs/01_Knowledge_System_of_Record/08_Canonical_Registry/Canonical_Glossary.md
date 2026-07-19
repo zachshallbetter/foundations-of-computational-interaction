@@ -714,7 +714,7 @@ A family of bounded coupling phenomena in which distinguishable systems or parti
 **Supporting papers:** Interaction; CAN INTERACTION BECOME A
 PRIMARY SCIENTIFIC OBJECT?; INTERACTION AS A
 SCIENTIFIC EXPLANANDUM; Foundations of Computational Interaction; Predicting Interaction  
-**Supporting literature:** (1982) Human-computer interaction: a preliminary RUDD,J., STERN, K. R. AND ISENSEE, S. (1996) Low social psychological analysis. Behavior Research: vs. High-fidelity Prototyping Debate. ACM Inter- Methods and Instrumentation,13, (2), 210-220. actions Magazine, January, 76-85. References 501; (1993) Human-Computer Interaction (2nd ed.). Analysis: Verbal Reports as Data. Cambridge, MA: London: Prentice-Hall Europe. The MIT Press.; (1993) Project Ernestine: validating a GOMS J. (1993) Unpacking collaboration: the interac- analysis for predicting and explaining real-world tional organization of trading in a city dealing performance. Human-Computer Interaction, 8(3), room. In Proceedings of the Third European Con- 237-309. ference on Computer-Supported Cooperative; 1. Interview: reproduced by permission of IDEO. (1997) Tangible Bits: towards seamless interfaces, in CH1'97 Proceedings, reprinted by permission of Chapter 2 Association for Computing Machinery, Inc.; Figure Figure 2.1 (on Color Plate 2): gif from www.ai.mit. 2.1 1 (ii) gif from www.almaden.ibm.com/cs/blueeyes/ edu/projects/medical-visionlsurgeryl reproduced by permission of IBM; Figure 2.11 (iii): gif surgical-navigation.htm1 reproduced by permission from www.parc.xerox.com/red/members/richgold/ of Michael E. Leventon; Figure 2.6(a): gif from livingdoc/slide6. html, reproduced by permission of http://vibes.cs.uiuc.edu/ProjectNRIVirtuelVirtueOve Rich Gold of PARC Communications; Figure 2.12: rview.htm, reproduced by permission of Dr Daniel A. gif from www.mbay.net/-brendaWarticleslPDA. Reed (University of Illinois at Urbana-Champaign) Mar.951 reproduced by permission of General Magic, from work on the Collaborative Virtual Inc.  
+**Supporting literature:** See master bibliography and originating paper.  
 **Contracts:** Interaction Contract  
 **Formal mappings:** No unique formal mapping declared
 
@@ -1141,7 +1141,7 @@ A conditional relation from represented states, observations, or beliefs to acti
 
 A representation-independent computational substrate for declaring domain commitments, evolving system state, assigning operational semantics, and producing governed projections whose preservation, transformation, omission, introduced structure, operations, snapshots, and replay can be inspected.
 
-**Boundary:** Fundamental is not the scientific theory, a philosophical ontology, proof of CIS, or a guarantee of shared human meaning.
+**Boundary:** Fundamental is not the scientific theory, a philosophical ontology, proof of FCI, or a guarantee of shared human meaning.
 
 **Dependencies:** None declared  
 **Originating paper:** CAN INTERACTION BECOME A
@@ -1162,9 +1162,9 @@ PRIMARY SCIENTIFIC OBJECT?; How Sciences Define Their Objects; Representation, I
 
 A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
 
-CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
+FCI must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
 
-**Aliases:** the proposed model
+**Aliases:** FCI; CIS; Computational Interaction Science
 
 **Dependencies:** None declared  
 **Originating paper:** Foundations of Computational Interaction  
