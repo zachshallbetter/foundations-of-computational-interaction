@@ -4,7 +4,7 @@
 **Status:** Provisional System of Record  
 **Governance:** Concept Lifecycle and Theory Governance
 
-This glossary is the canonical vocabulary for the current Foundations of Computational Interaction research program. Terms are organized by explanatory role rather than as a fixed implementation stack. Definitions remain provisional until empirically validated.
+This glossary is the canonical vocabulary for the current Foundations of Computational Interaction (FCI) research program. Terms are organized by explanatory role rather than as a fixed implementation stack. Definitions remain provisional until empirically validated.
 
 ## Maturity labels
 
@@ -454,7 +454,7 @@ A conditional relation from represented states, observations, or beliefs to acti
 
 A representation-independent computational substrate for declaring domain commitments, evolving system state, assigning operational semantics, and producing governed projections whose preservation, transformation, omission, introduced structure, operations, snapshots, and replay can be inspected.
 
-**Boundary:** Fundamental is not the scientific theory, a philosophical ontology, proof of CIS, or a guarantee of shared human meaning.
+**Boundary:** Fundamental is not the scientific theory, a philosophical ontology, proof of FCI, or a guarantee of shared human meaning.
 
 ## Foundations of Computational Interaction
 
@@ -462,4 +462,4 @@ A representation-independent computational substrate for declaring domain commit
 
 A research program that studies interaction as an explanatory target by separating and comparing declared domain commitments, state, semantics, projection, representation, interpretation, opportunity, coupling, behavior, measurement, similarity, strategy, and evidence.
 
-CIS must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
+FCI must justify itself through comparative explanatory gain, empirical validity, reproducible methods, and error-sensitive predictions. It does not replace HCI, psychology, anthropology, cognitive science, design, computer science, or related disciplines.
