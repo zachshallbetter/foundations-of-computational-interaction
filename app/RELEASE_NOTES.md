@@ -1,6 +1,6 @@
 # Release notes — C reference substrate
 
-The substrate versions **independently** of the theory layer (currently 0.9.0). Passing these tests
+The substrate versions **independently** of the theory layer (currently 0.5.0). Passing these tests
 establishes reference-kernel conformance only. See [`VERSIONING.md`](VERSIONING.md).
 
 # Unreleased
@@ -11,7 +11,7 @@ _Nothing yet._
 
 First versioned release of the substrate. Experimental API; no compatibility guarantee before 1.0.0.
 
-- `VERSIONING.md`: the FCI theory layer is relabelled **0.9.0** (was 1.0.0), with the rationale recorded
+- `VERSIONING.md`: the FCI theory layer is relabelled **0.5.0** (was 1.0.0), with the rationale recorded
   in the policy itself. Substrate, schema, dataset and publication versions are **unchanged** — this is
   a single-layer correction, and per the non-coupling rules it implies nothing about any other layer.
 
