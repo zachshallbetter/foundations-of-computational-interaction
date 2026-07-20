@@ -1,3 +1,11 @@
+# Unreleased
+
+- `verify-object` now reports **which** undefined symbols were found, and under which compiler,
+  instead of failing silently via `test -z`. The freestanding invariant is a real claim about the
+  substrate; a gate that asserts it without saying what broke is not diagnosable. CI's first
+  cross-compiler run failed here under Linux clang with no usable log output — this is the fix for
+  that, not a relaxation of the check.
+
 # FCI Internal Consolidation Candidate 1.0.0
 
 This candidate freezes the interdisciplinary-synthesis determination, authority

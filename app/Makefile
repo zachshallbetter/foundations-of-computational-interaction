@@ -44,7 +44,17 @@ $(BUILD)/overclaim-benchmark: examples/benchmarks/overclaim-benchmark.c $(LIB_OB
 	$(CC) $(CPPFLAGS) $(CFLAGS) examples/benchmarks/overclaim-benchmark.c $(LIB_OBJECT) -o $@
 
 verify-object: $(LIB_OBJECT)
-	test -z "$$(nm -u $(LIB_OBJECT))"
+	@undef="$$(nm -u $(LIB_OBJECT))"; \
+	if [ -n "$$undef" ]; then \
+		echo "verify-object: FAILED — the substrate must be freestanding, but $(LIB_OBJECT)"; \
+		echo "  references undefined symbols (compiler: $(CC)):"; \
+		echo "$$undef" | sed 's/^/    /'; \
+		echo "  A freestanding object may not depend on an external runtime. Either the compiler"; \
+		echo "  emitted an implicit libcall (commonly memcpy/memset even under -ffreestanding), or"; \
+		echo "  the source gained a genuine external dependency."; \
+		exit 1; \
+	fi; \
+	echo "verify-object: no undefined symbols — freestanding invariant holds ($(CC))"
 
 verify-examples:
 	test -f examples/manifest.csv
