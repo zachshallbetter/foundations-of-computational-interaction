@@ -27,7 +27,7 @@ predicting human–computer interaction.
 | [`03_External_Literature/`](docs/03_External_Literature/) | Supporting external literature |
 | [`04_Reference/`](docs/04_Reference/) | Bibliography, dataset schemas, templates, concept graphs, the audit standard |
 | [`05_Publication/`](docs/05_Publication/) | Publication guidelines and consistency audits |
-| [`90_Project/`](docs/90_Project/) | Release manifests, audits, previous release packages |
+| [`90_Project/`](docs/90_Project/) | Release manifests, audits, decisions, previous release packages, the v1.0 `Reviews/`, and [`Research_Practices.md`](docs/90_Project/Research_Practices.md) |
 
 Start with **[`docs/START_HERE.md`](docs/START_HERE.md)**.
 
@@ -91,7 +91,7 @@ CI lives in [`.github/workflows/`](.github/workflows/):
 
 | Workflow | Gate |
 |---|---|
-| `ci.yml` | Builds and tests the C substrate and checks corpus links. A mandatory `conclusion` job asserts **every** dependency succeeded — a skipped or cancelled job can never count as green |
+| `ci.yml` | Builds and tests the C substrate under **both gcc and clang**, then asserts the `make conformance` vectors are **byte-identical across compilers** — two builds each passing their own tests would not test the determinism claim. Also checks corpus links and that documented directories exist. A mandatory `conclusion` job asserts **every** dependency succeeded — a skipped or cancelled job can never count as green |
 | `pr-checks.yml` | A PR touching `docs/` must record it in [`docs/CHANGELOG.md`](docs/CHANGELOG.md); a PR touching `app/` must record it in [`app/RELEASE_NOTES.md`](app/RELEASE_NOTES.md) — the per-layer analogue of a single changelog gate |
 
 ---
@@ -125,10 +125,10 @@ quality gates — is in `.agents/AGENTS.md`. How claims may be made and revised 
 in [`docs/90_Project/Research_Practices.md`](docs/90_Project/Research_Practices.md).
 `AGENTS.md` is the entry point for agents.
 
-> Agent guidance files (`AGENTS.md`, `CLAUDE.md`, `.agents/AGENTS.md`) are **untracked** — they match a
-> machine-wide gitignore rule. They are referenced by name rather than link for that reason: a link
-> would break on a fresh clone. If this repository should ship its agent guidance, add a repo-level
-> negation to `.gitignore` and commit them.
+> Root-level agent guidance (`AGENTS.md`, `CLAUDE.md`) is **local tooling config and is not tracked** —
+> it matches a machine-wide gitignore rule. It is referenced by name rather than by link for that
+> reason: a link would resolve for a contributor who has the files and break on a fresh clone. Check
+> `git ls-files` for the authoritative answer on any given file rather than trusting this note.
 
 ## Citation
 
