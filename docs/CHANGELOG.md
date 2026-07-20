@@ -1,6 +1,22 @@
 # Changelog
 
+Corpus / theory layer. The C reference substrate versions **independently** — see
+[`../app/RELEASE_NOTES.md`](../app/RELEASE_NOTES.md) and [`../app/VERSIONING.md`](../app/VERSIONING.md).
+A shared number never implies cross-layer conformance.
+
 ## Unreleased
+
+_Nothing yet._
+
+## 0.9.0 — 2026-07-20
+
+**First released version.**
+
+This supersedes an in-repository `1.0.0` label that was **never tagged or published**. It was corrected
+downward because it claimed a ratification that has not occurred: ontology labels remain pending
+identifier ratification, and the program's own stance is that its scientific necessity and empirical
+advantage remain to be demonstrated. Everything previously recorded under that label ships here — the
+entries are retained below rather than discarded.
 
 - **README accuracy corrections.** The agent-guidance note asserted that all three agent files are untracked; `.agents/AGENTS.md` is in fact tracked on `main`, so the note was false as written. It now describes only the root-level files, and points at `git ls-files` as the authoritative answer rather than asking the reader to trust a prose claim about tracking state. The `90_Project/` row omitted `Reviews/` and `Research_Practices.md`. The CI table understated `ci.yml`, which runs a **gcc + clang matrix** and compares the `make conformance` vectors across compilers — the comparison, not the two passing builds, is what tests the determinism claim.
 
@@ -26,7 +42,9 @@
 - Added machine-checkable governance schemas: `ethics-gate-assessment.schema.json` (the eight non-compensatory ethics/power gates) and `data-management-plan.schema.json`.
 - Corpus hygiene: repaired an OCR-garbled bibliography block in the Canonical Glossary, corrected a stray bibliography count (600 → 267 canonical), and repaired a corrupted terminology change-log and package reference in the consolidation records.
 
-## 1.0.0
+- `scripts/check-doc-links.py` now enumerates **tracked** markdown via `git ls-files` rather than walking the filesystem. It was scanning untracked local files (agent guidance), so a local run could fail where CI — which never sees them — passed. Repository link integrity is a property of tracked content.
+
+### Previously recorded under the unreleased `1.0.0` label
 
 Initial clean corpus release.
 
