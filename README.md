@@ -80,6 +80,7 @@ Run before proposing a merge. CI runs the same commands.
 ```bash
 cd app && make test                    # build + unit, stress, example, schema and benchmark suites
 python3 scripts/check-doc-links.py     # every internal markdown link resolves
+python3 scripts/check-structure.py     # documented directories actually exist
 ```
 
 `make test` exercises six binaries: substrate unit tests; 8192 deterministic traces with an
@@ -115,6 +116,19 @@ Split licensing — [`LICENSES.md`](LICENSES.md) is the authoritative path map.
 | Third-party materials | excluded or separately attributed |
 
 *Licensing is provisional pending confirmation against publication and commercialization plans.*
+
+## Contributing
+
+Working conventions, the authority order, per-layer versioning and the full gate are in
+`CLAUDE.md`. Research doctrine — editorial language, example identity, publication
+quality gates — is in `.agents/AGENTS.md`. How claims may be made and revised is
+in [`docs/90_Project/Research_Practices.md`](docs/90_Project/Research_Practices.md).
+`AGENTS.md` is the entry point for agents.
+
+> Agent guidance files (`AGENTS.md`, `CLAUDE.md`, `.agents/AGENTS.md`) are **untracked** — they match a
+> machine-wide gitignore rule. They are referenced by name rather than link for that reason: a link
+> would break on a fresh clone. If this repository should ship its agent guidance, add a repo-level
+> negation to `.gitignore` and commit them.
 
 ## Citation
 

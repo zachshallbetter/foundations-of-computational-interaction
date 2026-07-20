@@ -117,6 +117,11 @@ jobs:
       - name: Internal doc links resolve
         run: python3 scripts/check-doc-links.py
 
+      # Prose drifts where links do not: docs/README.md described directories that did not exist
+      # while every link check passed. This verifies structural claims against the filesystem.
+      - name: Documented structure matches the filesystem
+        run: python3 scripts/check-structure.py
+
   # Required check. A skipped dependency is satisfied (path filter did its job); a failed or
   # cancelled one is not. Without this, branch protection on individual jobs would let a
   # docs-only PR pass by skipping everything.

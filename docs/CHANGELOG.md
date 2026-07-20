@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- **Working practices documented and made checkable.** Added `CLAUDE.md` (operational agent guide: layout, authority order, the verification gate, CI, per-layer versioning and changelogs, branch/commit conventions, engineering craft) and `AGENTS.md` as the agent entry point. The existing `.agents/AGENTS.md` remains authoritative for **research doctrine**; the split is deliberate — doctrine constrains what may be claimed and how it is written, operations constrain how changes are verified and recorded.
+- Added [`90_Project/Research_Practices.md`](90_Project/Research_Practices.md): maturity vs provenance as independent dimensions, preregistration, the discovery criterion (a discovery must show the prior basis *could not in principle* have exposed it), permanence of negative results, the structural/representational/convenience classification, and an explicit section on what these practices do **not** establish.
+- **Corrected `docs/README.md`, which was stale in both directions**: it described `00_Project/`, `03_Research_Infrastructure/` and `04_External_Literature/`, none of which exist, and omitted `03_External_Literature/`, `04_Reference/`, `05_Publication/` and `90_Project/`, which do. Every link check had passed throughout — the link checker validates links, not claims about structure.
+- Added `scripts/check-structure.py`, now gated in CI, which verifies documented directory claims against the filesystem in both directions (described-but-absent and present-but-undescribed). It found the seven drifts above.
+- Fixed a dangling reference in `.agents/AGENTS.md` §6.1: the authority order lives in `app/AUTHORITY.md`, not `README.md`, and is now linked directly.
+
 - **Repository renamed** to `foundations-of-computational-interaction` (from `CompInt`), matching the program's full name. GitHub redirects the old URL; local clones should update their remote.
 - **Continuous integration added** (`.github/workflows/`), modelled on the Fundamental engine's gate discipline and adapted to FCI's per-layer versioning:
   - `ci.yml` builds and tests the C reference substrate under **both gcc and clang**, then asserts the `make conformance` vectors are **byte-identical across compilers** — determinism across toolchains is the substrate's actual claim, and each build passing its own tests would not test it. A mandatory `conclusion` job asserts every dependency succeeded, so a skipped or cancelled job can never count as green.

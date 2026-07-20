@@ -6,11 +6,12 @@ This repository contains the Foundations of Computational Interaction research c
 
 ## Structure
 
-- `00_Project/` — repository metadata and release history.
 - `01_Knowledge_System_of_Record/` — ontology, glossary, encyclopedia, framework, contracts, graphs, and reviews.
 - `02_Research_Papers/` — research papers in dependency order.
-- `03_Research_Infrastructure/` — bibliography, citation maps, reading guides, and reference corpus.
-- `04_External_Literature/` — external books, papers, and reports only.
+- `03_External_Literature/` — external books, papers, and reports only.
+- `04_Reference/` — bibliography, citation maps, reading guides, dataset schemas, templates, and the audit standard.
+- `05_Publication/` — publication guidelines and consistency audits.
+- `90_Project/` — repository metadata, release history, audits, decisions, manifests, and research practices.
 
 ## File naming
 
