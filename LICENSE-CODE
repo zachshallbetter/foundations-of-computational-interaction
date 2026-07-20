@@ -1,0 +1,21 @@
+Code, schemas, and tooling in this repository are licensed under the
+Apache License, Version 2.0.
+
+SPDX-License-Identifier: Apache-2.0
+
+Copyright 2026 Zach Shallbetter
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+these files except in compliance with the License. You may obtain a copy of the
+License at:
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+NOTE (provisional): the full canonical Apache-2.0 text should be embedded in this
+file verbatim at licensing finalization. See LICENSES.md for the path map and the
+provisional status. Scope of "code, schemas, and tooling" is defined in LICENSES.md.

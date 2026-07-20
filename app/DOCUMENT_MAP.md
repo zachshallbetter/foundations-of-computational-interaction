@@ -15,8 +15,8 @@
 | COMPINT-INVAR-001 | `../docs/02_Research_Papers/04_Representation_and_Projection/Scoped_Invariance_Under_Projection_v0.4.md` | supporting concept paper | 0.4 | draft | ontology; comparison contract | unassigned |
 | COMPINT-FUND-001 | `../docs/01_Knowledge_System_of_Record/04_Framework/Fundamental_and_Computational_Interaction_Science_v0.4.md` | supporting implementation relationship | 0.4 | draft | ontology; conformance | unassigned |
 | COMPINT-WIKI-001 | `../docs/01_Knowledge_System_of_Record/07_Reviews/Computational_Interaction_Science_Wikipedia_Readiness_Review_v0.2.md` | publication constraint | 0.2 | current review memo | encyclopedia article | unassigned |
-| COMPINT-CONTRACT-001 | `docs/04_Templates/*.schema.json` | draft normative contract system | 0.2.0 | candidate | glossary; ontology | unassigned |
-| COMPINT-DATA-001 | `docs/05_Dataset_Schema/interaction_study.schema.json` | exploratory interchange schema | 0.3.0 | candidate | contracts | unassigned |
+| COMPINT-CONTRACT-* | `docs/04_Reference/Templates/*.schema.json` — per-type IDs, see [Contract ID Registry](../docs/01_Knowledge_System_of_Record/05_Specifications/Contracts/Contract_ID_Registry.md) | draft normative contract system; `COMPINT-CONTRACT-001` retained as deprecated family alias | 0.2.0 | candidate | glossary; ontology | unassigned |
+| COMPINT-DATA-001 | `docs/04_Reference/Dataset_Schema/interaction_study.schema.json` | exploratory interchange schema | 0.3.0 | candidate | contracts | unassigned |
 | COMPINT-CONFORM-001 | `CONFORMANCE.md` | normative conformance boundary | 1.0.0 | frozen | authority; contracts | unassigned |
 | COMPINT-KERNEL-001 | `include/cis.h`; `src/cis.c` | deterministic reference subset | 0.1.0 | experimental | conformance | tests |
 | COMPINT-EXAMPLES-001 | `examples/manifest.csv` | example registry | 1.0.0 theory alignment | active | kernel; contracts | tests |

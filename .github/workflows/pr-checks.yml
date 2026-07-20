@@ -1,0 +1,126 @@
+name: PR checks
+
+# Per-layer record-keeping. FCI versions theory, schemas, software and examples independently
+# (app/VERSIONING.md), so a single repo-wide changelog would be the wrong shape: it would imply the
+# coupling the policy exists to deny. Each layer is gated against its own record instead.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "pr-checks-${{ github.event.pull_request.number }}"
+  cancel-in-progress: true
+
+jobs:
+  changelog:
+    name: layer changes are recorded
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      # Reads the DIFF of each record, not merely whether the file exists — an untouched changelog
+      # is exactly the failure this catches.
+      - name: Corpus changes require a docs/CHANGELOG.md entry
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          base="origin/${BASE_REF}"
+          changed=$(git diff --name-only "$base"...HEAD)
+
+          docs_touched=$(echo "$changed" | grep -E '^docs/' | grep -v '^docs/CHANGELOG.md$' || true)
+          if [ -n "$docs_touched" ]; then
+            added=$(git diff "$base"...HEAD -- docs/CHANGELOG.md | grep -c '^+[^+]' || true)
+            if [ "$added" -eq 0 ]; then
+              echo "::error::this PR changes docs/ but adds nothing to docs/CHANGELOG.md"
+              echo "changed under docs/:"; echo "$docs_touched" | head -20
+              exit 1
+            fi
+            echo "✓ corpus change recorded ($added line(s) added to docs/CHANGELOG.md)"
+          else
+            echo "— no corpus changes"
+          fi
+
+      - name: Substrate changes require an app/RELEASE_NOTES.md entry
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          base="origin/${BASE_REF}"
+          changed=$(git diff --name-only "$base"...HEAD)
+
+          app_touched=$(echo "$changed" | grep -E '^app/' | grep -v '^app/RELEASE_NOTES.md$' || true)
+          if [ -n "$app_touched" ]; then
+            added=$(git diff "$base"...HEAD -- app/RELEASE_NOTES.md | grep -c '^+[^+]' || true)
+            if [ "$added" -eq 0 ]; then
+              echo "::error::this PR changes app/ but adds nothing to app/RELEASE_NOTES.md"
+              echo "changed under app/:"; echo "$app_touched" | head -20
+              exit 1
+            fi
+            echo "✓ substrate change recorded ($added line(s) added to app/RELEASE_NOTES.md)"
+          else
+            echo "— no substrate changes"
+          fi
+
+  version-coupling:
+    name: no silent cross-layer version coupling
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      # The versioning policy's central claim is that layers do NOT move together. A PR that bumps
+      # several layers at once is not forbidden, but it must say so — silence would let coupling
+      # accumulate exactly where the policy says it must not.
+      # PR_BODY is passed through the environment, never interpolated into the script. A PR body is
+      # attacker-controlled text: `${{ github.event.pull_request.body }}` inside `run:` would be a
+      # script-injection vector on a public repository.
+      - name: Flag multi-layer version bumps without a stated rationale
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          base="origin/${BASE_REF}"
+          bumped=$(git diff "$base"...HEAD -- app/VERSIONING.md | grep -cE '^\+\|.*[0-9]+\.[0-9]+\.[0-9]+' || true)
+          if [ "$bumped" -gt 1 ]; then
+            if ! printf '%s' "$PR_BODY" | grep -qiE 'conformance record|cross-layer|coupling'; then
+              echo "::error::this PR changes $bumped version rows but the description does not address cross-layer coupling"
+              echo "app/VERSIONING.md: cross-layer compatibility must be declared in a conformance record, never inferred"
+              exit 1
+            fi
+          fi
+          echo "✓ no undeclared multi-layer bump"
+
+  doc-links:
+    name: internal doc links resolve
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python3 scripts/check-doc-links.py
+
+  conclusion-pr:
+    name: conclusion-pr
+    if: always()
+    needs: [changelog, version-coupling, doc-links]
+    runs-on: ubuntu-latest
+    steps:
+      - name: All PR checks succeeded
+        run: |
+          results='${{ join(needs.*.result, ' ') }}'
+          echo "dependency results: $results"
+          for r in $results; do
+            if [ "$r" != "success" ] && [ "$r" != "skipped" ]; then
+              echo "::error::a dependency reported '$r' — PR checks are not green"
+              exit 1
+            fi
+          done
+          echo "✓ PR checks green"

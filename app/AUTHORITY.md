@@ -1,4 +1,4 @@
-# the proposed model Authority and Change Control
+# FCI Authority and Change Control
 
 **Status:** canonical for repository conflict resolution  
 **Version:** 1.0.0
