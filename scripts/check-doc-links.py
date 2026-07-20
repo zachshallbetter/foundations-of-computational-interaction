@@ -12,6 +12,7 @@ must not depend on the reachability of third-party sites) and pure in-page ancho
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 import urllib.parse
 from pathlib import Path
@@ -24,11 +25,25 @@ LINK = re.compile(r"(?<!\\)\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 
 
 def markdown_files() -> list[Path]:
-    return [
-        p
-        for p in ROOT.rglob("*.md")
-        if not any(part in SKIP_DIRS for part in p.relative_to(ROOT).parts)
-    ]
+    """Tracked markdown only.
+
+    Walking the filesystem would also scan untracked local files (agent guidance, scratch notes),
+    which CI never sees — so a local run could fail where CI passed. Repository link integrity is a
+    property of tracked content. Falls back to a filesystem walk outside a git checkout.
+    """
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(ROOT), "ls-files", "-z", "*.md"],
+            capture_output=True, check=True, text=True,
+        ).stdout
+        tracked = [ROOT / n for n in out.split("\0") if n]
+        if tracked:
+            return [p for p in tracked if p.exists()
+                    and not any(part in SKIP_DIRS for part in p.relative_to(ROOT).parts)]
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+    return [p for p in ROOT.rglob("*.md")
+            if not any(part in SKIP_DIRS for part in p.relative_to(ROOT).parts)]
 
 
 def is_external(target: str) -> bool:
