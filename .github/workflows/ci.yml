@@ -1,0 +1,139 @@
+name: CI
+
+# The always-on gate. Every push to main and every PR builds and tests the C reference substrate and
+# verifies the corpus link graph. A mandatory `conclusion` job asserts every dependency SUCCEEDED — a
+# skipped or cancelled job can never count as green. `conclusion` is the job to make required in
+# branch protection, not the individual checks.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  merge_group:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "ci-${{ github.event.pull_request.number || github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  # Path filter: the C build only needs to run when the substrate or the workflow changes. A
+  # docs-only PR skips it and `conclusion` still passes, because it treats a skipped dependency as
+  # satisfied. Changing this workflow counts as `app` so the filter is always self-tested.
+  changes:
+    name: detect changes
+    runs-on: ubuntu-latest
+    outputs:
+      app: ${{ steps.filter.outputs.app }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            app:
+              - 'app/**'
+              - '.github/workflows/ci.yml'
+
+  # Built with both compilers. The substrate claims freestanding C11 portability, so a claim that
+  # only one toolchain has ever verified is a claim on trust. The Makefile already compiles with
+  # -Wall -Wextra -Wpedantic -Werror, so a new warning fails the build without extra configuration.
+  substrate:
+    name: C reference substrate (${{ matrix.cc }})
+    needs: changes
+    if: needs.changes.outputs.app == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        cc: [gcc, clang]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Compiler version
+        run: ${{ matrix.cc }} --version
+
+      # The same command the README documents as the local gate: builds the substrate and runs the
+      # unit, stress, example, schema and benchmark suites.
+      - name: Build and test
+        working-directory: app
+        run: make test
+        env:
+          CC: ${{ matrix.cc }}
+
+      # The conformance vectors are a golden: identical output is expected from every conforming
+      # build. Verified byte-identical across gcc and clang before this gate was added.
+      - name: Emit conformance golden
+        working-directory: app
+        run: |
+          make clean
+          make conformance
+          ./build/conformance | tee "conformance-${{ matrix.cc }}.txt"
+        env:
+          CC: ${{ matrix.cc }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: conformance-${{ matrix.cc }}
+          path: app/conformance-${{ matrix.cc }}.txt
+
+  # Determinism across toolchains is the actual claim. Comparing the two goldens is what tests it —
+  # each build passing its own tests would not.
+  conformance-golden:
+    name: conformance golden is compiler-independent
+    needs: [changes, substrate]
+    if: needs.changes.outputs.app == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: conformance-*
+          merge-multiple: true
+      - name: Compare goldens
+        run: |
+          ls -la
+          if diff -u conformance-gcc.txt conformance-clang.txt; then
+            echo "✓ conformance vectors identical across gcc and clang"
+          else
+            echo "::error::conformance vectors differ by compiler — the substrate is not deterministic"
+            exit 1
+          fi
+
+  corpus:
+    name: corpus integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Internal doc links resolve
+        run: python3 scripts/check-doc-links.py
+
+  # Required check. A skipped dependency is satisfied (path filter did its job); a failed or
+  # cancelled one is not. Without this, branch protection on individual jobs would let a
+  # docs-only PR pass by skipping everything.
+  conclusion:
+    name: conclusion
+    if: always()
+    needs: [changes, substrate, conformance-golden, corpus]
+    runs-on: ubuntu-latest
+    steps:
+      - name: All jobs succeeded or were legitimately skipped
+        run: |
+          results='${{ join(needs.*.result, ' ') }}'
+          echo "dependency results: $results"
+          for r in $results; do
+            if [ "$r" != "success" ] && [ "$r" != "skipped" ]; then
+              echo "::error::a dependency reported '$r' — the gate is not green"
+              exit 1
+            fi
+          done
+          echo "✓ gate green"
