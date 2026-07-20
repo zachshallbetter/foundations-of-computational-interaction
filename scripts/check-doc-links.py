@@ -27,7 +27,7 @@ LINK = re.compile(r"(?<!\\)\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 def markdown_files() -> list[Path]:
     """Tracked markdown only.
 
-    Walking the filesystem would also scan untracked local files (agent guidance, scratch notes),
+    Walking the filesystem would also scan untracked local files (editor config, scratch notes),
     which CI never sees — so a local run could fail where CI passed. Repository link integrity is a
     property of tracked content. Falls back to a filesystem walk outside a git checkout.
     """

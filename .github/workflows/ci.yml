@@ -29,16 +29,29 @@ jobs:
     outputs:
       app: ${{ steps.filter.outputs.app }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
+          fetch-depth: 0
           persist-credentials: false
-      - uses: dorny/paths-filter@v3
-        id: filter
-        with:
-          filters: |
-            app:
-              - 'app/**'
-              - '.github/workflows/ci.yml'
+
+      # Plain git rather than a third-party filter action. The action targeted Node 20; when the
+      # runners began forcing Node 24 it died silently mid-run, taking the whole gate with it. A
+      # path filter is a one-line diff — it does not need a dependency that can break underneath us.
+      - id: filter
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if [ -n "$BASE_REF" ]; then
+            changed=$(git diff --name-only "origin/${BASE_REF}...HEAD")
+          else
+            changed=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || git ls-files)
+          fi
+          echo "changed files:"; echo "$changed" | sed 's/^/  /'
+          if echo "$changed" | grep -qE '^app/|^\.github/workflows/ci\.yml$'; then
+            echo "app=true" >> "$GITHUB_OUTPUT"; echo "→ substrate jobs will run"
+          else
+            echo "app=false" >> "$GITHUB_OUTPUT"; echo "→ substrate jobs skipped (no app/ changes)"
+          fi
 
   # Built with both compilers. The substrate claims freestanding C11 portability, so a claim that
   # only one toolchain has ever verified is a claim on trust. The Makefile already compiles with
@@ -53,7 +66,7 @@ jobs:
       matrix:
         cc: [gcc, clang]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 
@@ -79,7 +92,7 @@ jobs:
         env:
           CC: ${{ matrix.cc }}
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: conformance-${{ matrix.cc }}
           path: app/conformance-${{ matrix.cc }}.txt
@@ -92,7 +105,7 @@ jobs:
     if: needs.changes.outputs.app == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           pattern: conformance-*
           merge-multiple: true
@@ -110,7 +123,7 @@ jobs:
     name: corpus integrity
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 

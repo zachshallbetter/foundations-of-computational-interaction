@@ -119,16 +119,14 @@ Split licensing — [`LICENSES.md`](LICENSES.md) is the authoritative path map.
 
 ## Contributing
 
-Working conventions, the authority order, per-layer versioning and the full gate are in
-`CLAUDE.md`. Research doctrine — editorial language, example identity, publication
-quality gates — is in `.agents/AGENTS.md`. How claims may be made and revised is
-in [`docs/90_Project/Research_Practices.md`](docs/90_Project/Research_Practices.md).
-`AGENTS.md` is the entry point for agents.
+- **How claims may be made and revised** — [`docs/90_Project/Research_Practices.md`](docs/90_Project/Research_Practices.md)
+- **Which artifact wins a conflict** — [`app/AUTHORITY.md`](app/AUTHORITY.md)
+- **Per-layer versioning and non-coupling** — [`app/VERSIONING.md`](app/VERSIONING.md)
+- **Verification gate** — see above; CI runs the same commands
 
-> Root-level agent guidance (`AGENTS.md`, `CLAUDE.md`) is **local tooling config and is not tracked** —
-> it matches a machine-wide gitignore rule. It is referenced by name rather than by link for that
-> reason: a link would resolve for a contributor who has the files and break on a fresh clone. Check
-> `git ls-files` for the authoritative answer on any given file rather than trusting this note.
+Record every change in the **layer's own** log: corpus changes in
+[`docs/CHANGELOG.md`](docs/CHANGELOG.md), substrate changes in
+[`app/RELEASE_NOTES.md`](app/RELEASE_NOTES.md). CI enforces both.
 
 ## Citation
 
