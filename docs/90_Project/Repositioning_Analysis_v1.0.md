@@ -28,7 +28,7 @@ To establish a logical progression from baseline motivation to downstream applic
 | **4. Representation** | *How is it represented?* | Paper 4 (Representation section) | Formulates target state configurations and layout attributes. |
 | **5. Projection** | *What survives transformation?* | Paper 4 (Projection section) | Establishes structural mapping invariants, signifiers, and signals. |
 | **6. Interpretation** | *What is system vs. user purpose?* | Paper 5 (Interpretation section) | Separates explicit system actions from latent user intent. |
-| **7. Opportunity** | *What is the unit of choice?* | Paper 6 (Opportunity profile) | Establishes the Behavioral Opportunity as the core unit of state analysis. |
+| **7. Opportunity** | *What is the unit of choice?* | Paper 6 (Opportunity profile) | Establishes opportunity as a typed action-availability profile — the structure over which choice is analyzed, not a measurement unit. |
 | **8. Observation** | *What can be observed?* | Paper 8 (Behavioral traces) | Formulates coding rules for converting raw actions into structured traces. |
 | **9. Evidence** | *What counts as evidence?* | Handbooks (Experimental & Replication) | Specifies lineage verification, replication protocols, and bias checks. |
 | **10. Measurement** | *What can be measured?* | Paper 9 (Measurement framework) | Specifies metrics, coding invariants, and scaling parameters. |
