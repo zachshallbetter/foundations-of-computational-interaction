@@ -6,6 +6,8 @@ A shared number never implies cross-layer conformance.
 
 ## Unreleased
 
+- **Contributor guidance consolidated into tracked documentation.** The README's contributing section and `90_Project/Research_Practices.md` referenced local tooling configuration that is not part of the repository, so those pointers resolved for some contributors and broke on a fresh clone. Both now reference tracked documents only — the research practices, the authority order, the versioning policy and the verification gate.
+
 _Nothing yet._
 
 ## 0.5.0 — 2026-07-20
@@ -23,17 +25,15 @@ This supersedes two earlier labels, **neither of which was ever tagged or publis
 Everything previously recorded under those labels ships here — the entries are retained below rather
 than discarded.
 
-- **README accuracy corrections.** The agent-guidance note asserted that all three agent files are untracked; `.agents/AGENTS.md` is in fact tracked on `main`, so the note was false as written. It now describes only the root-level files, and points at `git ls-files` as the authoritative answer rather than asking the reader to trust a prose claim about tracking state. The `90_Project/` row omitted `Reviews/` and `Research_Practices.md`. The CI table understated `ci.yml`, which runs a **gcc + clang matrix** and compares the `make conformance` vectors across compilers — the comparison, not the two passing builds, is what tests the determinism claim.
+- **README accuracy corrections.** The `90_Project/` row omitted `Reviews/` and `Research_Practices.md`. The CI table understated `ci.yml`, which runs a **gcc + clang matrix** and compares the `make conformance` vectors across compilers — the comparison, not the two passing builds, is what tests the determinism claim.
 
 - **Theory version corrected downward, 1.0.0 → 0.5.0** (via a briefly-held `0.9.0`, never tagged). The 1.0 label claimed a ratification that has not occurred: ontology labels are still pending identifier ratification, and the program's own stance is that its scientific necessity and empirical advantage remain to be demonstrated. **No theory content changed** — this is a relabelling, not a revision. Records that cite "theory 1.0.0" (example alignment records, prior release notes, editorial reports) are deliberately left unedited, because rewriting them would misstate what was validated when. Nothing was ever tagged or released at 1.0.0, so no published artifact contradicts the change.
 - The two top-level v1.0 records — the comprehensive repository review and the program closeout TODO — were **moved, not deleted**, to `90_Project/Reviews/`. They are 783 lines of unique material with no equivalent anywhere else in the corpus; the canonical-cleanup intent was to clear the top level, which a move achieves without destroying the record.
-- `.agents/AGENTS.md` is now tracked. It is repository content — research doctrine — and was being caught incidentally by a machine-wide `AGENTS.md` gitignore rule, which would have lost it on a fresh clone. A repo-level negation was added; `AGENTS.md` and `CLAUDE.md` at the root remain untracked local tooling config.
 
-- **Working practices documented and made checkable.** Added `CLAUDE.md` (operational agent guide: layout, authority order, the verification gate, CI, per-layer versioning and changelogs, branch/commit conventions, engineering craft) and `AGENTS.md` as the agent entry point. The existing `.agents/AGENTS.md` remains authoritative for **research doctrine**; the split is deliberate — doctrine constrains what may be claimed and how it is written, operations constrain how changes are verified and recorded.
+- **Working practices documented and made checkable.** Operational conventions — layout, authority order, the verification gate, CI, per-layer versioning and changelogs, branch and commit conventions — are now written down alongside the research-claim practices they depend on.
 - Added [`90_Project/Research_Practices.md`](90_Project/Research_Practices.md): maturity vs provenance as independent dimensions, preregistration, the discovery criterion (a discovery must show the prior basis *could not in principle* have exposed it), permanence of negative results, the structural/representational/convenience classification, and an explicit section on what these practices do **not** establish.
 - **Corrected `docs/README.md`, which was stale in both directions**: it described `00_Project/`, `03_Research_Infrastructure/` and `04_External_Literature/`, none of which exist, and omitted `03_External_Literature/`, `04_Reference/`, `05_Publication/` and `90_Project/`, which do. Every link check had passed throughout — the link checker validates links, not claims about structure.
 - Added `scripts/check-structure.py`, now gated in CI, which verifies documented directory claims against the filesystem in both directions (described-but-absent and present-but-undescribed). It found the seven drifts above.
-- Fixed a dangling reference in `.agents/AGENTS.md` §6.1: the authority order lives in `app/AUTHORITY.md`, not `README.md`, and is now linked directly.
 
 - **Repository renamed** to `foundations-of-computational-interaction` (from `CompInt`), matching the program's full name. GitHub redirects the old URL; local clones should update their remote.
 - **Continuous integration added** (`.github/workflows/`), modelled on the Fundamental engine's gate discipline and adapted to FCI's per-layer versioning:
@@ -47,7 +47,7 @@ than discarded.
 - Added machine-checkable governance schemas: `ethics-gate-assessment.schema.json` (the eight non-compensatory ethics/power gates) and `data-management-plan.schema.json`.
 - Corpus hygiene: repaired an OCR-garbled bibliography block in the Canonical Glossary, corrected a stray bibliography count (600 → 267 canonical), and repaired a corrupted terminology change-log and package reference in the consolidation records.
 
-- `scripts/check-doc-links.py` now enumerates **tracked** markdown via `git ls-files` rather than walking the filesystem. It was scanning untracked local files (agent guidance), so a local run could fail where CI — which never sees them — passed. Repository link integrity is a property of tracked content.
+- `scripts/check-doc-links.py` now enumerates **tracked** markdown via `git ls-files` rather than walking the filesystem. It was scanning untracked local files, so a local run could fail where CI — which never sees them — passed. Repository link integrity is a property of tracked content.
 
 ### Previously recorded under the unreleased `1.0.0` label
 
