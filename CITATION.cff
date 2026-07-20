@@ -11,7 +11,7 @@ authors:
   - family-names: Shallbetter
     given-names: Zach
 version: "0.9.0"
-date-released: "2026-07-19"
+date-released: "2026-07-20"
 url: "https://github.com/zachshallbetter/CompInt"
 keywords:
   - computational interaction
