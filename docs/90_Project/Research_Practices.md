@@ -1,9 +1,9 @@
 # Research practices
 
 **Status:** active method. Governs how claims in this repository may be made, recorded, and revised.
-Doctrine — what the program is *about* — is in `.agents/AGENTS.md`;
-operations are in `CLAUDE.md`. This document sits between them: it constrains
-**when a claim is allowed to strengthen**.
+Where the corpus defines *what the program is about* and the verification gate defines *how changes
+are checked*, this document sits between them: it constrains **when a claim is allowed to
+strengthen**.
 
 The program's own stance is that its scientific necessity and empirical advantage remain to be
 demonstrated. That stance is only meaningful if something enforces it. These practices are that
@@ -142,6 +142,6 @@ contract under a closely related protocol, and its
 states the domain-neutral form of this method.
 
 The two programs converged on it independently and **neither validates the other**. Fundamental is
-apparatus, not evidence: per `.agents/AGENTS.md` §5.1, if the experimental platform and simulation
-kernel disappeared, the conceptual theory would have to remain valid. Software here is the reference
-implementation, not the contribution.
+apparatus, not evidence: if the experimental platform and simulation kernel disappeared, the
+conceptual theory would have to remain valid. Software here is the reference implementation, not the
+contribution.
