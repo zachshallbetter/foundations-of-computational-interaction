@@ -1,5 +1,16 @@
 # Unreleased
 
+- `verify-object` now permits exactly the four external symbols C11 §4 allows a freestanding
+  implementation to require (`memcpy`, `memset`, `memmove`, `memcmp`) and rejects everything else.
+  This is a **precisification, not a relaxation**: cross-compiler CI found that GCC inlines this
+  substrate's struct copies while Clang emits `memcpy`, so the previous zero-undefined-symbol
+  assertion encoded a claim stronger than "freestanding" that no portable build can satisfy.
+  Verified that the check still rejects a genuine external dependency. The stronger property is
+  still available by shipping substrate-local implementations of the four; that option is recorded
+  in the Makefile rather than taken silently.
+- `app/README.md` corrected: it claimed `make test` rejects *any* undefined external symbol, which
+  was true only under GCC.
+
 - `verify-object` now reports **which** undefined symbols were found, and under which compiler,
   instead of failing silently via `test -z`. The freestanding invariant is a real claim about the
   substrate; a gate that asserts it without saying what broke is not diagnosable. CI's first

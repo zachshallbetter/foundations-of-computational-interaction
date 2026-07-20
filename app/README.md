@@ -66,8 +66,13 @@ These commands require only a C11 compiler and `make`. The library itself uses o
 the C standard headers for fixed-width integer and size types; it performs no I/O,
 allocation, filesystem, clock, network, or operating-system calls.
 The library object is compiled as freestanding code, and `make test` rejects any
-undefined external symbol in it. The demo and test executables use hosted C only to
-print their results.
+undefined external symbol in it other than the four the C standard permits a
+freestanding implementation to require (`memcpy`, `memset`, `memmove`, `memcmp`).
+Cross-compiler CI showed why the distinction matters: GCC inlines the struct copies in
+this substrate and emits none of them, while Clang emits `memcpy`. Both are conforming,
+so a zero-undefined-symbol claim is stronger than "freestanding" and is not portably
+achievable without shipping our own implementations of those four. The demo and test
+executables use hosted C only to print their results.
 
 ## Layout
 
