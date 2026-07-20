@@ -1,5 +1,9 @@
 # Unreleased
 
+- `VERSIONING.md`: the FCI theory layer is relabelled **0.9.0** (was 1.0.0), with the rationale recorded
+  in the policy itself. Substrate, schema, dataset and publication versions are **unchanged** — this is
+  a single-layer correction, and per the non-coupling rules it implies nothing about any other layer.
+
 - `verify-object` now permits exactly the four external symbols C11 §4 allows a freestanding
   implementation to require (`memcpy`, `memset`, `memmove`, `memcmp`) and rejects everything else.
   This is a **precisification, not a relaxation**: cross-compiler CI found that GCC inlines this

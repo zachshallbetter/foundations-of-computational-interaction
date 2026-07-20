@@ -53,7 +53,7 @@ FCI versions theory, specifications, software, publication infrastructure, and e
 
 | Layer | Version | Stability |
 |---|---:|---|
-| FCI theory | 1.0.0 | frozen determination; ontology labels pending identifier ratification |
+| FCI theory | 0.9.0 | pre-ratification; ontology labels pending identifier ratification |
 | Contract schemas | 0.2.0 | draft normative candidates |
 | Dataset schema | 0.3.0 | exploratory, not piloted |
 | C reference substrate | 0.1.0 | experimental API; no compatibility guarantee before 1.0.0 |

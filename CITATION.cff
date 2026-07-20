@@ -10,7 +10,7 @@ type: dataset
 authors:
   - family-names: Shallbetter
     given-names: Zach
-version: "1.0.0"
+version: "0.9.0"
 date-released: "2026-07-19"
 url: "https://github.com/zachshallbetter/CompInt"
 keywords:

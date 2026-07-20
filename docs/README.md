@@ -1,6 +1,6 @@
 # Foundations of Computational Interaction
 
-Version **1.0.0**
+Version **0.9.0**
 
 This repository contains the Foundations of Computational Interaction research corpus, its knowledge system of record, supporting research infrastructure, and external literature.
 
