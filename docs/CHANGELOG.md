@@ -6,6 +6,7 @@ A shared number never implies cross-layer conformance.
 
 ## Unreleased
 
+- **CI: replaced the third-party path-filter action with plain git.** GitHub began forcing Node 24 onto actions that target Node 20; the filter action died silently mid-run and took the whole gate with it, having passed hours earlier. A path filter is a one-line diff and does not need a dependency that can break underneath the repository. Checkout, upload-artifact and download-artifact bumped to current majors at the same time.
 - **Contributor guidance consolidated into tracked documentation.** The README's contributing section and `90_Project/Research_Practices.md` referenced local tooling configuration that is not part of the repository, so those pointers resolved for some contributors and broke on a fresh clone. Both now reference tracked documents only — the research practices, the authority order, the versioning policy and the verification gate.
 
 _Nothing yet._
