@@ -32,3 +32,10 @@ __pycache__/
 
 # Preserved input package (171MB) — kept on disk, not tracked
 docs/90_Project/Previous_Releases/docs_with_scientific_audit_standard.zip
+
+# macOS archive metadata
+__MACOSX/
+
+# Agent research doctrine is repository content, not local tooling config.
+# The generic AGENTS.md rule in the global gitignore catches it incidentally.
+!.agents/AGENTS.md

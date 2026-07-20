@@ -1,0 +1,12 @@
+Foundations of Computational Interaction (FCI) — split licensing (provisional)
+
+This repository is licensed under two licenses depending on the artifact:
+
+  - Code, schemas, and tooling ......... Apache License 2.0   (see LICENSE-CODE)
+  - Research corpus and owned docs ..... CC BY 4.0            (see LICENSE-CONTENT)
+
+The authoritative mapping of paths and artifact classes to licenses is in LICENSES.md.
+Third-party materials are excluded or separately attributed and are NOT relicensed here.
+
+This licensing structure is PROVISIONAL and is not final until confirmed against the
+project's publication and commercialization plans. See LICENSES.md.

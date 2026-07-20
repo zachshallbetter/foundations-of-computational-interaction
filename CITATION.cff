@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you reference this work, please cite it as below."
+title: "Foundations of Computational Interaction (FCI)"
+abstract: >-
+  An interdisciplinary scientific synthesis and research program for formally
+  describing, measuring, modeling, and predicting human–computer interaction.
+  A research program, not an established independent discipline; its scientific
+  necessity and empirical advantage remain to be demonstrated.
+type: dataset
+authors:
+  - family-names: Shallbetter
+    given-names: Zach
+version: "0.9.0"
+date-released: "2026-07-19"
+url: "https://github.com/zachshallbetter/CompInt"
+keywords:
+  - computational interaction
+  - human-computer interaction
+  - research program
+  - measurement
+# Split licensing (provisional): research corpus under CC-BY-4.0; code/schemas under Apache-2.0.
+# See LICENSES.md for the authoritative path map.
+license: CC-BY-4.0
