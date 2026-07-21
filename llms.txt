@@ -1,0 +1,90 @@
+# Foundations of Computational Interaction (FCI)
+
+> An interdisciplinary research program for formally describing, measuring, modeling, and
+> predicting human–computer interaction. It is a **research program, not an established
+> discipline** — its scientific necessity and empirical advantage remain to be demonstrated.
+> Nothing here is a validated result unless a record says so explicitly.
+
+Versions move **independently per layer**; a shared number never implies cross-layer conformance.
+Theory 0.5.0 (pre-ratification) · contract schemas 0.2.0 · dataset schema 0.3.0 ·
+C reference substrate 0.1.0. Passing the substrate's tests establishes reference-kernel
+conformance only — not empirical validation.
+
+- [llms-full.txt](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/llms-full.txt): the project-licensed corpus concatenated into one file
+
+## 01 Knowledge System of Record
+
+Canonical definitions, glossary, relational ontology, contract definitions.
+
+- [A Relational Ontology of Computational Interaction](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/01_Ontology/Current/A_Relational_Ontology_of_Computational_Interaction_v0.3.md)
+- [Foundations of Computational Interaction Glossary](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/02_Glossary/Computational_Interaction_Science_Glossary_v0.4.md)
+- [Foundations of Computational Interaction](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/03_Encyclopedia/Computational_Interaction_Science_Encyclopedia_Article_Draft_v0.3.md)
+- [Fundamental and Foundations of Computational Interaction](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/04_Framework/Fundamental_and_Computational_Interaction_Science_v0.4.md)
+- [Foundations of Computational Interaction Contracts](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/05_Specifications/Contracts/Computational_Interaction_Science_Contracts_v1.0.0-structure.1.md)
+- [Contract ID Registry](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/05_Specifications/Contracts/Contract_ID_Registry.md)
+- [Wikipedia Readiness Review: Foundations of Computational Interaction](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/07_Reviews/Computational_Interaction_Science_Wikipedia_Readiness_Review_v0.2.md)
+- [Foundations of Computational Interaction - Canonical Glossary](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Glossary.md)
+- [Foundations of Computational Interaction - Canonical Ontology](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Ontology.md)
+- [Consent Governance 0.1.0](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/Consent_Governance.md)
+- [Ethics and Power Gates 0.1.0](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/Ethics_and_Power_Gates.md)
+- [Participant Data Management Plan 0.1.0](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/Participant_Data_Management_Plan.md)
+- [Research Governance Minimum](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/README.md)
+- [Knowledge System of Record](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/README.md)
+
+## 02 Research Papers
+
+Research papers in logical dependency order.
+
+- [Scoped Invariance Under Projection](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/04_Representation_and_Projection/Scoped_Invariance_Under_Projection_v0.4.md)
+- [The Limits of Computational Interaction Models](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/13_Formal_Models/The_Limits_of_Computational_Interaction_Models_v0.2.md)
+
+## 05 Publication
+
+Publication guidelines and consistency audits.
+
+- [Bibliography Audits and Reports Index](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Bibliography_Audits/README.md)
+- [Appendix A - Candidate Version 2.0 Changes](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Appendix_A_Candidate_Version_2.0_Changes.md)
+- [Consistency Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Consistency_Report.md)
+- [Cross-Reference Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Cross_Reference_Report.md)
+- [Editorial Change Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Editorial_Change_Report.md)
+- [Outstanding Editorial Issues](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Outstanding_Editorial_Issues.md)
+- [Publication Readiness Assessment](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Publication_Readiness_Assessment.md)
+- [Foundations of Computational Interaction Editorial Style Guide](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Style_Guide.md)
+- [Terminology Normalization Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Terminology_Normalization_Report.md)
+- [Completeness Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Publication_Reports/Completeness_Report.md)
+- [Maintenance Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Publication_Reports/Maintenance_Report.md)
+- [Publication Readiness Assessment](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Publication_Reports/Publication_Readiness_Assessment.md)
+- [Quality Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Publication_Reports/Quality_Report.md)
+- [Author Guide](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Style_and_Authoring/Author_Guide.md)
+- [Title](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Style_and_Authoring/Publication_Template.md)
+- [Reference Maintenance Guide](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Style_and_Authoring/Reference_Maintenance_Guide.md)
+
+## 90 Project
+
+Release manifests, audits, decisions, research practices, negative results.
+
+- [Appendix A - Candidate Version 2.0 Changes](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Appendices/Appendix_A_Candidate_Version_2.0_Changes.md)
+- [Change Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Change_Report.md)
+- [Consistency Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Consistency_Report.md)
+- [Impact Analysis](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Impact_Analysis.md)
+- [Publication Readiness Assessment](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Publication_Readiness_Assessment.md)
+- [Authoritative Metadata Sources](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Editorial_Normalization_v1.1.1/Source_Data/Authoritative_Metadata_Sources.md)
+- [Overlap and Supersession Record](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Decisions/Consolidated_RC/OVERLAP_AND_SUPERSESSION.md)
+- [Migration Map](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Manifests/MIGRATION_MAP.md)
+- [Negative results](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Negative_Results.md)
+- [CompInt Version 1.0 Release Notes](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Release_Notes_v1.0.md)
+- [Editorial Repositioning Analysis](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Repositioning_Analysis_v1.0.md)
+- [Research practices](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Research_Practices.md)
+- [CompInt Version 1.0 — Comprehensive Repository Review](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Reviews/Comprehensive_Repository_Review_v1.0.md)
+- [CompInt Program TODO — Version 1.0 Closeout and Version 2.0 Validation](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Reviews/Program_TODO_v1.0_Closeout.md)
+- [Foundations of Computational Interaction — Version 2.0 Research Program](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Version_2/Version_2_Research_Program.md)
+
+## Excluded from the full text
+
+Named here rather than inlined, because `LICENSES.md` forbids treating them as
+project-licensed even when co-located:
+
+- `docs/03_External_Literature` — third-party literature — excluded from project licensing, retained under original terms
+- `docs/04_Reference` — bibliographic records and citation metadata — mixed/third-party, not project-licensed
+- `docs/90_Project/Previous_Releases` — bundled historical releases — inherit-original, archived byte-for-byte
+- `_archive` — bundled historical releases — inherit-original
