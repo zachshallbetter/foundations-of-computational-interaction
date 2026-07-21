@@ -10,6 +10,24 @@ predicting human–computer interaction.
 
 ---
 
+## See it run — 30 seconds
+
+The smallest complete use of the substrate: declare one bounded state cell, assign semantics to one
+action, authorize one participant, commit one transition, project the result, print its stable hash.
+
+```bash
+cd app && make demo && ./build/door
+# state=1 events=1 hash=8184434590310759885
+```
+
+The **hash is the point**. The same declaration, the same transition, the same number — on any
+conforming build, under GCC or Clang. That reproducibility is what the corpus is trying to make
+precise, and it is the one claim here you can check before reading anything.
+
+Source: [`app/examples/door.c`](app/examples/door.c) (`CIS-EX-001`).
+
+---
+
 ## What is actually here
 
 | Layer | Path | What it is |
