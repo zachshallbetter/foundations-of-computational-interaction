@@ -88,6 +88,8 @@ actually held**, not softened in hindsight into something obviously wrong.
 An entry reconstructed after the fact is weaker evidence of discipline than one recorded when the
 belief was abandoned, and should be labelled as reconstructed.
 
+The registry itself is [`Negative_Results.md`](Negative_Results.md).
+
 ---
 
 ## 5. Refinements are classified before they are accepted
