@@ -27,7 +27,7 @@ predicting human–computer interaction.
 | [`03_External_Literature/`](docs/03_External_Literature/) | Supporting external literature |
 | [`04_Reference/`](docs/04_Reference/) | Bibliography, dataset schemas, templates, concept graphs, the audit standard |
 | [`05_Publication/`](docs/05_Publication/) | Publication guidelines and consistency audits |
-| [`90_Project/`](docs/90_Project/) | Release manifests, audits, decisions, previous release packages, the v1.0 `Reviews/`, and [`Research_Practices.md`](docs/90_Project/Research_Practices.md) |
+| [`90_Project/`](docs/90_Project/) | Release manifests, audits, decisions, previous release packages, the v1.0 `Reviews/`, [`Research_Practices.md`](docs/90_Project/Research_Practices.md), and the [negative-results registry](docs/90_Project/Negative_Results.md) |
 
 Start with **[`docs/START_HERE.md`](docs/START_HERE.md)**.
 
