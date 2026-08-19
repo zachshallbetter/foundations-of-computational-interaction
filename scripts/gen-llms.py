@@ -4,28 +4,22 @@
 `llms.txt` is an index (llmstxt.org): what this program is, what it does not claim, and where each
 document lives. `llms-full.txt` concatenates the **project-licensed corpus** into one file.
 
-## The licensing constraint
-
-`LICENSES.md` is the authoritative path map and it is not uniform. Concatenating `docs/**` wholesale
-would inline third-party material into a single artifact carrying the project's CC BY 4.0 banner —
-which the manifest forbids in as many words:
-
-    Third-party and excluded material must not be treated as project-licensed even when co-located.
-
-So the full text is built from an **allowlist** of project-owned paths. Excluded material is named in
-the index with a pointer, never inlined. A path that is not explicitly allowed is skipped and reported,
-because `LICENSES.md` says an unlisted path is "unlicensed pending classification — do not assume
-permission." Silence defaults to exclusion, not inclusion.
-
-    python3 scripts/gen-llms.py [--out DIR]
+Generates versioned llms index and full codebase corpus files in `.agents/` and top-level root:
+  .agents/llms.txt
+  .agents/llms-fci-v<version>.txt
+  .agents/llms-full.txt
+  .agents/llms-full-fci-v<version>.txt
 """
 from __future__ import annotations
 
+import os
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+AGENTS_DIR = ROOT / ".agents"
 SITE = "https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main"
 
 # Project-licensed prose (CC BY 4.0) — safe to inline.
@@ -36,18 +30,31 @@ INCLUDE_DIRS = [
     ("docs/90_Project", "Release manifests, audits, decisions, research practices, negative results"),
 ]
 
-# Apache-2.0 documentation for the reference substrate.
 INCLUDE_APP_DOCS = True
 
-ROOT_DOCS = ["README.md", "LICENSES.md", "docs/README.md", "docs/START_HERE.md", "docs/CHANGELOG.md", "docs/ROADMAP.md"]
+ROOT_DOCS = [
+    "README.md", "LICENSES.md", "AGENTS.md", "CLAUDE.md",
+    "docs/README.md", "docs/START_HERE.md", "docs/CHANGELOG.md", "docs/ROADMAP.md",
+    ".agents/AGENTS.md"
+]
 
-# Named in the index, never inlined. Reason is printed so the exclusion is auditable.
 EXCLUDE = {
     "docs/03_External_Literature": "third-party literature — excluded from project licensing, retained under original terms",
     "docs/04_Reference": "bibliographic records and citation metadata — mixed/third-party, not project-licensed",
     "docs/90_Project/Previous_Releases": "bundled historical releases — inherit-original, archived byte-for-byte",
     "_archive": "bundled historical releases — inherit-original",
 }
+
+
+def get_version() -> str:
+    try:
+        out = subprocess.run(["git", "-C", str(ROOT), "describe", "--tags", "--abbrev=0"],
+                             capture_output=True, check=True, text=True).stdout.strip()
+        if out:
+            return out.lstrip("v")
+    except Exception:
+        pass
+    return "0.5.0"
 
 
 def is_excluded(rel: str) -> str | None:
@@ -75,16 +82,15 @@ def h1_of(path: Path) -> str:
 
 
 def main() -> int:
-    out_dir = ROOT
-    if "--out" in sys.argv:
-        out_dir = Path(sys.argv[sys.argv.index("--out") + 1]).resolve()
-    out_dir.mkdir(parents=True, exist_ok=True)
+    version = get_version()
+    agents_dir = AGENTS_DIR
+    agents_dir.mkdir(parents=True, exist_ok=True)
 
     all_md = tracked_markdown()
     included: list[Path] = []
     skipped: list[tuple[str, str]] = []
 
-    allowed_prefixes = [d for d, _ in INCLUDE_DIRS] + (["app"] if INCLUDE_APP_DOCS else [])
+    allowed_prefixes = [d for d, _ in INCLUDE_DIRS] + (["app"] if INCLUDE_APP_DOCS else []) + [".agents"]
 
     for p in all_md:
         rel = p.relative_to(ROOT).as_posix()
@@ -102,6 +108,7 @@ def main() -> int:
     # ---- llms.txt (index)
     idx = [
         "# Foundations of Computational Interaction (FCI)",
+        f"> Version: v{version} | Total Included Documents: {len(included)}",
         "",
         "> An interdisciplinary research program for formally describing, measuring, modeling, and",
         "> predicting human–computer interaction. It is a **research program, not an established",
@@ -109,11 +116,12 @@ def main() -> int:
         "> Nothing here is a validated result unless a record says so explicitly.",
         "",
         "Versions move **independently per layer**; a shared number never implies cross-layer conformance.",
-        "Theory 0.5.0 (pre-ratification) · contract schemas 0.2.0 · dataset schema 0.3.0 ·",
+        f"Theory {version} (pre-ratification) · contract schemas 0.2.0 · dataset schema 0.3.0 ·",
         "C reference substrate 0.1.0. Passing the substrate's tests establishes reference-kernel",
         "conformance only — not empirical validation.",
         "",
         f"- [llms-full.txt]({SITE}/llms-full.txt): the project-licensed corpus concatenated into one file",
+        f"- [llms-full-fci-v{version}.txt]({SITE}/llms-full-fci-v{version}.txt): versioned corpus payload",
         "",
     ]
     for d, desc in INCLUDE_DIRS:
@@ -133,11 +141,12 @@ def main() -> int:
         idx.append(f"- `{path}` — {reason}")
     idx.append("")
 
-    (out_dir / "llms.txt").write_text("\n".join(idx), encoding="utf-8")
+    idx_text = "\n".join(idx)
 
     # ---- llms-full.txt
     full = [
         "# Foundations of Computational Interaction — full corpus",
+        f"Version: v{version} | Total Included Documents: {len(included)}",
         "",
         "Generated from the project-licensed corpus only. Third-party literature, bibliographic",
         "metadata and archived releases are deliberately absent — see LICENSES.md.",
@@ -152,10 +161,22 @@ def main() -> int:
         rel = p.relative_to(ROOT).as_posix()
         full += [f"<!-- {rel} -->", "", p.read_text(encoding="utf-8", errors="replace").rstrip(), "", "=" * 78, ""]
 
-    (out_dir / "llms-full.txt").write_text("\n".join(full), encoding="utf-8")
+    full_text = "\n".join(full)
 
-    kib = (out_dir / "llms-full.txt").stat().st_size // 1024
-    print(f"✓ llms.txt + llms-full.txt ({kib} KiB) — {len(included)} documents included")
+    # Write to .agents/
+    (agents_dir / "llms.txt").write_text(idx_text, encoding="utf-8")
+    (agents_dir / f"llms-fci-v{version}.txt").write_text(idx_text, encoding="utf-8")
+    (agents_dir / "llms-full.txt").write_text(full_text, encoding="utf-8")
+    (agents_dir / f"llms-full-fci-v{version}.txt").write_text(full_text, encoding="utf-8")
+
+    # Write to root (for backwards compatibility)
+    (ROOT / "llms.txt").write_text(idx_text, encoding="utf-8")
+    (ROOT / f"llms-fci-v{version}.txt").write_text(idx_text, encoding="utf-8")
+    (ROOT / "llms-full.txt").write_text(full_text, encoding="utf-8")
+    (ROOT / f"llms-full-fci-v{version}.txt").write_text(full_text, encoding="utf-8")
+
+    kib = (agents_dir / "llms-full.txt").stat().st_size // 1024
+    print(f"✓ gen-llms: generated .agents/llms.txt, .agents/llms-fci-v{version}.txt and .agents/llms-full.txt, .agents/llms-full-fci-v{version}.txt ({kib} KiB) — {len(included)} documents included")
     by_reason: dict[str, int] = {}
     for _, reason in skipped:
         by_reason[reason] = by_reason.get(reason, 0) + 1

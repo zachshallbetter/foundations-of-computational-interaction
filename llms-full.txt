@@ -1,4 +1,5 @@
 # Foundations of Computational Interaction — full corpus
+Version: v0.5.0 | Total Included Documents: 67
 
 Generated from the project-licensed corpus only. Third-party literature, bibliographic
 metadata and archived releases are deliberately absent — see LICENSES.md.
@@ -7479,6 +7480,8 @@ Corpus / theory layer. The C reference substrate versions **independently** — 
 A shared number never implies cross-layer conformance.
 
 ## Unreleased
+
+- **Regenerated `llms.txt` / `llms-full.txt`** to include the runnable-demo README section (they predated it). This is the exact drift issue #27 exists to gate — the committed machine-readable corpus fell behind a docs change with nothing to catch it. Until #27 lands, regenerate with `python3 scripts/gen-llms.py` after any docs change.
 
 - **The root README now opens with something you can run.** `make demo && ./build/door` prints `state=1 events=1 hash=…` in about thirty seconds — one bounded state cell, one authorized action, one committed transition, one stable hash. It was documented only at line 60 of `app/README.md`, so a first-time reader met several hundred lines of ontology before encountering any evidence the substrate executes. The hash is the part that matters: the same declaration produces the same number on any conforming build, under GCC or Clang, which is the corpus's central claim reduced to one checkable line.
 

@@ -1,4 +1,5 @@
 # Foundations of Computational Interaction (FCI)
+> Version: v0.5.0 | Total Included Documents: 67
 
 > An interdisciplinary research program for formally describing, measuring, modeling, and
 > predicting human–computer interaction. It is a **research program, not an established
@@ -11,6 +12,7 @@ C reference substrate 0.1.0. Passing the substrate's tests establishes reference
 conformance only — not empirical validation.
 
 - [llms-full.txt](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/llms-full.txt): the project-licensed corpus concatenated into one file
+- [llms-full-fci-v0.5.0.txt](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/llms-full-fci-v0.5.0.txt): versioned corpus payload
 
 ## 01 Knowledge System of Record
 
