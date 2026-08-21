@@ -2,9 +2,7 @@
 
 ## Subtitle
 
-Version:
-Status: Draft | Candidate | Canonical
-Canonical dependencies:
+Version: Status: Draft \| Candidate \| Canonical Canonical dependencies:
 
 ## Abstract
 
