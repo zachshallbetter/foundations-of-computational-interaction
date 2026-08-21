@@ -1,12 +1,8 @@
-# Foundations of Computational Interaction Study Report
+# Computational Interaction Science Study Report
 
 ## Metadata
 
-Study ID:
-Version:
-Authors:
-Date:
-Repository:
+Study ID: Version: Authors: Date: Repository:
 
 ## Research question and claims
 
