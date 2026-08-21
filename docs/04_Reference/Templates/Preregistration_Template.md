@@ -1,12 +1,8 @@
-# Foundations of Computational Interaction Preregistration
+# Computational Interaction Science Preregistration
 
 ## Metadata
 
-Study ID:
-Version:
-Authors:
-Date:
-Repository:
+Study ID: Version: Authors: Date: Repository:
 
 ## Research question and claims
 
