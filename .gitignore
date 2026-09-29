@@ -38,3 +38,8 @@ __MACOSX/
 
 # Agent guidance is local tooling config, not repository content.
 .agents/
+# The research doctrine is repository content: CLAUDE.md and AGENTS.md link to it,
+# and check-doc-links fails on a clean checkout without it.
+!.agents/
+.agents/*
+!.agents/AGENTS.md

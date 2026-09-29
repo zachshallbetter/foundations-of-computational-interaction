@@ -1,5 +1,5 @@
 # Foundations of Computational Interaction — full corpus
-Version: v0.5.0 | Total Included Documents: 87
+Version: v0.5.0 | Total Included Documents: 90
 
 Generated from the project-licensed corpus only. Third-party literature, bibliographic
 metadata and archived releases are deliberately absent — see LICENSES.md.
@@ -8,6 +8,353 @@ Prose is CC BY 4.0; `app/**` documentation describes Apache-2.0 code.
 
 FCI is a research program, not an established discipline. Its scientific necessity and
 empirical advantage remain to be demonstrated.
+
+==============================================================================
+
+<!-- .agents/AGENTS.md -->
+
+# Workspace Agent Rules: Foundations of Computational Interaction
+
+These rules guide the research, editorial refactoring, repositioning, and software development within the Foundations of Computational Interaction repository.
+
+---
+
+## 1. Guiding Principle
+
+Do not ask whether the work succeeds in defining a new discipline. Instead, evaluate whether it succeeds in constructing a coherent, scientifically useful conceptual model of computational interaction. All editorial decisions must reinforce that objective.
+
+---
+
+## 2. Architectural Layers
+
+The repository corpus must be framed around three distinct layers:
+
+1.  **Layer 1 — The Scholarly Program:** The long-term research effort, referred to as **Foundations of Computational Interaction**. This is the epistemic infrastructure for the scientific study of computational interaction. It specifies the conditions under which computational interaction can be represented, observed, measured, and compared. It includes historical research, ontology, semantics, representation, projection, interpretation, observation, evidence, measurement, and comparison. It is not itself a model.
+2.  **Layer 2 — The Principal Scientific Contribution:** A formal, conceptual model of computational interaction. It is described generically as "a formal model of computational interaction" or "a foundational model of computational interaction." It defines entities, relationships, representations, transformations, observations, evidence, measurement, and comparison. It is *not* a scientific discipline, and does *not* replace HCI or Computational Interaction.
+3.  **Layer 3 — Scientific Models (Downstream Consumers):** Explanation and prediction are not produced by the foundational model itself. They are produced by scientific models (e.g., cognitive, ecological, probabilistic, activity-theoretic, or economic models) built within the framework established by the foundational work. The foundational model supports them rather than replaces them.
+
+---
+
+## 3. The Epistemological Questions
+
+Every component of the program answers a necessary epistemological question to establish the conditions under which explanation and prediction become scientifically meaningful:
+*   **Ontology:** *What exists?*
+*   **Semantics:** *What do operations mean?*
+*   **Representation:** *How is it represented?*
+*   **Projection:** *What survives transformation?*
+*   **Interpretation:** *What is system action vs. user purpose?*
+*   **Opportunity:** *What is the fundamental unit of choice?*
+*   **Observation:** *What can be observed?*
+*   **Evidence:** *What counts as evidence?*
+*   **Measurement:** *What can be measured?*
+*   **Comparison:** *What can be compared?*
+
+---
+
+## 4. Editorial Guidelines
+
+*   **Scientific Language:** Replace institutional language with scientific language. Avoid phrasing like *"Computational Interaction Science proposes/defines..."* or *"the discipline of Computational Interaction Science."* Prefer *"FCI...",* *"the model defines...",* *"this work develops...",* *"this research establishes...",* or *"this paper defines..."*
+*   **Branding Reduction:** Minimize proper noun branding and acronyms. Prefer natural scientific prose (e.g., *"The model distinguishes...",* *"The model represents..."*).
+*   **Relationship to Existing Work:** Frame the relationship as complementary:
+    *   *Existing Computational Interaction:* Develops computational methods for understanding and optimizing interaction.
+    *   *This Body of Work:* Develops a formal conceptual model for representing, observing, measuring, and comparing computational interaction.
+*   **Introductions:** Every paper's introduction must state its specific role in the overall model (e.g., *"This paper defines the ontological foundation of FCI"*).
+
+---
+
+## 5. Research Program & Scientific Boundaries (Phase 0)
+
+### 5.1 Mission & Central Question
+*   **Mission:** Decide whether interaction merits a distinct computational science. Do not defend a thesis blindly, write papers first, design products, or invent unnecessary branding terms. Success is defined as a truthful recommendation to: `proceed`, `revise`, `merge`, or `abandon`.
+*   **Central Question:** Can interaction be a coherent scientific unit independent of interfaces, products, and implementations?
+*   **Implementation Independence:** This is required. If the experimental platform (Observatory) and simulation kernel (Fundamental) disappear, the conceptual theory must still remain valid. Software is the apparatus/reference implementation, not the contribution.
+
+### 5.2 Observations & Lived Experience
+*   **Core Observation:** People with different lived, cultural, linguistic, professional, technical, or material histories may perceive and use the same software differently.
+*   **Exposure-Based Origins:** Recurring differences observed in community engagements (e.g., orientation, navigation, collaboration, verification) must not be assumed to have essentialist cultural causes. Investigate specific mechanisms, exposure histories, and interaction ecologies.
+*   **The Work Thesis:** Interaction behavior emerges from accumulated lifetime exposure to tools, software, games, education, language, writing systems, community practice, governance, workflows, physical environment, visual traditions, material culture, and institutions.
+
+### 5.3 Candidate Field Definition & Negative Space
+*   **Computational Interaction Science (Proposed):** The study of how people perceive, interpret, act on, adapt to, and transfer across structured information systems, and how these processes can be formally described, measured, and modeled.
+*   **Negative Space:** This work is *not* UX design, usability, design systems, personality models, learning styles, cultural taxonomy, demographic segmentation, marketing, AI interface models, telemetry platforms, or accessibility standards. If the model collapses into existing fields without material loss, merge or stop.
+*   **Research Stance:** Adversarial and constructive. Assume current terms are invalid. Challenge novelty, need, scope, falsifiability, operationalization, ethics, and overlap.
+
+### 5.4 Adjacent Fields & Existing Models
+*   **Adjacent Fields to Analyze:** HCI, Human Factors, Cognitive Science, Cog Psychology, Ecological Psychology, Distributed Cognition, Situated Cognition, Activity Theory, Embodied Cognition, Information Foraging, Info Visualization, Semiotics, Anthropology, Cross-Cultural HCI, Learning Science, Behavioral Economics, Systems Theory, Cybernetics, Complexity, Human-AI, Game Studies.
+*   **Existing Models to Evaluate:** Affordances, Seven Stages of Action, GOMS/KLM, Mental Models, Distributed Cog, Activity Theory, Situated Action, Embodied Cog, Info Foraging, Cognitive Load, Flow, Technology Acceptance Model (TAM), Adaptive Interfaces, Cross-Cultural HCI.
+*   *For each field/model:* Analyze scope, unit of analysis, mechanisms, empirical strength, limits, and overlaps to identify genuine gaps.
+
+### 5.5 Core Concepts & Priority Topics
+1.  **Interaction Ecology:** Lifetime habitats and accumulated experiences shape approaches to unfamiliar systems. Exposure profiles predict behavioral similarity better than demographics.
+2.  **Interaction Morphology:** Visual and spatial composition (shape, color, density, alignment, symmetry, positioning) encodes preconscious structural expectations before semantic interpretation.
+3.  **Interaction Grammar:** Interfaces express action grammars transferring across systems beyond low-level input events.
+4.  **Behavioral Opportunities:** The fundamental unit of choice/measurement. Defined as: `Known State + Visible Information + Available Actions + Choice/Avoidance + Outcome`. Relative models predict behavior better than event counts or self-reports.
+5.  **Semantic Representation & Transfer:** Translation loss across representations during form changes tracks semantic fidelity and prior grammar exposure, not surface similarity.
+
+### 5.6 Context Variables
+*   Analyze context variables strictly as moderators, covariates, exposures, or confounds—never as essentialist identities.
+*   **Variables include:** Age band, current/raised region, migration, languages/scripts, reading direction, education/occupation, community roles, device/software history, gaming, visual/material traditions, collaborative norms, institutional exposure, and access needs.
+
+---
+
+## 6. Repository Rules & Infrastructure
+
+> **Operational conventions** — the verification gate, CI, per-layer versioning and changelogs, branch
+> and commit conventions — are in [CLAUDE.md](../CLAUDE.md). Claim-strength practices (preregistration,
+> the discovery criterion, negative results, evidence provenance) are in
+> [docs/90_Project/Research_Practices.md](../docs/90_Project/Research_Practices.md).
+
+### 6.1 Authority and Scope
+Apply the authority order in [app/AUTHORITY.md](../app/AUTHORITY.md) (final synthesis determination, then canonical glossary, then relational ontology, …). Treat [docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Ontology.md](../docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Ontology.md) as the current label and determination freeze, contract schemas as draft 0.x normative candidates, C as a deterministic subset, and examples as explanatory derivatives. Never let code, bibliography records, or generated files silently change theory.
+
+Use **FCI** as the preferred short name and **Interaction Participant** as the general participant category. Retain the `cis_` C namespace only under the legacy policy in [NAMING.md](../app/NAMING.md). Use `formal trace`, `execution record`, or `instrument record` unless an empirical Behavioral Evidence Contract is applied.
+
+### 6.2 Examples and Visual Review Rules
+Every executable, interactive model, visualization, or worked scenario added to this repository must be an identified example.
+
+1.  Allocate the next unused `CIS-EX-NNN` identifier in `examples/manifest.csv`.
+2.  Put the identifier and applicable theory version in the source artifact.
+3.  Add a complete `examples/README.md` definition covering purpose, inputs or controls, concepts exercised, expected behavior, non-claims, and validation.
+4.  Keep editable visualization fragments under `examples/visualizations/src/` and generated standalone files under `examples/visualizations/`.
+5.  Add golden assertions or behavioral tests wherever the example makes an executable claim.
+6.  Align every interactive figure in [examples/PAPER_ALIGNMENT.md](../app/examples/PAPER_ALIGNMENT.md), including canonical concepts, internal research basis, candidate source keys, and claim boundary.
+7.  Run `make test`; missing identities, missing definitions, and stale generated visualization output are failures.
+
+**Visual Quality Review Rules:**
+Interactive figures must pass visual review at both wide and narrow widths:
+*   The primary relationship must be visually dominant.
+*   Controls and evidence must be hierarchically distinct.
+*   Color must have a stable, semantic role.
+*   Empty states must remain compact.
+*   Text must not clip or overflow.
+*   Focusable controls must use native keyboard behavior.
+*   No decorative treatment should imply a stronger research claim than is supported.
+
+Never reuse or renumber an example identifier. A material semantic change gets a new identifier; a correction that restores the documented contract retains the existing identifier and updates its validation record.
+
+---
+
+## 7. Quality Gates & Publication Rules
+
+*   **Canonical Canon:** One primary contribution per paper. Theory before implementation, definitions before use, assumptions explicit, observations separate from inference, claims falsifiable.
+*   **Quality Gate Checks:**
+    *   Every claim must be cited or explicitly labeled as an inference.
+    *   Every new term must be systematically compared to existing literature vocabulary.
+    *   Every gap must be evidenced, and every hypothesis must be operationalizable.
+    *   Every identity claim must be non-essentialist.
+    *   Every recommendation must include its failure conditions.
+
+---
+
+## 8. Agent Execution Methodology & Forward-Thinking Completion Engine
+
+To ensure all research, coding, documentation, and refactoring tasks are executed with maximum intelligence and completed to end-to-end working state, agents must strictly follow these 5 core execution rules:
+
+### 8.1 Ambient Adaptation & Engineering Judgment
+* **Style & Convention Matching**: Read surrounding files before editing. Match comment density, naming conventions, architectural idioms, and structural patterns.
+* **Root-Cause Resolution**: Inspect actual log/test outputs and trace upstream data flow. Address underlying logic errors rather than applying superficial symptom patches or suppressing errors.
+
+### 8.2 Autonomous Execution to Completion
+* **End-to-End Ownership**: Do not halt halfway or stop at draft code/plans. Drive tasks through research, implementation, build validation, and verification until the requested outcome is fully realized.
+* **Self-Correction & Autonomous Momentum**: If a chosen path hits a blocker, evaluate alternative approaches immediately. Log the deviation in `scratch/implementation-notes.md` and proceed with the best alternative rather than halting execution to ask trivial questions.
+
+### 8.3 Unknowns Discovery Framework (Blind Spot Pass & Pre/During/Post Workflow)
+Map tasks across the 4 Context Quadrants before and during execution:
+1. **Known Knowns**: Explicit user requirements in the prompt.
+2. **Known Unknowns**: Identified gaps requiring investigation before coding.
+3. **Unknown Knowns**: Implicit expectations and visual taste ("know it when I see it").
+4. **Unknown Unknowns**: Unconsidered architectural traps, edge cases, or domain blind spots.
+
+* **Pre-Implementation Blind Spot Pass**: Scan the codebase for hidden dependencies and domain risks before proposing solutions.
+* **Isolated Mocks & Prototypes**: Create lightweight mocks for UX/visual tasks with high "Unknown Knowns" to validate user preferences before modifying production state.
+* **Decision-Focused Planning**: Structure implementation plans around critical decisions (data models, interfaces, user-facing behavior) rather than routine boilerplates.
+
+### 8.4 Live Implementation Ledger (`scratch/implementation-notes.md`)
+For non-trivial tasks, maintain a scratch ledger at `<appDataDir>/brain/<conversation-id>/scratch/implementation-notes.md` recording:
+* **Decisions & Rationale**: Key architectural choices and why alternative paths were bypassed.
+* **Deviations**: Edge cases encountered that required adapting the initial plan.
+* **Verification Proof**: Command outputs, test results, and runtime build metrics confirming correctness.
+
+### 8.5 Empirical Runtime Verification
+* **No Premature Success Claims**: Never declare completion based solely on code edits.
+* **Validation Suite**: Always run empirical build checks (`make test`, `npm run build`, `tsc`, or relevant test scripts) before finishing a task.
+
+==============================================================================
+
+<!-- AGENTS.md -->
+
+# Agent guide
+
+This repository keeps agent guidance in two files, split by kind. Read both before working here.
+
+| File | Covers |
+|---|---|
+| **[`.agents/AGENTS.md`](.agents/AGENTS.md)** | **Research doctrine** — the guiding principle, the three architectural layers, the epistemological questions, editorial language rules, example-identity rules, and publication quality gates |
+| **[`CLAUDE.md`](CLAUDE.md)** | **Operations** — layout, authority order, the verification gate, CI, per-layer versioning and changelogs, branch/commit conventions, and research-claim practices |
+
+The split is deliberate: doctrine constrains *what may be claimed and how it is written*; operations
+constrain *how changes are verified and recorded*. Neither substitutes for the other.
+
+Start with [`CLAUDE.md`](CLAUDE.md) if you are making a change; start with
+[`.agents/AGENTS.md`](.agents/AGENTS.md) if you are writing or editing the corpus.
+
+==============================================================================
+
+<!-- CLAUDE.md -->
+
+# FCI — agent guide
+
+**Foundations of Computational Interaction (FCI)** is a research program for formally describing,
+measuring, modeling, and predicting human–computer interaction. It is a **research program, not an
+established discipline**; its scientific necessity and empirical advantage remain to be demonstrated.
+
+> **Research doctrine lives in [`.agents/AGENTS.md`](.agents/AGENTS.md)** — the guiding principle, the
+> three architectural layers, the epistemological questions, editorial language rules, example-identity
+> rules, and publication quality gates. Read it before touching the corpus.
+>
+> **This file is the operational layer**: layout, gates, versioning, and working conventions.
+
+---
+
+## Layout
+
+| Path | Role |
+|---|---|
+| [`docs/`](docs/) | The conceptual corpus and knowledge system of record |
+| [`app/`](app/) | Freestanding C11 reference substrate — a *deterministic subset* of the ontology |
+| [`scripts/`](scripts/) | Repository-level checks that run in CI |
+| [`.agents/`](.agents/) | Research doctrine for agents |
+
+**Authority when artifacts disagree:** [`app/AUTHORITY.md`](app/AUTHORITY.md) is canonical — final
+synthesis determination, then canonical glossary, then relational ontology, and so on. Code,
+bibliography records, and generated files **never** silently change theory.
+
+---
+
+## Naming canon
+
+- **FCI** is the preferred short name. Avoid institutional phrasing ("the discipline of…").
+- **`CIS-EX-NNN` example identifiers are never renamed or renumbered.** Identity stability is a
+  contract: a material semantic change gets a *new* identifier; a correction that restores the
+  documented contract keeps the existing one and updates its validation record.
+- The `cis_` C namespace is retained under the legacy policy in [`app/NAMING.md`](app/NAMING.md).
+  Residual `cis` symbols are deliberate, not oversights.
+
+---
+
+## Verification gate
+
+Run before proposing a merge. CI runs the same commands.
+
+```bash
+cd app && make test                      # build + unit, stress, example, schema, benchmark suites
+python3 scripts/check-doc-links.py       # every internal markdown link resolves
+python3 scripts/check-structure.py       # documented directories actually exist
+```
+
+### CI gates
+
+| Workflow | What it enforces |
+|---|---|
+| `ci.yml` | Builds and tests the substrate under **both gcc and clang**, then asserts the `make conformance` vectors are **byte-identical across compilers**. Plus corpus link and structure integrity. |
+| `pr-checks.yml` | Per-layer record-keeping; flags multi-layer version bumps that never mention coupling. |
+
+**`conclusion` / `conclusion-pr` are the required checks**, not the individual jobs. They assert every
+dependency *succeeded* — a skipped or cancelled job can never count as green. Making an individual job
+required instead would let a docs-only PR pass by skipping everything.
+
+**Why both compilers.** The substrate claims freestanding C11 determinism. Two builds each passing
+their own tests does not test that claim; comparing their conformance vectors does.
+
+---
+
+## Versioning — layers move independently
+
+FCI versions theory, schemas, software, publication infrastructure, and examples **independently**.
+A shared number never implies cross-layer conformance. The policy is
+[`app/VERSIONING.md`](app/VERSIONING.md) and it is **load-bearing, not decorative**:
+
+- a theory patch does not require a software release;
+- a schema release does not imply empirical validation;
+- passing C tests establishes reference-kernel conformance **only**;
+- cross-layer compatibility must be **declared in a conformance record** — never inferred from equal
+  version numbers.
+
+**Changelogs are per layer, for the same reason.** A single repo-wide changelog would assert exactly
+the coupling the policy denies.
+
+| Layer | Record |
+|---|---|
+| Corpus (`docs/`) | [`docs/CHANGELOG.md`](docs/CHANGELOG.md) |
+| Substrate (`app/`) | [`app/RELEASE_NOTES.md`](app/RELEASE_NOTES.md) |
+
+CI reads the **diff** of these files, not merely whether they exist — an untouched changelog is the
+failure it catches.
+
+---
+
+## Working conventions
+
+- **Status honesty.** Never describe something as established unless a record confirms it. Distinguish
+  *documented*, *implemented*, *tested*, and *empirically validated* — they are four different claims.
+  When in doubt, state the weaker one.
+- **Branch naming.** Named for the work: `feat/…`, `fix/…`, `docs/…`, `chore/…`, `research/…`. Never
+  tool-generated or session-identifier names — branch names are permanent in PR records.
+- **Git voice.** Normal human engineering prose. **No** `Co-Authored-By`, no AI-attribution trailers,
+  no "generated by" footers, and no agent/assistant references in anything tracked — code, docs,
+  commits, or PRs.
+- **Don't commit or push unless asked**, except on a feature branch.
+- **Verify the finish line.** "CI armed" ≠ green; "PR approved" ≠ merged. Check the actual state
+  (`gh pr view <n> --json state`) before reporting completion.
+
+---
+
+## Research practices
+
+The empirical protocol this program holds itself to — preregistration, the discovery criterion,
+negative results, and evidence provenance — is documented in
+[`docs/90_Project/Research_Practices.md`](docs/90_Project/Research_Practices.md).
+
+The short version, because it governs how anything here may be *claimed*:
+
+- A claim's **maturity** (how settled) and its **provenance** (what backs it) are separate dimensions.
+  A fixture written against the implementation it was designed alongside cannot falsify that design.
+- **Negative results are permanent.** A hypothesis that was held and disproven is recorded, not
+  deleted — the abandoned intuition is the thing most likely to be re-proposed later.
+- **Predictions are registered before the work**, and falsifications keep the lesson they taught.
+  Accuracy is expected to *fall* as scope widens; a rising accuracy with widening scope means the
+  predictions are being written to be safe.
+
+---
+
+## Engineering craft (hard-won — keep these)
+
+- **A documented claim that was only ever verified one way is an untested claim.** The substrate's
+  README asserted `make test` "rejects any undefined external symbol." True under GCC; false under
+  Clang, which emits `memcpy` for struct assignment. Both conform — C11 §4 permits a freestanding
+  implementation to require `memcpy`/`memset`/`memmove`/`memcmp`. The invariant is now stated
+  precisely and tested in both directions (a real external dependency is still rejected).
+- **Fix the diagnostic before the defect.** The first cross-compiler failure printed only
+  `Error 1` — undiagnosable. Making the check *report the offending symbol* came first; guessing
+  would have led to a plausible wrong fix that hid the real question.
+- **Prose drifts where links do not.** `docs/README.md` described two directories that did not exist
+  and omitted three that did, and the link checker passed the whole time — it validates links, not
+  claims about structure. `scripts/check-structure.py` closes that specific gap; assume other prose
+  claims are unverified until something checks them.
+- **A gate that cannot fail is not a gate.** After changing a check, prove it still rejects the thing
+  it exists to catch.
+
+---
+
+## Quick map for a new task
+
+1. **Research doctrine, editorial language, example rules** → [`.agents/AGENTS.md`](.agents/AGENTS.md).
+2. **Which artifact wins a conflict** → [`app/AUTHORITY.md`](app/AUTHORITY.md).
+3. **What may be claimed, and how strongly** → [`docs/90_Project/Research_Practices.md`](docs/90_Project/Research_Practices.md).
+4. **Corpus orientation** → [`docs/START_HERE.md`](docs/START_HERE.md).
+5. **Building or changing the substrate** → [`app/README.md`](app/README.md), then `make test`.
+6. **Adding an executable example** → allocate the next `CIS-EX-NNN`; see `.agents/AGENTS.md` §6.2.
+7. Always close with the verification gate above, and record the change in the **layer's own** log.
 
 ==============================================================================
 
