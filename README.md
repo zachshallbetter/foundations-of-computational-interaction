@@ -3,6 +3,7 @@
 **An interdisciplinary research program for formally describing, measuring, modeling, and predicting human–computer interaction.** The repository holds a versioned knowledge system of record, a freestanding C11 reference substrate for a deterministic subset of that ontology, and the verification tooling that keeps both checkable.
 
 [![Release](https://img.shields.io/github/v/release/zachshallbetter/foundations-of-computational-interaction?label=release&color=4da3ff)](https://github.com/zachshallbetter/foundations-of-computational-interaction/releases/latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23290488.svg)](https://doi.org/10.5281/zenodo.23290488)
 [![CI](https://github.com/zachshallbetter/foundations-of-computational-interaction/actions/workflows/ci.yml/badge.svg)](https://github.com/zachshallbetter/foundations-of-computational-interaction/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/corpus-CC%20BY%204.0-lightgrey)](LICENSE-CONTENT)
 [![License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE-CODE)
@@ -133,14 +134,14 @@ Licensing remains provisional pending confirmation against publication and comme
 If you use this work, please cite it.
 
 ```bibtex
-@misc{shallbetter_foundations_computational_interaction_0_5_1,
+@dataset{shallbetter_foundations_computational_interaction_0_5_1,
   author       = {Shallbetter, Zachary},
   title        = {Foundations of Computational Interaction},
   year         = {2026},
   version      = {0.5.1},
   publisher    = {Zenodo},
-  note         = {Research program corpus and reference substrate},
-  url          = {https://github.com/zachshallbetter/foundations-of-computational-interaction},
+  doi          = {10.5281/zenodo.23290488},
+  url          = {https://doi.org/10.5281/zenodo.23290488},
   orcid        = {0009-0009-9450-3429}
 }
 ```
@@ -148,7 +149,8 @@ If you use this work, please cite it.
 Machine-readable citation metadata: [`CITATION.cff`](CITATION.cff).  
 Archival deposit metadata: [`.zenodo.json`](.zenodo.json).
 
-> After the Zenodo record for version 0.5.1 is published, the concept DOI will be recorded in `CITATION.cff` and a DOI badge will be added here, following the same pattern used for [Fundamental](https://github.com/zachshallbetter/fundamental-engine).
+> **DOI (this version):** [10.5281/zenodo.23290488](https://doi.org/10.5281/zenodo.23290488)  
+> **Concept DOI (all versions):** [10.5281/zenodo.23290487](https://doi.org/10.5281/zenodo.23290487)
 
 ## Author
 
