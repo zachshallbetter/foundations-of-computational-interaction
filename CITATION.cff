@@ -26,4 +26,4 @@ keywords:
   - ontology
   - interaction science
   - formal methods
-# doi: 10.5281/zenodo.XXXXXXXX  # concept DOI — fill after Zenodo publication
+doi: 10.5281/zenodo.23290487   # concept DOI — always resolves to the latest release
