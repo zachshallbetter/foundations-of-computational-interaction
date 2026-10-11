@@ -129,6 +129,15 @@ Licensing remains provisional pending confirmation against publication and comme
 - **Which artifact wins a conflict** — [`app/AUTHORITY.md`](app/AUTHORITY.md)
 - **Negative results** — [`docs/90_Project/Negative_Results.md`](docs/90_Project/Negative_Results.md)
 
+## Related software
+
+Foundations of Computational Interaction is a **research program**. A related runtime by the same author implements inspectable, field-mediated interaction on real hosts:
+
+- Shallbetter, Z. (2026). *Fundamental* (Version 0.10.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.20989937
+
+Fundamental does not implement this research program, and this corpus is not a package dependency of Fundamental. The connection is scholarly and architectural: shared concern with inspectable interaction and independent layer versioning.
+
+
 ## Citation
 
 If you use this work, please cite it.
