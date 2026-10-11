@@ -84,7 +84,7 @@ Authoritative policy: [`app/VERSIONING.md`](app/VERSIONING.md).
 
 > **On `CIS-EX-*` identifiers.** Example identifiers were deliberately not renamed when the program title settled. Their stability is the contract. Residual historical symbols in the C substrate are a separate in-flight rename, not an oversight.
 
-Repository release tag **`v0.5.0`** marks the theory corpus package corresponding to theory version 0.5.0 (see [`VERSION`](VERSION)).
+Repository release tag **`v0.5.1`** is the public packaging release for theory version **0.5.0** (see [`VERSION`](VERSION)). Theory remains 0.5.0; 0.5.1 records the archival surface, citation metadata, and verification presentation.
 
 ## Verification
 
@@ -133,11 +133,11 @@ Licensing remains provisional pending confirmation against publication and comme
 If you use this work, please cite it.
 
 ```bibtex
-@misc{shallbetter_foundations_computational_interaction_0_5_0,
+@misc{shallbetter_foundations_computational_interaction_0_5_1,
   author       = {Shallbetter, Zachary},
   title        = {Foundations of Computational Interaction},
   year         = {2026},
-  version      = {0.5.0},
+  version      = {0.5.1},
   publisher    = {Zenodo},
   note         = {Research program corpus and reference substrate},
   url          = {https://github.com/zachshallbetter/foundations-of-computational-interaction},
@@ -148,7 +148,7 @@ If you use this work, please cite it.
 Machine-readable citation metadata: [`CITATION.cff`](CITATION.cff).  
 Archival deposit metadata: [`.zenodo.json`](.zenodo.json).
 
-> After the Zenodo record for version 0.5.0 is published, the concept DOI will be recorded in `CITATION.cff` and a DOI badge will be added here, following the same pattern used for [Fundamental](https://github.com/zachshallbetter/fundamental-engine).
+> After the Zenodo record for version 0.5.1 is published, the concept DOI will be recorded in `CITATION.cff` and a DOI badge will be added here, following the same pattern used for [Fundamental](https://github.com/zachshallbetter/fundamental-engine).
 
 ## Author
 
