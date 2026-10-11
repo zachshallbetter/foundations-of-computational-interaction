@@ -6,15 +6,15 @@ abstract: >-
   modeling, and predicting human-computer interaction. A research program, not an
   established independent discipline; its scientific necessity and empirical
   advantage remain to be demonstrated. This deposit packages the versioned
-  knowledge system of record and the C11 reference substrate for a deterministic
-  subset of the ontology.
+  knowledge system of record (theory 0.5.0) and the C11 reference substrate for a
+  deterministic subset of the ontology.
 type: dataset
 authors:
   - family-names: Shallbetter
     given-names: Zachary
     orcid: "https://orcid.org/0009-0009-9450-3429"
-version: "0.5.0"
-date-released: "2026-07-20"
+version: "0.5.1"
+date-released: "2026-10-11"
 license: CC-BY-4.0
 repository-code: "https://github.com/zachshallbetter/foundations-of-computational-interaction"
 url: "https://github.com/zachshallbetter/foundations-of-computational-interaction"

@@ -1,8 +1,8 @@
 {
   "title": "Foundations of Computational Interaction",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "upload_type": "dataset",
-  "description": "Foundations of Computational Interaction version 0.5.0: an interdisciplinary research program for formally describing, measuring, modeling, and predicting human-computer interaction. Includes the versioned knowledge system of record and a C11 reference substrate for a deterministic subset of the ontology. Research corpus under CC BY 4.0; code and schemas under Apache-2.0. See LICENSES.md. Author: Zachary Shallbetter (ORCID 0009-0009-9450-3429).",
+  "description": "Foundations of Computational Interaction version 0.5.1 (public packaging release for theory 0.5.0). An interdisciplinary research program for formally describing, measuring, modeling, and predicting human-computer interaction. Includes the versioned knowledge system of record and a C11 reference substrate for a deterministic subset of the ontology. Research corpus under CC BY 4.0; code and schemas under Apache-2.0. See LICENSES.md. Author: Zachary Shallbetter (ORCID 0009-0009-9450-3429).",
   "creators": [
     {
       "name": "Shallbetter, Zachary",
@@ -22,12 +22,12 @@
   "access_right": "open",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/tree/v0.5.0",
+      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/tree/v0.5.1",
       "relation": "isSupplementTo",
       "resource_type": "dataset"
     },
     {
-      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/releases/tag/v0.5.0",
+      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/releases/tag/v0.5.1",
       "relation": "isIdenticalTo",
       "resource_type": "dataset"
     }
