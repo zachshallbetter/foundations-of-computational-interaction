@@ -3,21 +3,24 @@ message: "If you reference this work, please cite it as below."
 title: "Foundations of Computational Interaction (FCI)"
 abstract: >-
   An interdisciplinary scientific synthesis and research program for formally
-  describing, measuring, modeling, and predicting human–computer interaction.
-  A research program, not an established independent discipline; its scientific
+  describing, measuring, modeling, and predicting human–computer interaction. A
+  research program, not an established independent discipline; its scientific
   necessity and empirical advantage remain to be demonstrated.
 type: dataset
 authors:
   - family-names: Shallbetter
-    given-names: Zach
+    given-names: Zachary
+    orcid: "https://orcid.org/0009-0009-9450-3429"
 version: "0.5.0"
 date-released: "2026-07-20"
-url: "https://github.com/zachshallbetter/CompInt"
+license: CC-BY-4.0
+repository-code: "https://github.com/zachshallbetter/foundations-of-computational-interaction"
+url: "https://github.com/zachshallbetter/foundations-of-computational-interaction"
 keywords:
   - computational interaction
   - human-computer interaction
   - research program
   - measurement
-# Split licensing (provisional): research corpus under CC-BY-4.0; code/schemas under Apache-2.0.
-# See LICENSES.md for the authoritative path map.
-license: CC-BY-4.0
+  - ontology
+  - interaction science
+# doi: 10.5281/zenodo.XXXXXXXX  # concept DOI — fill after first Zenodo version
