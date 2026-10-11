@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you reference this work, please cite it as below."
-title: "Foundations of Computational Interaction (FCI)"
+title: "Foundations of Computational Interaction"
 abstract: >-
   An interdisciplinary scientific synthesis and research program for formally
-  describing, measuring, modeling, and predicting human–computer interaction. A
+  describing, measuring, modeling, and predicting human-computer interaction. A
   research program, not an established independent discipline; its scientific
   necessity and empirical advantage remain to be demonstrated.
 type: dataset
@@ -12,7 +12,7 @@ authors:
     given-names: Zachary
     orcid: "https://orcid.org/0009-0009-9450-3429"
 version: "0.5.0"
-date-released: "2026-07-20"
+date-released: "2026-10-11"
 license: CC-BY-4.0
 repository-code: "https://github.com/zachshallbetter/foundations-of-computational-interaction"
 url: "https://github.com/zachshallbetter/foundations-of-computational-interaction"
