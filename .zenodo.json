@@ -1,8 +1,8 @@
 {
-  "title": "Foundations of Computational Interaction (FCI)",
+  "title": "Foundations of Computational Interaction",
   "version": "0.5.0",
   "upload_type": "dataset",
-  "description": "An interdisciplinary scientific synthesis and research program for formally describing, measuring, modeling, and predicting human\u2013computer interaction. Research corpus (docs/) under CC-BY-4.0; code/schemas under Apache-2.0 \u2014 see LICENSES.md.",
+  "description": "An interdisciplinary scientific synthesis and research program for formally describing, measuring, modeling, and predicting human-computer interaction. Research corpus under CC-BY-4.0; code and schemas under Apache-2.0. See LICENSES.md.",
   "creators": [
     {
       "name": "Shallbetter, Zachary",
