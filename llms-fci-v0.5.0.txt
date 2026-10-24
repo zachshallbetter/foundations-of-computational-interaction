@@ -1,5 +1,5 @@
 # Foundations of Computational Interaction (FCI)
-> Version: v0.5.0 | Total Included Documents: 67
+> Version: v0.5.0 | Total Included Documents: 90
 
 > An interdisciplinary research program for formally describing, measuring, modeling, and
 > predicting human–computer interaction. It is a **research program, not an established
@@ -25,8 +25,12 @@ Canonical definitions, glossary, relational ontology, contract definitions.
 - [Foundations of Computational Interaction Contracts](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/05_Specifications/Contracts/Computational_Interaction_Science_Contracts_v1.0.0-structure.1.md)
 - [Contract ID Registry](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/05_Specifications/Contracts/Contract_ID_Registry.md)
 - [Wikipedia Readiness Review: Foundations of Computational Interaction](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/07_Reviews/Computational_Interaction_Science_Wikipedia_Readiness_Review_v0.2.md)
-- [Foundations of Computational Interaction - Canonical Glossary](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Glossary.md)
-- [Foundations of Computational Interaction - Canonical Ontology](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Ontology.md)
+- [Governance](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Glossary.md)
+- [Scope](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/08_Canonical_Registry/Canonical_Ontology.md)
+- [Canonical Artifact Index](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/09_Indexes_and_Graphs/Indexes/Canonical_Artifact_Index.md)
+- [Canonical Definition Index](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/09_Indexes_and_Graphs/Indexes/Canonical_Definition_Index.md)
+- [Canonical Figure Index](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/09_Indexes_and_Graphs/Indexes/Canonical_Figure_Index.md)
+- [Canonical Vocabulary](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/09_Indexes_and_Graphs/Indexes/Canonical_Vocabulary.md)
 - [Consent Governance 0.1.0](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/Consent_Governance.md)
 - [Ethics and Power Gates 0.1.0](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/Ethics_and_Power_Gates.md)
 - [Participant Data Management Plan 0.1.0](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/01_Knowledge_System_of_Record/10_Governance/Participant_Data_Management_Plan.md)
@@ -37,8 +41,24 @@ Canonical definitions, glossary, relational ontology, contract definitions.
 
 Research papers in logical dependency order.
 
+- [Contents](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/01_Scientific_Explanandum/Interaction_as_a_Scientific_Explanandum.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/02_Primary_Scientific_Object/Can_Interaction_Become_a_Primary_Scientific_Object.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/03_Architecture_of_Sciences/How_Sciences_Define_Their_Objects.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/04_Representation_and_Projection/Representation_Invariance_and_Projection.md)
 - [Scoped Invariance Under Projection](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/04_Representation_and_Projection/Scoped_Invariance_Under_Projection_v0.4.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/05_Ontology_Semantics_Interpretation/Ontology_Semantics_Representation_and_Interpretation.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/06_Opportunity/Opportunity_Affordance_and_Action_Availability.md)
+- [Contents](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/07_Interaction/Interaction_Toward_a_General_Theory_of_Interaction.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/08_Behavior/Behavior_Toward_a_Scientific_Theory_of_Computational_Behavior.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/09_Measurement/Measurement_Toward_a_Scientific_Framework_for_Interaction_Research.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/10_Similarity/Interaction_Similarity_Toward_a_General_Theory_of_Comparable_Interactions.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/11_Transfer/Interaction_Transfer_Toward_a_Theory_of_Experience_and_Adaptation.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/12_Strategies/Interaction_Strategies_Toward_a_Theory_of_Behavioral_Organization.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/13_Formal_Models/Formal_Models_of_Computational_Interaction_Toward_a_Mathematical_Foundation.md)
 - [The Limits of Computational Interaction Models](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/13_Formal_Models/The_Limits_of_Computational_Interaction_Models_v0.2.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/14_Prediction/Predicting_Interaction_Toward_a_Predictive_Theory_of_Computational_Interaction.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/15_Comparative_Interaction/Comparative_Interaction_Toward_a_Scientific_Method_for_Comparing_Computational_Interactions.md)
+- [Abstract](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/02_Research_Papers/16_Program_Synthesis/Computational_Interaction_Science_Foundations.md)
 
 ## 05 Publication
 
@@ -51,7 +71,7 @@ Publication guidelines and consistency audits.
 - [Editorial Change Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Editorial_Change_Report.md)
 - [Outstanding Editorial Issues](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Outstanding_Editorial_Issues.md)
 - [Publication Readiness Assessment](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Publication_Readiness_Assessment.md)
-- [Foundations of Computational Interaction Editorial Style Guide](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Style_Guide.md)
+- [Computational Interaction Science Editorial Style Guide](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Style_Guide.md)
 - [Terminology Normalization Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Editorial_Reports/Terminology_Normalization_Report.md)
 - [Completeness Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Publication_Reports/Completeness_Report.md)
 - [Maintenance Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/05_Publication/Publication_Reports/Maintenance_Report.md)
@@ -66,10 +86,10 @@ Publication guidelines and consistency audits.
 Release manifests, audits, decisions, research practices, negative results.
 
 - [Appendix A - Candidate Version 2.0 Changes](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Appendices/Appendix_A_Candidate_Version_2.0_Changes.md)
-- [Change Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Change_Report.md)
-- [Consistency Report](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Consistency_Report.md)
-- [Impact Analysis](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Impact_Analysis.md)
-- [Publication Readiness Assessment](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Publication_Readiness_Assessment.md)
+- [Changes](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Change_Report.md)
+- [Findings](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Consistency_Report.md)
+- [Impact](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Impact_Analysis.md)
+- [Assessment](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Canonical_Integration_v1.0.0/Publication_Readiness_Assessment.md)
 - [Authoritative Metadata Sources](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Audits/Editorial_Normalization_v1.1.1/Source_Data/Authoritative_Metadata_Sources.md)
 - [Overlap and Supersession Record](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Decisions/Consolidated_RC/OVERLAP_AND_SUPERSESSION.md)
 - [Migration Map](https://github.com/zachshallbetter/foundations-of-computational-interaction/blob/main/docs/90_Project/Manifests/MIGRATION_MAP.md)
