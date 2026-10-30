@@ -128,6 +128,7 @@ Never reuse or renumber an example identifier. A material semantic change gets a
     *   Every gap must be evidenced, and every hypothesis must be operationalizable.
     *   Every identity claim must be non-essentialist.
     *   Every recommendation must include its failure conditions.
+    *   **RPDS & Dual-Format Delivery**: All research papers must adhere to the Research Paper & Monograph Directory Standard (RDP Rule V9). Every paper exists as a matching pair of Markdown (`{slug}.md`) and publication-grade PDF (`{slug}.pdf`). Generic names like `paper.md` or `paper.pdf` are prohibited; all deliverables must use self-documenting semantic slugs.
 
 ---
 

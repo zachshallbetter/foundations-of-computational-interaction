@@ -1,5 +1,11 @@
 # Foundations of Computational Interaction
 
+**Identifier:** `fci`  
+**Version:** Theory `0.5.0` (repository packaging release `0.5.2`)  
+**Status:** Research Program; contract schemas are draft normative candidates and empirical validity remains unestablished  
+**Question:** How can human–computer interaction be formally described, measured, modeled, and predicted?  
+**Scope:** A versioned conceptual corpus and deterministic C11 reference substrate for a bounded subset of its ontology.
+
 **An interdisciplinary research program for formally describing, measuring, modeling, and predicting human–computer interaction.** The repository holds a versioned knowledge system of record, a freestanding C11 reference substrate for a deterministic subset of that ontology, and the verification tooling that keeps both checkable.
 
 [![Release](https://img.shields.io/github/v/release/zachshallbetter/foundations-of-computational-interaction?label=release&color=4da3ff)](https://github.com/zachshallbetter/foundations-of-computational-interaction/releases/latest)
@@ -85,7 +91,7 @@ Authoritative policy: [`app/VERSIONING.md`](app/VERSIONING.md).
 
 > **On `CIS-EX-*` identifiers.** Example identifiers were deliberately not renamed when the program title settled. Their stability is the contract. Residual historical symbols in the C substrate are a separate in-flight rename, not an oversight.
 
-Repository release tag **`v0.5.1`** is the public packaging release for theory version **0.5.0** (see [`VERSION`](VERSION)). Theory remains 0.5.0; 0.5.1 records the archival surface, citation metadata, and verification presentation.
+Repository release tag **`v0.5.2`** is the public packaging release for theory version **0.5.0** (see [`VERSION`](VERSION)). Theory remains 0.5.0; 0.5.2 records privacy-clean corpus packaging and refreshed release metadata, citation metadata, and verification presentation.
 
 ## Verification
 
@@ -147,7 +153,7 @@ If you use this work, please cite it.
   author       = {Shallbetter, Zachary},
   title        = {Foundations of Computational Interaction},
   year         = {2026},
-  version      = {0.5.1},
+  version      = {0.5.2},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.23290488},
   url          = {https://doi.org/10.5281/zenodo.23290488},

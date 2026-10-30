@@ -78,7 +78,7 @@ Those paths no longer match the repository. It also says source research papers 
 
 ### Finding B — root `README.md` contains nonportable absolute links
 
-The root README contains five `file:///Users/...` links. These only work on one local machine. It also describes a root `_archive/` directory that is not present in the reviewed archive.
+The reviewed root README contained five machine-specific local file links; they worked only on the author's computer. The current README uses repository-relative links.
 
 **Severity:** P0 release-portability defect.  
 **Required correction:** Replace all absolute local links with repository-relative links and remove or restore `_archive/`.
