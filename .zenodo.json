@@ -1,8 +1,8 @@
 {
   "title": "Foundations of Computational Interaction",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "upload_type": "dataset",
-  "description": "Foundations of Computational Interaction (v0.5.2, theory 0.5.0) is an interdisciplinary research program for formally describing, measuring, modeling, and predicting human-computer interaction. It contains the versioned knowledge system of record, empirical falsification protocols, and a C11 reference substrate for a deterministic subset of the ontology. Research corpus under CC-BY-4.0; code and schemas under Apache-2.0.",
+  "description": "Foundations of Computational Interaction (v0.5.3, theory 0.5.0) is an interdisciplinary research program for formally describing, measuring, modeling, and predicting human-computer interaction. It contains the versioned knowledge system of record, empirical falsification protocols, and a C11 reference substrate for a deterministic subset of the ontology. Research corpus under CC-BY-4.0; code and schemas under Apache-2.0.",
   "creators": [
     {
       "name": "Shallbetter, Zachary",
@@ -23,12 +23,12 @@
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/tree/v0.5.2",
+      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/tree/v0.5.3",
       "relation": "isSupplementTo",
       "resource_type": "dataset"
     },
     {
-      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/releases/tag/v0.5.2",
+      "identifier": "https://github.com/zachshallbetter/foundations-of-computational-interaction/releases/tag/v0.5.3",
       "relation": "isIdenticalTo",
       "resource_type": "dataset"
     },

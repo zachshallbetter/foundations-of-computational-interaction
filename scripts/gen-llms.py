@@ -47,14 +47,19 @@ EXCLUDE = {
 
 
 def get_version() -> str:
-    try:
-        out = subprocess.run(["git", "-C", str(ROOT), "describe", "--tags", "--abbrev=0"],
-                             capture_output=True, check=True, text=True).stdout.strip()
-        if out:
-            return out.lstrip("v")
-    except Exception:
-        pass
-    return "0.5.0"
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+    if not version:
+        raise ValueError("VERSION must declare the repository release version")
+    return version.lstrip("v")
+
+def get_theory_version() -> str:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    for line in readme.splitlines():
+        if line.startswith("| Theory |"):
+            fields = line.strip().strip("|").split("|")
+            if len(fields) >= 2 and fields[1].strip():
+                return fields[1].strip()
+    raise ValueError("README.md must declare the theory version in its version table")
 
 
 def is_excluded(rel: str) -> str | None:
@@ -83,6 +88,7 @@ def h1_of(path: Path) -> str:
 
 def main() -> int:
     version = get_version()
+    theory_version = get_theory_version()
     agents_dir = AGENTS_DIR
     agents_dir.mkdir(parents=True, exist_ok=True)
 
@@ -116,7 +122,7 @@ def main() -> int:
         "> Nothing here is a validated result unless a record says so explicitly.",
         "",
         "Versions move **independently per layer**; a shared number never implies cross-layer conformance.",
-        f"Theory {version} (pre-ratification) · contract schemas 0.2.0 · dataset schema 0.3.0 ·",
+        f"Theory {theory_version} (pre-ratification) · contract schemas 0.2.0 · dataset schema 0.3.0 ·",
         "C reference substrate 0.1.0. Passing the substrate's tests establishes reference-kernel",
         "conformance only — not empirical validation.",
         "",

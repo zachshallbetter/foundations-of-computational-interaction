@@ -1,7 +1,7 @@
 # Foundations of Computational Interaction
 
 **Identifier:** `fci`  
-**Version:** Theory `0.5.0` (repository packaging release `0.5.2`)  
+**Version:** Theory `0.5.0` (repository packaging release `0.5.3`)  
 **Status:** Research Program; contract schemas are draft normative candidates and empirical validity remains unestablished  
 **Question:** How can human–computer interaction be formally described, measured, modeled, and predicted?  
 **Scope:** A versioned conceptual corpus and deterministic C11 reference substrate for a bounded subset of its ontology.
@@ -91,7 +91,7 @@ Authoritative policy: [`app/VERSIONING.md`](app/VERSIONING.md).
 
 > **On `CIS-EX-*` identifiers.** Example identifiers were deliberately not renamed when the program title settled. Their stability is the contract. Residual historical symbols in the C substrate are a separate in-flight rename, not an oversight.
 
-Repository release tag **`v0.5.2`** is the public packaging release for theory version **0.5.0** (see [`VERSION`](VERSION)). Theory remains 0.5.0; 0.5.2 records privacy-clean corpus packaging and refreshed release metadata, citation metadata, and verification presentation.
+Repository release tag **`v0.5.3`** is the public packaging release for theory version **0.5.0** (see [`VERSION`](VERSION)). Theory remains 0.5.0; 0.5.3 fixes the generated corpus theory-version label and refreshes the versioned corpus and deposit metadata; theory remains 0.5.0.
 
 ## Verification
 
@@ -153,7 +153,7 @@ If you use this work, please cite it.
   author       = {Shallbetter, Zachary},
   title        = {Foundations of Computational Interaction},
   year         = {2026},
-  version      = {0.5.2},
+  version      = {0.5.3},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.23290488},
   url          = {https://doi.org/10.5281/zenodo.23290488},
