@@ -19,6 +19,7 @@ jobs:
   changelog:
     name: layer changes are recorded
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
         with:
@@ -70,6 +71,7 @@ jobs:
   version-coupling:
     name: no silent cross-layer version coupling
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
         with:
@@ -101,6 +103,7 @@ jobs:
   doc-links:
     name: internal doc links resolve
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
         with:
@@ -112,6 +115,7 @@ jobs:
     if: always()
     needs: [changelog, version-coupling, doc-links]
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: All PR checks succeeded
         run: |
