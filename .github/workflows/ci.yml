@@ -26,6 +26,7 @@ jobs:
   changes:
     name: detect changes
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     outputs:
       app: ${{ steps.filter.outputs.app }}
     steps:
@@ -61,8 +62,10 @@ jobs:
     needs: changes
     if: needs.changes.outputs.app == 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         cc: [gcc, clang]
     steps:
@@ -104,6 +107,7 @@ jobs:
     needs: [changes, substrate]
     if: needs.changes.outputs.app == 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/download-artifact@v6
         with:
@@ -122,6 +126,7 @@ jobs:
   corpus:
     name: corpus integrity
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
         with:
@@ -143,6 +148,7 @@ jobs:
     if: always()
     needs: [changes, substrate, conformance-golden, corpus]
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: All jobs succeeded or were legitimately skipped
         run: |
