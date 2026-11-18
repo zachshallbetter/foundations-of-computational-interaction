@@ -1,0 +1,50 @@
+name: Bug report
+description: The C substrate, a repository check, or the corpus is not behaving as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. A minimal reproduction is the fastest path to a fix.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - C reference substrate (app/)
+        - Corpus (docs/)
+        - Scripts or CI (scripts/, .github/)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Release or commit
+      placeholder: v0.5.3 (or a commit hash)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What should have happened. Quote the record or document if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: The commands you ran, for example `cd app && make test`, and their output.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: OS, compiler and version (gcc or clang), Python version

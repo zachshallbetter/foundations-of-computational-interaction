@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose a change to the substrate, the corpus or the tooling.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        This is a research program. A proposal that strengthens an empirical or disciplinary claim
+        needs the evidence the records require (see `docs/90_Project/Research_Practices.md`).
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      description: The layers version independently (`app/VERSIONING.md`).
+      options:
+        - Theory or corpus (docs/)
+        - Contract or dataset schemas
+        - C reference substrate (app/)
+        - Examples (CIS-EX-NNN)
+        - Tooling or CI
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The change you want
+      description: What should be different, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How you imagine it
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
